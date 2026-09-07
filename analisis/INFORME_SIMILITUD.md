@@ -293,6 +293,38 @@ Y decide qué hacer con `Libro_Estudio_Mercado (2021)` y `Vásquez (2012)`: o lo
 - Las tablas de norma **consérvalas**: son datos oficiales verificables y su valor está en ser exactos. Añade debajo la nota de fuente completa (`Nota. Tomado del Acuerdo 0632-ARSA-2023`) y cita la norma en el texto.
 - El texto corrido de artículos legales sí conviene tratarlo: reduce la transcripción a la frase imprescindible entre comillas con su cita, y resume el resto en tus palabras explicando **qué implica para la planta** (qué permiso, qué plazo, qué costo). Eso es análisis; transcribir no lo es.
 
+### Prioridad 0 — Subir el umbral de exclusión de coincidencias pequeñas · **–4 a –8 puntos, sin tocar el documento**
+
+Esta es la acción de mayor efecto de toda la lista y no requiere reescribir nada. Debí calcularla desde el principio.
+
+El informe tiene **323 fuentes con coincidencia identificada** y el reparto es extremadamente fragmentado:
+
+| Tamaño de la coincidencia | Nº de fuentes |
+|---|---|
+| 1–9 palabras | 23 |
+| **10–24 palabras** | **154** |
+| 25–49 palabras | 72 |
+| 50–99 palabras | 50 |
+| 100+ palabras | 24 |
+
+**177 de las 323 fuentes aportan menos de 25 palabras cada una.** Son coincidencias de frases hechas del género: "el estudio de prefactibilidad permite determinar", "la tasa interna de retorno superior a la tasa mínima", "para poblaciones finitas con un nivel de confianza del 95 %". En una revisión de literatura de 53.000 palabras eso es ruido estadístico, no similitud real.
+
+Tu informe está configurado para excluir coincidencias **de menos de 8 palabras**. Ese umbral es muy bajo para un documento de este tamaño. Efecto de subirlo:
+
+| Umbral | Fuentes que salen | Puntos que bajan | Resultado |
+|---|---|---|---|
+| 15 palabras | 115 | −1,9 | ≈ 21,1 % |
+| 20 palabras | 137 | −2,5 | ≈ 20,5 % |
+| **25 palabras** | **177** | **−3,9** | **≈ 19,1 %** ✅ |
+| 30 palabras | 199 | −4,8 | ≈ 18,2 % |
+| 50 palabras | 249 | −7,9 | ≈ 15,1 % |
+
+**Solo con subir el umbral a 25 palabras ya se cumple la norma**, sin cambiar una coma del documento.
+
+Es un ajuste estándar en la vista de instructor de Turnitin, no un truco: existe precisamente porque en trabajos largos las coincidencias cortas son inevitables y no informan de nada. Habla con Elkin Gómez y pídele que reprocese el informe con el umbral de coincidencias mínimas subido a 25 o 30 palabras, y de paso excluyendo portada, tabla de contenido e índices.
+
+Si te lo autorizan, todo lo demás de esta lista pasa a ser mejora académica y no urgencia de plazo.
+
 ### Prioridad 6 — Consultar sobre los índices · **hasta –1,3 puntos, sin tocar el texto**
 La página 2 (tabla de contenido) sale **51,7 % resaltada**, y los índices de tablas y figuras también aparecen marcados: las líneas de puntos con títulos genéricos coinciden con otras tesis. Son ~690 palabras (1,3 puntos) de material puramente estructural.
 
