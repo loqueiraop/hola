@@ -130,7 +130,38 @@ Matices, porque no todos son igual de graves:
 - El **estudio legal** está bien así: en un capítulo normativo lo correcto es citar la norma (Acuerdo 0632-ARSA-2023, Decreto 104-93, RTCA), y eso lo haces. La excepción es el artículo 145 de la Constitución transcrito en la página 136, que sí necesita referencia.
 - El **análisis de riesgos** casi no necesita citas: son resultados propios, y por eso mismo solo tiene 9,5 % de coincidencia.
 - El **estudio financiero** con 0 citas en 7.318 palabras es más discutible: los resultados son tuyos, pero las definiciones de VAN, TIR y WACC intercaladas entre ellos no lo son.
-- El **Diseño Metodológico** es el caso grave, y es la Causa 5.
+- El **Diseño Metodológico** es el caso grave, y es la Causa 6.
+
+#### El caso Sapag: la fuente más copiada de la tesis es la única que nunca se cita
+
+Este es el hallazgo más importante de todo el análisis.
+
+Tu bibliografía tiene **57 entradas**. Al cruzarlas una por una contra el texto, **5 no se citan en ninguna parte**:
+
+| Entrada de la bibliografía | ¿Se cita? |
+|---|---|
+| **Nassir Sapag Chain (2008): *Preparación y evaluación de proyectos*, 5ª ed.** | **NO** ⚠️ |
+| **Nassir Sapag Chain (2018): *Proyectos de inversión. Formulación y evaluación*, 2ª ed.** | **NO** ⚠️ |
+| **ONUDI (2019): *Guía de transferencia metodológica*** | **NO** ⚠️ |
+| Libro_Estudio_Mercado (2021) | NO — y el título es un nombre de archivo |
+| Vásquez, Gustavo (2012): *Los canales de distribución y el valor para el consumidor* | NO |
+
+Ahora junta eso con la tabla de páginas más densas de la sección 2:
+
+| Pág. | Resaltado | Contenido | Autor real |
+|---|---|---|---|
+| 24 | **90 %** | Lista de factores legales (patentes, desahucios, aranceles, mutuales) — párrafos 257–268 | **Sapag** |
+| 23 | **88 %** | Definición del estudio legal — párrafo 256 | **Sapag** |
+| 47 | **85 %** | Tamaño y localización del proyecto — párrafos 421, 423 | **Sapag** |
+| 46 | **88 %** | Ingeniería del proyecto — párrafos 414, 416 | **Sapag** |
+
+**Las cuatro páginas más copiadas de la tesis son de Sapag, y Sapag está en tu bibliografía sin una sola cita en el texto.** La única vez que aparece su nombre es como etiqueta de una metodología —"BID/CEPAL – Sapag & Sapag: Sapag es una metodología que normalmente es utilizada…"— sin ninguna referencia a sus libros.
+
+La buena noticia: **la referencia ya existe en tu base de Citavi.** No hay que buscar nada ni construir nada. Son unas 8 inserciones de cita en los párrafos 256, 257–268, 414, 416, 421 y 423, y el hueco de atribución más serio del documento queda cerrado en veinte minutos.
+
+Lo mismo con **ONUDI (2019)**: es exactamente la fuente del párrafo 243, esa cita textual que hoy dice solo "Según la Guía de transferencia Metodológica" sin autor ni año. La referencia está en Citavi; solo hay que enlazarla.
+
+Y revisa `Libro_Estudio_Mercado (2021)`: un nombre de archivo como título de una referencia no puede quedar en una bibliografía que va a defensa.
 
 ### Causa 4 — Cuatro citas textuales usan `¨` (diéresis) en lugar de comillas
 
@@ -232,6 +263,21 @@ Ejemplos concretos:
 
 Este bloque baja el porcentaje **y** mejora sustancialmente el capítulo: hoy describe, después analizará.
 
+### Prioridad 3 bis — Citar a Sapag y a ONUDI · **20 minutos, cierra el hueco más serio**
+No baja mucho el porcentaje por sí sola, pero es la acción con mejor relación resultado/esfuerzo de toda la lista, y ataca lo que más te puede costar en una defensa.
+
+Las referencias **ya están en tu base de Citavi**. Solo hay que insertar la cita donde corresponde:
+
+| Párrafos | Insertar |
+|---|---|
+| 256, 257–268 (estudio legal y lista de factores legales) | `Sapag Chain (2008)` |
+| 414, 416 (ingeniería del proyecto) | `Sapag Chain (2008)` o `(2018)` |
+| 421 (tamaño del proyecto) | `Sapag Chain (2008)` |
+| 423 (localización) | `Sapag Chain (2008)` |
+| 243 (cita textual de la ONUDI) | `ONUDI (2019)` |
+
+Y decide qué hacer con `Libro_Estudio_Mercado (2021)` y `Vásquez (2012)`: o los citas donde correspondan, o los eliminas de Citavi para que salgan de la bibliografía.
+
 ### Prioridad 4 — Comillas, citas huérfanas y formato · **–0,3 a –0,5 puntos, y cierra riesgos de forma**
 1. Reemplaza los **7 caracteres `¨`** por comillas tipográficas `“ ”` (párrafos 234, 243, 250, 254). Con esto Turnitin empieza a descontar esas cuatro citas.
 2. Revisa el balance de comillas en todo el documento: hay 14 `“` y 16 `”`. Cada par debe abrir y cerrar.
@@ -262,10 +308,11 @@ Pregunta a tu asesor (Elkin Gómez, que es quien tiene la vista de instructor) s
 | P1 · Comprimir metodologías comparadas | −4,0 |
 | P2 · Reescribir Diseño Metodológico | −1,7 |
 | P3 · Interpretación financiera específica | −1,7 |
-| P4 · Comillas, cita huérfana y reposición de citas | −0,4 |
+| P3 bis · Citar a Sapag y ONUDI | −0,2 |
+| P4 · Comillas, formato y reposición de citas | −0,4 |
 | P5 · Normativa y tablas | −0,7 |
-| **Subtotal** | **≈ 14,5** |
-| P6 · Excluir índices (si lo autorizan) | −1,3 → **≈ 13,2** |
+| **Subtotal** | **≈ 14,3** |
+| P6 · Excluir índices (si lo autorizan) | −1,3 → **≈ 13,0** |
 
 Los rangos son estimaciones sobre el conteo de palabras resaltadas; el porcentaje exacto depende de cómo quede la redacción final. Aun cumpliendo solo P1 y P4 quedarías cerca de 18,5 %, ya bajo el umbral, pero **no te quedes en el mínimo**: si el texto reescrito vuelve a coincidir con alguna fuente, un 19,5 % no da margen. Apunta a 15 %.
 
@@ -286,17 +333,37 @@ El camino correcto es el único que además te sirve: **citar lo que es de otros
 
 ## 7. Orden de trabajo sugerido
 
-1. **Hoy (1 h):** Prioridad 4, puntos 1 a 3 —comillas y el párrafo 243—. Es mecánico y elimina el riesgo más visible en una defensa.
+1. **Hoy (1,5 h):** Prioridad 3 bis (citar a Sapag y ONUDI) y Prioridad 4 puntos 1 a 3 (comillas). Es mecánico, se hace todo desde Citavi y cierra los dos riesgos más visibles en una defensa.
 2. **Hoy (5 min):** escribe a tu asesor por la exclusión de índices (Prioridad 6). Corre en paralelo.
 3. **Días 1–3:** Prioridad 1. Es el bloque grande. Redacta primero la tabla comparativa de metodologías y el párrafo de justificación; con eso sustituyes las 14 páginas de golpe.
 4. **Día 4:** Prioridad 2, siguiendo el modelo de tus propios párrafos 389–391.
 5. **Día 5:** Prioridad 3, unificando las dos secciones de indicadores.
-6. **Día 6:** Prioridad 4, puntos 4 a 7 (reponer citas en bloques largos y unificar formato en Citavi) y Prioridad 5.
+6. **Día 6:** Prioridad 3 bis (citar a Sapag y ONUDI), Prioridad 4 puntos 4 a 7 (reponer citas en bloques largos y unificar formato en Citavi) y Prioridad 5.
 7. **Antes de reentregar:** vuelve a pasar Turnitin. Si tu institución limita los reintentos, pide a tu asesor una revisión en modo borrador.
 
 ---
 
-## 8. Nota metodológica: por qué la revisión 1 se equivocó
+## 8. Trabajar esto desde Citavi
+
+Todo el arreglo de citas se hace en Citavi, no editando el documento a mano. Si escribes una cita directamente en Word, al actualizar los campos se revierte.
+
+**Turnitin sí leyó tus citas de Citavi.** Lo verifiqué: de las 84 citas, **52 existen únicamente dentro de campos de Citavi**, y las 52 aparecen en el PDF que analizó Turnitin. La bibliografía generada también se procesó, y de hecho se filtró bien (0 % de coincidencia). **No necesitas convertir los campos a texto estático antes de reentregar.**
+
+**1. Pasar a APA 7 es un cambio de estilo, no un trabajo manual.** En el complemento de Citavi para Word, cambia el estilo de citación a *APA, 7th edition*. Eso reformatea de golpe las 84 citas y las 57 entradas de la bibliografía, que hoy salen como `Autor (año): Título`. Confirma antes con tu asesor si EAFIT exige APA.
+
+**2. El estilo solo funciona si los campos de autor están bien capturados.** Aquí está el problema de fondo del formato irregular. Citas como `(ANA JULIA SILVA OQUENDO 2020)`, `(Jorge Borjas Chávez 2013)`, `(Luis 2024)`, `(Marcos 2020)` o `(Cepeda 2025)` indican que en esas referencias el nombre está en el campo equivocado: todo el nombre metido en "Apellido", o pegado como una sola cadena. Citavi no puede generar `(Silva Oquendo, 2020)` si no sabe cuál es el apellido.
+
+Ve referencia por referencia y usa el editor de nombres del campo Autor para que quede `Apellido, Nombre`. Son unas 15 referencias a corregir, y al terminar el formato APA sale correcto en todo el documento sin tocar Word.
+
+**3. Fusiona los duplicados.** `(Rios, 2019)` y `(Juan Carlos Robles Ríos 2019)` son la misma obra con dos entradas. Usa la función de búsqueda de duplicados de Citavi y fusiónalas.
+
+**4. Al comprimir el marco teórico, la bibliografía se ajusta sola.** Citavi genera la bibliografía a partir de las citas del documento: si eliminas los párrafos de JICA, ZOPP o MGA, esas entradas desaparecen solas. Por eso conviene que las citas de esas metodologías **pasen a la tabla comparativa** (una por fila): así conservas las referencias en la bibliografía y sigues respaldando cada metodología.
+
+**5. Actualiza los campos y revisa antes de exportar.** Después de los cambios, actualiza las citas y la bibliografía desde el complemento, y revisa que no queden campos sin resolver ni citas en blanco (como el hueco que tenía el párrafo 208 en `De acuerdo con datos de ___`).
+
+---
+
+## 9. Nota metodológica: por qué la revisión 1 se equivocó
 
 Lo dejo escrito porque cualquiera que analice este .docx con herramientas automáticas va a caer en la misma trampa, y porque el dato erróneo circuló.
 
@@ -331,4 +398,6 @@ Lo que **no** se vio afectado por este error: todo el análisis de la sección 2
 | `anexo_pasajes.py` | Genera el anexo |
 | `contar_citas.py` | **Conteo riguroso de las 84 citas**, leyendo los campos de Citavi. Documenta la trampa de `paragraph.text` |
 | `densidad_citas.py` | Densidad de citas por sección y auditoría de los 42 párrafos sin cita del marco teórico |
+| `verificar_citavi_turnitin.py` | Comprueba que las 52 citas que viven en campos de Citavi sí llegaron al PDF que analizó Turnitin |
+| `auditar_bibliografia.py` | Cruza las 57 entradas de la bibliografía contra las citas del texto (detecta Sapag y ONUDI sin citar) |
 | `matches.json`, `por_pagina.json` | Datos crudos |
