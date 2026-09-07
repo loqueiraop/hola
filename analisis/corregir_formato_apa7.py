@@ -12,6 +12,7 @@ import json
 import re
 import sys
 import zipfile
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -22,6 +23,7 @@ SRC = ROOT / 'Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.docx'
 DST = ROOT / 'Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA APA7 BORRADOR.docx'
 REPORT = ROOT / 'analisis/informe_correccion_apa7_formato.json'
 W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
+W14 = '{http://schemas.microsoft.com/office/word/2010/wordml}'
 XMLSPACE = '{http://www.w3.org/XML/1998/namespace}space'
 PARSER = etree.XMLParser(remove_blank_text=False, resolve_entities=False, huge_tree=True)
 
@@ -337,6 +339,177 @@ def normalize_spaces(root: etree._Element) -> int:
     return changes
 
 
+def make_continuation_paragraph(label: str) -> etree._Element:
+    paragraph = etree.Element(W + 'p')
+    ppr = etree.SubElement(paragraph, W + 'pPr')
+    style = etree.SubElement(ppr, W + 'pStyle')
+    style.set(W + 'val', 'APAcontinuacindetabla')
+    etree.SubElement(ppr, W + 'pageBreakBefore')
+    etree.SubElement(ppr, W + 'keepNext')
+    run = etree.SubElement(paragraph, W + 'r')
+    node = etree.SubElement(run, W + 't')
+    set_text(node, label)
+    return paragraph
+
+
+def fresh_para_id(used: set[str], seed: int) -> tuple[str, int]:
+    candidate = seed
+    while True:
+        value = f'{candidate & 0xFFFFFFFF:08X}'
+        candidate += 1
+        if value not in used:
+            used.add(value)
+            return value, candidate
+
+
+def fragment_table(
+    table: etree._Element,
+    data_row_indices: list[int],
+    used_para_ids: set[str],
+    para_id_seed: int,
+    regenerate_ids: bool,
+) -> tuple[etree._Element, int]:
+    fragment = copy.deepcopy(table)
+    rows = fragment.findall('./' + W + 'tr')
+    if not rows:
+        raise RuntimeError('No se puede fragmentar una tabla sin filas')
+    selected = {0, *data_row_indices}
+    for index, row in enumerate(rows):
+        if index not in selected:
+            fragment.remove(row)
+    if regenerate_ids:
+        for paragraph in fragment.iter(W + 'p'):
+            attr = W14 + 'paraId'
+            if attr not in paragraph.attrib:
+                continue
+            value, para_id_seed = fresh_para_id(used_para_ids, para_id_seed)
+            paragraph.set(attr, value)
+    return fragment, para_id_seed
+
+
+def split_long_tables(root: etree._Element, report: dict[str, Any]) -> Counter[str]:
+    """Divide sólo las dos tablas que exceden una página.
+
+    Las filas y celdas se copian sin alterar texto. Cada fragmento conserva el
+    encabezado original, recibe cierre propio y un rótulo de continuación.
+    Devuelve el multiconjunto de textos de encabezado añadidos para validar que
+    la única duplicación de contenido corresponde a esos encabezados.
+    """
+    used_para_ids = {
+        paragraph.get(W14 + 'paraId')
+        for paragraph in root.iter(W + 'p')
+        if paragraph.get(W14 + 'paraId')
+    }
+    para_id_seed = 0xF0000000
+    specifications = [
+        {
+            'number': 5,
+            'header_first_cell': 'FUERZAS DE PORTER',
+            'expected_rows': 6,
+            'parts': [[1], [2], [3], [4, 5]],
+            'labels': ['Tabla 5 (continuación)', 'Tabla 5 (continuación)', 'Tabla 5 (continuación)'],
+        },
+        {
+            'number': 32,
+            'header_first_cell': 'Parámetro',
+            'expected_rows': 24,
+            'parts': [list(range(1, 9)), list(range(9, 17)), list(range(17, 24))],
+            'labels': ['Tabla 32 (continuación)', 'Tabla 32 (continuación)'],
+        },
+    ]
+    extra_headers: Counter[str] = Counter()
+    changes = []
+    for spec in specifications:
+        candidates = []
+        for table in root.iter(W + 'tbl'):
+            rows = table.findall('./' + W + 'tr')
+            if not rows:
+                continue
+            first_cells = rows[0].findall('./' + W + 'tc')
+            if first_cells and text(first_cells[0]).strip() == spec['header_first_cell'] and len(rows) == spec['expected_rows']:
+                candidates.append(table)
+        if len(candidates) != 1:
+            # Una ejecución posterior sobre un documento ya fragmentado no
+            # debe volver a duplicar tablas.
+            labels_present = sum(1 for p in root.iter(W + 'p') if text(p).strip() in spec['labels'])
+            if not candidates and labels_present >= len(spec['labels']):
+                changes.append({'table': spec['number'], 'already_split': True})
+                continue
+            raise RuntimeError(f"Tabla {spec['number']} no inequívoca para fragmentar: {len(candidates)} candidatas")
+        table = candidates[0]
+        source_rows = table.findall('./' + W + 'tr')
+        source_data = [[text(cell) for cell in row.findall('./' + W + 'tc')] for row in source_rows[1:]]
+        expected_indices = [index for part in spec['parts'] for index in part]
+        if expected_indices != list(range(1, spec['expected_rows'])):
+            raise RuntimeError(f"Partición incompleta de Tabla {spec['number']}: {expected_indices}")
+        fragments = []
+        for fragment_index, part in enumerate(spec['parts']):
+            fragment, para_id_seed = fragment_table(
+                table,
+                part,
+                used_para_ids,
+                para_id_seed,
+                regenerate_ids=fragment_index > 0,
+            )
+            fragments.append(fragment)
+        reconstructed = [
+            [text(cell) for cell in row.findall('./' + W + 'tc')]
+            for fragment in fragments
+            for row in fragment.findall('./' + W + 'tr')[1:]
+        ]
+        if reconstructed != source_data:
+            raise RuntimeError(f"La fragmentación alteró datos de Tabla {spec['number']}")
+        parent = table.getparent()
+        position = parent.index(table)
+        parent.remove(table)
+        parent.insert(position, fragments[0])
+        insertion = position + 1
+        for label, fragment in zip(spec['labels'], fragments[1:]):
+            parent.insert(insertion, make_continuation_paragraph(label))
+            parent.insert(insertion + 1, fragment)
+            insertion += 2
+        header_values = [text(cell) for cell in source_rows[0].findall('./' + W + 'tc')]
+        for _ in range(len(fragments) - 1):
+            extra_headers.update(header_values)
+        changes.append({
+            'table': spec['number'],
+            'source_rows': spec['expected_rows'],
+            'fragments': [len(part) + 1 for part in spec['parts']],
+            'data_rows_preserved': len(source_data),
+            'continuation_labels': spec['labels'],
+        })
+    report['formatting']['long_tables_split_with_continuation'] = changes
+    return extra_headers
+
+
+def ensure_unique_para_ids(root: etree._Element) -> list[dict[str, str]]:
+    values = [
+        paragraph.get(W14 + 'paraId')
+        for paragraph in root.iter(W + 'p')
+        if paragraph.get(W14 + 'paraId')
+    ]
+    used = set(values)
+    seen: set[str] = set()
+    seed = 0xF1000000
+    changes = []
+    for paragraph in root.iter(W + 'p'):
+        attr = W14 + 'paraId'
+        value = paragraph.get(attr)
+        if not value:
+            continue
+        if value in seen:
+            replacement, seed = fresh_para_id(used, seed)
+            paragraph.set(attr, replacement)
+            changes.append({'before': value, 'after': replacement, 'text': text(paragraph)[:120]})
+        else:
+            seen.add(value)
+    return changes
+
+
+def table_cell_counter(root: etree._Element) -> Counter[str]:
+    return Counter(text(cell) for cell in root.iter(W + 'tc'))
+
+
 def set_border(container: etree._Element, edge: str, size: str = '4') -> None:
     borders = container.find('./' + W + 'tcBorders')
     if borders is None:
@@ -353,10 +526,12 @@ def set_border(container: etree._Element, edge: str, size: str = '4') -> None:
 def format_tables(root: etree._Element) -> dict[str, Any]:
     tables = list(root.iter(W + 'tbl'))
     cant_split = 0
+    keep_next = 0
+    caption_keep_next = 0
     border_cells = 0
     for table in tables:
         rows = table.findall('./' + W + 'tr')
-        for row in rows:
+        for row_index, row in enumerate(rows):
             trpr = row.find('./' + W + 'trPr')
             if trpr is None:
                 trpr = etree.Element(W + 'trPr')
@@ -364,6 +539,28 @@ def format_tables(root: etree._Element) -> dict[str, Any]:
             if trpr.find('./' + W + 'cantSplit') is None:
                 etree.SubElement(trpr, W + 'cantSplit')
                 cant_split += 1
+            # Mantiene juntas las filas de cada tabla física siempre que la
+            # cuadrícula completa quepa en una página. cantSplit sólo protege
+            # una fila; keepNext evita fragmentos huérfanos como la Tabla 7.
+            if row_index < len(rows) - 1:
+                for paragraph in row.iter(W + 'p'):
+                    ppr = ensure_ppr(paragraph)
+                    if ppr.find('./' + W + 'keepNext') is None:
+                        etree.SubElement(ppr, W + 'keepNext')
+                        keep_next += 1
+        # El número/título o rótulo de continuación inmediatamente anterior
+        # debe viajar con la cuadrícula, no quedar aislado al pie de página.
+        previous = table.getprevious()
+        linked = 0
+        while previous is not None and linked < 2 and previous.tag == W + 'p':
+            value = text(previous).strip()
+            if value:
+                ppr = ensure_ppr(previous)
+                if ppr.find('./' + W + 'keepNext') is None:
+                    etree.SubElement(ppr, W + 'keepNext')
+                    caption_keep_next += 1
+                linked += 1
+            previous = previous.getprevious()
         if not rows:
             continue
         for cell in rows[0].findall('./' + W + 'tc'):
@@ -380,7 +577,13 @@ def format_tables(root: etree._Element) -> dict[str, Any]:
                 cell.insert(0, tcpr)
             set_border(tcpr, 'bottom')
             border_cells += 1
-    return {'tables': len(tables), 'rows_marked_cant_split': cant_split, 'edge_cells_reasserted': border_cells}
+    return {
+        'tables': len(tables),
+        'rows_marked_cant_split': cant_split,
+        'table_paragraphs_marked_keep_next': keep_next,
+        'caption_paragraphs_marked_keep_next': caption_keep_next,
+        'edge_cells_reasserted': border_cells,
+    }
 
 
 def add_table_page_breaks(top: list[etree._Element]) -> list[dict[str, Any]]:
@@ -442,6 +645,7 @@ def main() -> int:
         body = root.find('.//' + W + 'body')
         top = body.findall('./' + W + 'p') if body is not None else []
         before = inventory(root)
+        before_cell_values = table_cell_counter(root)
 
         by_tag = {sdt_tag(s): s for s in root.iter(W + 'sdt') if sdt_tag(s).startswith('CitaviPlaceholder#')}
         missing = sorted(set(APA7_RESULTS) - set(by_tag))
@@ -465,6 +669,8 @@ def main() -> int:
         report['formatting']['long_body_bold_removed'] = clean_long_body_bold(top)
         report['formatting']['heading_italics_removed'] = remove_heading_italics(styles, top)
         report['formatting']['table_page_breaks'] = add_table_page_breaks(top)
+        added_header_counter = split_long_tables(root, report)
+        report['formatting']['duplicate_paraIds_regenerated'] = ensure_unique_para_ids(root)
         report['formatting']['tables'] = format_tables(root)
         report['formatting']['do_not_expand_shift_return_added'] = add_compatibility_setting(settings)
 
@@ -486,6 +692,7 @@ def main() -> int:
         out_styles = parse(out.read('word/styles.xml'))
         out_settings = parse(out.read('word/settings.xml'))
         after = inventory(out_root)
+        after_cell_values = table_cell_counter(out_root)
         out_by_tag = {sdt_tag(s): s for s in out_root.iter(W + 'sdt') if sdt_tag(s).startswith('CitaviPlaceholder#')}
         visible_ok = all(citation_result(out_by_tag[tag]) == value for tag, value in APA7_RESULTS.items())
         citation_values = [citation_result(s) for s in out_by_tag.values()]
@@ -517,6 +724,11 @@ def main() -> int:
         rel_media = [n for n in source.namelist() if n.endswith('.rels') or n.startswith('word/media/')]
         protected_diff = [n for n in rel_media if sha256(source.read(n)) != sha256(out.read(n))]
         changed_parts = [n for n in source.namelist() if sha256(source.read(n)) != sha256(out.read(n))]
+        para_ids = [
+            paragraph.get(W14 + 'paraId')
+            for paragraph in out_root.iter(W + 'p')
+            if paragraph.get(W14 + 'paraId')
+        ]
         validations = {
             'zip_integrity': out.testzip() is None,
             'package_parts_and_order_preserved': source.namelist() == out.namelist(),
@@ -524,14 +736,18 @@ def main() -> int:
             'citavi_instruction_payloads_preserved': before['citation_instr'] == after['citation_instr'],
             'apa7_results_applied': visible_ok,
             'no_known_malformed_citation_patterns': not malformed,
-            'table_count_56_preserved': after['tables'] == before['tables'] == 56,
-            'table_cell_text_and_structure_preserved': before['table_matrix'] == after['table_matrix'],
+            'table_count_61_after_two_controlled_splits': (
+                (before['tables'] == 56 and after['tables'] == 61)
+                or (before['tables'] == 61 and after['tables'] == 61)
+            ),
+            'all_table_cell_text_preserved_except_repeated_headers': after_cell_values == before_cell_values + added_header_counter,
             'drawings_55_preserved': after['drawings'] == before['drawings'] == 55,
             'relationships_and_media_byte_preserved': not protected_diff,
             'no_manual_text_wrapping_breaks': not text_wrap_breaks,
             'no_long_body_majority_bold': not long_bold,
             'heading_styles_not_italic': not italic_heading_styles,
             'all_table_rows_cannot_split': not rows_without_cant_split,
+            'paragraph_paraIds_unique': len(para_ids) == len(set(para_ids)),
             'compatibility_setting_present': out_settings.find('.//' + W + 'doNotExpandShiftReturn') is not None,
             'requested_table_page_breaks_present': len(page_break_values) >= len(TABLE_CAPTIONS_NEW_PAGE) + 4,
         }

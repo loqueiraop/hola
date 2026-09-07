@@ -21,6 +21,7 @@ FINAL = ROOT / 'Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.docx'
 PDF = ROOT / 'analisis/render/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.pdf'
 OUT = ROOT / 'analisis/verificacion_entrega_apa7.json'
 W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
+W14 = '{http://schemas.microsoft.com/office/word/2010/wordml}'
 A = '{http://schemas.openxmlformats.org/drawingml/2006/main}'
 R = '{http://schemas.openxmlformats.org/package/2006/relationships}'
 
@@ -142,6 +143,14 @@ def main() -> int:
         paragraphs = body.findall('./' + W + 'p') if body is not None else []
         all_text = '\n'.join(text(p) for p in paragraphs)
         all_document_text = text(root)
+        para_ids = [
+            paragraph.get(W14 + 'paraId')
+            for paragraph in root.iter(W + 'p')
+            if paragraph.get(W14 + 'paraId')
+        ]
+        duplicate_para_ids = sorted({value for value in para_ids if para_ids.count(value) > 1})
+        checks['all_w14_paraIds_unique'] = len(para_ids) == len(set(para_ids))
+        details['duplicate_w14_paraIds'] = duplicate_para_ids
 
         sdts = list(root.iter(W + 'sdt'))
         citations = [s for s in sdts if sdt_tag(s).startswith('CitaviPlaceholder#')]
@@ -175,7 +184,7 @@ def main() -> int:
         tables = list(root.iter(W + 'tbl'))
         table_rows = list(root.iter(W + 'tr'))
         checks.update({
-            'tables_56': len(tables) == 56,
+            'tables_61_with_controlled_continuations': len(tables) == 61,
             'all_table_rows_cannot_split': all(row.find('./' + W + 'trPr/' + W + 'cantSplit') is not None for row in table_rows),
             'drawings_55': len(list(root.iter(W + 'drawing'))) == 55,
             'media_parts_33': len(media) == 33,
@@ -305,6 +314,21 @@ def main() -> int:
     checks['no_extreme_interword_gaps_over_60pt'] = not abnormal_gaps
     details['maximum_interword_gap_points'] = round(max_gap, 2)
     details['extreme_gap_lines'] = abnormal_gaps
+
+    table_audit_path = ROOT / 'analisis/auditoria_tablas_partidas_final.json'
+    table_audit = json.loads(table_audit_path.read_text(encoding='utf-8')) if table_audit_path.exists() else {}
+    checks['all_37_logical_tables_have_closed_labeled_continuations'] = (
+        table_audit.get('all_ok') is True
+        and table_audit.get('tables_checked') == 37
+        and table_audit.get('pdf_sha256') == sha256(PDF.read_bytes())
+        and not table_audit.get('orphan_continuations')
+    )
+    details['logical_table_audit'] = {
+        'report': str(table_audit_path),
+        'tables_checked': table_audit.get('tables_checked'),
+        'orphan_continuations': table_audit.get('orphan_continuations'),
+        'pdf_hash_matches': table_audit.get('pdf_sha256') == sha256(PDF.read_bytes()),
+    }
 
     failed = [name for name, ok in checks.items() if not ok]
     report = {

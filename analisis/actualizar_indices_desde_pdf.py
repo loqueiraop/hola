@@ -162,7 +162,7 @@ def main() -> int:
         validations = {
             "zip_valid": zb.testzip() is None,
             "part_names_and_order_preserved": names_a == names_b,
-            "only_document_xml_changed": changed_parts == ["word/document.xml"],
+            "only_document_xml_or_no_part_changed": changed_parts in ([], ["word/document.xml"]),
             "index_count_176": len(out_paragraphs) == EXPECTED_TOTAL,
             "all_visible_pages_equal_rendered_targets": visible == expected,
         }

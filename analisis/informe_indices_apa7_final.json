@@ -2,8 +2,8 @@
   "source": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA APA7 BORRADOR.docx",
   "rendered_pdf": "/projects/sandbox/hola/analisis/render/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA APA7 BORRADOR.pdf",
   "destination": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.docx",
-  "source_sha256": "575c918817c40b20269e9db27abd0e7c0452bea069327b1e6845528dbb1c2994",
-  "destination_sha256": "56bbc322b8dc02c5a88ad9f16757a1110195b8ca9e176d7200ada07aadd15ef5",
+  "source_sha256": "99825130c3b70c4df80dc460762e14e8b0b4f15b711f02b7221e027d2812befa",
+  "destination_sha256": "99825130c3b70c4df80dc460762e14e8b0b4f15b711f02b7221e027d2812befa",
   "counts": {
     "ndicemanualnivel1": 21,
     "ndicemanualnivel2": 53,
@@ -12,8 +12,8 @@
     "ndicemanualfigura": 54
   },
   "entries": 176,
-  "changed_entries": 70,
-  "unchanged_entries": 106,
+  "changed_entries": 0,
+  "unchanged_entries": 176,
   "updates": [
     {
       "style": "ndicemanualnivel1",
@@ -329,355 +329,355 @@
     },
     {
       "style": "ndicemanualnivel1",
-      "before": "Estudio de mercado66",
-      "after": "Estudio de mercado66",
-      "old_page": 66,
-      "new_page": 66,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualnivel2",
-      "before": "Indicadores económicos clave que afectan el consumo66",
-      "after": "Indicadores económicos clave que afectan el consumo66",
-      "old_page": 66,
-      "new_page": 66,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualnivel3",
-      "before": "Comercialización de la leche67",
-      "after": "Comercialización de la leche67",
+      "before": "Estudio de mercado67",
+      "after": "Estudio de mercado67",
       "old_page": 67,
       "new_page": 67,
       "changed": false
     },
     {
+      "style": "ndicemanualnivel2",
+      "before": "Indicadores económicos clave que afectan el consumo67",
+      "after": "Indicadores económicos clave que afectan el consumo67",
+      "old_page": 67,
+      "new_page": 67,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel3",
+      "before": "Comercialización de la leche68",
+      "after": "Comercialización de la leche68",
+      "old_page": 68,
+      "new_page": 68,
+      "changed": false
+    },
+    {
       "style": "ndicemanualnivel1",
-      "before": "Estudio Técnico92",
-      "after": "Estudio Técnico92",
-      "old_page": 92,
-      "new_page": 92,
+      "before": "Estudio Técnico93",
+      "after": "Estudio Técnico93",
+      "old_page": 93,
+      "new_page": 93,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Resumen del estudio técnico120",
-      "after": "Resumen del estudio técnico120",
-      "old_page": 120,
-      "new_page": 120,
+      "before": "Resumen del estudio técnico121",
+      "after": "Resumen del estudio técnico121",
+      "old_page": 121,
+      "new_page": 121,
       "changed": false
     },
     {
       "style": "ndicemanualnivel1",
-      "before": "Estudio Organizacional y Administrativo122",
-      "after": "Estudio Organizacional y Administrativo122",
-      "old_page": 122,
-      "new_page": 122,
+      "before": "Estudio Organizacional y Administrativo123",
+      "after": "Estudio Organizacional y Administrativo123",
+      "old_page": 123,
+      "new_page": 123,
       "changed": false
     },
     {
       "style": "ndicemanualnivel1",
-      "before": "Estudio Legal129",
-      "after": "Estudio Legal129",
-      "old_page": 129,
-      "new_page": 129,
+      "before": "Estudio Legal130",
+      "after": "Estudio Legal130",
+      "old_page": 130,
+      "new_page": 130,
       "changed": false
     },
     {
       "style": "ndicemanualnivel1",
-      "before": "Estudio ambiental141",
-      "after": "Estudio ambiental141",
-      "old_page": 141,
-      "new_page": 141,
+      "before": "Estudio ambiental142",
+      "after": "Estudio ambiental142",
+      "old_page": 142,
+      "new_page": 142,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Riesgos asociados con la estrategia de nicho148",
-      "after": "Riesgos asociados con la estrategia de nicho148",
-      "old_page": 148,
-      "new_page": 148,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualnivel1",
-      "before": "Estudio Financiero149",
-      "after": "Estudio Financiero149",
+      "before": "Riesgos asociados con la estrategia de nicho149",
+      "after": "Riesgos asociados con la estrategia de nicho149",
       "old_page": 149,
       "new_page": 149,
       "changed": false
     },
     {
-      "style": "ndicemanualnivel2",
-      "before": "Plan de Inversiones y Financiamiento151",
-      "after": "Plan de Inversiones y Financiamiento151",
-      "old_page": 151,
-      "new_page": 151,
+      "style": "ndicemanualnivel1",
+      "before": "Estudio Financiero150",
+      "after": "Estudio Financiero150",
+      "old_page": 150,
+      "new_page": 150,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Producción y Ventas153",
-      "after": "Producción y Ventas153",
-      "old_page": 153,
-      "new_page": 153,
+      "before": "Plan de Inversiones y Financiamiento152",
+      "after": "Plan de Inversiones y Financiamiento152",
+      "old_page": 152,
+      "new_page": 152,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Costos Variables155",
-      "after": "Costos Variables155",
-      "old_page": 155,
-      "new_page": 155,
+      "before": "Producción y Ventas154",
+      "after": "Producción y Ventas154",
+      "old_page": 154,
+      "new_page": 154,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Costo de Personal.157",
-      "after": "Costo de Personal.157",
-      "old_page": 157,
-      "new_page": 157,
+      "before": "Costos Variables156",
+      "after": "Costos Variables156",
+      "old_page": 156,
+      "new_page": 156,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Costos Fijos.159",
-      "after": "Costos Fijos.159",
-      "old_page": 159,
-      "new_page": 159,
+      "before": "Costo de Personal.158",
+      "after": "Costo de Personal.158",
+      "old_page": 158,
+      "new_page": 158,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Depreciaciones y Amortizaciones.162",
-      "after": "Depreciaciones y Amortizaciones.162",
-      "old_page": 162,
-      "new_page": 162,
+      "before": "Costos Fijos.160",
+      "after": "Costos Fijos.160",
+      "old_page": 160,
+      "new_page": 160,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Valor de Desecho y Capital de Trabajo.165",
-      "after": "Valor de Desecho y Capital de Trabajo.165",
-      "old_page": 165,
-      "new_page": 165,
+      "before": "Depreciaciones y Amortizaciones.163",
+      "after": "Depreciaciones y Amortizaciones.163",
+      "old_page": 163,
+      "new_page": 163,
       "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Tabla de Amortización del Préstamo.166",
-      "after": "Tabla de Amortización del Préstamo.167",
+      "before": "Valor de Desecho y Capital de Trabajo.166",
+      "after": "Valor de Desecho y Capital de Trabajo.166",
       "old_page": 166,
-      "new_page": 167,
-      "changed": true
+      "new_page": 166,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Impuesto Municipal de Industria, Comercio y Servicios (ICS)168",
-      "after": "Impuesto Municipal de Industria, Comercio y Servicios (ICS)169",
+      "before": "Tabla de Amortización del Préstamo.168",
+      "after": "Tabla de Amortización del Préstamo.168",
       "old_page": 168,
-      "new_page": 169,
-      "changed": true
+      "new_page": 168,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Flujo de Caja del Proyecto (Sin Financiamiento)171",
-      "after": "Flujo de Caja del Proyecto (Sin Financiamiento)172",
-      "old_page": 171,
-      "new_page": 172,
-      "changed": true
+      "before": "Impuesto Municipal de Industria, Comercio y Servicios (ICS)170",
+      "after": "Impuesto Municipal de Industria, Comercio y Servicios (ICS)170",
+      "old_page": 170,
+      "new_page": 170,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Flujo de Caja del Proyecto con Financiamiento175",
-      "after": "Flujo de Caja del Proyecto con Financiamiento176",
-      "old_page": 175,
-      "new_page": 176,
-      "changed": true
+      "before": "Flujo de Caja del Proyecto (Sin Financiamiento)173",
+      "after": "Flujo de Caja del Proyecto (Sin Financiamiento)173",
+      "old_page": 173,
+      "new_page": 173,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Costo de Capital sin Financiamiento.180",
-      "after": "Costo de Capital sin Financiamiento.181",
-      "old_page": 180,
-      "new_page": 181,
-      "changed": true
+      "before": "Flujo de Caja del Proyecto con Financiamiento178",
+      "after": "Flujo de Caja del Proyecto con Financiamiento178",
+      "old_page": 178,
+      "new_page": 178,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Indicadores Financieros Sin Financiamiento.182",
-      "after": "Indicadores Financieros Sin Financiamiento.183",
-      "old_page": 182,
+      "before": "Costo de Capital sin Financiamiento.183",
+      "after": "Costo de Capital sin Financiamiento.183",
+      "old_page": 183,
       "new_page": 183,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel3",
-      "before": "Análisis de los indicadores financieros sin financiamiento.182",
-      "after": "Análisis de los indicadores financieros sin financiamiento.183",
-      "old_page": 182,
-      "new_page": 183,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Costo de Capital con Financiamiento (WACC)184",
-      "after": "Costo de Capital con Financiamiento (WACC)185",
-      "old_page": 184,
+      "before": "Indicadores Financieros Sin Financiamiento.185",
+      "after": "Indicadores Financieros Sin Financiamiento.185",
+      "old_page": 185,
       "new_page": 185,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel2",
-      "before": "Indicadores Financieros con Financiamiento.186",
-      "after": "Indicadores Financieros con Financiamiento.187",
-      "old_page": 186,
-      "new_page": 187,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualnivel3",
-      "before": "Análisis de los indicadores financieros187",
-      "after": "Análisis de los indicadores financieros188",
+      "before": "Análisis de los indicadores financieros sin financiamiento.185",
+      "after": "Análisis de los indicadores financieros sin financiamiento.185",
+      "old_page": 185,
+      "new_page": 185,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel2",
+      "before": "Costo de Capital con Financiamiento (WACC)187",
+      "after": "Costo de Capital con Financiamiento (WACC)187",
       "old_page": 187,
-      "new_page": 188,
-      "changed": true
+      "new_page": 187,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Notas Legales y Cumplimiento Normativo.188",
-      "after": "Notas Legales y Cumplimiento Normativo.189",
-      "old_page": 188,
+      "before": "Indicadores Financieros con Financiamiento.189",
+      "after": "Indicadores Financieros con Financiamiento.189",
+      "old_page": 189,
       "new_page": 189,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel2",
-      "before": "Clasificación de Variables para el Análisis de Sensibilidad.192",
-      "after": "Clasificación de Variables para el Análisis de Sensibilidad.193",
-      "old_page": 192,
-      "new_page": 193,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualnivel3",
-      "before": "Variables más críticas del proyecto195",
-      "after": "Variables más críticas del proyecto196",
+      "before": "Análisis de los indicadores financieros190",
+      "after": "Análisis de los indicadores financieros190",
+      "old_page": 190,
+      "new_page": 190,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel2",
+      "before": "Notas Legales y Cumplimiento Normativo.191",
+      "after": "Notas Legales y Cumplimiento Normativo.191",
+      "old_page": 191,
+      "new_page": 191,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel2",
+      "before": "Clasificación de Variables para el Análisis de Sensibilidad.195",
+      "after": "Clasificación de Variables para el Análisis de Sensibilidad.195",
       "old_page": 195,
-      "new_page": 196,
-      "changed": true
+      "new_page": 195,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel3",
-      "before": "Variables Sujetas a Distribución de Probabilidad (@RISK).196",
-      "after": "Variables Sujetas a Distribución de Probabilidad (@RISK).197",
-      "old_page": 196,
-      "new_page": 197,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel3",
-      "before": "Justificación de las distribuciones utilizadas.198",
-      "after": "Justificación de las distribuciones utilizadas.199",
-      "old_page": 198,
-      "new_page": 199,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel3",
-      "before": "Importancia del análisis Monte Carlo.199",
-      "after": "Importancia del análisis Monte Carlo.200",
+      "before": "Variables más críticas del proyecto199",
+      "after": "Variables más críticas del proyecto199",
       "old_page": 199,
+      "new_page": 199,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel3",
+      "before": "Variables Sujetas a Distribución de Probabilidad (@RISK).200",
+      "after": "Variables Sujetas a Distribución de Probabilidad (@RISK).200",
+      "old_page": 200,
       "new_page": 200,
-      "changed": true
+      "changed": false
     },
     {
-      "style": "ndicemanualnivel1",
-      "before": "Análisis de Riesgos201",
-      "after": "Análisis de Riesgos202",
-      "old_page": 201,
+      "style": "ndicemanualnivel3",
+      "before": "Justificación de las distribuciones utilizadas.202",
+      "after": "Justificación de las distribuciones utilizadas.202",
+      "old_page": 202,
       "new_page": 202,
-      "changed": true
+      "changed": false
     },
     {
-      "style": "ndicemanualnivel2",
-      "before": "Identificación y parametrización de los riesgos203",
-      "after": "Identificación y parametrización de los riesgos204",
-      "old_page": 203,
-      "new_page": 204,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel2",
-      "before": "Análisis de la frecuencia de ocurrencia de los eventos de riesgo204",
-      "after": "Análisis de la frecuencia de ocurrencia de los eventos de riesgo205",
+      "style": "ndicemanualnivel3",
+      "before": "Importancia del análisis Monte Carlo.204",
+      "after": "Importancia del análisis Monte Carlo.204",
       "old_page": 204,
+      "new_page": 204,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel1",
+      "before": "Análisis de Riesgos205",
+      "after": "Análisis de Riesgos205",
+      "old_page": 205,
       "new_page": 205,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Análisis de la severidad: valor presente de las pérdidas por evento220",
-      "after": "Análisis de la severidad: valor presente de las pérdidas por evento221",
-      "old_page": 220,
-      "new_page": 221,
-      "changed": true
+      "before": "Identificación y parametrización de los riesgos207",
+      "after": "Identificación y parametrización de los riesgos207",
+      "old_page": 207,
+      "new_page": 207,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Cuantificación integrada del riesgo: valor esperado y valor en riesgo234",
-      "after": "Cuantificación integrada del riesgo: valor esperado y valor en riesgo235",
-      "old_page": 234,
-      "new_page": 235,
-      "changed": true
+      "before": "Análisis de la frecuencia de ocurrencia de los eventos de riesgo208",
+      "after": "Análisis de la frecuencia de ocurrencia de los eventos de riesgo208",
+      "old_page": 208,
+      "new_page": 208,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Efecto del riesgo sobre el valor del proyecto238",
-      "after": "Efecto del riesgo sobre el valor del proyecto239",
+      "before": "Análisis de la severidad: valor presente de las pérdidas por evento224",
+      "after": "Análisis de la severidad: valor presente de las pérdidas por evento224",
+      "old_page": 224,
+      "new_page": 224,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel2",
+      "before": "Cuantificación integrada del riesgo: valor esperado y valor en riesgo238",
+      "after": "Cuantificación integrada del riesgo: valor esperado y valor en riesgo238",
       "old_page": 238,
-      "new_page": 239,
-      "changed": true
+      "new_page": 238,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel2",
-      "before": "Limitaciones del modelo de riesgo242",
-      "after": "Limitaciones del modelo de riesgo243",
+      "before": "Efecto del riesgo sobre el valor del proyecto242",
+      "after": "Efecto del riesgo sobre el valor del proyecto242",
       "old_page": 242,
-      "new_page": 243,
-      "changed": true
+      "new_page": 242,
+      "changed": false
     },
     {
-      "style": "ndicemanualnivel1",
-      "before": "Conclusiones244",
-      "after": "Conclusiones245",
-      "old_page": 244,
-      "new_page": 245,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel1",
-      "before": "Recomendaciones246",
-      "after": "Recomendaciones247",
+      "style": "ndicemanualnivel2",
+      "before": "Limitaciones del modelo de riesgo246",
+      "after": "Limitaciones del modelo de riesgo246",
       "old_page": 246,
-      "new_page": 247,
-      "changed": true
+      "new_page": 246,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel1",
-      "before": "Bibliografía248",
-      "after": "Bibliografía249",
+      "before": "Conclusiones248",
+      "after": "Conclusiones248",
       "old_page": 248,
-      "new_page": 249,
-      "changed": true
+      "new_page": 248,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel1",
-      "before": "Anexos254",
-      "after": "Anexos255",
-      "old_page": 254,
-      "new_page": 255,
-      "changed": true
+      "before": "Recomendaciones250",
+      "after": "Recomendaciones250",
+      "old_page": 250,
+      "new_page": 250,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel1",
+      "before": "Bibliografía252",
+      "after": "Bibliografía252",
+      "old_page": 252,
+      "new_page": 252,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel1",
+      "before": "Anexos258",
+      "after": "Anexos258",
+      "old_page": 258,
+      "new_page": 258,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
@@ -721,259 +721,259 @@
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 6. Proyección de clientes, ventas y precios del proyecto a diez años90",
-      "after": "Tabla 6. Proyección de clientes, ventas y precios del proyecto a diez años90",
-      "old_page": 90,
-      "new_page": 90,
+      "before": "Tabla 6. Proyección de clientes, ventas y precios del proyecto a diez años91",
+      "after": "Tabla 6. Proyección de clientes, ventas y precios del proyecto a diez años91",
+      "old_page": 91,
+      "new_page": 91,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 7. Matriz de selección de la localización de la planta93",
-      "after": "Tabla 7. Matriz de selección de la localización de la planta93",
-      "old_page": 93,
-      "new_page": 93,
+      "before": "Tabla 7. Matriz de selección de la localización de la planta95",
+      "after": "Tabla 7. Matriz de selección de la localización de la planta95",
+      "old_page": 95,
+      "new_page": 95,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 8. Parámetros de calidad e inocuidad para la clasificación de la leche cruda de vaca100",
-      "after": "Tabla 8. Parámetros de calidad e inocuidad para la clasificación de la leche cruda de vaca100",
-      "old_page": 100,
-      "new_page": 100,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualtabla",
-      "before": "Tabla 9. Parámetros fisicoquímicos de la leche cruda de vaca101",
-      "after": "Tabla 9. Parámetros fisicoquímicos de la leche cruda de vaca101",
+      "before": "Tabla 8. Parámetros de calidad e inocuidad para la clasificación de la leche cruda de vaca101",
+      "after": "Tabla 8. Parámetros de calidad e inocuidad para la clasificación de la leche cruda de vaca101",
       "old_page": 101,
       "new_page": 101,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 10. Depreciación de activos fijos119",
-      "after": "Tabla 10. Depreciación de activos fijos119",
-      "old_page": 119,
-      "new_page": 119,
+      "before": "Tabla 9. Parámetros fisicoquímicos de la leche cruda de vaca102",
+      "after": "Tabla 9. Parámetros fisicoquímicos de la leche cruda de vaca102",
+      "old_page": 102,
+      "new_page": 102,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 11. Amortización de gastos preoperativos119",
-      "after": "Tabla 11. Amortización de gastos preoperativos119",
-      "old_page": 119,
-      "new_page": 119,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualtabla",
-      "before": "Tabla 12. Plan de inversiones y estructura de financiamiento del proyecto120",
-      "after": "Tabla 12. Plan de inversiones y estructura de financiamiento del proyecto120",
+      "before": "Tabla 10. Depreciación de activos fijos120",
+      "after": "Tabla 10. Depreciación de activos fijos120",
       "old_page": 120,
       "new_page": 120,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 13. Proyección desglosada de costos y gastos operativos a diez años121",
-      "after": "Tabla 13. Proyección desglosada de costos y gastos operativos a diez años121",
+      "before": "Tabla 11. Amortización de gastos preoperativos120",
+      "after": "Tabla 11. Amortización de gastos preoperativos120",
+      "old_page": 120,
+      "new_page": 120,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualtabla",
+      "before": "Tabla 12. Plan de inversiones y estructura de financiamiento del proyecto121",
+      "after": "Tabla 12. Plan de inversiones y estructura de financiamiento del proyecto121",
       "old_page": 121,
       "new_page": 121,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 14. Supuestos base utilizados para la evaluación financiera del proyecto150",
-      "after": "Tabla 14. Supuestos base utilizados para la evaluación financiera del proyecto150",
-      "old_page": 150,
-      "new_page": 150,
+      "before": "Tabla 13. Proyección desglosada de costos y gastos operativos a diez años122",
+      "after": "Tabla 13. Proyección desglosada de costos y gastos operativos a diez años122",
+      "old_page": 122,
+      "new_page": 122,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 15. Plan de inversiones y financiamiento151",
-      "after": "Tabla 15. Plan de inversiones y financiamiento152",
+      "before": "Tabla 14. Supuestos base utilizados para la evaluación financiera del proyecto151",
+      "after": "Tabla 14. Supuestos base utilizados para la evaluación financiera del proyecto151",
       "old_page": 151,
-      "new_page": 152,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualtabla",
-      "before": "Tabla 16. Proyección de producción y ventas154",
-      "after": "Tabla 16. Proyección de producción y ventas154",
-      "old_page": 154,
-      "new_page": 154,
+      "new_page": 151,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 17. Costos variables proyectados156",
-      "after": "Tabla 17. Costos variables proyectados156",
-      "old_page": 156,
-      "new_page": 156,
+      "before": "Tabla 15. Plan de inversiones y financiamiento153",
+      "after": "Tabla 15. Plan de inversiones y financiamiento153",
+      "old_page": 153,
+      "new_page": 153,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 18. Estructura de personal y salarios158",
-      "after": "Tabla 18. Estructura de personal y salarios158",
-      "old_page": 158,
-      "new_page": 158,
+      "before": "Tabla 16. Proyección de producción y ventas155",
+      "after": "Tabla 16. Proyección de producción y ventas155",
+      "old_page": 155,
+      "new_page": 155,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 19. Proyección del costo anual de personal159",
-      "after": "Tabla 19. Proyección del costo anual de personal159",
+      "before": "Tabla 17. Costos variables proyectados157",
+      "after": "Tabla 17. Costos variables proyectados157",
+      "old_page": 157,
+      "new_page": 157,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualtabla",
+      "before": "Tabla 18. Estructura de personal y salarios159",
+      "after": "Tabla 18. Estructura de personal y salarios159",
       "old_page": 159,
       "new_page": 159,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 20. Costos fijos proyectados161",
-      "after": "Tabla 20. Costos fijos proyectados161",
-      "old_page": 161,
-      "new_page": 161,
+      "before": "Tabla 19. Proyección del costo anual de personal160",
+      "after": "Tabla 19. Proyección del costo anual de personal160",
+      "old_page": 160,
+      "new_page": 160,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 21. Depreciaciones y amortizaciones proyectadas163",
-      "after": "Tabla 21. Depreciaciones y amortizaciones proyectadas163",
-      "old_page": 163,
-      "new_page": 163,
+      "before": "Tabla 20. Costos fijos proyectados162",
+      "after": "Tabla 20. Costos fijos proyectados162",
+      "old_page": 162,
+      "new_page": 162,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 22. Valor de desecho y capital de trabajo165",
-      "after": "Tabla 22. Valor de desecho y capital de trabajo166",
-      "old_page": 165,
-      "new_page": 166,
-      "changed": true
+      "before": "Tabla 21. Depreciaciones y amortizaciones proyectadas164",
+      "after": "Tabla 21. Depreciaciones y amortizaciones proyectadas164",
+      "old_page": 164,
+      "new_page": 164,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 23. Amortización del préstamo167",
-      "after": "Tabla 23. Amortización del préstamo167",
+      "before": "Tabla 22. Valor de desecho y capital de trabajo167",
+      "after": "Tabla 22. Valor de desecho y capital de trabajo167",
       "old_page": 167,
       "new_page": 167,
       "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 24. Proyección del impuesto municipal de industria, comercio y servicios169",
-      "after": "Tabla 24. Proyección del impuesto municipal de industria, comercio y servicios170",
+      "before": "Tabla 23. Amortización del préstamo169",
+      "after": "Tabla 23. Amortización del préstamo169",
       "old_page": 169,
-      "new_page": 170,
-      "changed": true
+      "new_page": 169,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 25. Flujo de caja del proyecto sin financiamiento172",
-      "after": "Tabla 25. Flujo de caja del proyecto sin financiamiento173",
-      "old_page": 172,
-      "new_page": 173,
-      "changed": true
+      "before": "Tabla 24. Proyección del impuesto municipal de industria, comercio y servicios171",
+      "after": "Tabla 24. Proyección del impuesto municipal de industria, comercio y servicios171",
+      "old_page": 171,
+      "new_page": 171,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 26. Flujo de caja del proyecto con financiamiento176",
-      "after": "Tabla 26. Flujo de caja del proyecto con financiamiento177",
-      "old_page": 176,
-      "new_page": 177,
-      "changed": true
+      "before": "Tabla 25. Flujo de caja del proyecto sin financiamiento175",
+      "after": "Tabla 25. Flujo de caja del proyecto sin financiamiento175",
+      "old_page": 175,
+      "new_page": 175,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 27. Costo de capital sin financiamiento181",
-      "after": "Tabla 27. Costo de capital sin financiamiento182",
-      "old_page": 181,
-      "new_page": 182,
-      "changed": true
+      "before": "Tabla 26. Flujo de caja del proyecto con financiamiento180",
+      "after": "Tabla 26. Flujo de caja del proyecto con financiamiento180",
+      "old_page": 180,
+      "new_page": 180,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 28. Indicadores financieros sin financiamiento182",
-      "after": "Tabla 28. Indicadores financieros sin financiamiento183",
-      "old_page": 182,
-      "new_page": 183,
-      "changed": true
+      "before": "Tabla 27. Costo de capital sin financiamiento184",
+      "after": "Tabla 27. Costo de capital sin financiamiento184",
+      "old_page": 184,
+      "new_page": 184,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 29. Costo de capital con financiamiento185",
-      "after": "Tabla 29. Costo de capital con financiamiento186",
+      "before": "Tabla 28. Indicadores financieros sin financiamiento185",
+      "after": "Tabla 28. Indicadores financieros sin financiamiento185",
       "old_page": 185,
-      "new_page": 186,
-      "changed": true
+      "new_page": 185,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 30. Indicadores financieros con financiamiento186",
-      "after": "Tabla 30. Indicadores financieros con financiamiento187",
-      "old_page": 186,
-      "new_page": 187,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualtabla",
-      "before": "Tabla 31. Notas legales de cumplimiento normativo aplicadas al estudio financiero188",
-      "after": "Tabla 31. Notas legales de cumplimiento normativo aplicadas al estudio financiero189",
+      "before": "Tabla 29. Costo de capital con financiamiento188",
+      "after": "Tabla 29. Costo de capital con financiamiento188",
       "old_page": 188,
-      "new_page": 189,
-      "changed": true
+      "new_page": 188,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 32. Clasificación de variables para el análisis de sensibilidad192",
-      "after": "Tabla 32. Clasificación de variables para el análisis de sensibilidad193",
+      "before": "Tabla 30. Indicadores financieros con financiamiento190",
+      "after": "Tabla 30. Indicadores financieros con financiamiento190",
+      "old_page": 190,
+      "new_page": 190,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualtabla",
+      "before": "Tabla 31. Notas legales de cumplimiento normativo aplicadas al estudio financiero192",
+      "after": "Tabla 31. Notas legales de cumplimiento normativo aplicadas al estudio financiero192",
       "old_page": 192,
-      "new_page": 193,
-      "changed": true
+      "new_page": 192,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 33. Variables sujetas a distribución de probabilidad196",
-      "after": "Tabla 33. Variables sujetas a distribución de probabilidad197",
+      "before": "Tabla 32. Clasificación de variables para el análisis de sensibilidad196",
+      "after": "Tabla 32. Clasificación de variables para el análisis de sensibilidad196",
       "old_page": 196,
-      "new_page": 197,
-      "changed": true
+      "new_page": 196,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 34. Registro de riesgos identificados y parámetros de modelación203",
-      "after": "Tabla 34. Registro de riesgos identificados y parámetros de modelación204",
-      "old_page": 203,
-      "new_page": 204,
-      "changed": true
+      "before": "Tabla 33. Variables sujetas a distribución de probabilidad201",
+      "after": "Tabla 33. Variables sujetas a distribución de probabilidad201",
+      "old_page": 201,
+      "new_page": 201,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 35. Cuantificación del riesgo por evento: valor esperado, valor en riesgo y participación relativa236",
-      "after": "Tabla 35. Cuantificación del riesgo por evento: valor esperado, valor en riesgo y participación relativa237",
-      "old_page": 236,
-      "new_page": 237,
-      "changed": true
+      "before": "Tabla 34. Registro de riesgos identificados y parámetros de modelación207",
+      "after": "Tabla 34. Registro de riesgos identificados y parámetros de modelación207",
+      "old_page": 207,
+      "new_page": 207,
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 36. Estadísticos comparativos de las distribuciones simuladas de VPN Risk y VPN Inversionista239",
-      "after": "Tabla 36. Estadísticos comparativos de las distribuciones simuladas de VPN Risk y VPN Inversionista240",
-      "old_page": 239,
+      "before": "Tabla 35. Cuantificación del riesgo por evento: valor esperado, valor en riesgo y participación relativa240",
+      "after": "Tabla 35. Cuantificación del riesgo por evento: valor esperado, valor en riesgo y participación relativa240",
+      "old_page": 240,
       "new_page": 240,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualtabla",
-      "before": "Tabla 37. Indicadores de riesgo del proyecto241",
-      "after": "Tabla 37. Indicadores de riesgo del proyecto242",
-      "old_page": 241,
-      "new_page": 242,
-      "changed": true
+      "before": "Tabla 36. Estadísticos comparativos de las distribuciones simuladas de VPN Risk y VPN Inversionista243",
+      "after": "Tabla 36. Estadísticos comparativos de las distribuciones simuladas de VPN Risk y VPN Inversionista243",
+      "old_page": 243,
+      "new_page": 243,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualtabla",
+      "before": "Tabla 37. Indicadores de riesgo del proyecto245",
+      "after": "Tabla 37. Indicadores de riesgo del proyecto245",
+      "old_page": 245,
+      "new_page": 245,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
@@ -1009,428 +1009,426 @@
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 5. Distribución de la demanda según la edad72",
-      "after": "Figura 5. Distribución de la demanda según la edad72",
-      "old_page": 72,
-      "new_page": 72,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualfigura",
-      "before": "Figura 6. Distribución de la demanda según el lugar de residencia72",
-      "after": "Figura 6. Distribución de la demanda según el lugar de residencia72",
-      "old_page": 72,
-      "new_page": 72,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualfigura",
-      "before": "Figura 7. Frecuencia de compra de productos lácteos73",
-      "after": "Figura 7. Frecuencia de compra de productos lácteos73",
+      "before": "Figura 5. Distribución de la demanda según la edad73",
+      "after": "Figura 5. Distribución de la demanda según la edad73",
       "old_page": 73,
       "new_page": 73,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 8. Barreras actuales en la compra de productos lácteos74",
-      "after": "Figura 8. Barreras actuales en la compra de productos lácteos74",
+      "before": "Figura 6. Distribución de la demanda según el lugar de residencia73",
+      "after": "Figura 6. Distribución de la demanda según el lugar de residencia73",
+      "old_page": 73,
+      "new_page": 73,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualfigura",
+      "before": "Figura 7. Frecuencia de compra de productos lácteos74",
+      "after": "Figura 7. Frecuencia de compra de productos lácteos74",
       "old_page": 74,
       "new_page": 74,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 9. Preferencia sobre la modalidad de entrega de productos lácteos75",
-      "after": "Figura 9. Preferencia sobre la modalidad de entrega de productos lácteos75",
+      "before": "Figura 8. Barreras actuales en la compra de productos lácteos75",
+      "after": "Figura 8. Barreras actuales en la compra de productos lácteos75",
       "old_page": 75,
       "new_page": 75,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 10. Empaque preferido de productos lácteos75",
-      "after": "Figura 10. Empaque preferido de productos lácteos75",
-      "old_page": 75,
-      "new_page": 75,
+      "before": "Figura 9. Preferencia sobre la modalidad de entrega de productos lácteos76",
+      "after": "Figura 9. Preferencia sobre la modalidad de entrega de productos lácteos76",
+      "old_page": 76,
+      "new_page": 76,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 11. Percepción de la marca77",
-      "after": "Figura 11. Percepción de la marca77",
-      "old_page": 77,
-      "new_page": 77,
+      "before": "Figura 10. Empaque preferido de productos lácteos76",
+      "after": "Figura 10. Empaque preferido de productos lácteos76",
+      "old_page": 76,
+      "new_page": 76,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 12. Intención de compra del producto77",
-      "after": "Figura 12. Intención de compra del producto77",
-      "old_page": 77,
-      "new_page": 77,
-      "changed": false
-    },
-    {
-      "style": "ndicemanualfigura",
-      "before": "Figura 13. Recomendación de la marca78",
-      "after": "Figura 13. Recomendación de la marca78",
+      "before": "Figura 11. Percepción de la marca78",
+      "after": "Figura 11. Percepción de la marca78",
       "old_page": 78,
       "new_page": 78,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 14. Principal proveedor en el mercado lácteo79",
-      "after": "Figura 14. Principal proveedor en el mercado lácteo79",
+      "before": "Figura 12. Intención de compra del producto78",
+      "after": "Figura 12. Intención de compra del producto78",
+      "old_page": 78,
+      "new_page": 78,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualfigura",
+      "before": "Figura 13. Recomendación de la marca79",
+      "after": "Figura 13. Recomendación de la marca79",
       "old_page": 79,
       "new_page": 79,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 15. Marcas conocidas por los consumidores80",
-      "after": "Figura 15. Marcas conocidas por los consumidores80",
+      "before": "Figura 14. Principal proveedor en el mercado lácteo80",
+      "after": "Figura 14. Principal proveedor en el mercado lácteo80",
       "old_page": 80,
       "new_page": 80,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 16. Marca preferida por los consumidores81",
-      "after": "Figura 16. Marca preferida por los consumidores81",
+      "before": "Figura 15. Marcas conocidas por los consumidores81",
+      "after": "Figura 15. Marcas conocidas por los consumidores81",
       "old_page": 81,
       "new_page": 81,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 17. Percepción de innovación de las marcas disponibles81",
-      "after": "Figura 17. Percepción de innovación de las marcas disponibles81",
-      "old_page": 81,
-      "new_page": 81,
+      "before": "Figura 16. Marca preferida por los consumidores82",
+      "after": "Figura 16. Marca preferida por los consumidores82",
+      "old_page": 82,
+      "new_page": 82,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 18. Precio pagado actualmente por litro de leche83",
-      "after": "Figura 18. Precio pagado actualmente por litro de leche83",
-      "old_page": 83,
-      "new_page": 83,
+      "before": "Figura 17. Percepción de innovación de las marcas disponibles82",
+      "after": "Figura 17. Percepción de innovación de las marcas disponibles82",
+      "old_page": 82,
+      "new_page": 82,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 19. Percepción de los precios actuales de los productos lácteos83",
-      "after": "Figura 19. Percepción de los precios actuales de los productos lácteos83",
-      "old_page": 83,
-      "new_page": 83,
+      "before": "Figura 18. Precio pagado actualmente por litro de leche84",
+      "after": "Figura 18. Precio pagado actualmente por litro de leche84",
+      "old_page": 84,
+      "new_page": 84,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 20. Presupuesto de los consumidores para la compra de lácteos85",
-      "after": "Figura 20. Presupuesto de los consumidores para la compra de lácteos85",
-      "old_page": 85,
-      "new_page": 85,
+      "before": "Figura 19. Percepción de los precios actuales de los productos lácteos84",
+      "after": "Figura 19. Percepción de los precios actuales de los productos lácteos84",
+      "old_page": 84,
+      "new_page": 84,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 21. Precio dispuesto a pagar por un producto diferenciado85",
-      "after": "Figura 21. Precio dispuesto a pagar por un producto diferenciado85",
-      "old_page": 85,
-      "new_page": 85,
+      "before": "Figura 20. Presupuesto de los consumidores para la compra de lácteos86",
+      "after": "Figura 20. Presupuesto de los consumidores para la compra de lácteos86",
+      "old_page": 86,
+      "new_page": 86,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 22. Proyección de clientes, ventas y precios del proyecto a diez años91",
-      "after": "Figura 22. Proyección de clientes, ventas y precios del proyecto a diez años91",
-      "old_page": 91,
-      "new_page": 91,
+      "before": "Figura 21. Precio dispuesto a pagar por un producto diferenciado86",
+      "after": "Figura 21. Precio dispuesto a pagar por un producto diferenciado86",
+      "old_page": 86,
+      "new_page": 86,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 23. Diagrama de flujo del proceso productivo de leche pasteurizada95",
-      "after": "Figura 23. Diagrama de flujo del proceso productivo de leche pasteurizada95",
-      "old_page": 95,
-      "new_page": 95,
+      "before": "Figura 22. Proyección de clientes, ventas y precios del proyecto a diez años92",
+      "after": "Figura 22. Proyección de clientes, ventas y precios del proyecto a diez años92",
+      "old_page": 92,
+      "new_page": 92,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 24. Tanque de recibo de leche111",
-      "after": "Figura 24. Tanque de recibo de leche111",
-      "old_page": 111,
-      "new_page": 111,
+      "before": "Figura 23. Diagrama de flujo del proceso productivo de leche pasteurizada96",
+      "after": "Figura 23. Diagrama de flujo del proceso productivo de leche pasteurizada96",
+      "old_page": 96,
+      "new_page": 96,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 25. Pasteurizador HTST de placas112",
-      "after": "Figura 25. Pasteurizador HTST de placas112",
+      "before": "Figura 24. Tanque de recibo de leche112",
+      "after": "Figura 24. Tanque de recibo de leche112",
       "old_page": 112,
       "new_page": 112,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 26. Equipo de enfriamiento113",
-      "after": "Figura 26. Equipo de enfriamiento113",
+      "before": "Figura 25. Pasteurizador HTST de placas113",
+      "after": "Figura 25. Pasteurizador HTST de placas113",
       "old_page": 113,
       "new_page": 113,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 27. Máquina de empaque114",
-      "after": "Figura 27. Máquina de empaque114",
+      "before": "Figura 26. Equipo de enfriamiento114",
+      "after": "Figura 26. Equipo de enfriamiento114",
       "old_page": 114,
       "new_page": 114,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 28. Empaque en bolsa de polietileno de baja densidad116",
-      "after": "Figura 28. Empaque en bolsa de polietileno de baja densidad116",
-      "old_page": 116,
-      "new_page": 116,
+      "before": "Figura 27. Máquina de empaque115",
+      "after": "Figura 27. Máquina de empaque115",
+      "old_page": 115,
+      "new_page": 115,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 29. Organigrama de la empresa123",
-      "after": "Figura 29. Organigrama de la empresa123",
-      "old_page": 123,
-      "new_page": 123,
+      "before": "Figura 28. Empaque en bolsa de polietileno de baja densidad117",
+      "after": "Figura 28. Empaque en bolsa de polietileno de baja densidad117",
+      "old_page": 117,
+      "new_page": 117,
       "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 30. Distribución de frecuencia del riesgo de variación en el precio de la leche cruda206",
-      "after": "Figura 30. Distribución de frecuencia del riesgo de variación en el precio de la leche cruda207",
-      "old_page": 206,
-      "new_page": 207,
-      "changed": true
+      "before": "Figura 29. Organigrama de la empresa124",
+      "after": "Figura 29. Organigrama de la empresa124",
+      "old_page": 124,
+      "new_page": 124,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 31. Distribución de frecuencia del riesgo de fallo del equipo de pasteurización y refrigeración207",
-      "after": "Figura 31. Distribución de frecuencia del riesgo de fallo del equipo de pasteurización y refrigeración208",
-      "old_page": 207,
-      "new_page": 208,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualfigura",
-      "before": "Figura 32. Distribución de frecuencia del riesgo de pérdida de clientes clave del canal HoReCa208",
-      "after": "Figura 32. Distribución de frecuencia del riesgo de pérdida de clientes clave del canal HoReCa209",
-      "old_page": 208,
-      "new_page": 209,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualfigura",
-      "before": "Figura 33. Distribución de frecuencia del riesgo de incumplimiento de la normativa sanitaria (SENASA)209",
-      "after": "Figura 33. Distribución de frecuencia del riesgo de incumplimiento de la normativa sanitaria (SENASA)210",
-      "old_page": 209,
+      "before": "Figura 30. Distribución de frecuencia del riesgo de variación en el precio de la leche cruda210",
+      "after": "Figura 30. Distribución de frecuencia del riesgo de variación en el precio de la leche cruda210",
+      "old_page": 210,
       "new_page": 210,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 34. Distribución de frecuencia del riesgo de interrupción de la cadena de frío en distribución211",
-      "after": "Figura 34. Distribución de frecuencia del riesgo de interrupción de la cadena de frío en distribución212",
+      "before": "Figura 31. Distribución de frecuencia del riesgo de fallo del equipo de pasteurización y refrigeración211",
+      "after": "Figura 31. Distribución de frecuencia del riesgo de fallo del equipo de pasteurización y refrigeración211",
       "old_page": 211,
-      "new_page": 212,
-      "changed": true
+      "new_page": 211,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 35. Distribución de frecuencia del riesgo de incremento del precio del combustible212",
-      "after": "Figura 35. Distribución de frecuencia del riesgo de incremento del precio del combustible213",
+      "before": "Figura 32. Distribución de frecuencia del riesgo de pérdida de clientes clave del canal HoReCa212",
+      "after": "Figura 32. Distribución de frecuencia del riesgo de pérdida de clientes clave del canal HoReCa212",
       "old_page": 212,
-      "new_page": 213,
-      "changed": true
+      "new_page": 212,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 36. Distribución de frecuencia del riesgo de entrada de un nuevo competidor al mercado213",
-      "after": "Figura 36. Distribución de frecuencia del riesgo de entrada de un nuevo competidor al mercado214",
+      "before": "Figura 33. Distribución de frecuencia del riesgo de incumplimiento de la normativa sanitaria (SENASA)213",
+      "after": "Figura 33. Distribución de frecuencia del riesgo de incumplimiento de la normativa sanitaria (SENASA)213",
       "old_page": 213,
-      "new_page": 214,
-      "changed": true
+      "new_page": 213,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 37. Distribución de frecuencia del riesgo de contaminación de lote y retiro de producto214",
-      "after": "Figura 37. Distribución de frecuencia del riesgo de contaminación de lote y retiro de producto215",
-      "old_page": 214,
+      "before": "Figura 34. Distribución de frecuencia del riesgo de interrupción de la cadena de frío en distribución215",
+      "after": "Figura 34. Distribución de frecuencia del riesgo de interrupción de la cadena de frío en distribución215",
+      "old_page": 215,
       "new_page": 215,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 38. Distribución de frecuencia del riesgo de variación del tipo de cambio Lps/USD216",
-      "after": "Figura 38. Distribución de frecuencia del riesgo de variación del tipo de cambio Lps/USD217",
+      "before": "Figura 35. Distribución de frecuencia del riesgo de incremento del precio del combustible216",
+      "after": "Figura 35. Distribución de frecuencia del riesgo de incremento del precio del combustible216",
       "old_page": 216,
-      "new_page": 217,
-      "changed": true
+      "new_page": 216,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 39. Distribución de frecuencia del riesgo de accidente de transporte217",
-      "after": "Figura 39. Distribución de frecuencia del riesgo de accidente de transporte218",
+      "before": "Figura 36. Distribución de frecuencia del riesgo de entrada de un nuevo competidor al mercado217",
+      "after": "Figura 36. Distribución de frecuencia del riesgo de entrada de un nuevo competidor al mercado217",
       "old_page": 217,
-      "new_page": 218,
-      "changed": true
+      "new_page": 217,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 40. Distribución de frecuencia del riesgo de inflación mayor a la proyectada218",
-      "after": "Figura 40. Distribución de frecuencia del riesgo de inflación mayor a la proyectada219",
+      "before": "Figura 37. Distribución de frecuencia del riesgo de contaminación de lote y retiro de producto218",
+      "after": "Figura 37. Distribución de frecuencia del riesgo de contaminación de lote y retiro de producto218",
       "old_page": 218,
-      "new_page": 219,
-      "changed": true
+      "new_page": 218,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 41. Distribución de la frecuencia total de eventos de riesgo del proyecto219",
-      "after": "Figura 41. Distribución de la frecuencia total de eventos de riesgo del proyecto220",
-      "old_page": 219,
+      "before": "Figura 38. Distribución de frecuencia del riesgo de variación del tipo de cambio Lps/USD220",
+      "after": "Figura 38. Distribución de frecuencia del riesgo de variación del tipo de cambio Lps/USD220",
+      "old_page": 220,
       "new_page": 220,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 42. Distribución del valor presente de las pérdidas por variación en el precio de la leche cruda221",
-      "after": "Figura 42. Distribución del valor presente de las pérdidas por variación en el precio de la leche cruda222",
+      "before": "Figura 39. Distribución de frecuencia del riesgo de accidente de transporte221",
+      "after": "Figura 39. Distribución de frecuencia del riesgo de accidente de transporte221",
       "old_page": 221,
+      "new_page": 221,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualfigura",
+      "before": "Figura 40. Distribución de frecuencia del riesgo de inflación mayor a la proyectada222",
+      "after": "Figura 40. Distribución de frecuencia del riesgo de inflación mayor a la proyectada222",
+      "old_page": 222,
       "new_page": 222,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 43. Distribución del valor presente de las pérdidas por fallo del equipo de pasteurización y refrigeración223",
-      "after": "Figura 43. Distribución del valor presente de las pérdidas por fallo del equipo de pasteurización y refrigeración224",
+      "before": "Figura 41. Distribución de la frecuencia total de eventos de riesgo del proyecto223",
+      "after": "Figura 41. Distribución de la frecuencia total de eventos de riesgo del proyecto223",
       "old_page": 223,
-      "new_page": 224,
-      "changed": true
+      "new_page": 223,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 44. Distribución del valor presente de las pérdidas por pérdida de clientes clave del canal HoReCa224",
-      "after": "Figura 44. Distribución del valor presente de las pérdidas por pérdida de clientes clave del canal HoReCa225",
-      "old_page": 224,
-      "new_page": 225,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualfigura",
-      "before": "Figura 45. Distribución del valor presente de las pérdidas por incumplimiento de la normativa sanitaria225",
-      "after": "Figura 45. Distribución del valor presente de las pérdidas por incumplimiento de la normativa sanitaria226",
+      "before": "Figura 42. Distribución del valor presente de las pérdidas por variación en el precio de la leche cruda225",
+      "after": "Figura 42. Distribución del valor presente de las pérdidas por variación en el precio de la leche cruda225",
       "old_page": 225,
-      "new_page": 226,
-      "changed": true
+      "new_page": 225,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 46. Distribución del valor presente de las pérdidas por interrupción de la cadena de frío226",
-      "after": "Figura 46. Distribución del valor presente de las pérdidas por interrupción de la cadena de frío227",
-      "old_page": 226,
-      "new_page": 227,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualfigura",
-      "before": "Figura 47. Distribución del valor presente de las pérdidas por incremento del precio del combustible227",
-      "after": "Figura 47. Distribución del valor presente de las pérdidas por incremento del precio del combustible228",
+      "before": "Figura 43. Distribución del valor presente de las pérdidas por fallo del equipo de pasteurización y refrigeración227",
+      "after": "Figura 43. Distribución del valor presente de las pérdidas por fallo del equipo de pasteurización y refrigeración227",
       "old_page": 227,
-      "new_page": 228,
-      "changed": true
+      "new_page": 227,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 48. Distribución del valor presente de las pérdidas por entrada de un nuevo competidor al mercado228",
-      "after": "Figura 48. Distribución del valor presente de las pérdidas por entrada de un nuevo competidor al mercado229",
+      "before": "Figura 44. Distribución del valor presente de las pérdidas por pérdida de clientes clave del canal HoReCa228",
+      "after": "Figura 44. Distribución del valor presente de las pérdidas por pérdida de clientes clave del canal HoReCa228",
       "old_page": 228,
+      "new_page": 228,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualfigura",
+      "before": "Figura 45. Distribución del valor presente de las pérdidas por incumplimiento de la normativa sanitaria229",
+      "after": "Figura 45. Distribución del valor presente de las pérdidas por incumplimiento de la normativa sanitaria229",
+      "old_page": 229,
       "new_page": 229,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 49. Distribución del valor presente de las pérdidas por contaminación de lote y retiro de producto230",
-      "after": "Figura 49. Distribución del valor presente de las pérdidas por contaminación de lote y retiro de producto231",
+      "before": "Figura 46. Distribución del valor presente de las pérdidas por interrupción de la cadena de frío230",
+      "after": "Figura 46. Distribución del valor presente de las pérdidas por interrupción de la cadena de frío230",
       "old_page": 230,
-      "new_page": 231,
-      "changed": true
+      "new_page": 230,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 50. Distribución del valor presente de las pérdidas por variación del tipo de cambio Lps/USD231",
-      "after": "Figura 50. Distribución del valor presente de las pérdidas por variación del tipo de cambio Lps/USD232",
+      "before": "Figura 47. Distribución del valor presente de las pérdidas por incremento del precio del combustible231",
+      "after": "Figura 47. Distribución del valor presente de las pérdidas por incremento del precio del combustible231",
       "old_page": 231,
-      "new_page": 232,
-      "changed": true
+      "new_page": 231,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 51. Distribución del valor presente de las pérdidas por accidente de transporte232",
-      "after": "Figura 51. Distribución del valor presente de las pérdidas por accidente de transporte233",
+      "before": "Figura 48. Distribución del valor presente de las pérdidas por entrada de un nuevo competidor al mercado232",
+      "after": "Figura 48. Distribución del valor presente de las pérdidas por entrada de un nuevo competidor al mercado232",
       "old_page": 232,
-      "new_page": 233,
-      "changed": true
+      "new_page": 232,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 52. Distribución del valor presente de las pérdidas por inflación mayor a la proyectada233",
-      "after": "Figura 52. Distribución del valor presente de las pérdidas por inflación mayor a la proyectada234",
-      "old_page": 233,
+      "before": "Figura 49. Distribución del valor presente de las pérdidas por contaminación de lote y retiro de producto234",
+      "after": "Figura 49. Distribución del valor presente de las pérdidas por contaminación de lote y retiro de producto234",
+      "old_page": 234,
       "new_page": 234,
-      "changed": true
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 53. Modelo de cuantificación del riesgo: valor esperado, valor en riesgo al 95 % y al 99 % por evento235",
-      "after": "Figura 53. Modelo de cuantificación del riesgo: valor esperado, valor en riesgo al 95 % y al 99 % por evento236",
+      "before": "Figura 50. Distribución del valor presente de las pérdidas por variación del tipo de cambio Lps/USD235",
+      "after": "Figura 50. Distribución del valor presente de las pérdidas por variación del tipo de cambio Lps/USD235",
       "old_page": 235,
-      "new_page": 236,
-      "changed": true
+      "new_page": 235,
+      "changed": false
     },
     {
       "style": "ndicemanualfigura",
-      "before": "Figura 54. Comparación de las distribuciones de VPN Risk y VPN Inversionista239",
-      "after": "Figura 54. Comparación de las distribuciones de VPN Risk y VPN Inversionista240",
+      "before": "Figura 51. Distribución del valor presente de las pérdidas por accidente de transporte236",
+      "after": "Figura 51. Distribución del valor presente de las pérdidas por accidente de transporte236",
+      "old_page": 236,
+      "new_page": 236,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualfigura",
+      "before": "Figura 52. Distribución del valor presente de las pérdidas por inflación mayor a la proyectada237",
+      "after": "Figura 52. Distribución del valor presente de las pérdidas por inflación mayor a la proyectada237",
+      "old_page": 237,
+      "new_page": 237,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualfigura",
+      "before": "Figura 53. Modelo de cuantificación del riesgo: valor esperado, valor en riesgo al 95 % y al 99 % por evento239",
+      "after": "Figura 53. Modelo de cuantificación del riesgo: valor esperado, valor en riesgo al 95 % y al 99 % por evento239",
       "old_page": 239,
-      "new_page": 240,
-      "changed": true
+      "new_page": 239,
+      "changed": false
+    },
+    {
+      "style": "ndicemanualfigura",
+      "before": "Figura 54. Comparación de las distribuciones de VPN Risk y VPN Inversionista243",
+      "after": "Figura 54. Comparación de las distribuciones de VPN Risk y VPN Inversionista243",
+      "old_page": 243,
+      "new_page": 243,
+      "changed": false
     },
     {
       "style": "ndicemanualnivel1",
-      "before": "Anexo 1. Instrumento de encuesta comercial254",
-      "after": "Anexo 1. Instrumento de encuesta comercial255",
-      "old_page": 254,
-      "new_page": 255,
-      "changed": true
-    },
-    {
-      "style": "ndicemanualnivel1",
-      "before": "Anexo 2. Parametrización detallada del modelo de riesgo operativo257",
-      "after": "Anexo 2. Parametrización detallada del modelo de riesgo operativo258",
-      "old_page": 257,
+      "before": "Anexo 1. Instrumento de encuesta comercial258",
+      "after": "Anexo 1. Instrumento de encuesta comercial258",
+      "old_page": 258,
       "new_page": 258,
-      "changed": true
+      "changed": false
+    },
+    {
+      "style": "ndicemanualnivel1",
+      "before": "Anexo 2. Parametrización detallada del modelo de riesgo operativo261",
+      "after": "Anexo 2. Parametrización detallada del modelo de riesgo operativo261",
+      "old_page": 261,
+      "new_page": 261,
+      "changed": false
     }
   ],
-  "changed_package_parts": [
-    "word/document.xml"
-  ],
+  "changed_package_parts": [],
   "validations": {
     "zip_valid": true,
     "part_names_and_order_preserved": true,
-    "only_document_xml_changed": true,
+    "only_document_xml_or_no_part_changed": true,
     "index_count_176": true,
     "all_visible_pages_equal_rendered_targets": true
   },
