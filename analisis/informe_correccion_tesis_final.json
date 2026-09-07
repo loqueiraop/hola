@@ -1,0 +1,2153 @@
+{
+  "source": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 (1).docx",
+  "destination": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA BORRADOR.docx",
+  "report": "/projects/sandbox/hola/analisis/informe_correccion_tesis_final.json",
+  "source_sha256": "f0653912dd7ebe4641198cc74635a2654fe06a7df9bcd008863f6f8fe588094f",
+  "replacements": [
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 242,
+      "before": "La organización de las naciones unidas para el desarrollo industrial (ONUDI) es un organismo el cual está especializado en promover y acelerar el desarrollo industrial en los países en desarrollo y en las economías en transición para trabajar en mejorar las condiciones de vida de los países más pobres del mundo. En los últimos años ha asumido un papel destacado como un organismo de cooperación técnica la cual proporciona un apoyo especializado en la ejecución de proyectos ,dicho apoyo se materializa en la metodología desarrollada para la elaboración de proyectos ,el cual es un estándar general , ordenado , confiable y sistemático (Franco et al. 2012)",
+      "after": "La Organización de las Naciones Unidas para el Desarrollo Industrial (ONUDI) promueve un desarrollo industrial inclusivo y sostenible y, mediante cooperación técnica, ofrece una metodología ordenada para formular y evaluar proyectos (Franco et al. 2012)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 244,
+      "before": "Dicha metodología ONUDI, considera tres fases de ciclo de vida del proyecto: ",
+      "after": "La metodología ONUDI organiza el ciclo de vida del proyecto en tres fases complementarias:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 245,
+      "before": "1) Fase de pre- inversión: Esta fase comprende la elaboración de una serie de estudios, contenidos en un documento el cual servirá de apoyo para definir la viabilidad del proyecto.",
+      "after": "1) Preinversión: reúne los estudios que sustentan la decisión sobre la viabilidad del proyecto."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 246,
+      "before": "2)Fase de inversión: Dicha fase comprende todo el montaje físico y demás actividades las cuales son necesarias para poner el proyecto en marcha.",
+      "after": "2) Inversión: comprende el montaje físico y las actividades necesarias para iniciar la operación."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 247,
+      "before": "3) Fase operacional: Esta fase empieza cuando el proyecto se pone en marcha y inician las operaciones comerciales las cuales generan los beneficios previstos inicialmente. Dicha fase se parece más a las características de una empresa en funcionamiento. (Franco et al. 2012)",
+      "after": "3) Operación: comienza con la puesta en marcha y la generación de los beneficios previstos; en esta fase el proyecto funciona como una empresa en actividad (Franco et al. 2012)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 252,
+      "before": "El estudio de mercado se enfoca en conocer las características de los consumidores, con el fin de conservar y acaparar más personas consumidoras, influenciándolas para que adquieran productos y servicios. Para lo cual integran información que identifique las necesidades y el comportamiento consumidor. Y, de esta forma, tomar decisiones (Weissbach, 2021).",
+      "after": "El estudio de mercado reúne y analiza información sobre necesidades, hábitos y decisiones de compra para definir a quién se dirige la oferta y cómo puede atenderse ese segmento (Weissbach, 2021)."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 254,
+      "before": "Según Dominguez (2018), el estudio técnico¨ Determina la factibilidad técnica del proyecto, al permitir diseñar el método de ejecución y la identificación de la veracidad del mismo, el cual se adapte a las condiciones del entorno, para así, utilizar mejor los recursos y orientándose a la obtención de un producto deseado, el cual sería un bien o servicio” (p 7).",
+      "after": "El estudio técnico determina si la propuesta puede ejecutarse en las condiciones del entorno, define el proceso requerido y orienta el uso de los recursos para obtener el bien o servicio previsto (p 7)."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 256,
+      "before": "Por la parte legal de un proyecto se determina la existencia o la inexistencia de diversas normas las cuales pueden restringir la realización del negocio o restringir su materialización al cumplimiento de algunos parámetros mínimos para poder implementar. El estudio legal de la viabilidad económica se encarga de estimar los efectos que las normas que ya están establecidas tendrán sobre los costos y beneficios de un proyecto que ya es viable legalmente. Entre otros, se deberá considerar el gasto que podrían ocasionar algunos de los siguientes factores legales: ",
+      "after": "El estudio legal identifica las normas que condicionan la puesta en marcha y la operación del negocio, así como sus efectos sobre los costos y beneficios. La evaluación debe considerar, entre otros, los siguientes conceptos:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 257,
+      "before": "Patentes y permisos municipales.",
+      "after": "Patentes, licencias y permisos municipales."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 258,
+      "before": "Elaboración de contratos laborales y comerciales.",
+      "after": "Preparación de contratos laborales y comerciales."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 259,
+      "before": "Estudios de posesión y vigencia de títulos de propiedad.",
+      "after": "Verificación de la posesión y vigencia de los títulos de propiedad."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 260,
+      "before": "Gastos asociados con la inscripción en registros públicos de propiedad.",
+      "after": "Costos de inscripción en los registros públicos de propiedad."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 261,
+      "before": "Inscripción de marcas.",
+      "after": "Registro y protección de marcas."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 262,
+      "before": "Aranceles y permisos de importación.",
+      "after": "Aranceles y autorizaciones de importación."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 263,
+      "before": "Indemnizaciones de desahucios.",
+      "after": "Indemnizaciones asociadas con desahucios."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 264,
+      "before": "Contratos con mutuales de seguridad de los trabajadores.",
+      "after": "Contratos con entidades de seguridad y prevención laboral."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 265,
+      "before": "Obligaciones en caso de accidentes de trabajo.",
+      "after": "Obligaciones derivadas de accidentes de trabajo."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 266,
+      "before": "Tratamiento fiscal de depreciaciones y amortizaciones contables.",
+      "after": "Tratamiento fiscal de las depreciaciones y amortizaciones contables."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 267,
+      "before": "Impuestos a las ganancias, la propiedad y el valor agregado.",
+      "after": "Impuestos sobre las ganancias, la propiedad y el valor agregado."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 268,
+      "before": "Regulaciones internacionales.",
+      "after": "Regulaciones internacionales aplicables."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 270,
+      "before": "El estudio administrativo en un proyecto de inversión proporciona las herramientas esenciales que sirven de guía para los encargados en administrar un proyecto. Este tipo de estudio muestra los elementos administrativos tales como la planeación estratégica la cual define el rumbo y las acciones que debe de realizar la empresa para alcanzar los objetivos, por otra parte, se definen otras herramientas como el organigrama y la planeación de los recursos humanos con la finalidad de proponer un perfil adecuado y seguir en la alineación del logro de las metas empresariales (Puerta, 2008).",
+      "after": "El estudio administrativo define cómo se dirigirá el proyecto. Incluye la planeación estratégica, la estructura organizacional y la gestión del talento humano, de modo que funciones, perfiles y recursos queden alineados con los objetivos empresariales (Puerta, 2008)."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 272,
+      "before": "Los Estudios de Impacto Ambiental (EsIA) son documentos de carácter técnico interdisciplinario los cuales están destinados a predecir, identificar, valorar y considerar medidas preventivas y a su vez corregir las consecuencias de los efectos ambientales que en determinadas acciones antrópicas pueden causar sobre la calidad de vida del hombre y su entorno. Su finalidad es que las autoridades de aplicación tome decisiones respecto a la conveniencia ambiental y social de la generación de nuevos proyectos en un determinado ámbito geográfico (Coria Daniel 2008).",
+      "after": "El estudio de impacto ambiental integra distintas disciplinas para anticipar y valorar los efectos de una intervención, proponer medidas preventivas o correctivas y aportar evidencia para la decisión de la autoridad competente sobre su conveniencia ambiental y social (Coria Daniel 2008)."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 278,
+      "before": "según (Rios, 2019) El MARCO LOGICO, es un método el cual permite contar con diversos elementos para el diseño, monitoreo y evaluación de proyectos.",
+      "after": "El enfoque de marco lógico sintetiza los elementos necesarios para diseñar, monitorear y evaluar un proyecto y facilita que los participantes compartan una estructura común de análisis (Rios, 2019)."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 279,
+      "before": "Su estructura está basada en un consenso junto con los principales involucrados lo cual permite generar un lenguaje en común lo que facilita la comunicación evitando malentendidos. Esto es debido porque resume en un solo cuadro la información más importante en la gerencia del programa lo que permite focalizar la atención y esfuerzos permitiendo alcanzar acuerdos precisos acerca de los objetivos planteados (Juan Carlos Robles Ríos 2019)",
+      "after": "Al concentrar la información esencial en una matriz acordada con los involucrados, el método favorece la comunicación, orienta los esfuerzos y hace explícitos los objetivos del programa (Juan Carlos Robles Ríos 2019)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 280,
+      "before": "El marco  lógico permite realizar un diseño el cual enmarca tres aspectos claves ; Coherencia, Viabilidad y Variabilidad (ANA JULIA SILVA OQUENDO 2020)",
+      "after": "La fuente consultada organiza el diseño del marco lógico en tres aspectos: coherencia, viabilidad y variabilidad (ANA JULIA SILVA OQUENDO 2020)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 281,
+      "before": "En la Actualidad el Marco lógico es utilizado en diversas instituciones incluyendo agencias a nivel mundial como el banco internacional de desarrollo dicho Banco considera la principal técnica de análisis científico no cuantitativo del campo de desarrollo. A modo que se puede decir que el marco lógico permite plantear de manera clara el propósito y la justificacion del proyecto, además de que identifica las necesidades de información definiendo los puntos claves del proyecto desde su inicio lo cual ayuda a mejorar la comunicación entre los involucrados midiendo si el proyecto será exitoso o un fracaso total. (ANA JULIA SILVA OQUENDO 2020)",
+      "after": "Su uso por organismos de desarrollo se explica por la capacidad de relacionar el problema, la justificación, los objetivos, la información necesaria y los criterios con los que se juzgará el desempeño (ANA JULIA SILVA OQUENDO 2020)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 283,
+      "before": "La matriz de marco lógico es una simple tabla que posee cuatro filas por cuatro columnas en ella se registran en forma resumida la información que posee el proyecto.",
+      "after": "La matriz de marco lógico resume la lógica del proyecto en una estructura de cuatro filas y cuatro columnas."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 284,
+      "before": "Las filas de dicha matriz presentan información acerca de cuatro distintos niveles de objetivo los cuales se nombran ( FIN, PROPOSITO,COMPONENTES Y ACTIVIDADES) (Gómez 2004, pág. 12)",
+      "after": "Las filas corresponden a cuatro niveles: fin, propósito, componentes y actividades (Gómez 2004, pág. 12)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 285,
+      "before": "La primera fila corresponde al Fin del proyecto y en esta se describe la situación esperada cuando el proyecto ha estado funcionando por algún tiempo ",
+      "after": "El fin describe la situación de desarrollo a la que el proyecto espera contribuir en el largo plazo."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 286,
+      "before": "En la segunda fila se sitúa el propósito del proyecto y se presenta la situación esperada al concluir su ejecución ",
+      "after": "El propósito expresa el cambio directo que se espera observar al finalizar la intervención."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 287,
+      "before": "Seguido de la tercera fila en la cual se colocan los componentes del proyecto, es decir, lo que debe ser completado o entregado durante la ejecución del proyecto por último en la fila número cuatro se colocan las actividades que deben ser realizadas durante el proyecto para que se produzcan los componentes. (Gómez 2004, pág. 12)",
+      "after": "Los componentes son los productos que deben entregarse durante la ejecución, mientras que las actividades reúnen las tareas necesarias para producirlos (Gómez 2004, pág. 12)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 288,
+      "before": "En cambio, en las columnas de dicha tabla del marco lógico se deben registrarla siguiente información:",
+      "after": "Las columnas ordenan cuatro tipos de información:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 289,
+      "before": "En la primera columna se debe colocar el resumen Narrativo el cual servirá para registrar los objetivos del proyecto y las actividades que serán necesarias desarrollar para el éxito de los objetivos. es por eso que se le llama columna de objetivos (Gómez 2004, pág. 12)",
+      "after": "La primera presenta el resumen narrativo de los objetivos y de las actividades vinculadas con su cumplimiento (Gómez 2004, pág. 12)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 290,
+      "before": "En la segunda columna se detallan los indicadores los cuales son los que permiten controlar el avance de dicho proyecto y permite evaluar los logros alcanzados.En la tercera columna se habla de los Medios de verificación que son las fuentes de información a las cuales se deben de utilizar para buscar información clave como es el caso de datos necesarios para calcular los indicadores definidos en la segunda columna.",
+      "after": "La segunda contiene los indicadores para seguir avances y resultados; la tercera identifica los medios de verificación de los datos utilizados para calcularlos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 291,
+      "before": "Por último, la cuarta columna también llamada Supuestos la cual sirve para anotar los factores externos cuya ocurrencia es importante para tener éxito en los objetivos del proyecto. (Gómez 2004, pág. 13)",
+      "after": "La cuarta registra los supuestos externos cuya ocurrencia puede afectar el logro de los objetivos (Gómez 2004, pág. 13)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 292,
+      "before": "JICA según Pérez (2008) JICA es un organismo de la Cooperación Técnica del Gobierno de Japón. La agencia de cooperación internacional de Japón es un organismo que fue desarrollado el 1 de octubre de 2003 con el objetivo de mejorar el desarrollo socioeconómico de países que están en vías de desarrollo, y fomentar la cooperación internacional. (PEREZ, Ana María, et al. 2008)",
+      "after": "JICA. La Agencia de Cooperación Internacional del Japón es el organismo japonés de cooperación técnica orientado a apoyar el desarrollo socioeconómico y la colaboración internacional (PEREZ, Ana María, et al. 2008)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 293,
+      "before": "La JICA  es una herramienta de evaluación para juzgar lo más objetivamente posible los puntos importantes y la efectividad de las actividades de cooperación JICA en diferentes etapas durante el ciclo del proyecto (ex-ante,intermedia,final y ex-post)cuyo objetivo principal de evaluación es mejorar la efectividad y eficiencia de proyectos utilizando los resultados de evaluación para mejorar la planeación e implementación ,La JICA  también intenta obtener apoyo y comprensión del público al utilizarlo para asegurar la rendición de cuentas. (Holcim 2024, pág. 7)",
+      "after": "JICA utiliza la evaluación para valorar la pertinencia y la eficacia de sus actividades en distintos momentos del ciclo —antes, durante, al cierre y después de la intervención—, mejorar la gestión y rendir cuentas sobre los resultados (Holcim 2024, pág. 7)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 294,
+      "before": "La JICA ha concentrado sus esfuerzos en fortalecer su evaluación con los siguientes tres objetivos.",
+      "after": "El sistema de evaluación de JICA persigue tres propósitos:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 295,
+      "before": "(1) Utilizar la Alimentación de la Evaluación como un Medio para la Operación y Gestión de Proyectos.",
+      "after": "1) Incorporar los resultados de la evaluación en la operación y gestión de los proyectos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 296,
+      "before": "(2) Acentuar los “Efectos de Aprendizaje” del Personal y las Organizaciones Interesadas para lograr una Implementación Más Efectiva de los Proyectos.",
+      "after": "2) Fortalecer el aprendizaje del personal y de las organizaciones participantes para mejorar la ejecución."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 297,
+      "before": "(3) Dar a conocer ampliamente la información para asegurar la rendición de cuentas de la JICA. (Holcim 2024, pág. 7)",
+      "after": "3) Difundir la información necesaria para sustentar la rendición de cuentas (Holcim 2024, pág. 7)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 299,
+      "before": "La metodología JICA  consta de cuatro pasos los cuales están plasmados en el manual Proyecto JICA y no solo se refiere al equipo del proyecto JICA sino que también q expertos japoneses y a un Consultor nacional además de miembros del grupo de trabajo del comité consultivo (Agencia de Cooperación Internacional del Japón Ministerio de Agricultura y Riego, Gobierno de la República del Sudán 2014)",
+      "after": "El procedimiento descrito para proyectos JICA involucra al equipo del proyecto, especialistas japoneses, consultoría nacional y representantes de los grupos de trabajo y del comité consultivo (Agencia de Cooperación Internacional del Japón Ministerio de Agricultura y Riego, Gobierno de la República del Sudán 2014)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 300,
+      "before": "La metodología JICA se divide en cuatro pasos ",
+      "after": "La secuencia metodológica se desarrolla en cuatro pasos:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 301,
+      "before": "El primer paso consta de la capacidad de evaluación: En dicho paso se debe definir el nivel del objetivo en función de la estrategias, política , mandatos entre otros .Además en el mismo paso se debe de Evaluar la capacidad actual que posee el grupo objetivo es decir recursos humanos Por ultimo en dicho paso se debe de identificar las diversas necesidades de capacitación.Segundo el paso dos que trata de un Diseño de capacitación programa : En dicho diseño se debe de elaborar el marco del programa de formación además de emplear un facilitador para realizar una capacitación en la cual se debe de realizar un estudio previo al entrenamiento para poder plasmar un diseño bien detallado del mismo.además de establecer un cronograma el cual debe de detallar los contenidos de la capacitación notificando con detalles la capacitación de todos los participantes (Agencia de Cooperación Internacional del Japón Ministerio de Agricultura y Riego, Gobierno de la República del Sudán 2014)",
+      "after": "Primero se diagnostican las capacidades del grupo objetivo y sus necesidades de formación. Después se diseña el programa de capacitación, se selecciona la facilitación, se realiza un diagnóstico previo y se establece un cronograma detallado (Agencia de Cooperación Internacional del Japón Ministerio de Agricultura y Riego, Gobierno de la República del Sudán 2014)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 302,
+      "before": "El paso número tres se basa en una implementación y monitoreo:   En este paso se debe de organizar el lugar y el equipo necesario, así mismo se debe de preparar una hoja de asistencia la cual servirá para retroalimentación Se debe de realizar también un monitoreo de los participantes de la capacitación y de los capacitadores.",
+      "after": "El tercer paso comprende la ejecución y el seguimiento: se organizan el espacio y los equipos, se controla la asistencia y se recoge retroalimentación de participantes y facilitadores."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 303,
+      "before": "En el último paso del modelo JICA el cual es el paso cuatro este consta de un plan de acción:Se debe de formar un equipo de trabajo y realizar un plan de acción y presentarlo enfrente de los demás equipos de trabajo para obtener comentarios y mejorar dicho plan de acción además se debe de implementar las actividades planificadas junto con el plan de acción y evaluar la presentación  final del personal superior   (Agencia de Cooperación Internacional del Japón Ministerio de Agricultura y Riego, Gobierno de la República del Sudán 2014)",
+      "after": "El cuarto paso convierte lo aprendido en un plan de acción: los equipos formulan, presentan, ajustan, ejecutan y evalúan las actividades previstas (Agencia de Cooperación Internacional del Japón Ministerio de Agricultura y Riego, Gobierno de la República del Sudán 2014)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 305,
+      "before": "La metodología ZOPP, es un conjunto de técnicas y procedimientos utilizados para la planificación de proyectos la cual está orientada a alcanzar diversos objetivos , Dicha metodología  se originó en Alemania  donde se le conoce como Zielorientierte Projektplanung, lo que significa planeación de Proyectos Orientada a Objetivos con el fin  de obtener un análisis completo real y transparente sobre los objetivos ,alternativos ,riesgos y soluciones de diversos proyectos colaborativos en el cual se le aplica dicha metodología que lleva el método cuantitativo que tiene su origen en el conocido Marco lógico de proyectos (Marcos  2020)",
+      "after": "ZOPP —planificación de proyectos orientada a objetivos— articula técnicas participativas para analizar problemas, alternativas, riesgos y soluciones de manera transparente; su estructura se relaciona con el enfoque de marco lógico (Marcos  2020)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 307,
+      "before": "Entre las principales componentes  de la metodología ZOPP cabe destacar tres la primera es el procedimiento de planificación por sus pasos sucesivos , el segundo es la visualización y documentación permanente de los pasos de planificación mediante tarjetas en las que se registraran las contribuciones del equipo de planificación y resultados de las discusiones tercero es el enfoque del equipo como marco de referencia para el dicho estudio interdisciplinario de problemas y participación de interesados y beneficiarios (FERNÁNDEZ 1989)",
+      "after": "Sus componentes centrales son una secuencia explícita de planificación, la documentación continua de los acuerdos mediante recursos visuales y el trabajo interdisciplinario con las partes interesadas y beneficiarias (FERNÁNDEZ 1989)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 309,
+      "before": "La MGA tiene como principal objetivo proveer un sistema de información ágil y eficiente en el proceso de identificación, preparación, evaluación y programación de los proyectos de inversión. Este sirve para guiar y orientar al usuario en la realización de estudios de evaluación ex-ante para una mejor toma de decisiones en cuanto a la inversión (Guillermo Roa Rodriguez 2015) ",
+      "after": "La Metodología General Ajustada (MGA) funciona como un sistema de información para identificar, preparar, evaluar y programar proyectos de inversión, y guía los estudios ex ante que respaldan la decisión de invertir (Guillermo Roa Rodriguez 2015)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 311,
+      "before": "Etapa de pre-inversion: es donde inicia el proceso del proyecto aquí se agotan los procesos de formulación, estructuración y evaluación de factibilidad tanto técnica, social, ambiental, jurídica y financiera de las operaciones evaluadas en dicha etapa se realizan todos los análisis y estudios requeridos para poder definir la situación negativa e identificar la mejor situación ante los posibles problemas. (Sierra et al 2023)",
+      "after": "La preinversión concentra la formulación, estructuración y evaluación técnica, social, ambiental, jurídica y financiera. En ella se delimita el problema y se comparan alternativas de solución (Sierra et al 2023)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 312,
+      "before": "El perfil: En dicho nivel se debe recopilar toda la información posible de raíz y de origen secundario que aporten datos y que estos datos sean útiles para dicho proyecto como documentos parecidos al proyecto que se realizara, mercados y beneficiarios con el fin de evaluar las diversas alternativas del proyecto y calcular los costos y beneficios de este ",
+      "after": "En el nivel de perfil se recopila información primaria y secundaria disponible sobre proyectos semejantes, mercados y beneficiarios para estimar, de forma inicial, costos y beneficios."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 313,
+      "before": "Fase 2: En dicho nivel se deben de evaluar las alternativas las cuales fueron seleccionadas en dicha fase en donde se deben de realizar estudios técnicos especializados mejorando la información y reduciendo la incertidumbre; dichos estudios deben de incluir los efectos producidos por cambios en las diversas variables del proyecto sobre el (VPN) y sobre los gastos de inversión y de operación del proyecto además de las estimaciones de la demanda y la oferta ",
+      "after": "En la fase siguiente se profundizan las alternativas seleccionadas mediante estudios técnicos que reducen la incertidumbre y permiten examinar cómo los cambios en demanda, oferta, inversión y operación afectan el valor presente neto."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 314,
+      "before": "Fase tres: En dicho nivel se debe detallar aspectos claves técnicos de la solución planteada en dicho proyecto es por eso por lo que se debe de analizar cuidadosamente dicha alternativa prestándole mucha atención en el proyecto en el momento de implementación, desde su estructura de financiamiento y su organización administrativa, cronograma y plan de monitoreo ",
+      "after": "El nivel avanzado detalla la solución técnica y prepara su implementación: estructura de financiamiento, organización administrativa, cronograma y plan de seguimiento."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 315,
+      "before": "Etapa de inversión :En dicha etapa se desarrolla las actividades que permiten entregar los bienes y servicios los cuales deben ser definidos anteriormente en el alcance del proyectoEn dicha etapa se debe de adelantar  el proceso de seguimiento  a las actividades que se van desarrollando buscando monitorear  el avance  del proyecto  para redireccionar  el rumbo si es necesario",
+      "after": "La inversión ejecuta las actividades necesarias para entregar los bienes y servicios definidos en el alcance. El seguimiento del avance permite corregir desviaciones durante la implementación "
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 316,
+      "before": "Etapa de operación: Es la cual comprende el periodo en los que los productos del proyecto entran en funcionamiento y generan beneficios que concuerdan con los objetivos definidos para el proyecto (Sierra et al 2023)",
+      "after": "La operación comprende el periodo en que los productos del proyecto entran en funcionamiento y generan los beneficios vinculados con sus objetivos (Sierra et al 2023)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 318,
+      "before": "Es una metodología la cual sirve para gestionar proyectos, dicha metodología proporciona una estructura al proceso además de incluir la consulta a partes que están interesadas y proporcionales información que sea relevante a largo plazo en dicho proyecto lo cual ayuda a tomar mejores decisiones que son posibles.",
+      "after": "La gestión del ciclo del proyecto (PCM) proporciona una secuencia para organizar decisiones, consultar a las partes interesadas y utilizar información relevante durante toda la intervención."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 319,
+      "before": "El ciclo de operaciones de gestión del proyecto se divide en cinco fases las cuales son: (programación, Identificación, formulación, Implementación, Evaluación y cierre)",
+      "after": "El ciclo considerado en esta revisión comprende seis fases: programación, identificación, formulación, implementación, evaluación y cierre."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 320,
+      "before": "Dicho ciclo destaca diversos criterios y procedimientos de la toma de decisiones los cuales se definen en cada fase de forma específica , las fases son progresivas y cada una debe de completarse antes de pasar a la siguiente fase , los nuevos proyectos se basan en los resultados de la fase final evaluación y auditoria (Axial ERP 2022)",
+      "after": "Las fases son progresivas: cada decisión se apoya en los resultados de la anterior y los hallazgos de evaluación y auditoría alimentan nuevas intervenciones (Axial ERP 2022)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 322,
+      "before": "Programación: La primer fase llamada programación es aquella que pregunta cuáles son las prioridades de desarrollo y llega a un acuerdo sobre un documento estratégico y un programa indicativo.",
+      "after": "Programación: se acuerdan las prioridades de desarrollo y se traducen en una estrategia y un programa indicativo."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 323,
+      "before": "Identificación: La fase de identificación es la segunda fase es allí donde se realiza la finalización de la fiche, o propuesta de financiación, tras una evaluación inicial de una delegación. La propuesta es aceptada, modificada o denegada, y se compromete o no la financiación.",
+      "after": "Identificación: se somete la propuesta a una valoración inicial para aceptarla, ajustarla o descartarla antes de comprometer recursos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 324,
+      "before": "planificación: En dicha fase se determina si el proyecto es factible y si el proyecto cumplirá con los beneficios que se proponen completando la propuesta de financiación, junto con las disposiciones técnicas y administrativas.",
+      "after": "Formulación: se determina la factibilidad, se precisan los beneficios esperados y se completan las disposiciones técnicas, administrativas y financieras."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 325,
+      "before": "Implementación: En dicha fase de plasman Si se logran resultados y los recursos que se utilizan adecuadamente, además se presenta un plan operativo anual, así como otros informes y revisiones de seguimiento para determinar si la financiación debe continuar según lo previsto o cambiar para apoyar nuevas necesidades.",
+      "after": "Implementación: se ejecuta el plan, se controla el uso de recursos y se revisan resultados e informes para decidir si la financiación continúa o se adapta."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 326,
+      "before": "evaluación: La evaluación determinara si el proyecto ha alcanzado sus objetivos planificados mediante la realización de un estudio de evaluación, que es planificado y gestionado por un gestor de tareas.",
+      "after": "Evaluación: se contrasta el desempeño alcanzado con los objetivos previstos mediante un estudio planificado y gestionado para ese fin."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 327,
+      "before": "por último, la fase de Cierre: Durante dicha fase de cierre, se realiza una auditoría para determinar si el proyecto se completó cumpliendo con la ley y las normas, y si se han cumplido otros criterios. El proceso suele ser gestionado por un gestor de tareas de auditoría. (Peter Landau 2024)",
+      "after": "Cierre: una auditoría verifica la terminación del proyecto, el cumplimiento normativo y los demás criterios establecidos (Peter Landau 2024)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 329,
+      "before": "Sapag es una metodología que normalmente es utilizada para la preparación y evaluación de proyectos de manera eficiente. Dicha metodología se desarrolló por los hermanos Eduardo y Julio Sapag, quienes eran reconocidos en el campo de la ingeniería industrial y gestión de proyectos",
+      "after": "El enfoque asociado con Sapag y Sapag ordena la preparación y evaluación de proyectos para sustentar decisiones de inversión."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 330,
+      "before": "El principal objetivo de dicha metodología es preparar y evaluar proyectos de una manera que sea sistemática y que maximice el éxito y disminuya los errores. (Luis 2024)",
+      "after": "Su finalidad es examinar cada alternativa de forma sistemática, reducir errores de formulación y mejorar la probabilidad de alcanzar los resultados esperados (Luis 2024)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 332,
+      "before": "Dicha metodología se divide en seis etapas que llevan secuencia interrelacionada y complementarias que guían al equipo del proyecto a través de todo el ciclo del proyecto. ",
+      "after": "La secuencia revisada se organiza en seis etapas interrelacionadas:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 333,
+      "before": "Identificación del proyecto es la primera etapa en esta se identifican las necesidades o problemas que pueden ser abordados a través de un proyecto de la misma forma se realiza un análisis preliminar para determinar la viabilidad y permanencia de la idea del proyecto. ",
+      "after": "Identificación: se delimita la necesidad o el problema y se realiza una primera valoración de la pertinencia y viabilidad de la idea."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 334,
+      "before": "Prefactibilidad: Esta es la segunda etapa en esta se realiza un estudio más detallado de la idea del proyecto, donde se debe de evaluar su factibilidad técnica, económica y financiera además de elaborar un perfil preliminar del proyecto para determinar si es viable o no y ver si se continua con su desarrollo.",
+      "after": "Prefactibilidad: se comparan con mayor detalle las dimensiones técnica, económica y financiera para decidir si conviene profundizar el proyecto."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 335,
+      "before": "Factibilidad: Esta es la tercera etapa y en esta etapa se realiza un estudio más exhaustivo del proyecto, analizando en detalle todos sus aspectos técnicos, económicos, financieros, legales, ambientales, entre otros. Se debe de elaborar un informe de factibilidad que determine si el proyecto es viable y rentable. ",
+      "after": "Factibilidad: se estudian de manera exhaustiva los aspectos técnicos, económicos, financieros, legales y ambientales y se emite una decisión sobre viabilidad y rentabilidad."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 336,
+      "before": "Diseño y planificación: Esta es la cuarta etapa y es aquella donde se define la estructura y organización del proyecto, es aquí donde se debe de elaborar los planes y programas del trabajo y se deben de identificar los recursos claves para que los objetivos se cumplan y las metas se alcancen se debe de realizar un cronograma y un presupuesto detallado.",
+      "after": "Diseño y planificación: se define la organización, se programan actividades y recursos y se preparan el cronograma y el presupuesto."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 337,
+      "before": "ejecución y control: Corresponde a la etapa número cinco en dicha etapa se debe de implementar el proyecto ejecutando las actividades planificadas y monitoreando el avance y desempeño del proyecto, se debe de realizar ajustes y correcciones si es necesario.",
+      "after": "Ejecución y control: se implementan las actividades, se monitorea el desempeño y se introducen ajustes cuando aparecen desviaciones."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 338,
+      "before": "evaluación y cierre: Esta corresponde a la etapa número seis es decir la última etapa es aquí donde se debe de evaluar el desempeño del proyecto una vez finaliza su ejecución , se debe de analizar los resultados obtenidos y compararlos con los objetivos y metas anteriormente establecidos, elaborando un informe final de evaluación y cierre del proyecto. (Luis 2024)",
+      "after": "Evaluación y cierre: se comparan los resultados finales con los objetivos y metas y se documentan las conclusiones de la intervención (Luis 2024)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 339,
+      "before": "BPIN/SNIP:La metodología SNIP sirve para la formulación y evaluación de proyectos de inversión donde se deben de describir la identificación ,formulación y evaluación de proyectos correspondientes a estudios de reinversión y donde se generara un análisis de la idea del proyecto, el perfil del proyecto, la prefactibilidad y factibilidad del mismo son etapas que compone dicho estudio (SNIP 2020)",
+      "after": "BPIN/SNIP. El Sistema Nacional de Inversión Pública orienta la identificación, formulación y evaluación de proyectos de inversión y distingue los niveles de idea, perfil, prefactibilidad y factibilidad (SNIP 2020)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 341,
+      "before": "Estudio de viabilidad o factibilidad técnica, se debe de suministrar los elementos técnicos claves para validar la adecuación y viabilidad técnica de las alternativas seleccionadas para llevar a cabo el proyecto. ",
+      "after": "La viabilidad técnica aporta los elementos necesarios para comprobar que las alternativas seleccionadas pueden ejecutarse con los recursos y condiciones disponibles."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 342,
+      "before": "Estudio de viabilidad o factibilidad ambiental: El proyecto deberá de contar con un informe que aporte los elementos que permitan cuantificar el impacto del  proyecto sobre el medio ambiente , este mismo deberá  cumplir con las exigencias de información exigidas por las autoridades ambientales  así mismo se debe de identificar las acciones que se requieran para mitigar los efectos adversos del proyecto que podría generar en el medio ambiente y cumplir con las exigencias regulatorias vigentes así como un coste de las mismas a los efectos de la presentación del flujo de beneficios y costos.",
+      "after": "La viabilidad ambiental identifica y cuantifica los efectos de la alternativa, verifica los requisitos de la autoridad competente y estima las medidas y los costos necesarios para prevenir o mitigar impactos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 343,
+      "before": "Estudio de viabilidad jurídico.: El proyecto debe deberá contar con un informe de viabilidad jurídica e institucional de cada una de las soluciones alternativas las cuales consisten en identificar y justificar si las mismas se ajustan a las disposiciones reglamentarias y legales vigentes y en particular si dicho proyecto enmarca la misión del organismo y en su ámbito de competencia se deberá de justificar la capacidad del organismo para ejecutar el proyecto durante el ciclo de vida del mismo (SNIP 2020)",
+      "after": "La viabilidad jurídica e institucional determina si cada alternativa se ajusta a las normas vigentes, corresponde al mandato del organismo y puede ser ejecutada durante todo el ciclo de vida del proyecto (SNIP 2020)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 345,
+      "before": "La metodología OCDE se aplica ampliamente, incluso mucho más de lo que se esperaba es debido a que tiene diversas ventajas entre dichas ventajas es que facilita la síntesis de la evaluación además ayuda a identificar los puntos débiles que son comunes de la acción humanitaria y que facilita la colaboración entre las personas evaluadoras de todo el mundo apuntado a criterios claves que son fáciles de entender y de utilizar. (ALNAP 2023, pág. 2)",
+      "after": "Los criterios OCDE/CAD se utilizan para ordenar y hacer comparables las evaluaciones, identificar debilidades recurrentes y facilitar el aprendizaje entre equipos evaluadores (ALNAP 2023, pág. 2)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 347,
+      "before": "Eficacia: Criterio más aplicado en dicha metodología de evaluación y se define generalmente en términos de consecución de objetivos y es donde se identifican retos a la hora de definir un objetivo y cuál es la mejor manera de medirlos en contexto humanitarios. ",
+      "after": "Eficacia: valora en qué medida se alcanzaron los objetivos y exige definir resultados e indicadores adecuados al contexto."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 348,
+      "before": "La adecuación o pertinencia es el segundo criterio de dicha metodología esta trata de averiguar si el proyecto es congruente con las necesidades y las prioridades locales. ",
+      "after": "Pertinencia: examina la correspondencia entre la intervención y las necesidades y prioridades de la población y del entorno."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 349,
+      "before": "La eficiencia es el tercer criterio de dicha metodología este criterio mide los resultados cualitativos y cuantitativos obtenidos como consecuencia de los insumos utilizados para ver si es el método más eficiente. ",
+      "after": "Eficiencia: relaciona los resultados cualitativos y cuantitativos con los insumos utilizados para determinar si los recursos se emplearon de manera adecuada."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 350,
+      "before": "El impacto es el cuarto criterio de la metodología y se refiere al grado en el que la intervención ha generado, o se espera que genere efectos significativos, positivos o negativos previstos o no previstos en diferentes niveles ",
+      "after": "Impacto: considera los efectos significativos, positivos o negativos, previstos o imprevistos, que la intervención genera o puede generar."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 351,
+      "before": "El quinto criterio de dicha metodología es el de cobertura debido a la necesidad de llegar a la mayor población posible que se enfrente a un riesgo de muerte donde quiera que este es muy pertinente para los problemas detectados en el desempeño de la acción humanitaria y un criterio prioritario para algunas personas y es fundamental para el compromiso de no dejar a nadie atrás.",
+      "after": "Cobertura: analiza si la respuesta alcanza a la población expuesta y si evita excluir a quienes enfrentan mayores necesidades."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 352,
+      "before": "La coherencia es el sexto criterio de dicha metodología y es la necesidad de evaluar las políticas de seguridad, desarrollo, comercio y militares, así como humanitarias para asegurar que exista coherencia en el proyecto. ",
+      "after": "Coherencia: revisa la compatibilidad entre la intervención y las políticas humanitarias, de desarrollo, seguridad, comercio y otros ámbitos relacionados."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 353,
+      "before": "Los criterios de la OCDE han demostrado con el tiempo ser muy famosos en la evaluación de la acción humana, además su uso ha contribuido a la capacidad del sector para mejorar la calidad de la evaluación y comparar los resultados de las distintas evaluaciones. (ALNAP 2023)",
+      "after": "La aplicación sostenida de estos criterios ha permitido mejorar la calidad de las evaluaciones y contrastar resultados entre intervenciones (ALNAP 2023)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 355,
+      "before": "AIKA es una herramienta la cual fue desarrollada en el año 2022 por el instituto Nacional De Colombia el cual evalúa y califica el grado de cumplimiento de la sostenibilidad en un proyecto en cualquiera de las fasea del ciclo de la vida, este incorpora 58 parámetros también llamados créditos los cuales se dividen en 5 dimensiones: Ambiental, Social, técnico, económico, Financiero y gobernanza. (Cepeda 2025)",
+      "after": "AIKA es una herramienta desarrollada para valorar la sostenibilidad de proyectos de infraestructura mediante 58 parámetros o créditos agrupados en dimensiones ambientales, sociales, técnicas, económicas, financieras y de gobernanza (Cepeda 2025)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 357,
+      "before": "Aika clasifica la sostenibilidad de un proyecto en función a un porcentaje mínimo alcanzado del total de los puntos aplicables en 4 grados lo cual corresponde al cumplimiento de lo que está establecido en la normativa vigente aplicable. ",
+      "after": "La herramienta asigna un grado de sostenibilidad de acuerdo con el porcentaje de puntos aplicables que obtiene el proyecto y con el cumplimiento de la normativa pertinente."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 358,
+      "before": "Además AIKA promueve la armonización entre las actividades propias del ciclo de vida de la infraestructura vial con el medio ambiente  , a partir de la vinculación del concepto de sostenibilidad y el desarrollo equilibrado, esta metodología es un instrumento que se enfoca de forma sustentada y cuantificable el respaldo de la toma de decisiones y adopción de medidas, procedimientos y adopción de medidas ,procedimientos o acciones que garanticen que los proyectos de infraestructura de transporte del INVIAS  se implementen e involucren la sostenibilidad de manera armónica  ( Cepeda 2025)",
+      "after": "AIKA vincula las decisiones del ciclo de vida de la infraestructura con criterios ambientales y de desarrollo equilibrado, de manera que las medidas adoptadas puedan justificarse y medirse (Cepeda 2025)."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 360,
+      "before": "La producción de leche pasteurizada constituye un proceso esencial dentro de la industria láctea, ya que garantiza la inocuidad del producto y preserva sus propiedades nutricionales.",
+      "after": "La pasteurización es una etapa central de la industria láctea porque controla microorganismos patógenos y permite conservar las propiedades nutricionales del producto."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 361,
+      "before": "El modelo de comercialización se estructura bajo un canal de distribución denominado detallista con un vendedor que visite los clientes con una lista de visita definida.",
+      "after": "La comercialización propuesta utiliza un canal detallista atendido por vendedores con rutas de visita definidas."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 362,
+      "before": "La industria láctea en Honduras es una de las agroindustrias más fuertes del país y todavía tiene mucho espacio para crecer, especialmente en transformación, distribución y productos especializados.",
+      "after": "La industria láctea hondureña tiene una presencia relevante y conserva oportunidades de crecimiento en transformación, distribución y productos especializados."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 364,
+      "before": "La producción de leche está dominada por pequeños y medianos ganaderos, mientras que las grandes empresas procesadoras concentran la industrialización y distribución nacional. La empresa líder es Lacthosa⁠, conocida por su marca Sula.",
+      "after": "La producción primaria se distribuye entre pequeños y medianos ganaderos, mientras que la industrialización y la distribución nacional se concentran en empresas de mayor tamaño, entre ellas Lacthosa con su marca Sula."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 365,
+      "before": "Honduras también importa millones de dólares en productos lácteos, lo cual significa que todavía existe demanda insatisfecha y espacio para producción nacional.",
+      "after": "Las importaciones de productos lácteos muestran que una parte de la demanda interna se cubre con oferta externa y que existe espacio para producción nacional."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 366,
+      "before": "En municipios rurales hay mucho potencial para marcas regionales con identidad local.",
+      "after": "En los municipios rurales, una marca regional puede diferenciarse mediante identidad local y cercanía con productores y clientes."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 368,
+      "before": "La mayor oportunidad probablemente no está en competir directamente con grandes empresas, sino en:",
+      "after": "La alternativa no consiste en replicar la oferta de las empresas de mayor escala, sino en concentrarse en:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 375,
+      "before": "El sector está creciendo por varios factores:",
+      "after": "Entre los factores que explican la evolución del sector se encuentran:"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 381,
+      "before": "La leche se considera un alimento de elevada densidad nutricional, ya que integra proteínas, lípidos, carbohidratos, vitaminas y minerales indispensables para el crecimiento y la supervivencia en las primeras etapas de vida. Su carácter esencial se evidencia en el hecho de que, en los mamíferos, representa el primer y único alimento consumido al nacer, lo que subraya su relevancia dentro de la dieta humana en cualquier etapa de desarrollo.",
+      "after": "La leche combina proteínas, grasas, carbohidratos, vitaminas y minerales. Su función como primer alimento de los mamíferos evidencia su densidad nutricional y su importancia en las primeras etapas de vida."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 382,
+      "before": "La producción de leche es una actividad que se remonta a más de seis milenios, vinculada estrechamente con el proceso de domesticación animal. En sus orígenes, las comunidades humanas optaron por domesticar especies herbívoras, dado que estas ofrecían múltiples beneficios: suministro de leche, carne y pieles, además de representar un menor riesgo en comparación con los animales carnívoros. Este patrón de domesticación se mantiene vigente, pues las mismas especies continúan siendo la base de la producción láctea moderna (Vergara, 2007).",
+      "after": "La producción láctea se relaciona con la domesticación de especies herbívoras, elegidas históricamente por aportar leche, carne y pieles con menores riesgos de manejo que los animales carnívoros; esas especies siguen sosteniendo la actividad moderna (Vergara, 2007)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 383,
+      "before": "Según la guía de implementación de un sistema integrado de gestión ISO 9001:2008 - ISO 22000:2005, para las empresas de producción de leche entera pasteurizada y queso fresco realizada por Monterroza y Extremor (2014), el proceso productivo para la obtención de leche pasteurizada está compuesto en 10 fases que corresponden al ordeño, almacenamiento y refrigeración, transporte, recepción en planta, pruebas de calidad, estandarización, homogenización, pasteurización, empaque, distribución y despacho.",
+      "after": "De acuerdo con Monterroza y Extremor (2014), el proceso de leche pasteurizada comprende diez fases: ordeño; refrigeración y almacenamiento; transporte; recepción; control de calidad; estandarización; homogeneización; pasteurización; empaque; y, como etapa final, distribución y despacho."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 385,
+      "before": "La metodología empleada en esta investigación es de carácter mixto, al integrar enfoques cuantitativos y cualitativos en el análisis de la viabilidad del proyecto. El componente cuantitativo se refleja en la aplicación de encuestas estructuradas, el análisis estadístico de la demanda, la proyección financiera y la simulación de riesgos mediante herramientas especializadas. El componente cualitativo se manifiesta en entrevistas semiestructuradas a actores clave del sector, en el análisis de percepciones y en la interpretación de factores externos que inciden en el entorno competitivo.",
+      "after": "La investigación adoptó un enfoque mixto. El componente cuantitativo integró la encuesta, la estimación de la demanda, la evaluación financiera y la simulación de riesgos; el diseño del componente cualitativo contempló entrevistas semiestructuradas, percepciones de actores y análisis del entorno competitivo."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 386,
+      "before": "Dentro de este diseño metodológico se aplicará la técnica de la ONUDI, ampliamente reconocida en el ámbito de la evaluación de proyectos industriales por su carácter integral y sistemático. Esta técnica permitirá organizar los estudios de mercado, sectorial, técnico, financiero y de riesgos en un marco coherente, asegurando que los resultados obtenidos sean consistentes y comparables con estándares internacionales de prefactibilidad.",
+      "after": "La metodología ONUDI articuló los estudios sectorial, de mercado, técnico, organizacional, legal, ambiental y financiero, junto con el análisis de riesgos, en una secuencia común de evaluación de prefactibilidad."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 387,
+      "before": "En este sentido, el diseño metodológico se estructura en función de los objetivos de la investigación, definiendo para cada uno la información requerida, las fuentes de obtención, los instrumentos de recolección y los métodos de análisis.",
+      "after": "Para cada objetivo se definieron la información requerida, sus fuentes, los instrumentos de recolección y el procedimiento de análisis."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 389,
+      "before": "El estudio sectorial se desarrollará como un análisis proyectivo–evaluativo, con enfoque cuantitativo y cualitativo, orientado a comprender el entorno macro y competitivo del sector lácteo en Honduras. La información necesaria corresponde a los factores externos que inciden en el desempeño del proyecto, tales como aspectos políticos, económicos, sociales, tecnológicos, ecológicos y legales, así como las condiciones competitivas inmediatas relacionadas con la rivalidad entre competidores, el poder de negociación de proveedores y clientes, la amenaza de nuevos entrantes y la presencia de productos sustitutos. Para obtener esta información se recurrirá a fuentes secundarias, incluyendo estadísticas oficiales, informes sectoriales y literatura especializada, complementadas con fuentes primarias mediante entrevistas semiestructuradas a actores clave del sector, como productores locales, proveedores de insumos, distribuidores y representantes institucionales.",
+      "after": "El estudio sectorial se diseñó para combinar fuentes documentales —estadísticas oficiales, informes y literatura especializada— con entrevistas a productores, proveedores, distribuidores y representantes institucionales. La información prevista abarcó los factores políticos, económicos, sociales, tecnológicos, ecológicos y legales, además de las condiciones de rivalidad, proveedores, clientes, entrantes y sustitutos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 390,
+      "before": "El instrumento de recolección será un cuestionario de entrevista semiestructurada, diseñado con preguntas abiertas y cerradas que permitan identificar oportunidades, amenazas y condiciones competitivas. Dicho cuestionario será validado por juicio de expertos y aplicado de manera presencial o virtual. La población objetivo estará conformada por los actores vinculados al sector lácteo en la zona de influencia, y la muestra se seleccionará mediante muestreo intencional, priorizando informantes con experiencia y conocimiento del sector. Se estima entrevistar entre diez y quince participantes, lo que permitirá obtener información cualitativa suficiente para el análisis.",
+      "after": "Como instrumento cualitativo se definió una entrevista semiestructurada, sujeta a validación mediante juicio de expertos, con informantes seleccionados intencionalmente por su experiencia en el sector. Se planificó entrevistar entre diez y quince actores clave; como el documento no registra cuántas entrevistas se ejecutaron, sus resultados no se presentan como evidencia confirmada."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 391,
+      "before": "El procedimiento de análisis se realizará mediante la aplicación del modelo PESTEL, que permitirá identificar oportunidades y amenazas derivadas del entorno macro, y del modelo de las Cinco Fuerzas de Porter, que servirá para evaluar la dinámica competitiva del sector. Las respuestas obtenidas en las entrevistas se categorizarán y se triangularán con la información documental, garantizando la validez y confiabilidad de los resultados.",
+      "after": "El diseño previó examinar el entorno macro con PESTEL y la competencia con el modelo de las cinco fuerzas de Porter, categorizar las respuestas y triangularlas con fuentes secundarias."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 393,
+      "before": "El estudio de mercado se desarrollará siguiendo la metodología propuesta por la ONUDI, con el propósito de evaluar la demanda insatisfecha, analizar la competencia, definir el producto y establecer estrategias de comercialización. La información necesaria abarca los antecedentes del sector, el comportamiento del consumidor, la situación del mercado, las tendencias y el entorno competitivo. Para ello se recurrirá principalmente a fuentes primarias, mediante la aplicación de encuestas estructuradas a consumidores del canal detalle en la Región Centro de Honduras, y a fuentes secundarias, como informes sectoriales, estadísticas oficiales y bases de datos de clientes de la empresa Lacthosa, que permitirán segmentar y definir el nicho de mercado.",
+      "after": "El estudio de mercado evaluó la demanda, la competencia, el producto y la estrategia de comercialización. Utilizó información primaria de establecimientos del canal detalle en la Región Centro y fuentes secundarias, incluidas estadísticas, informes sectoriales y bases de clientes, para delimitar el nicho de mercado."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 394,
+      "before": "El instrumento de recolección será una encuesta estructurada y será validada por juicio de expertos. La población objetivo estará conformada por consumidores del canal detalle en la Región Centro de Honduras, específicamente clientes clasificados como “A”. El tamaño de la muestra se calculará utilizando la fórmula para poblaciones finitas, con un nivel de confianza del 95% y un margen de error del 5%, lo que permitirá obtener resultados estadísticamente representativos.",
+      "after": "La encuesta estructurada fue validada por juicio de expertos. Se obtuvieron n=63 respuestas de una población declarada de N=500 establecimientos. El documento no conserva evidencia suficiente del procedimiento de selección ni del tratamiento de la no respuesta; por ello, los resultados se interpretan de forma descriptiva y no se les atribuye un margen de error probabilístico. Como referencia teórica, si se asumieran muestreo aleatorio simple, 95 % de confianza y máxima variabilidad (p=q=0,5), el error sería aproximadamente ±11,55 %, no ±5 %."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 395,
+      "before": "El análisis de la información se realizará mediante técnicas de estadística descriptiva e inferencial, que permitirán identificar patrones de consumo, segmentar el mercado y estimar la demanda potencial. Asimismo, se llevará a cabo un análisis comparativo de la competencia, evaluando productos, precios, estrategias de marketing y fortalezas o debilidades de los principales actores del sector. Finalmente, se examinarán las tendencias y el entorno, considerando cambios tecnológicos, regulaciones legales y factores culturales que puedan afectar el éxito del negocio.",
+      "after": "Los datos se analizaron con estadística descriptiva para caracterizar hábitos, segmentar el mercado y estimar la demanda. La oferta competidora se comparó por producto, precio, comercialización y posicionamiento, y el análisis incorporó tendencias tecnológicas, regulatorias y culturales."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 399,
+      "before": "El instrumento de recolección de datos utilizado en esta investigación es una encuesta estructurada, diseñada para recopilar información sobre hábitos de compra, percepciones, problemas actuales con el producto y disposición de los clientes a cambiar de proveedor. La encuesta se aplicará a una muestra de 60 establecimientos seleccionados mediante muestreo aleatorio simple, dentro de una población objetivo de 500 tiendas y negocios relacionados con el consumo de leche y productos derivados.",
+      "after": "La encuesta estructurada recopiló hábitos de compra, percepciones, problemas con el producto actual y disposición a cambiar de proveedor. Respondieron 63 establecimientos vinculados con el consumo de leche y derivados dentro de una población objetivo declarada de 500 tiendas y negocios; ante la ausencia de trazabilidad del procedimiento de selección, los resultados no se extrapolan estadísticamente a toda la población."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 414,
+      "before": "El estudio técnico se utilizará métodos de ingeniería y análisis de procesos así se podrá determinar la viabilidad operativa, optimizar recursos y minimizar costo, se incluirá el tamaño y la localización con métodos cuantitativos y cualitativos, diagrama de flujo de procesos, selección de tecnología, análisis de materias primas y distribución en planta. ",
+      "after": "El estudio técnico evaluó la viabilidad operativa mediante ingeniería de procesos. Integró el dimensionamiento y la localización, el flujo productivo, la tecnología, las materias primas y la distribución de planta para estimar recursos y costos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 416,
+      "before": "Se deberá considerar las implicaciones de inversión que en este caso se refieren a obras físicas e infraestructura, así como las inversiones en capital de trabajo y los costos en adquisición de materias primas y salarios. La finalidad de la operación es garantizar que la producción sea eficiente y rentable. En este punto, también se relaciona con el análisis técnico del plan de negocios. Existen ciertos aspectos a considerar en esta etapa:",
+      "after": "La ingeniería del proyecto cuantificó obras e infraestructura, capital de trabajo, materias primas, personal y costos de operación. El análisis se orientó a definir un proceso eficiente y a vincular las decisiones técnicas con el modelo financiero."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 421,
+      "before": "Es la parte referida a establecer el nivel de inversiones necesarias para operar normalmente. En este caso se relaciona el nivel de inversión con la productividad del tamaño de planta, medido en unidades de producto. Es necesario tener en cuenta las economías de escala que se podrían dar y el apalancamiento operativo, eligiendo el tamaño de planta que presente un mayor valor presente neto. Aquí también se deben evaluar las condiciones de operación que permitan un desempeño adecuado del proyecto.",
+      "after": "El tamaño se determinó a partir de la demanda estimada, la capacidad de los equipos, las inversiones y los costos de operación. Las alternativas de capacidad se compararon por su utilización y su efecto en los flujos y en el valor actual neto."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 423,
+      "before": "Es una decisión de largo plazo, por cuanto es costoso equivocarse en su elección. Se tomarán en cuenta aspectos como:",
+      "after": "La localización se evaluó como una decisión de largo plazo mediante criterios de acceso al mercado, abastecimiento de leche cruda, disponibilidad de factores productivos y condiciones legales y tributarias."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 473,
+      "before": "La industria de los lácteos es un sector de suma importancia en la economía hondureña debido a que genera muchos empleos tanto a pequeños, medianos y grandes productores los cuales tienen inversiones significativas en todo el país su contribución en el PIB es del 15% generando más de 350,000 empleos directos y 250,000 empleos indirectos con una producción limpia lo que no genera muchos residuos y hacen eficiente el uso de energía y materia prima ahorrando gastos en el consumo del agua (CNP+LHonduras 2017)",
+      "after": "La industria láctea aporta a la economía hondureña mediante la actividad de productores de diferentes escalas. La fuente consultada estima una contribución del 15 % al PIB, 350,000 empleos directos y 250,000 indirectos, y destaca oportunidades de eficiencia en el uso de energía, materias primas y agua (CNP+LHonduras 2017)"
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1618,
+      "before": "El presente estudio tuvo como objetivo general evaluar la prefactibilidad de crear una nueva marca de leche  fluida en Honduras orientada a un mercado nicho que no ha sido atendido actualmente los resultados obtenidos permiten concluir que el proyecto es prefactible desde las perspectivas comercial, técnica, legal, organizacional, ambiental, financiera y de gestión de riesgos.",
+      "after": "En respuesta al objetivo general, la evaluación integrada indica que la producción y distribución de leche fluida pasteurizada para un nicho de mercado en Honduras es prefactible en las dimensiones comercial, técnica, organizacional, legal, ambiental, financiera y de riesgos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1619,
+      "before": "El estudio sectorial evidenció que el sector lácteo hondureño presenta oportunidades favorables para el desarrollo de productos diferenciados, especialmente en segmentos urbanos que demandan calidad, inocuidad y productos con valor agregado asimismo, el análisis PESTEL y las Cinco Fuerzas de Porter mostró que, aunque existe una alta rivalidad competitiva y presencia de productos sustitutos, la estrategia de focalización en un nicho específico permite reducir la competencia directa y desarrollar ventajas competitivas sostenibles.",
+      "after": "Respecto del objetivo sectorial, PESTEL y el modelo de las cinco fuerzas de Porter identificaron rivalidad elevada y productos sustitutos, junto con una oportunidad de diferenciación en segmentos que valoran calidad e inocuidad. Estos resultados respaldan una estrategia focalizada, sin asegurar por sí solos una ventaja competitiva sostenible."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1620,
+      "before": "Los resultados del estudio de mercado confirmaron la existencia de una demanda potencial para la leche pasteurizada propuesta la encuesta aplicada a 63 establecimientos mostró una intención de compra favorable, una alta frecuencia de consumo de productos lácteos y una disposición de pago compatible con el precio planteado para el proyecto además, se identificó una oportunidad significativa en los segmentos HORECA, comercios minoristas y consumidores que valoran atributos de frescura, seguridad alimentaria y calidad.",
+      "after": "En relación con el objetivo de mercado, las 63 encuestas aplicadas a establecimientos mostraron intención de compra, consumo frecuente de lácteos y disposición de pago compatible con el precio propuesto. La evidencia delimita una oportunidad en el canal HORECA y en comercios minoristas que priorizan frescura, inocuidad y calidad."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1621,
+      "before": "Desde el punto de vista técnico, se determinó que la localización óptima de la planta corresponde a la ciudad de Comayagua, debido a sus ventajas logísticas, cercanía a proveedores de leche cruda y acceso a los principales mercados de consumo del país además la tecnología seleccionada y la capacidad inicial de procesamiento permiten satisfacer la demanda proyectada y facilitan futuras expansiones de la capacidad instalada.",
+      "after": "Para el objetivo técnico, Comayagua resultó la localización seleccionada por su acceso logístico, cercanía al abastecimiento de leche cruda y conexión con los mercados previstos. La tecnología y la capacidad inicial definidas cubren la demanda proyectada y permiten evaluar ampliaciones posteriores."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1622,
+      "before": "En relación con el estudio legal y administrativo, se comprobó que existe un marco normativo claramente definido para la producción y comercialización de leche pasteurizada en Honduras aunque el cumplimiento regulatorio exige inversiones y procesos de autorización, estos requisitos son técnicamente viables y contribuyen a fortalecer la confianza de los consumidores y el acceso a canales formales de comercialización.",
+      "after": "En los objetivos organizacional y legal se identificaron la estructura de gestión y los requisitos aplicables a la producción y comercialización. Su cumplimiento exige inversiones, permisos y controles, pero no se detectaron impedimentos técnicos que invaliden la propuesta."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1623,
+      "before": "El estudio ambiental permitió identificar los principales impactos asociados al consumo de agua, generación de efluentes y manejo de residuos, sin embargo, mediante la implementación de buenas prácticas de manufactura, sistemas de tratamiento y medidas de mitigación propuestas, dichos impactos pueden mantenerse dentro de niveles aceptables, garantizando la sostenibilidad ambiental de la operación.",
+      "after": "El objetivo ambiental permitió reconocer como aspectos principales el consumo de agua, los efluentes y los residuos. Las medidas de prevención, tratamiento y seguimiento propuestas permiten gestionar esos impactos; su eficacia deberá comprobarse durante la factibilidad y la operación."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1624,
+      "before": "Los resultados financieros constituyen uno de los principales argumentos a favor de la ejecución del proyecto. En el escenario sin financiamiento se obtuvo un Valor Actual Neto (VAN) de L 15,370,631, una Tasa Interna de Retorno (TIR) de 55.95 %, una recuperación de la inversión en 3.67 años y una relación beneficio-costo de 1.24. Por su parte, en el escenario con financiamiento se alcanzó un VAN de L 15,459,686 y una TIR de 63.62 %, lo que evidencia una sólida rentabilidad y una adecuada capacidad para generar valor para los inversionistas.",
+      "after": "Para el objetivo financiero, el escenario sin financiamiento obtuvo un VAN de L 15,370,631, una TIR de 55.95 %, un periodo de recuperación de 3.67 años y una relación beneficio/costo de 1.24. Con financiamiento, el VAN fue L 15,459,686 y la TIR 63.62 %. Bajo los supuestos del modelo, ambos escenarios generan valor."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1625,
+      "before": "Finalmente, el análisis de riesgos mostró que, aun considerando los once eventos de riesgo identificados mediante simulación Monte Carlo, el proyecto mantiene una amplia capacidad para absorber pérdidas potenciales. El valor esperado de las pérdidas representa únicamente el 15.1 % del valor actual neto promedio estimado para el inversionista, lo que confirma que la exposición al riesgo es manejable y no compromete la viabilidad económica del proyecto.",
+      "after": "En cuanto al objetivo de riesgos, la simulación consideró once eventos. La pérdida esperada equivale al 15.1 % del valor actual neto promedio del inversionista; por tanto, el proyecto conserva margen frente a la exposición modelada, aunque requiere mantener controles y actualizar los supuestos."
+    },
+    {
+      "kind": "professional_rewrite",
+      "paragraph": 1626,
+      "before": "En consecuencia, se concluye que la propuesta de producción y distribución de leche pasteurizada bajo una estrategia de mercado nicho en Honduras es prefactible y posee condiciones favorables para avanzar a una etapa de factibilidad detallada y posterior implementación.",
+      "after": "En síntesis, los resultados justifican avanzar a una fase de factibilidad detallada, en la que deberán confirmarse la demanda, las cotizaciones, los permisos, el abastecimiento y las medidas de mitigación antes de decidir la inversión."
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 2,
+      "before": "Estudio de prefactibilidad para la producción y distribución de leche pasteurizada a mercado nicho en Honduras",
+      "after": "Estudio de prefactibilidad para la producción y distribución de leche pasteurizada para un mercado de nicho en Honduras"
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 475,
+      "before": "1. Condiciones macro del entorno (nivel país) Condiciones económicas generales",
+      "after": "Condiciones macro del entorno (nivel nacional)"
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 497,
+      "before": "ANALISIS PESTEL:",
+      "after": "ANÁLISIS PESTEL:"
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 569,
+      "before": "CINCO FUERZAS DE PORTER:",
+      "after": "Cinco fuerzas de Porter:"
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 800,
+      "before": "Enfasis en calidad y valor percibido por porción.",
+      "after": "Énfasis en calidad y valor percibido por porción."
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 807,
+      "before": "Por otro lado, el informe Dairy Trends Report 2026 de IFF (2025), señala que el mercado lácteo está transitando hacia un consumo más consciente y una concepción integral de la salud, donde el valor del producto se redefine más allá del precio; los consumidores buscan opciones multifuncionales y alineadas con valores sociales y ambientales. El reporte identifica cinco ejes principales: consumo intencional (considered consumption), salud holística que incorpora beneficios funcionales como proteína y probióticos, la búsqueda de placer emocional sin sacrificar la salud (joyful harmony), la transición de la sostenibilidad hacia prácticas regenerativas y la importancia de la trazabilidad y el origen, y finalmente la integración de la inteligencia artificial en el desarrollo de productos, siempre equilibrada con la autenticidad y el oficio humano (p 1-4). ",
+      "after": "Por otro lado, el informe Dairy Trends Report 2026 de IFF (2025), señala que el mercado lácteo está transitando hacia un consumo más consciente y una concepción integral de la salud, donde el valor del producto se redefine más allá del precio; los consumidores buscan opciones multifuncionales y alineadas con valores sociales y ambientales. El reporte identifica cinco ejes principales: consumo intencional (considered consumption), salud holística que incorpora beneficios funcionales como proteína y probióticos, la búsqueda de placer emocional sin sacrificar la salud (joyful harmony), la transición de la sostenibilidad hacia prácticas regenerativas y la importancia de la trazabilidad y el origen, y finalmente la integración de la inteligencia artificial en el desarrollo de productos, siempre equilibrada con la autenticidad y el oficio humano (pp. 1–4). "
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 808,
+      "before": "En 2024 los precios de la leche y los productos lácteos aumentaron, impulsados principalmente por el encarecimiento de la mantequilla, lo que amplió la brecha entre los componentes grasos y no grasos de la leche. La producción mundial de leche creció aproximadamente uno punto uno por ciento, alcanzando cerca de 950 millones de toneladas, con incrementos en India y Pakistán que, no obstante, tienen escasa incidencia en el comercio internacional por su limitada capacidad exportadora. Entre los principales productores, aumentaron la producción en Nueva Zelanda y en la Unión Europea, mientras que en Estados Unidos se registró una disminución. El comercio mundial de lácteos continuó contrayéndose debido a la fuerte reducción de las importaciones por parte de China, especialmente de leche en polvo entera y desnatada, aunque otros compradores relevantes como Arabia Saudita, Argelia, Indonesia y México incrementaron sus adquisiciones. De cara al futuro, el informe sugiere que Estados Unidos podría resultar beneficiado ante una eventual recuperación de la demanda de exportaciones, dado el crecimiento limitado de la oferta en la Unión Europea y en Nueva Zelanda (OECD; FAO, 2025).",
+      "after": "En 2024 los precios de la leche y los productos lácteos aumentaron, impulsados principalmente por el encarecimiento de la mantequilla, lo que amplió la brecha entre los componentes grasos y no grasos de la leche. La producción mundial de leche creció aproximadamente 1,1 %, alcanzando cerca de 950 millones de toneladas, con incrementos en India y Pakistán que, no obstante, tienen escasa incidencia en el comercio internacional por su limitada capacidad exportadora. Entre los principales productores, aumentaron la producción en Nueva Zelanda y en la Unión Europea, mientras que en Estados Unidos se registró una disminución. El comercio mundial de lácteos continuó contrayéndose debido a la fuerte reducción de las importaciones por parte de China, especialmente de leche en polvo entera y desnatada, aunque otros compradores relevantes como Arabia Saudita, Argelia, Indonesia y México incrementaron sus adquisiciones. De cara al futuro, el informe sugiere que Estados Unidos podría resultar beneficiado ante una eventual recuperación de la demanda de exportaciones, dado el crecimiento limitado de la oferta en la Unión Europea y en Nueva Zelanda (OECD; FAO, 2025)."
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 809,
+      "before": "Se puede decir que las tendencias muestran una industria orientada hacia el bienestar integral y el consumo consciente, y esto para el sector lácteo esto implica priorizar trazabilidad, productos nutritivos y de mayor valor agregado, prácticas regenerativas y adopción ética de tecnologías para responder a consumidores más exigentes y mercados volátiles.",
+      "after": "Las tendencias muestran una industria orientada hacia el bienestar integral y el consumo consciente; para el sector lácteo, esto implica priorizar trazabilidad, productos nutritivos y de mayor valor agregado, prácticas regenerativas y adopción ética de tecnologías para responder a consumidores más exigentes y mercados volátiles."
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 1012,
+      "before": "En Honduras, la normativa sanitaria para alimentos está regulada por el Código de Salud y controlada por la Agencia de Regulación Sanitaria(ARSA). Su marco operativo central se fundamenta en el Reglamento para el Control Sanitario de Alimentos y Bebidas, el cual establece directrices estrictas de higiene, inocuidad y comercialización. ",
+      "after": "En Honduras, la normativa sanitaria para alimentos está regulada por el Código de Salud y controlada por la Agencia de Regulación Sanitaria (ARSA). Su marco operativo central se fundamenta en el Reglamento para el Control Sanitario de Alimentos y Bebidas, el cual establece directrices estrictas de higiene, inocuidad y comercialización. "
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 1659,
+      "before": "¿Cómo percibe la calidad de este producto en base a su presentación?",
+      "after": "¿Cómo percibe la calidad de este producto con base en su presentación?"
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 1641,
+      "before": "A continuación, se presenta el instrumento de recolección de datos aplicado a 66 establecimientos del sector HoReCa (Hoteles, Restaurantes y Cafeterías) y canal detalle en la zona central de Honduras. La encuesta se realizó durante el periodo abril-mayo de 2026 con el objetivo de identificar las necesidades, preferencias y disposición de compra de leche pasteurizada en el mercado objetivo.",
+      "after": "A continuación, se presenta el instrumento de recolección de datos aplicado a 63 establecimientos del sector HoReCa (Hoteles, Restaurantes y Cafeterías) y canal detalle en la zona central de Honduras. La encuesta se realizó durante el periodo abril-mayo de 2026 con el objetivo de identificar las necesidades, preferencias y disposición de compra de leche pasteurizada en el mercado objetivo."
+    },
+    {
+      "kind": "exact_verified",
+      "paragraph": 1680,
+      "before": "La muestra final estuvo conformada por 66 establecimientos comerciales distribuidos en zonas urbanas, semiurbanas y rurales de la región central de Honduras. Los datos recolectados fueron procesados y analizados para determinar la viabilidad comercial del proyecto.",
+      "after": "La muestra final estuvo conformada por 63 establecimientos comerciales distribuidos en zonas urbanas, semiurbanas y rurales de la región central de Honduras. Los datos recolectados fueron procesados y analizados para determinar la viabilidad comercial del proyecto."
+    },
+    {
+      "kind": "mechanical_phrase",
+      "paragraph": 213,
+      "before": "Evaluar la prefactibilidad de crear una nueva marca de leche fresca o fluida en Honduras, con el fin de capturar un mercado nicho que ha consumido históricamente este tipo de producto y que actualmente no es atendido por ninguna empresa en el país.",
+      "after": "Evaluar la prefactibilidad de crear una nueva marca de leche fresca o fluida en Honduras, con el fin de capturar un mercado de nicho que ha consumido históricamente este tipo de producto y que actualmente no es atendido por ninguna empresa en el país."
+    },
+    {
+      "kind": "mechanical_phrase",
+      "paragraph": 491,
+      "before": "El proyecto se enfoca en un mercado nicho urbano, localizado principalmente en Tegucigalpa y San Pedro Sula, ciudades que concentran una alta proporción del consumo nacional de leche pasteurizada. En estas ciudades, los consumidores muestran mayor preferencia por productos procesados, de marca y con garantías sanitarias.",
+      "after": "El proyecto se enfoca en un mercado de nicho urbano, localizado principalmente en Tegucigalpa y San Pedro Sula, ciudades que concentran una alta proporción del consumo nacional de leche pasteurizada. En estas ciudades, los consumidores muestran mayor preferencia por productos procesados, de marca y con garantías sanitarias."
+    },
+    {
+      "kind": "mechanical_phrase",
+      "paragraph": 596,
+      "before": "El producto del presente estudio es la leche bovina pasteurizada bajo el nombre Pura, destinada a un mercado nicho en Honduras. Esta se obtiene a partir de leche cruda fresca, la cual es sometida a un proceso de pasteurización que garantiza la eliminación de microorganismos patógenos, asegurando su inocuidad y calidad para el consumo humano.",
+      "after": "El producto del presente estudio es la leche bovina pasteurizada bajo el nombre Pura, destinada a un mercado de nicho en Honduras. Esta se obtiene a partir de leche cruda fresca, la cual es sometida a un proceso de pasteurización que garantiza la eliminación de microorganismos patógenos, asegurando su inocuidad y calidad para el consumo humano."
+    },
+    {
+      "kind": "mechanical_phrase",
+      "paragraph": 679,
+      "before": "La comercialización de la leche pasteurizada se desarrollará a través de canales de comercialización selectivos, orientados a un mercado nicho en Honduras, con el propósito de garantizar la calidad del producto, el adecuado manejo sanitario y el mantenimiento de la cadena de frío desde su producción hasta el consumo final. Para la definición de estos canales, se consideraron los diferentes esquemas de comercialización existentes, analizando la participación del negocio en cada etapa del proceso, desde el productor hasta el consumidor final.",
+      "after": "La comercialización de la leche pasteurizada se desarrollará a través de canales de comercialización selectivos, orientados a un mercado de nicho en Honduras, con el propósito de garantizar la calidad del producto, el adecuado manejo sanitario y el mantenimiento de la cadena de frío desde su producción hasta el consumo final. Para la definición de estos canales, se consideraron los diferentes esquemas de comercialización existentes, analizando la participación del negocio en cada etapa del proceso, desde el productor hasta el consumidor final."
+    },
+    {
+      "kind": "citavi_bibliography_visible_verified",
+      "changes": [
+        {
+          "before": "ARSA, del #1.",
+          "after": "ARSA.",
+          "count": 1
+        },
+        {
+          "before": "Guia Ayuda al Ciudadano",
+          "after": "Guía de ayuda al ciudadano",
+          "count": 1
+        },
+        {
+          "before": "Solicitud Para Licencia Sanitaria para Establecimiento",
+          "after": "Solicitud para licencia sanitaria para establecimiento",
+          "count": 1
+        },
+        {
+          "before": "Marco logico.",
+          "after": "Marco lógico.",
+          "count": 1
+        },
+        {
+          "before": "gomez (2004)",
+          "after": "Gómez (2004)",
+          "count": 1
+        },
+        {
+          "before": "Planficación de Proyectos",
+          "after": "Planificación de proyectos",
+          "count": 1
+        },
+        {
+          "before": "Libro_Estudio_Mercado",
+          "after": "Libro de estudio de mercado",
+          "count": 1
+        },
+        {
+          "before": "luis (2024)",
+          "after": "Luis (2024)",
+          "count": 1
+        },
+        {
+          "before": "la !:eche Pasteurizada",
+          "after": "la leche pasteurizada",
+          "count": 1
+        },
+        {
+          "before": "Quinta edicion",
+          "after": "Quinta edición",
+          "count": 1
+        },
+        {
+          "before": "Segunda Edicion",
+          "after": "Segunda edición",
+          "count": 1
+        },
+        {
+          "before": "gestión ” financiera eficiente ”",
+          "after": "gestión financiera eficiente",
+          "count": 1
+        },
+        {
+          "before": "metodología JICA,.",
+          "after": "metodología JICA.",
+          "count": 1
+        },
+        {
+          "before": "https://www.bing.com/ck/a?!&&p=8489c8adb948637b63e7939927203f709c086b457b92f103b01bdf80634d9445JmltdHM9MTc3MTIwMDAwMA&ptn=3&ver=2&hsh=4&fclid=37d69565-f4a5-6530-0e77-8089f5b9641e&psq=Jica+metodologia+que+es&u=a1aHR0cDovL3d3dy5wdG9sb21lby51bmFtLm14OjgwODAveG1sdWkvYml0c3RyZWFtL2hhbmRsZS8xMzIuMjQ4LjUyLjEwMC84Ny9BNi5wZGYucGRmP3NlcXVlbmNlPTY",
+          "after": "https://www.ptolomeo.unam.mx:8080/xmlui/bitstream/handle/132.248.52.100/87/A6.pdf.pdf?sequence=6",
+          "count": 1
+        },
+        {
+          "before": "OHN 18: Leche cruda de vaca — Requisitos. OHN 18.",
+          "after": "OHN 18 (2018): Leche cruda de vaca — Requisitos. Norma OHN 18:2018.",
+          "count": 1
+        },
+        {
+          "before": "https://www.cnpml-honduras.org/sectorlacteos/?utm_source",
+          "after": "https://www.cnpml-honduras.org/sectorlacteos/",
+          "count": 1
+        },
+        {
+          "before": "implementación de la Programa Ejecutivo",
+          "after": "implementación del Programa Ejecutivo",
+          "count": 1
+        },
+        {
+          "before": "Redalyc.El estudio",
+          "after": "Redalyc. El estudio",
+          "count": 1
+        },
+        {
+          "before": "Boletin del instituto",
+          "after": "Boletín del instituto",
+          "count": 1
+        },
+        {
+          "before": "Tetra pack.",
+          "after": "Tetra Pak.",
+          "count": 1
+        },
+        {
+          "before": "Planificación de proyectos Orientado a Objetivos",
+          "after": "Planificación de proyectos orientada a objetivos",
+          "count": 1
+        }
+      ],
+      "instrText_modified": false
+    },
+    {
+      "kind": "porter_table_verified",
+      "changes": [
+        {
+          "before": "PROVEDORES",
+          "after": "PROVEEDORES",
+          "count": 1
+        },
+        {
+          "before": "IMPLICACION",
+          "after": "IMPLICACIÓN",
+          "count": 1
+        },
+        {
+          "before": "orgazativa",
+          "after": "organizativa",
+          "count": 1
+        },
+        {
+          "before": "estabilidad.La",
+          "after": "estabilidad. La",
+          "count": 1
+        },
+        {
+          "before": "responsables.Crear",
+          "after": "responsables. Crear",
+          "count": 1
+        },
+        {
+          "before": "enforcase",
+          "after": "enfocarse",
+          "count": 1
+        },
+        {
+          "before": "mayor demando",
+          "after": "mayor demanda",
+          "count": 1
+        },
+        {
+          "before": "mercado nicho",
+          "after": "mercado de nicho",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "citation_results": [
+    {
+      "tag": "CitaviPlaceholder#db57d2b5-5047-427b-ba26-55e39b558c2d",
+      "before": "(Chain 2008,  22).",
+      "after": "(Sapag Chain, 2008, pág. 22).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#40586cf3-36a4-452b-8e98-e1ebd517a2b1",
+      "before": "(ORGANIZACION DE LAS NACIONES UNIDAS PARA EL DESARROLLO INDUSTRIAL 2019.",
+      "after": "(ONUDI, 2019, pág. 16).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#5a5468d2-69b6-4441-a313-b7931eda8833",
+      "before": "(p 7).",
+      "after": "(Domínguez Cedeño, 2018, pág. 7).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#be2ccc5c-f34f-472b-91d4-0374ded4c98f",
+      "before": "",
+      "after": "(Sierra et al 2023)",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#771bcc9c-728c-4359-bfd5-0d468164c5e6",
+      "before": "(OHN18, 2018).",
+      "after": "(OHN 18, 2018).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#8c4fd9fe-1ff0-4f0e-9d40-5a02d2de55e8",
+      "before": "(OHN18, 2018).",
+      "after": "(OHN 18, 2018).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#dadabde3-befb-4f5e-a9e6-5bbd4f2a50c8",
+      "before": "(OHN18, 2018).",
+      "after": "(OHN 18, 2018).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#50a43b28-8e13-4317-bdb6-be8a3c528117",
+      "before": "(OHN18, 2018).",
+      "after": "(OHN 18, 2018).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#86772af3-e489-4d1f-99aa-f54396dde7be",
+      "before": "(Agencia de Regulación Sanitaria, 2026).",
+      "after": "(Agencia de Regulación Sanitaria, 2026a).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#2a2c6cb4-1954-4c0e-998a-f4e17d7c1672",
+      "before": "(Agencia de Regulación Sanitaria, 2026).",
+      "after": "(Agencia de Regulación Sanitaria, 2026b).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#06a9f38d-5982-4cf4-b527-382e4ade5870",
+      "before": "(Agencia de Regulación Sanitaria, 2024).",
+      "after": "(Agencia de Regulación Sanitaria, 2024).",
+      "instrText_modified": false
+    },
+    {
+      "tag": "CitaviPlaceholder#bee99d04-8945-45ee-b901-8873b25045ba",
+      "before": "(Agencia de Regulación Sanitaria 2024).",
+      "after": "(Agencia de Regulación Sanitaria, 2024).",
+      "instrText_modified": false
+    }
+  ],
+  "style_changes": [
+    {
+      "paragraph": 277,
+      "text": "Marco Lógico EML/LFA:",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 282,
+      "text": "Componentes de la metodología del marco lógico EML/LFA:",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 292,
+      "text": "JICA. La Agencia de Cooperación Internacional del Japón es el organismo japonés de cooperación técnica orientado a apoyar el desarrollo socioeconómico y la colaboración internacional (PEREZ, Ana María, et al. 2008)",
+      "before": "",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 298,
+      "text": "Componentes de la metodología JICA:",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 304,
+      "text": "ZOPP: ",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 306,
+      "text": "Componentes de la metodología ZOPP:",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 308,
+      "text": "MGA: ",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 310,
+      "text": "Componentes de la metodología MGA:",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 317,
+      "text": "PCM – Project Cycle Management: ",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 321,
+      "text": "Componentes de la metodología PCM – Project Cycle Management: ",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 328,
+      "text": "BID/CEPAL – Sapag & Sapag:",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 331,
+      "text": "Componentes de la metodología Sapag:",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 339,
+      "text": "BPIN/SNIP. El Sistema Nacional de Inversión Pública orienta la identificación, formulación y evaluación de proyectos de inversión y distingue los niveles de idea, perfil, prefactibilidad y factibilidad (SNIP 2020)",
+      "before": "",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 340,
+      "text": "Componentes de la metodología SNIP:",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 344,
+      "text": "OCDE/DAC: ",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 346,
+      "text": "Componentes de la metodología OCDE/DAC: ",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 354,
+      "text": " AIKA:",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 356,
+      "text": "Componentes de la metodología AIKA:",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 474,
+      "text": "Análisis del entorno del proyecto",
+      "before": "",
+      "after": "Ttulo2"
+    },
+    {
+      "paragraph": 475,
+      "text": "Condiciones macro del entorno (nivel nacional)",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 479,
+      "text": "Condiciones políticas y legales",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 481,
+      "text": "Condiciones socioculturales generales",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 483,
+      "text": "Condiciones macro del sector lácteo (nivel nacional/sectorial)",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 484,
+      "text": "Situación del sector lácteo",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 487,
+      "text": "Competencia a nivel sectorial",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 489,
+      "text": "Condiciones micro del proyecto (nivel nicho y área de influencia)",
+      "before": "",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 490,
+      "text": "Mercado objetivo y consumo en el nicho",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 493,
+      "text": "Competencia directa en el nicho",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 495,
+      "text": "Distribución y logística específica",
+      "before": "",
+      "after": "Ttulo4"
+    },
+    {
+      "paragraph": 1618,
+      "text": "En respuesta al objetivo general, la evaluación integrada indica que la producción y distribución de leche fluida pasteurizada para un nicho de mercado en Honduras es prefactible en las dimensiones comercial, técnica, organizacional, legal, ambiental, financiera y de riesgos.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1619,
+      "text": "Respecto del objetivo sectorial, PESTEL y el modelo de las cinco fuerzas de Porter identificaron rivalidad elevada y productos sustitutos, junto con una oportunidad de diferenciación en segmentos que valoran calidad e inocuidad. Estos resultados respaldan una estrategia focalizada, sin asegurar por sí solos una ventaja competitiva sostenible.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1620,
+      "text": "En relación con el objetivo de mercado, las 63 encuestas aplicadas a establecimientos mostraron intención de compra, consumo frecuente de lácteos y disposición de pago compatible con el precio propuesto. La evidencia delimita una oportunidad en el canal HORECA y en comercios minoristas que priorizan frescura, inocuidad y calidad.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1621,
+      "text": "Para el objetivo técnico, Comayagua resultó la localización seleccionada por su acceso logístico, cercanía al abastecimiento de leche cruda y conexión con los mercados previstos. La tecnología y la capacidad inicial definidas cubren la demanda proyectada y permiten evaluar ampliaciones posteriores.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1622,
+      "text": "En los objetivos organizacional y legal se identificaron la estructura de gestión y los requisitos aplicables a la producción y comercialización. Su cumplimiento exige inversiones, permisos y controles, pero no se detectaron impedimentos técnicos que invaliden la propuesta.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1623,
+      "text": "El objetivo ambiental permitió reconocer como aspectos principales el consumo de agua, los efluentes y los residuos. Las medidas de prevención, tratamiento y seguimiento propuestas permiten gestionar esos impactos; su eficacia deberá comprobarse durante la factibilidad y la operación.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1624,
+      "text": "Para el objetivo financiero, el escenario sin financiamiento obtuvo un VAN de L 15,370,631, una TIR de 55.95 %, un periodo de recuperación de 3.67 años y una relación beneficio/costo de 1.24. Con financiamiento, el VAN fue L 15,459,686 y la TIR 63.62 %. Bajo los supuestos del modelo, ambos escenarios generan valor.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1625,
+      "text": "En cuanto al objetivo de riesgos, la simulación consideró once eventos. La pérdida esperada equivale al 15.1 % del valor actual neto promedio del inversionista; por tanto, el proyecto conserva margen frente a la exposición modelada, aunque requiere mantener controles y actualizar los supuestos.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1626,
+      "text": "En síntesis, los resultados justifican avanzar a una fase de factibilidad detallada, en la que deberán confirmarse la demanda, las cotizaciones, los permisos, el abastecimiento y las medidas de mitigación antes de decidir la inversión.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1628,
+      "text": "Se recomienda avanzar hacia un estudio de factibilidad integral que permita profundizar en aspectos técnicos, comerciales, ambientales y financieros, utilizando información primaria adicional y cotizaciones definitivas de equipos, infraestructura y servicios.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1629,
+      "text": "Se recomienda formalizar acuerdos de suministro de leche cruda con productores organizados, centros de recolección de leche (CREL) y ganaderos de la región de Comayagua, con el fin de garantizar disponibilidad permanente de materia prima, estabilidad de precios y cumplimiento de los estándares de calidad requeridos.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1630,
+      "text": "Se recomienda iniciar oportunamente los trámites de licenciamiento ambiental, licencia sanitaria, registros sanitarios y autorizaciones emitidas por ARSA, SENASA y demás instituciones competentes para reducir riesgos de retrasos durante la implementación.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1631,
+      "text": "Se recomienda desarrollar una estrategia comercial enfocada inicialmente en los segmentos HORECA, cafeterías especializadas, restaurantes, hoteles y comercios minoristas con alto volumen de compra, aprovechando la ventaja competitiva del producto frente a las alternativas disponibles actualmente en el mercado.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1632,
+      "text": "Se recomienda implementar desde el inicio sistemas de Buenas Prácticas de Manufactura (BPM), Procedimientos Operativos Estandarizados de Saneamiento (POES) y principios HACCP, con el propósito de fortalecer la inocuidad alimentaria, facilitar auditorías y mejorar el posicionamiento de la marca.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1633,
+      "text": "Se recomienda establecer indicadores de gestión que permitan monitorear continuamente variables críticas como volumen de ventas, costos de producción, eficiencia operativa, pérdidas por merma, cumplimiento de la cadena de frío y satisfacción del cliente.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1634,
+      "text": "Se recomienda ejecutar periódicamente análisis de sensibilidad y actualizaciones del modelo de riesgos para evaluar el impacto de cambios en variables críticas como precio de la leche cruda, inflación, combustible, tipo de cambio y comportamiento de la demanda.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1635,
+      "text": "Finalmente, se recomienda evaluar en futuras etapas la expansión de la línea de productos mediante presentaciones adicionales y derivados lácteos especializados, aprovechando la infraestructura existente y fortaleciendo la propuesta de valor orientada a segmentos premium y mercados diferenciados.",
+      "before": "Figuras",
+      "after": "Normal"
+    },
+    {
+      "paragraph": 1358,
+      "text": "Impuesto sobre la Renta (ISR).",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 1360,
+      "text": "Depreciación y amortización.",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 1362,
+      "text": "Seguridad social y aportes patronales.",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 1364,
+      "text": "Prestaciones laborales.",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 1366,
+      "text": "Impuesto sobre Ventas (ISV)",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 1368,
+      "text": "Arrastre de pérdidas fiscales.",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 1370,
+      "text": "Impuesto Municipal de Industria, Comercio y Servicios",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    },
+    {
+      "paragraph": 1372,
+      "text": "Capital de trabajo.",
+      "before": "Ttulo4",
+      "after": "Ttulo3"
+    }
+  ],
+  "formatting": {
+    "mercado_nicho_corrected": 4,
+    "mechanical_text_nodes_changed": 14,
+    "no_spacing_body_to_normal": 44,
+    "no_spacing_short_semantic_preserved": 51,
+    "body_runs_set_12pt": 1763,
+    "document_rpr_font_language_normalized": 4594,
+    "styles_normalized": 210,
+    "theme_latin_fonts_to_calibri": {
+      "word/theme/themeOverride1.xml": 2,
+      "word/theme/themeOverride2.xml": 2,
+      "word/theme/themeOverride3.xml": 2,
+      "word/theme/themeOverride4.xml": 2,
+      "word/theme/themeOverride5.xml": 2,
+      "word/theme/themeOverride6.xml": 2,
+      "word/theme/themeOverride7.xml": 2,
+      "word/theme/themeOverride8.xml": 2,
+      "word/theme/themeOverride9.xml": 2,
+      "word/theme/themeOverride10.xml": 2,
+      "word/theme/themeOverride11.xml": 2,
+      "word/theme/themeOverride12.xml": 2,
+      "word/theme/themeOverride13.xml": 2,
+      "word/theme/themeOverride14.xml": 2,
+      "word/theme/themeOverride15.xml": 2,
+      "word/theme/themeOverride16.xml": 2,
+      "word/theme/theme1.xml": 0
+    },
+    "other_text_parts_font_language_normalized": []
+  },
+  "warnings_and_skipped": [
+    {
+      "code": "WEISSBACH_AUTHOR_MISSING",
+      "paragraph": 252,
+      "tag": "CitaviPlaceholder#775bafee-bd31-4727-853b-ec73c8136f45",
+      "detail": "El resultado visible conserva (Weissbach, 2021), pero el JSON Citavi incrustado no contiene autor. No se inventó ni se modificó instrText; debe corregirse en la base Citavi."
+    },
+    {
+      "code": "CITAVI_VISIBLE_RESULTS_ONLY",
+      "detail": "Los resultados visibles solicitados se corrigieron sin tocar instrText. Una actualización posterior desde Citavi puede regenerarlos; conviene corregir también los registros externos."
+    },
+    {
+      "code": "SAMPLE_60_66_RECONCILED",
+      "detail": "El original declaraba 60 establecimientos en metodología y 66 en dos pasajes del anexo, mientras los gráficos y resultados contienen 63 respuestas. Se unificó la muestra efectiva en 63; los 60 clientes activos del plan comercial se conservaron. Como no hay trazabilidad del procedimiento de selección, el análisis se declara descriptivo; ±11,55 % se presenta sólo como referencia teórica bajo muestreo aleatorio simple, no como precisión comprobada."
+    },
+    {
+      "code": "UNSOURCED_CONTEXT_NOT_INVENTED",
+      "detail": "No se añadieron autores ni citas a afirmaciones sin fuente de las páginas 50–51. Se corrigieron jerarquía y mecánica, y se documenta la necesidad de verificación académica posterior."
+    },
+    {
+      "code": "INDICES_NOT_UPDATED",
+      "detail": "La tabla de contenido y los índices manuales no se actualizaron, conforme al requisito; deberán actualizarse después del render final."
+    }
+  ],
+  "validations": [
+    {
+      "name": "before.package_parts",
+      "expected": 196,
+      "actual": 196,
+      "ok": true
+    },
+    {
+      "name": "before.sdt_total",
+      "expected": 80,
+      "actual": 80,
+      "ok": true
+    },
+    {
+      "name": "before.citavi_placeholders",
+      "expected": 75,
+      "actual": 75,
+      "ok": true
+    },
+    {
+      "name": "before.citavi_bibliographies",
+      "expected": 1,
+      "actual": 1,
+      "ok": true
+    },
+    {
+      "name": "before.citavi_non_sdt",
+      "expected": 1,
+      "actual": 1,
+      "ok": true
+    },
+    {
+      "name": "before.bibliography_entry_paragraphs",
+      "expected": 58,
+      "actual": 58,
+      "ok": true
+    },
+    {
+      "name": "before.tables",
+      "expected": 56,
+      "actual": 56,
+      "ok": true
+    },
+    {
+      "name": "before.drawings",
+      "expected": 55,
+      "actual": 55,
+      "ok": true
+    },
+    {
+      "name": "before.media_parts",
+      "expected": 33,
+      "actual": 33,
+      "ok": true
+    },
+    {
+      "name": "after.package_parts",
+      "expected": 196,
+      "actual": 196,
+      "ok": true
+    },
+    {
+      "name": "after.sdt_total",
+      "expected": 80,
+      "actual": 80,
+      "ok": true
+    },
+    {
+      "name": "after.citavi_placeholders",
+      "expected": 75,
+      "actual": 75,
+      "ok": true
+    },
+    {
+      "name": "after.citavi_bibliographies",
+      "expected": 1,
+      "actual": 1,
+      "ok": true
+    },
+    {
+      "name": "after.citavi_non_sdt",
+      "expected": 1,
+      "actual": 1,
+      "ok": true
+    },
+    {
+      "name": "after.bibliography_entry_paragraphs",
+      "expected": 58,
+      "actual": 58,
+      "ok": true
+    },
+    {
+      "name": "after.tables",
+      "expected": 56,
+      "actual": 56,
+      "ok": true
+    },
+    {
+      "name": "after.drawings",
+      "expected": 55,
+      "actual": 55,
+      "ok": true
+    },
+    {
+      "name": "after.media_parts",
+      "expected": 33,
+      "actual": 33,
+      "ok": true
+    },
+    {
+      "name": "package_part_names_and_order_preserved",
+      "ok": true,
+      "expected": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "word/document.xml",
+        "word/_rels/document.xml.rels",
+        "word/diagrams/data1.xml",
+        "word/footer3.xml",
+        "word/header3.xml",
+        "word/footer2.xml",
+        "word/footer1.xml",
+        "word/header2.xml",
+        "word/header1.xml",
+        "word/footnotes.xml",
+        "word/endnotes.xml",
+        "word/footer4.xml",
+        "word/header4.xml",
+        "word/footer5.xml",
+        "word/header5.xml",
+        "word/footer6.xml",
+        "word/header6.xml",
+        "word/footer7.xml",
+        "word/footer8.xml",
+        "word/header7.xml",
+        "word/footer9.xml",
+        "word/charts/chart4.xml",
+        "word/charts/style4.xml",
+        "word/charts/colors4.xml",
+        "word/charts/chart5.xml",
+        "word/charts/style5.xml",
+        "word/charts/colors5.xml",
+        "word/theme/themeOverride1.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet3.xlsx",
+        "word/charts/chart6.xml",
+        "word/charts/style6.xml",
+        "word/charts/colors6.xml",
+        "word/theme/themeOverride2.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet4.xlsx",
+        "word/charts/chart7.xml",
+        "word/charts/style7.xml",
+        "word/charts/colors7.xml",
+        "word/theme/themeOverride3.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet5.xlsx",
+        "word/media/image2.png",
+        "word/charts/chart8.xml",
+        "word/charts/style8.xml",
+        "word/charts/colors8.xml",
+        "word/theme/themeOverride4.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet6.xlsx",
+        "word/charts/chart9.xml",
+        "word/charts/style9.xml",
+        "word/charts/colors9.xml",
+        "word/theme/themeOverride5.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet7.xlsx",
+        "word/charts/chart10.xml",
+        "word/charts/style10.xml",
+        "word/charts/colors10.xml",
+        "word/theme/themeOverride6.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet8.xlsx",
+        "word/charts/chart11.xml",
+        "word/charts/style11.xml",
+        "word/charts/colors11.xml",
+        "word/theme/themeOverride7.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet9.xlsx",
+        "word/charts/chart12.xml",
+        "word/charts/style12.xml",
+        "word/charts/colors12.xml",
+        "word/theme/themeOverride8.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet10.xlsx",
+        "word/charts/chart13.xml",
+        "word/charts/style13.xml",
+        "word/charts/colors13.xml",
+        "word/theme/themeOverride9.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet11.xlsx",
+        "word/charts/chart14.xml",
+        "word/charts/style14.xml",
+        "word/theme/themeOverride10.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet12.xlsx",
+        "word/charts/chart15.xml",
+        "word/charts/style15.xml",
+        "word/charts/colors15.xml",
+        "word/theme/themeOverride11.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet13.xlsx",
+        "word/charts/chart16.xml",
+        "word/charts/style16.xml",
+        "word/charts/colors16.xml",
+        "word/theme/themeOverride12.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet14.xlsx",
+        "word/charts/chart17.xml",
+        "word/charts/style17.xml",
+        "word/charts/colors17.xml",
+        "word/theme/themeOverride13.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet15.xlsx",
+        "word/charts/chart18.xml",
+        "word/charts/style18.xml",
+        "word/charts/colors18.xml",
+        "word/theme/themeOverride14.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet16.xlsx",
+        "word/charts/chart19.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet2.xlsx",
+        "word/charts/colors19.xml",
+        "word/theme/themeOverride15.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet17.xlsx",
+        "word/charts/chart20.xml",
+        "word/charts/style20.xml",
+        "word/charts/colors20.xml",
+        "word/theme/themeOverride16.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet18.xlsx",
+        "word/charts/chart21.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet19.xlsx",
+        "word/media/image3.png",
+        "word/media/image4.png",
+        "word/media/image5.png",
+        "word/media/image6.png",
+        "word/media/image7.png",
+        "word/media/image8.png",
+        "word/media/image1.png",
+        "word/charts/style19.xml",
+        "word/charts/chart1.xml",
+        "word/charts/style1.xml",
+        "word/charts/colors1.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet.xlsx",
+        "word/diagrams/layout1.xml",
+        "word/diagrams/quickStyle1.xml",
+        "word/diagrams/colors1.xml",
+        "word/diagrams/drawing1.xml",
+        "word/media/image9.png",
+        "word/media/image10.png",
+        "word/media/image11.png",
+        "word/media/image12.png",
+        "word/media/image13.png",
+        "word/media/image14.png",
+        "word/media/image15.png",
+        "word/media/image16.png",
+        "word/media/image17.png",
+        "word/media/image18.png",
+        "word/media/image19.png",
+        "word/media/image20.png",
+        "word/media/image21.png",
+        "word/media/image22.png",
+        "word/media/image23.png",
+        "word/media/image24.png",
+        "word/media/image25.png",
+        "word/charts/chart2.xml",
+        "word/media/image27.png",
+        "word/media/image28.png",
+        "word/media/image29.png",
+        "word/media/image30.png",
+        "word/media/image31.png",
+        "word/media/image32.png",
+        "word/media/image33.emf",
+        "word/charts/style2.xml",
+        "word/charts/colors2.xml",
+        "word/charts/chart3.xml",
+        "word/charts/style3.xml",
+        "word/charts/colors3.xml",
+        "word/theme/theme1.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet1.xlsx",
+        "word/charts/colors14.xml",
+        "word/charts/_rels/chart1.xml.rels",
+        "word/charts/_rels/chart2.xml.rels",
+        "word/charts/_rels/chart3.xml.rels",
+        "word/charts/_rels/chart4.xml.rels",
+        "word/charts/_rels/chart5.xml.rels",
+        "word/charts/_rels/chart6.xml.rels",
+        "word/charts/_rels/chart7.xml.rels",
+        "word/charts/_rels/chart8.xml.rels",
+        "word/charts/_rels/chart9.xml.rels",
+        "word/charts/_rels/chart10.xml.rels",
+        "word/charts/_rels/chart11.xml.rels",
+        "word/charts/_rels/chart12.xml.rels",
+        "word/charts/_rels/chart13.xml.rels",
+        "word/charts/_rels/chart14.xml.rels",
+        "word/charts/_rels/chart15.xml.rels",
+        "word/charts/_rels/chart16.xml.rels",
+        "word/charts/_rels/chart17.xml.rels",
+        "word/charts/_rels/chart18.xml.rels",
+        "word/charts/_rels/chart19.xml.rels",
+        "word/charts/_rels/chart20.xml.rels",
+        "word/charts/_rels/chart21.xml.rels",
+        "word/media/image26.png",
+        "word/glossary/settings.xml",
+        "word/settings.xml",
+        "word/glossary/document.xml",
+        "word/glossary/_rels/document.xml.rels",
+        "word/glossary/webSettings.xml",
+        "word/glossary/fontTable.xml",
+        "customXml/itemProps1.xml",
+        "docProps/core.xml",
+        "docProps/app.xml",
+        "docProps/custom.xml",
+        "customXml/item1.xml",
+        "word/webSettings.xml",
+        "customXml/_rels/item1.xml.rels",
+        "word/styles.xml",
+        "word/numbering.xml",
+        "word/fontTable.xml",
+        "word/glossary/styles.xml"
+      ],
+      "actual": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "word/document.xml",
+        "word/_rels/document.xml.rels",
+        "word/diagrams/data1.xml",
+        "word/footer3.xml",
+        "word/header3.xml",
+        "word/footer2.xml",
+        "word/footer1.xml",
+        "word/header2.xml",
+        "word/header1.xml",
+        "word/footnotes.xml",
+        "word/endnotes.xml",
+        "word/footer4.xml",
+        "word/header4.xml",
+        "word/footer5.xml",
+        "word/header5.xml",
+        "word/footer6.xml",
+        "word/header6.xml",
+        "word/footer7.xml",
+        "word/footer8.xml",
+        "word/header7.xml",
+        "word/footer9.xml",
+        "word/charts/chart4.xml",
+        "word/charts/style4.xml",
+        "word/charts/colors4.xml",
+        "word/charts/chart5.xml",
+        "word/charts/style5.xml",
+        "word/charts/colors5.xml",
+        "word/theme/themeOverride1.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet3.xlsx",
+        "word/charts/chart6.xml",
+        "word/charts/style6.xml",
+        "word/charts/colors6.xml",
+        "word/theme/themeOverride2.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet4.xlsx",
+        "word/charts/chart7.xml",
+        "word/charts/style7.xml",
+        "word/charts/colors7.xml",
+        "word/theme/themeOverride3.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet5.xlsx",
+        "word/media/image2.png",
+        "word/charts/chart8.xml",
+        "word/charts/style8.xml",
+        "word/charts/colors8.xml",
+        "word/theme/themeOverride4.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet6.xlsx",
+        "word/charts/chart9.xml",
+        "word/charts/style9.xml",
+        "word/charts/colors9.xml",
+        "word/theme/themeOverride5.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet7.xlsx",
+        "word/charts/chart10.xml",
+        "word/charts/style10.xml",
+        "word/charts/colors10.xml",
+        "word/theme/themeOverride6.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet8.xlsx",
+        "word/charts/chart11.xml",
+        "word/charts/style11.xml",
+        "word/charts/colors11.xml",
+        "word/theme/themeOverride7.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet9.xlsx",
+        "word/charts/chart12.xml",
+        "word/charts/style12.xml",
+        "word/charts/colors12.xml",
+        "word/theme/themeOverride8.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet10.xlsx",
+        "word/charts/chart13.xml",
+        "word/charts/style13.xml",
+        "word/charts/colors13.xml",
+        "word/theme/themeOverride9.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet11.xlsx",
+        "word/charts/chart14.xml",
+        "word/charts/style14.xml",
+        "word/theme/themeOverride10.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet12.xlsx",
+        "word/charts/chart15.xml",
+        "word/charts/style15.xml",
+        "word/charts/colors15.xml",
+        "word/theme/themeOverride11.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet13.xlsx",
+        "word/charts/chart16.xml",
+        "word/charts/style16.xml",
+        "word/charts/colors16.xml",
+        "word/theme/themeOverride12.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet14.xlsx",
+        "word/charts/chart17.xml",
+        "word/charts/style17.xml",
+        "word/charts/colors17.xml",
+        "word/theme/themeOverride13.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet15.xlsx",
+        "word/charts/chart18.xml",
+        "word/charts/style18.xml",
+        "word/charts/colors18.xml",
+        "word/theme/themeOverride14.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet16.xlsx",
+        "word/charts/chart19.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet2.xlsx",
+        "word/charts/colors19.xml",
+        "word/theme/themeOverride15.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet17.xlsx",
+        "word/charts/chart20.xml",
+        "word/charts/style20.xml",
+        "word/charts/colors20.xml",
+        "word/theme/themeOverride16.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet18.xlsx",
+        "word/charts/chart21.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet19.xlsx",
+        "word/media/image3.png",
+        "word/media/image4.png",
+        "word/media/image5.png",
+        "word/media/image6.png",
+        "word/media/image7.png",
+        "word/media/image8.png",
+        "word/media/image1.png",
+        "word/charts/style19.xml",
+        "word/charts/chart1.xml",
+        "word/charts/style1.xml",
+        "word/charts/colors1.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet.xlsx",
+        "word/diagrams/layout1.xml",
+        "word/diagrams/quickStyle1.xml",
+        "word/diagrams/colors1.xml",
+        "word/diagrams/drawing1.xml",
+        "word/media/image9.png",
+        "word/media/image10.png",
+        "word/media/image11.png",
+        "word/media/image12.png",
+        "word/media/image13.png",
+        "word/media/image14.png",
+        "word/media/image15.png",
+        "word/media/image16.png",
+        "word/media/image17.png",
+        "word/media/image18.png",
+        "word/media/image19.png",
+        "word/media/image20.png",
+        "word/media/image21.png",
+        "word/media/image22.png",
+        "word/media/image23.png",
+        "word/media/image24.png",
+        "word/media/image25.png",
+        "word/charts/chart2.xml",
+        "word/media/image27.png",
+        "word/media/image28.png",
+        "word/media/image29.png",
+        "word/media/image30.png",
+        "word/media/image31.png",
+        "word/media/image32.png",
+        "word/media/image33.emf",
+        "word/charts/style2.xml",
+        "word/charts/colors2.xml",
+        "word/charts/chart3.xml",
+        "word/charts/style3.xml",
+        "word/charts/colors3.xml",
+        "word/theme/theme1.xml",
+        "word/embeddings/Microsoft_Excel_Worksheet1.xlsx",
+        "word/charts/colors14.xml",
+        "word/charts/_rels/chart1.xml.rels",
+        "word/charts/_rels/chart2.xml.rels",
+        "word/charts/_rels/chart3.xml.rels",
+        "word/charts/_rels/chart4.xml.rels",
+        "word/charts/_rels/chart5.xml.rels",
+        "word/charts/_rels/chart6.xml.rels",
+        "word/charts/_rels/chart7.xml.rels",
+        "word/charts/_rels/chart8.xml.rels",
+        "word/charts/_rels/chart9.xml.rels",
+        "word/charts/_rels/chart10.xml.rels",
+        "word/charts/_rels/chart11.xml.rels",
+        "word/charts/_rels/chart12.xml.rels",
+        "word/charts/_rels/chart13.xml.rels",
+        "word/charts/_rels/chart14.xml.rels",
+        "word/charts/_rels/chart15.xml.rels",
+        "word/charts/_rels/chart16.xml.rels",
+        "word/charts/_rels/chart17.xml.rels",
+        "word/charts/_rels/chart18.xml.rels",
+        "word/charts/_rels/chart19.xml.rels",
+        "word/charts/_rels/chart20.xml.rels",
+        "word/charts/_rels/chart21.xml.rels",
+        "word/media/image26.png",
+        "word/glossary/settings.xml",
+        "word/settings.xml",
+        "word/glossary/document.xml",
+        "word/glossary/_rels/document.xml.rels",
+        "word/glossary/webSettings.xml",
+        "word/glossary/fontTable.xml",
+        "customXml/itemProps1.xml",
+        "docProps/core.xml",
+        "docProps/app.xml",
+        "docProps/custom.xml",
+        "customXml/item1.xml",
+        "word/webSettings.xml",
+        "customXml/_rels/item1.xml.rels",
+        "word/styles.xml",
+        "word/numbering.xml",
+        "word/fontTable.xml",
+        "word/glossary/styles.xml"
+      ]
+    },
+    {
+      "name": "citavi_placeholder_tag_sequence_preserved",
+      "ok": true,
+      "expected_count": 75,
+      "actual_count": 75
+    },
+    {
+      "name": "all_citavi_instrText_preserved",
+      "ok": true,
+      "expected_count": 77,
+      "actual_count": 77
+    },
+    {
+      "name": "relationships_and_media_byte_preserved",
+      "ok": true,
+      "checked_parts": 58,
+      "different_parts": []
+    },
+    {
+      "name": "source_is_original_not_revisada",
+      "ok": true
+    },
+    {
+      "name": "corrected_title_present",
+      "ok": true
+    },
+    {
+      "name": "empty_sierra_restored",
+      "ok": true
+    },
+    {
+      "name": "sierra_result_inside_field",
+      "ok": true
+    },
+    {
+      "name": "sample_63_present",
+      "ok": true
+    },
+    {
+      "name": "sample_60_claim_removed",
+      "ok": true
+    },
+    {
+      "name": "sample_66_absent",
+      "ok": true
+    },
+    {
+      "name": "annex_sample_1641_corrected",
+      "ok": true
+    },
+    {
+      "name": "annex_sample_1680_corrected",
+      "ok": true
+    },
+    {
+      "name": "margin_5_claim_removed_from_method",
+      "ok": true
+    },
+    {
+      "name": "margin_11_55_present_only_as_theoretical",
+      "ok": true
+    },
+    {
+      "name": "sampling_results_not_extrapolated",
+      "ok": true
+    },
+    {
+      "name": "interviews_not_overclaimed",
+      "ok": true
+    },
+    {
+      "name": "source_terms_preserved_in_framework",
+      "ok": true
+    },
+    {
+      "name": "pasteurization_ten_phases_preserve_distribution",
+      "ok": true
+    },
+    {
+      "name": "weissbach_visible_reference_preserved",
+      "ok": true
+    },
+    {
+      "name": "citation_double_periods_absent",
+      "ok": true
+    },
+    {
+      "name": "bibliography_verified_errors_removed",
+      "ok": true
+    },
+    {
+      "name": "bibliography_verified_corrections_present",
+      "ok": true
+    },
+    {
+      "name": "conclusions_heading_preserved",
+      "ok": true
+    },
+    {
+      "name": "recommendations_heading_preserved",
+      "ok": true
+    },
+    {
+      "name": "porter_table_found_once",
+      "ok": true
+    },
+    {
+      "name": "porter_table_verified_errors_removed",
+      "ok": true
+    },
+    {
+      "name": "porter_table_corrected_terms_present",
+      "ok": true
+    },
+    {
+      "name": "document_explicit_rfonts_all_calibri",
+      "ok": true
+    },
+    {
+      "name": "styles_explicit_rfonts_all_calibri",
+      "ok": true
+    },
+    {
+      "name": "document_language_all_es_CO",
+      "ok": true
+    },
+    {
+      "name": "styles_language_all_es_CO",
+      "ok": true
+    },
+    {
+      "name": "indices_text_untouched",
+      "ok": true
+    }
+  ],
+  "methodology": {
+    "n": 63,
+    "N": 500,
+    "confidence": "95 %",
+    "p": 0.5,
+    "q": 0.5,
+    "finite_population_error_percent_calculated": 11.5544,
+    "reported_rounded_error": "±11,55 %"
+  },
+  "inventory_before": {
+    "package_parts": 196,
+    "sdt_total": 80,
+    "citavi_placeholders": 75,
+    "citavi_bibliographies": 1,
+    "citavi_non_sdt": 1,
+    "bibliography_entry_paragraphs": 58,
+    "tables": 56,
+    "drawings": 55,
+    "media_parts": 33
+  },
+  "inventory_after": {
+    "package_parts": 196,
+    "sdt_total": 80,
+    "citavi_placeholders": 75,
+    "citavi_bibliographies": 1,
+    "citavi_non_sdt": 1,
+    "bibliography_entry_paragraphs": 58,
+    "tables": 56,
+    "drawings": 55,
+    "media_parts": 33
+  },
+  "changed_package_parts": [
+    "word/document.xml",
+    "word/theme/themeOverride1.xml",
+    "word/theme/themeOverride2.xml",
+    "word/theme/themeOverride3.xml",
+    "word/theme/themeOverride4.xml",
+    "word/theme/themeOverride5.xml",
+    "word/theme/themeOverride6.xml",
+    "word/theme/themeOverride7.xml",
+    "word/theme/themeOverride8.xml",
+    "word/theme/themeOverride9.xml",
+    "word/theme/themeOverride10.xml",
+    "word/theme/themeOverride11.xml",
+    "word/theme/themeOverride12.xml",
+    "word/theme/themeOverride13.xml",
+    "word/theme/themeOverride14.xml",
+    "word/theme/themeOverride15.xml",
+    "word/theme/themeOverride16.xml",
+    "word/theme/theme1.xml",
+    "word/styles.xml"
+  ],
+  "validation_summary": {
+    "passed": 51,
+    "failed": 0,
+    "all_ok": true
+  },
+  "destination_sha256": "48ea103da5d527a9fec19db33e794359158ba6fddb7b666e889fd8d48ee0aa55"
+}

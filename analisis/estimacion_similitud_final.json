@@ -1,0 +1,38 @@
+{
+  "status": "estimate_not_official_turnitin_result",
+  "official_original_similarity_percent": 23.0,
+  "official_original_word_count": 52958,
+  "official_filters": [
+    "bibliography excluded",
+    "quoted text excluded",
+    "matches under 8 words excluded"
+  ],
+  "original_match_records": 687,
+  "original_match_record_words_non_deduplicated": 14985,
+  "original_highlight_words_unique_extracted": 14523,
+  "changed_paragraphs": 139,
+  "affected_original_match_records": 72,
+  "affected_paragraphs": 56,
+  "affected_match_words_non_deduplicated": 3959,
+  "exact_full_match_records_remaining_in_same_paragraph": 1,
+  "exact_full_match_words_remaining": 11,
+  "records_with_any_8_word_window_remaining_in_same_paragraph": 10,
+  "calculation": {
+    "record_overlap_adjustment": 0.969169,
+    "turnitin_to_highlight_calibration": 0.839416,
+    "calibrated_removed_equivalent_words": 3212,
+    "estimated_reduction_percentage_points": 6.06,
+    "mechanical_projection_percent": 16.94
+  },
+  "honest_working_range_percent": [
+    17.0,
+    20.0
+  ],
+  "interpretation": "The corrections likely place the document near or below 20%, but only a new Turnitin run of the final DOCX can certify compliance.",
+  "limitations": [
+    "Turnitin can identify new or fuzzy matches not present in the original report.",
+    "Highlighted source records can overlap; the calculation adjusts globally but cannot reproduce Turnitin's proprietary deduplication.",
+    "Pagination and total word count changed after editing.",
+    "This estimate must not be presented as an official Turnitin percentage."
+  ]
+}

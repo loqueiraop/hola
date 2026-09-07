@@ -1,0 +1,227 @@
+{
+  "pdf": "/projects/sandbox/hola/analisis/render/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.pdf",
+  "pdf_pages": 262,
+  "checks": {
+    "table_14_caption_and_final_marker_share_page": true,
+    "table_15_caption_and_final_marker_share_page": true,
+    "table_16_caption_and_final_marker_share_page": true,
+    "table_17_caption_and_final_marker_share_page": true,
+    "table_18_caption_and_final_marker_share_page": true,
+    "table_19_caption_and_final_marker_share_page": true,
+    "table_20_caption_and_final_marker_share_page": true,
+    "table_21_caption_and_final_marker_share_page": true,
+    "table_22_caption_and_final_marker_share_page": true,
+    "table_23_caption_and_final_marker_share_page": true,
+    "table_24_caption_and_final_marker_share_page": true,
+    "table_25_caption_and_final_marker_share_page": true,
+    "table_26_caption_and_final_marker_share_page": true,
+    "table_15_complete_on_caption_page": true,
+    "table_22_complete_on_caption_page": true
+  },
+  "all_ok": true,
+  "details": {
+    "14": {
+      "caption_pages": [
+        5,
+        151
+      ],
+      "marker_pages": [
+        151
+      ],
+      "shared_pages": [
+        151
+      ],
+      "marker": "Meses de capital de trabajo"
+    },
+    "15": {
+      "caption_pages": [
+        5,
+        153
+      ],
+      "marker_pages": [
+        153
+      ],
+      "shared_pages": [
+        153
+      ],
+      "marker": "TOTAL INVERSIONES"
+    },
+    "16": {
+      "caption_pages": [
+        5,
+        155
+      ],
+      "marker_pages": [
+        91,
+        155,
+        156,
+        172,
+        177,
+        182
+      ],
+      "shared_pages": [
+        155
+      ],
+      "marker": "51,680,445"
+    },
+    "17": {
+      "caption_pages": [
+        5,
+        157
+      ],
+      "marker_pages": [
+        122,
+        157,
+        158,
+        177,
+        182
+      ],
+      "shared_pages": [
+        157
+      ],
+      "marker": "29,192,969"
+    },
+    "18": {
+      "caption_pages": [
+        5,
+        159
+      ],
+      "marker_pages": [
+        159
+      ],
+      "shared_pages": [
+        159
+      ],
+      "marker": "Cargas patronales mensuales"
+    },
+    "19": {
+      "caption_pages": [
+        5,
+        160
+      ],
+      "marker_pages": [
+        122,
+        160,
+        162,
+        163
+      ],
+      "shared_pages": [
+        160
+      ],
+      "marker": "2,119,963"
+    },
+    "20": {
+      "caption_pages": [
+        5,
+        162
+      ],
+      "marker_pages": [
+        162,
+        177,
+        182
+      ],
+      "shared_pages": [
+        162
+      ],
+      "marker": "3,044,290"
+    },
+    "21": {
+      "caption_pages": [
+        5,
+        164,
+        165
+      ],
+      "marker_pages": [
+        120,
+        164,
+        165,
+        176,
+        177,
+        181,
+        182
+      ],
+      "shared_pages": [
+        164,
+        165
+      ],
+      "marker": "89,500"
+    },
+    "22": {
+      "caption_pages": [
+        5,
+        167
+      ],
+      "marker_pages": [
+        167,
+        168,
+        177,
+        178,
+        182
+      ],
+      "shared_pages": [
+        167
+      ],
+      "marker": "2,686,438"
+    },
+    "23": {
+      "caption_pages": [
+        5,
+        169
+      ],
+      "marker_pages": [
+        169
+      ],
+      "shared_pages": [
+        169
+      ],
+      "marker": "Saldo final"
+    },
+    "24": {
+      "caption_pages": [
+        5,
+        171,
+        172
+      ],
+      "marker_pages": [
+        172,
+        173,
+        177,
+        182
+      ],
+      "shared_pages": [
+        172
+      ],
+      "marker": "12,202"
+    },
+    "25": {
+      "caption_pages": [
+        5,
+        175,
+        176,
+        177
+      ],
+      "marker_pages": [
+        177
+      ],
+      "shared_pages": [
+        177
+      ],
+      "marker": "50,291,726"
+    },
+    "26": {
+      "caption_pages": [
+        5,
+        180,
+        181,
+        182
+      ],
+      "marker_pages": [
+        182
+      ],
+      "shared_pages": [
+        182
+      ],
+      "marker": "49,999,080"
+    }
+  }
+}

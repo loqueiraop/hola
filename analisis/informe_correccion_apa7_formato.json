@@ -1,0 +1,347 @@
+{
+  "source": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.docx",
+  "destination": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA APA7 BORRADOR.docx",
+  "source_sha256": "f12aced8bf2121227593a80a9fd4bcf60d7d26a982c9878a9830fc127db51399",
+  "citation_changes": [],
+  "formatting": {
+    "apa_textual_replacements": [],
+    "manual_line_breaks": [],
+    "space_nodes_normalized": 0,
+    "long_body_bold_removed": [],
+    "heading_italics_removed": {
+      "styles": [],
+      "paragraphs": []
+    },
+    "table_page_breaks": [
+      {
+        "paragraph": 1147,
+        "caption": "Tabla 14"
+      },
+      {
+        "paragraph": 1156,
+        "caption": "Tabla 15"
+      },
+      {
+        "paragraph": 1166,
+        "caption": "Tabla 16"
+      },
+      {
+        "paragraph": 1178,
+        "caption": "Tabla 17"
+      },
+      {
+        "paragraph": 1191,
+        "caption": "Tabla 18"
+      },
+      {
+        "paragraph": 1207,
+        "caption": "Tabla 20"
+      },
+      {
+        "paragraph": 1220,
+        "caption": "Tabla 21"
+      },
+      {
+        "paragraph": 1233,
+        "caption": "Tabla 22"
+      },
+      {
+        "paragraph": 1256,
+        "caption": "Tabla 24"
+      },
+      {
+        "paragraph": 1269,
+        "caption": "Tabla 25"
+      },
+      {
+        "paragraph": 1271,
+        "caption": "Tabla 25 (continuación). Años 5–8"
+      },
+      {
+        "paragraph": 1272,
+        "caption": "Tabla 25 (continuación). Años 9–10"
+      },
+      {
+        "paragraph": 1286,
+        "caption": "Tabla 26 (continuación). Años 5–8"
+      },
+      {
+        "paragraph": 1287,
+        "caption": "Tabla 26 (continuación). Años 9–10"
+      }
+    ],
+    "long_tables_split_with_continuation": [
+      {
+        "table": 5,
+        "already_split": true
+      },
+      {
+        "table": 32,
+        "already_split": true
+      }
+    ],
+    "duplicate_paraIds_regenerated": [
+      {
+        "before": "5990646C",
+        "after": "F1000000",
+        "text": "FUERZAS DE PORTER"
+      },
+      {
+        "before": "136959A1",
+        "after": "F1000001",
+        "text": "NIVEL"
+      },
+      {
+        "before": "4BA03986",
+        "after": "F1000002",
+        "text": "IMPLICACIÓN"
+      },
+      {
+        "before": "5CCBA0D2",
+        "after": "F1000003",
+        "text": "Justificacion"
+      },
+      {
+        "before": "0AE57BA6",
+        "after": "F1000004",
+        "text": "Estrategia"
+      },
+      {
+        "before": "5990646C",
+        "after": "F1000005",
+        "text": "FUERZAS DE PORTER"
+      },
+      {
+        "before": "136959A1",
+        "after": "F1000006",
+        "text": "NIVEL"
+      },
+      {
+        "before": "4BA03986",
+        "after": "F1000007",
+        "text": "IMPLICACIÓN"
+      },
+      {
+        "before": "5CCBA0D2",
+        "after": "F1000008",
+        "text": "Justificacion"
+      },
+      {
+        "before": "0AE57BA6",
+        "after": "F1000009",
+        "text": "Estrategia"
+      },
+      {
+        "before": "5990646C",
+        "after": "F100000A",
+        "text": "FUERZAS DE PORTER"
+      },
+      {
+        "before": "136959A1",
+        "after": "F100000B",
+        "text": "NIVEL"
+      },
+      {
+        "before": "4BA03986",
+        "after": "F100000C",
+        "text": "IMPLICACIÓN"
+      },
+      {
+        "before": "5CCBA0D2",
+        "after": "F100000D",
+        "text": "Justificacion"
+      },
+      {
+        "before": "0AE57BA6",
+        "after": "F100000E",
+        "text": "Estrategia"
+      },
+      {
+        "before": "6D7AF2BC",
+        "after": "F100000F",
+        "text": "Parámetro"
+      },
+      {
+        "before": "20BF0006",
+        "after": "F1000010",
+        "text": "Valor actual"
+      },
+      {
+        "before": "5A70A50B",
+        "after": "F1000011",
+        "text": "Clasificación"
+      },
+      {
+        "before": "2E78800C",
+        "after": "F1000012",
+        "text": "Mínimo"
+      },
+      {
+        "before": "5FD51929",
+        "after": "F1000013",
+        "text": "Base"
+      },
+      {
+        "before": "0D331AB5",
+        "after": "F1000014",
+        "text": "Máximo"
+      },
+      {
+        "before": "7C9438F0",
+        "after": "F1000015",
+        "text": "Justificación"
+      },
+      {
+        "before": "6D7AF2BC",
+        "after": "F1000016",
+        "text": "Parámetro"
+      },
+      {
+        "before": "20BF0006",
+        "after": "F1000017",
+        "text": "Valor actual"
+      },
+      {
+        "before": "5A70A50B",
+        "after": "F1000018",
+        "text": "Clasificación"
+      },
+      {
+        "before": "2E78800C",
+        "after": "F1000019",
+        "text": "Mínimo"
+      },
+      {
+        "before": "5FD51929",
+        "after": "F100001A",
+        "text": "Base"
+      },
+      {
+        "before": "0D331AB5",
+        "after": "F100001B",
+        "text": "Máximo"
+      },
+      {
+        "before": "7C9438F0",
+        "after": "F100001C",
+        "text": "Justificación"
+      }
+    ],
+    "tables": {
+      "tables": 61,
+      "rows_marked_cant_split": 0,
+      "table_paragraphs_marked_keep_next": 0,
+      "caption_paragraphs_marked_keep_next": 0,
+      "edge_cells_reasserted": 570
+    },
+    "do_not_expand_shift_return_added": false
+  },
+  "validations": [
+    {
+      "name": "zip_integrity",
+      "ok": true
+    },
+    {
+      "name": "package_parts_and_order_preserved",
+      "ok": true
+    },
+    {
+      "name": "citavi_tags_preserved",
+      "ok": true
+    },
+    {
+      "name": "citavi_instruction_payloads_preserved",
+      "ok": true
+    },
+    {
+      "name": "apa7_results_applied",
+      "ok": true
+    },
+    {
+      "name": "no_known_malformed_citation_patterns",
+      "ok": true
+    },
+    {
+      "name": "table_count_61_after_two_controlled_splits",
+      "ok": true
+    },
+    {
+      "name": "all_table_cell_text_preserved_except_repeated_headers",
+      "ok": true
+    },
+    {
+      "name": "drawings_55_preserved",
+      "ok": true
+    },
+    {
+      "name": "relationships_and_media_byte_preserved",
+      "ok": true
+    },
+    {
+      "name": "no_manual_text_wrapping_breaks",
+      "ok": true
+    },
+    {
+      "name": "no_long_body_majority_bold",
+      "ok": true
+    },
+    {
+      "name": "heading_styles_not_italic",
+      "ok": true
+    },
+    {
+      "name": "all_table_rows_cannot_split",
+      "ok": true
+    },
+    {
+      "name": "paragraph_paraIds_unique",
+      "ok": true
+    },
+    {
+      "name": "compatibility_setting_present",
+      "ok": true
+    },
+    {
+      "name": "requested_table_page_breaks_present",
+      "ok": true
+    }
+  ],
+  "validation_details": {
+    "malformed_citation_values": [],
+    "long_body_majority_bold": [],
+    "italic_heading_styles": [],
+    "rows_without_cant_split": [],
+    "table_page_break_values": [
+      "Tabla 5 (continuación)",
+      "Tabla 5 (continuación)",
+      "Tabla 5 (continuación)",
+      "Tabla 14",
+      "Tabla 15",
+      "Tabla 16",
+      "Tabla 17",
+      "Tabla 18",
+      "Tabla 20",
+      "Tabla 21",
+      "Tabla 22",
+      "Tabla 24",
+      "Tabla 25",
+      "Tabla 25 (continuación). Años 5–8",
+      "Tabla 25 (continuación). Años 9–10",
+      "Tabla 26 (continuación). Años 5–8",
+      "Tabla 26 (continuación). Años 9–10",
+      "Tabla 32 (continuación)",
+      "Tabla 32 (continuación)"
+    ],
+    "protected_differences": []
+  },
+  "changed_package_parts": [
+    "word/document.xml"
+  ],
+  "validation_summary": {
+    "passed": 17,
+    "total": 17,
+    "failed": 0,
+    "all_ok": true
+  },
+  "destination_sha256": "99825130c3b70c4df80dc460762e14e8b0b4f15b711f02b7221e027d2812befa"
+}
