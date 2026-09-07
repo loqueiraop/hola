@@ -1,0 +1,179 @@
+{
+  "source": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.docx",
+  "destination": "/projects/sandbox/hola/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA APA7 BORRADOR.docx",
+  "source_sha256": "467ec9aea9662cc5e49f9f3ee78c1c6bed3e549a371f1d79c007a8d992a6dfe5",
+  "citation_changes": [],
+  "formatting": {
+    "apa_textual_replacements": [],
+    "manual_line_breaks": [],
+    "space_nodes_normalized": 0,
+    "long_body_bold_removed": [],
+    "heading_italics_removed": {
+      "styles": [],
+      "paragraphs": []
+    },
+    "table_page_breaks": [
+      {
+        "paragraph": 1144,
+        "caption": "Tabla 14"
+      },
+      {
+        "paragraph": 1153,
+        "caption": "Tabla 15"
+      },
+      {
+        "paragraph": 1163,
+        "caption": "Tabla 16"
+      },
+      {
+        "paragraph": 1175,
+        "caption": "Tabla 17"
+      },
+      {
+        "paragraph": 1188,
+        "caption": "Tabla 18"
+      },
+      {
+        "paragraph": 1204,
+        "caption": "Tabla 20"
+      },
+      {
+        "paragraph": 1217,
+        "caption": "Tabla 21"
+      },
+      {
+        "paragraph": 1230,
+        "caption": "Tabla 22"
+      },
+      {
+        "paragraph": 1253,
+        "caption": "Tabla 24"
+      },
+      {
+        "paragraph": 1266,
+        "caption": "Tabla 25"
+      },
+      {
+        "paragraph": 1268,
+        "caption": "Tabla 25 (continuación). Años 5–8"
+      },
+      {
+        "paragraph": 1269,
+        "caption": "Tabla 25 (continuación). Años 9–10"
+      },
+      {
+        "paragraph": 1283,
+        "caption": "Tabla 26 (continuación). Años 5–8"
+      },
+      {
+        "paragraph": 1284,
+        "caption": "Tabla 26 (continuación). Años 9–10"
+      }
+    ],
+    "tables": {
+      "tables": 56,
+      "rows_marked_cant_split": 0,
+      "edge_cells_reasserted": 512
+    },
+    "do_not_expand_shift_return_added": false
+  },
+  "validations": [
+    {
+      "name": "zip_integrity",
+      "ok": true
+    },
+    {
+      "name": "package_parts_and_order_preserved",
+      "ok": true
+    },
+    {
+      "name": "citavi_tags_preserved",
+      "ok": true
+    },
+    {
+      "name": "citavi_instruction_payloads_preserved",
+      "ok": true
+    },
+    {
+      "name": "apa7_results_applied",
+      "ok": true
+    },
+    {
+      "name": "no_known_malformed_citation_patterns",
+      "ok": true
+    },
+    {
+      "name": "table_count_56_preserved",
+      "ok": true
+    },
+    {
+      "name": "table_cell_text_and_structure_preserved",
+      "ok": true
+    },
+    {
+      "name": "drawings_55_preserved",
+      "ok": true
+    },
+    {
+      "name": "relationships_and_media_byte_preserved",
+      "ok": true
+    },
+    {
+      "name": "no_manual_text_wrapping_breaks",
+      "ok": true
+    },
+    {
+      "name": "no_long_body_majority_bold",
+      "ok": true
+    },
+    {
+      "name": "heading_styles_not_italic",
+      "ok": true
+    },
+    {
+      "name": "all_table_rows_cannot_split",
+      "ok": true
+    },
+    {
+      "name": "compatibility_setting_present",
+      "ok": true
+    },
+    {
+      "name": "requested_table_page_breaks_present",
+      "ok": true
+    }
+  ],
+  "validation_details": {
+    "malformed_citation_values": [],
+    "long_body_majority_bold": [],
+    "italic_heading_styles": [],
+    "rows_without_cant_split": [],
+    "table_page_break_values": [
+      "Tabla 14",
+      "Tabla 15",
+      "Tabla 16",
+      "Tabla 17",
+      "Tabla 18",
+      "Tabla 20",
+      "Tabla 21",
+      "Tabla 22",
+      "Tabla 24",
+      "Tabla 25",
+      "Tabla 25 (continuación). Años 5–8",
+      "Tabla 25 (continuación). Años 9–10",
+      "Tabla 26 (continuación). Años 5–8",
+      "Tabla 26 (continuación). Años 9–10"
+    ],
+    "protected_differences": []
+  },
+  "changed_package_parts": [
+    "word/document.xml"
+  ],
+  "validation_summary": {
+    "passed": 16,
+    "total": 16,
+    "failed": 0,
+    "all_ok": true
+  },
+  "destination_sha256": "575c918817c40b20269e9db27abd0e7c0452bea069327b1e6845528dbb1c2994"
+}

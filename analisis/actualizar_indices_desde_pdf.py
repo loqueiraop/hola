@@ -17,10 +17,10 @@ import fitz
 from lxml import etree
 
 ROOT = Path("/projects/sandbox/hola")
-SRC = ROOT / "Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA BORRADOR.docx"
-PDF = ROOT / "analisis/render/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA BORRADOR.pdf"
+SRC = ROOT / "Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA APA7 BORRADOR.docx"
+PDF = ROOT / "analisis/render/Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA APA7 BORRADOR.pdf"
 DST = ROOT / "Tesis Jaime Fredy Horacio Avance 18 - CORREGIDA FINAL.docx"
-REPORT = ROOT / "analisis/informe_indices_final.json"
+REPORT = ROOT / "analisis/informe_indices_apa7_final.json"
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 PARSER = etree.XMLParser(remove_blank_text=False, resolve_entities=False, huge_tree=True)
