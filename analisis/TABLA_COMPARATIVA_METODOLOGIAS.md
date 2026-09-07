@@ -1,98 +1,83 @@
-# Esqueleto: tabla comparativa de metodologías de evaluación de proyectos
+# Tabla de síntesis y párrafo de justificación
 
-Sustituye los párrafos **277 a 358** de la tesis (3.364 palabras, 5,3 puntos del informe).
-ONUDI (párrafos 241–247) **no se toca**: es la metodología que usa el estudio y se
-queda desarrollada.
+**Esto NO sustituye nada.** El apartado "Principales metodologías de evaluación de
+proyectos" (párrafos 241–358) se conserva íntegro: definir las metodologías existentes
+para después justificar la elección es la estructura correcta de una revisión de
+literatura, y ese apartado es parte del marco teórico exigido.
 
-## Cómo usar esto
+Lo que se propone aquí es **añadir dos cosas al cierre del apartado**, después del
+último párrafo (el 358, sobre AIKA) y antes de "Producción y comercialización de leche
+pasteurizada":
 
-1. Cada fila se rellena **condensando tus propios párrafos**, que están indicados en
-   la columna "de dónde". No hay que escribir nada nuevo ni consultar fuentes.
-2. La columna **"Por qué se descarta"** es la única que exige redacción propia. Es la
-   más importante: es el criterio que justifica tu elección metodológica.
-3. Las citas de la última columna **ya están en tu documento y en Citavi**. Al moverlas
-   a la tabla siguen contando, así que la bibliografía no pierde ninguna entrada.
-4. Después de insertar la tabla, numérala como **Tabla 6** y renumera de ahí en
-   adelante (hoy la Tabla 6 es "Proyección de clientes"; pasaría a ser la 7). Actualiza
-   el índice de tablas.
-5. Añade debajo la nota: `Nota. Elaboración propia, 2026.`
+1. Una **tabla de síntesis** que recoge en una vista las diez metodologías ya descritas.
+2. El **párrafo que justifica la elección de ONUDI**, que hoy no existe.
+
+Ninguna de las dos baja el porcentaje de similitud de forma apreciable. Se proponen
+porque cierran el único hueco argumental del capítulo: hoy el párrafo 386 dice
+*"se aplicará la técnica de la ONUDI"* sin explicar por qué esa y no las otras nueve
+que se acaban de describir en 17 páginas. Es la primera pregunta que hará un jurado.
 
 ---
 
-## La tabla
+## 1. Tabla de síntesis
 
-| Metodología | Origen institucional | Enfoque / para qué se diseñó | Estructura o fases | Por qué se descarta para este estudio | Fuente |
+Todo el contenido sale de los párrafos que ya están escritos. No hay que consultar
+ninguna fuente nueva.
+
+| Metodología | Origen institucional | Ámbito para el que fue diseñada | Estructura o fases | Párrafos | Fuente |
 |---|---|---|---|---|---|
-| **Marco Lógico (EML/LFA)** | | | 4 filas × 4 columnas (fin, propósito, componentes, actividades) | | `(Robles Ríos, 2019)` `(Silva Oquendo, 2020)` `(Gómez, 2004)` |
-| **JICA** | Agencia de Cooperación Internacional del Japón, 2003 | | 4 pasos; evaluación ex-ante, intermedia, final y ex-post | | `(Pérez et al., 2008)` `(JICA, 2014)` |
-| **ZOPP** | Cooperación alemana (GTZ) | | | | `(Fernández, 1989)` `(Marcos, 2020)` |
-| **MGA** | Departamento Nacional de Planeación, Colombia | | Pre-inversión, inversión, operación | | `(Roa Rodríguez, 2015)` `(Sierra et al., 2023)` |
-| **Ciclo de gestión de proyectos (PCM)** | Comisión Europea | | 6 fases: programación, identificación, planificación, implementación, evaluación, cierre | | `(Axial ERP, 2022)` `(Landau, 2024)` |
-| **Sapag (BID/CEPAL)** | | | 6 etapas: identificación, prefactibilidad, factibilidad, diseño, ejecución, evaluación | | `(Sapag Chain, 2008)` |
-| **BPIN / SNIP** | Sistemas nacionales de inversión pública | | Viabilidad técnica, ambiental y jurídica | | `(SNIP, 2020)` |
-| **Criterios CAD-OCDE** | Comité de Ayuda al Desarrollo de la OCDE | | 6 criterios: eficacia, pertinencia, eficiencia, impacto, cobertura, coherencia | | `(ALNAP, 2023)` |
-| **AIKA** | Instituto Nacional de Cooperación, 2022 | | | | `(Cepeda, 2025)` |
-| **ONUDI** ✅ | Organización de las Naciones Unidas para el Desarrollo Industrial | Formulación y evaluación de proyectos industriales privados | 3 fases: pre-inversión, inversión, operación | **Es la seleccionada** | `(Franco et al., 2012)` `(ONUDI, 2019)` |
+| Marco Lógico (EML/LFA) | Adoptada por agencias de desarrollo; el BID la considera su principal técnica de análisis cualitativo | Diseño, monitoreo y evaluación de proyectos de desarrollo | Matriz 4×4: filas fin, propósito, componentes y actividades; columnas resumen narrativo, indicadores, medios de verificación y supuestos | 277–291 | Robles Ríos (2019); Silva Oquendo (2020); Gómez (2004) |
+| JICA | Agencia de Cooperación Internacional del Japón, creada el 1 de octubre de 2003 | Evaluación de actividades de cooperación técnica internacional y rendición de cuentas | Cuatro pasos; evaluación ex-ante, intermedia, final y ex-post | 292–303 | Pérez et al. (2008); JICA (2014); Holcim (2024) |
+| ZOPP | Alemania — *Zielorientierte Projektplanung* | Planificación de proyectos colaborativos orientada a objetivos; derivada del marco lógico | Tres componentes: planificación por pasos sucesivos, visualización permanente con tarjetas y enfoque de equipo interdisciplinario | 304–307 | Fernández (1989); Marcos (2020) |
+| MGA | Sistema de información para la inversión pública (Colombia) | Identificación, preparación, evaluación y programación de proyectos de inversión pública; evaluación ex-ante | Tres etapas: pre-inversión (perfil, fase 2, fase 3), inversión y operación | 308–316 | Roa Rodríguez (2015); Sierra et al. (2023) |
+| PCM — *Project Cycle Management* | Gestión del ciclo de proyecto de la cooperación europea | Gestión de proyectos con financiación por fases y consulta a partes interesadas | Seis fases: programación, identificación, planificación, implementación, evaluación y cierre | 317–327 | Axial ERP (2022); Landau (2024) |
+| Sapag (BID/CEPAL) | Hermanos Sapag — *véase la nota de abajo* | Preparación y evaluación sistemática de proyectos de inversión | Seis etapas: identificación, prefactibilidad, factibilidad, diseño y planificación, ejecución y control, evaluación y cierre | 328–338 | Sapag Chain (2008); Luis (2024) |
+| BPIN / SNIP | Sistemas nacionales de inversión pública | Formulación y evaluación de proyectos de inversión pública | Idea, perfil, prefactibilidad y factibilidad; estudios de viabilidad técnica, ambiental y jurídica | 339–343 | SNIP (2020) |
+| OCDE / CAD | Comité de Ayuda al Desarrollo de la OCDE | Evaluación de la acción humanitaria y de intervenciones de desarrollo | Seis criterios: eficacia, pertinencia, eficiencia, impacto, cobertura y coherencia | 344–353 | ALNAP (2023) |
+| AIKA | Colombia, 2022 | Calificación del cumplimiento de sostenibilidad en proyectos de infraestructura vial y de transporte | 58 créditos en cinco dimensiones; cuatro grados de cumplimiento | 354–358 | Cepeda (2025) |
+| **ONUDI** ✅ | Organización de las Naciones Unidas para el Desarrollo Industrial | **Formulación y evaluación de proyectos industriales** | Tres fases: pre-inversión, inversión y operación | 241–247 | Franco et al. (2012); ONUDI (2019) |
+
+Rotúlala como **Tabla 1** (queda antes de la actual Tabla 1, que está en la página 61),
+renumera las 37 restantes y añade la entrada al índice de tablas. Debajo:
+`Nota. Elaboración propia, 2026.`
+
+> **Aviso sobre Citavi.** Si escribes las citas de la tabla como texto normal, Citavi no
+> las reconoce y esas referencias **desaparecerán de la bibliografía** al actualizarla.
+> Inserta cada una desde el complemento de Citavi, no a mano.
+
+> **Discrepancia que hay que verificar.** El párrafo 329 dice que la metodología la
+> desarrollaron *"los hermanos Eduardo y Julio Sapag"*, pero tu bibliografía registra a
+> **Nassir Sapag Chain**. Uno de los dos datos está mal. Probablemente venga de la fuente
+> web `(Luis 2024)`. Compruébalo antes de dejarlo en la tabla: es el tipo de error que un
+> jurado detecta al instante.
 
 ---
 
-## De dónde condensar cada fila
+## 2. El párrafo de justificación
 
-| Fila | Párrafos de tu tesis | Palabras a condensar |
-|---|---|---|
-| Marco Lógico | 277–291 | 546 |
-| JICA | 292–303 | 601 |
-| ZOPP | 304–307 | 178 |
-| MGA | 308–316 | 410 |
-| Ciclo de gestión (PCM) | 317–327 | 378 |
-| Sapag | 328–338 | 414 |
-| BPIN / SNIP | 339–343 | 270 |
-| CAD-OCDE | 344–353 | 368 |
-| AIKA | 354–358 | 199 |
-| | **total** | **3.364** |
+Este lo escribes tú. Es el argumento que sostiene toda tu decisión metodológica y no
+puede salir de otra mano.
 
----
-
-## El párrafo de justificación
-
-Va inmediatamente después de la tabla y es lo que hoy no existe en la tesis. Hoy el
-párrafo 386 dice *"se aplicará la técnica de la ONUDI"* sin explicar por qué esa y no
-las nueve anteriores.
-
-Guía de lo que debe responder, con tus palabras:
+Guía de lo que debe responder:
 
 1. **Qué distingue a este proyecto.** Es una inversión **privada** con ánimo de lucro,
    evaluada con criterios de rentabilidad (VAN, TIR, PRI), no una intervención de
    desarrollo financiada con recursos públicos o de cooperación.
-2. **Por qué eso descarta un grupo entero.** Marco Lógico, JICA, ZOPP y CAD-OCDE están
-   construidas para proyectos de cooperación y política pública: miden impacto social,
-   pertinencia y cobertura. Aquí no hay beneficiario social que medir, hay un mercado
-   nicho y un inversionista.
+2. **Por qué eso descarta un grupo entero.** Marco Lógico, JICA, ZOPP y OCDE/CAD están
+   construidas para cooperación y política pública: miden impacto social, pertinencia y
+   cobertura. Aquí no hay beneficiario social que medir, hay un mercado nicho y un
+   inversionista.
 3. **Por qué descarta el otro grupo.** MGA y BPIN/SNIP son sistemas nacionales de
-   inversión pública (Colombia y Perú) y no aplican a una empresa privada en Honduras.
-4. **El caso de Sapag.** Es la más cercana y conviene decirlo explícitamente: comparte
-   la lógica de prefactibilidad y los mismos indicadores. Explica qué te hace preferir
-   ONUDI — por ejemplo que ONUDI organiza el estudio sectorial como componente propio,
-   que es central en tu trabajo, y que su estructura de tres fases se ajusta al alcance
-   de prefactibilidad que pide la maestría. Si te apoyas en Sapag para partes del
-   estudio, dilo: usar una metodología principal y tomar herramientas de otra es
-   legítimo y hay que declararlo.
-5. **Cierre.** Una frase que conecte con el diseño metodológico: los estudios sectorial,
-   de mercado, técnico, legal, administrativo, ambiental y financiero que siguen se
-   organizan según los componentes de ONUDI.
+   inversión pública, y AIKA califica sostenibilidad de infraestructura vial. Ninguno
+   aplica a una planta láctea privada en Honduras.
+4. **El caso de Sapag, que es el más delicado.** Es la más cercana y conviene decirlo
+   explícitamente: comparte la lógica de prefactibilidad y los mismos indicadores.
+   Explica qué te hace preferir ONUDI — por ejemplo que ONUDI trata el estudio sectorial
+   como componente propio, y ese estudio es central en tu trabajo. Si además tomas
+   herramientas de Sapag para partes del análisis, **decláralo**: usar una metodología
+   principal y complementarla es legítimo, ocultarlo no.
+5. **Cierre que conecta con el diseño metodológico.** Los estudios sectorial, de mercado,
+   técnico, legal, administrativo, ambiental y financiero que siguen se organizan según
+   los componentes de ONUDI.
 
-Extensión: **entre media y una página.** Con eso, el bloque completo pasa de 17 páginas
-a unas 3 (ONUDI desarrollada + tabla + justificación).
-
----
-
-## Efecto esperado
-
-| | Puntos |
-|---|---|
-| Situación actual | 23,0 |
-| Comprimir estas 9 metodologías | −5,3 |
-| **Resultado** | **≈ 17,7 %** |
-
-Y si además el asesor sube el umbral de coincidencias mínimas a 25 palabras
-(**Prioridad 0** del informe), quedaría alrededor del **14 %**.
+Extensión: entre media y una página.

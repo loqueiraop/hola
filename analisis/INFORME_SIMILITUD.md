@@ -229,8 +229,31 @@ Coinciden con tesis de IPChile, Uniminuto, Universidad Andrés Bello, Instituto 
 
 Ordenado por puntos recuperados frente a esfuerzo. Con los tres primeros bloques deberías quedar entre **14 % y 16 %**.
 
-### Prioridad 1 — Comprimir las metodologías comparadas · **–3,5 a –4,5 puntos**
-**Páginas 22–38 (párrafos 242–358).** Son 17 páginas describiendo ONUDI, marco lógico EML/LFA, JICA, ZOPP, criterios CAD-OCDE y el ciclo de Sapag. Pero **la tesis usa ONUDI** (párrafos 386, 393, 462 lo dicen explícitamente): las demás metodologías son un desvío descriptivo que no alimenta ninguna decisión posterior.
+### ~~Prioridad 1 — Comprimir las metodologías comparadas~~ · **RETIRADA**
+
+> **Esta recomendación se retira.** El autor confirmó que el apartado "Principales metodologías de evaluación de proyectos" **es parte exigida del marco teórico**: la revisión define las metodologías existentes para después justificar la elección de ONUDI. Eso es la estructura estándar de una revisión de literatura en evaluación de proyectos, y comprimirla habría restado calidad al trabajo.
+>
+> Las 17 páginas se conservan íntegras. No se borró ni se reescribió nada.
+>
+> Lo que sí sigue faltando en ese capítulo, y es aditivo en lugar de sustractivo, está en `TABLA_COMPARATIVA_METODOLOGIAS.md`: una **tabla de síntesis** al cierre del apartado y el **párrafo que justifica por qué se elige ONUDI**. Hoy el párrafo 386 dice "se aplicará la técnica de la ONUDI" sin explicar por qué esa y no las otras nueve que se acaban de describir. Añadir eso no baja el porcentaje, pero cierra el hueco argumental del capítulo.
+
+### Prioridad 1 (nueva) — Reducir la proximidad de redacción, conservando el contenido
+
+El apartado se queda. Lo que se puede trabajar es la **distancia con la fuente**, no la extensión.
+
+Las cinco fuentes con más solapamiento del informe son `coursehero.com`, `docplayer.es`, `administrarproyectos.com`, `projectadmin.org` y `alnap.cdn.ngo`. Todas están citadas —`(Luis 2024)` es administrarproyectos, `(ALNAP 2023)` es alnap—, así que **no hay problema de atribución**: hay problema de que al resumir esas páginas el texto quedó muy cerca del original.
+
+Esto es trabajo de redacción del autor, no mecánico. Los bloques con más margen:
+
+| Bloque | Párrafos | Resaltado |
+|---|---|---|
+| BPIN / SNIP | 339–343 | 57 % |
+| Criterios CAD-OCDE | 344–353 | 54 % |
+| ZOPP | 304–307 | 47 % |
+| Ciclo de gestión (PCM) | 317–327 | 38 % |
+| MGA | 308–316 | 37 % |
+
+**No es urgente.** Con la Prioridad 0 el documento ya cumple. Esto es mejora de calidad para la versión final.
 
 Qué hacer:
 1. Mantén ONUDI desarrollada, **reescrita con tus palabras**, conservando las citas que ya tienes: `(Franco et al. 2012)` en los párrafos 242 y 247.
@@ -334,17 +357,21 @@ Pregunta a tu asesor (Elkin Gómez, que es quien tiene la vista de instructor) s
 
 ## 5. Estimación de resultado
 
-| Acción | Puntos |
-|---|---|
-| Base actual | **23,0** |
-| P1 · Comprimir metodologías comparadas | −4,0 |
-| P2 · Reescribir Diseño Metodológico | −1,7 |
-| P3 · Interpretación financiera específica | −1,7 |
-| P3 bis · Citar a Sapag y ONUDI | −0,2 |
-| P4 · Comillas, formato y reposición de citas | −0,4 |
-| P5 · Normativa y tablas | −0,7 |
-| **Subtotal** | **≈ 14,3** |
-| P6 · Excluir índices (si lo autorizan) | −1,3 → **≈ 13,0** |
+**El marco teórico se conserva íntegro.** Esta es la ruta real:
+
+| Acción | Quién | Puntos | Acumulado |
+|---|---|---|---|
+| Base actual | | | **23,0 %** |
+| Comillas `¨` corregidas | ✅ hecho | −0,35 | 22,6 % |
+| **P0 · Umbral de coincidencias a 25 palabras** | **asesor** | **−3,9** | **18,8 %** ✅ |
+| P6 · Excluir portada, TDC e índices | asesor | −1,3 | **17,4 %** |
+| P2 · Reescribir el Diseño Metodológico | autor | −1,7 | 15,7 % |
+| P3 · Interpretación financiera específica | autor | −1,7 | 14,0 % |
+| P5 · Normativa y tablas | autor | −0,7 | 13,3 % |
+
+**Con las dos acciones del asesor se cumple la norma con 2,6 puntos de margen, sin tocar una palabra del texto.** Si el umbral se sube a 30 palabras en lugar de 25, queda en 16,5 %.
+
+Las acciones del autor (P2, P3, P5) son mejora de calidad, no urgencia de plazo: el Diseño Metodológico y la lectura de indicadores sí conviene reescribirlos, pero por razones académicas, no para cumplir el umbral.
 
 Los rangos son estimaciones sobre el conteo de palabras resaltadas; el porcentaje exacto depende de cómo quede la redacción final. Aun cumpliendo solo P1 y P4 quedarías cerca de 18,5 %, ya bajo el umbral, pero **no te quedes en el mínimo**: si el texto reescrito vuelve a coincidir con alguna fuente, un 19,5 % no da margen. Apunta a 15 %.
 
