@@ -6,9 +6,13 @@
 
 ---
 
+> **Corrección incorporada (revisión 2).** Una versión previa de este informe afirmaba que la tesis tenía "solo 11 citas en el texto". **Ese dato era falso y se retira.** El conteo real es de **84 citas de autor-año en 77 párrafos, con 67 fuentes distintas**, más 38 referencias normativas. El error se explica en la sección 8: las citas son marcadores de **Citavi** incrustados en controles de contenido de Word, y la librería que usé para leer el .docx no los devuelve. El diagnóstico de fondo cambia en consecuencia y está reescrito abajo.
+
 ## 1. La conclusión en una frase
 
-No hay un capítulo copiado que se pueda borrar de un golpe. El 23 % son **cientos de coincidencias pequeñas** (la fuente más grande aporta solo 1 %) y se concentran en un sitio muy concreto: **el Marco Teórico y el Diseño Metodológico** (páginas 19–52), donde el texto describe metodologías y definiciones de manual **sin citar de dónde salen**. Ese tramo son 34 de 260 páginas —13 % de la tesis— pero cargan con **8 de los 23 puntos**.
+No hay un capítulo copiado que se pueda borrar de un golpe. El 23 % son **cientos de coincidencias pequeñas** (la fuente más grande aporta solo 1 %) y se concentran en un sitio muy concreto: **el Marco Teórico y el Diseño Metodológico** (páginas 19–52). Ese tramo son 34 de 260 páginas —13 % de la tesis— pero cargan con **8 de los 23 puntos**.
+
+Y el motivo no es que falte citar. Es que **el texto está redactado casi con las mismas palabras que las fuentes que ya citas**. Turnitin solo descuenta lo que va entre comillas; una paráfrasis demasiado pegada al original, aunque lleve su cita al final, la cuenta completa.
 
 Dato revelador: el informe indica **17 % en “Trabajos entregados (trabajos del estudiante)”**, casi igual que el 17 % de internet. Eso significa que el texto coincide con **cientos de otras tesis** de universidades distintas, cada una con <1 %. Es la firma inconfundible de definiciones genéricas de libro de texto: todos los tesistas copian los mismos párrafos de Sapag, de ONUDI, del marco lógico y de la interpretación del VAN/TIR.
 
@@ -61,42 +65,109 @@ El detalle pasaje por pasaje (188 bloques de ≥25 palabras, con página, fuente
 
 ---
 
-## 3. Las cuatro causas reales
+## 3. Las causas reales
 
-### Causa 1 — Hay bibliografía, pero casi no hay citas en el texto
+### Causa 1 — La paráfrasis está demasiado pegada al original (no falta la cita)
 
-La bibliografía existe y es buena: **~50 fuentes** (Sapag 2008 y 2018, Franco/Montoya/Gómez 2012 sobre ONUDI, Pérez 2008 sobre JICA, Fernández 1989 sobre ZOPP, Robles Ríos 2019 sobre marco lógico, Dominguez 2018, Coria 2008, ALNAP 2023…). Turnitin la filtró correctamente: **0 % de coincidencia ahí**.
+Esta es la causa principal, y conviene entenderla bien porque cambia lo que hay que hacer.
 
-El problema es lo contrario: en 53.000 palabras solo detecté **11 citas en el texto**, y casi todas son fuentes de datos (BCH, USDA, Banco Mundial, Datosmacro). De las ~50 obras de la bibliografía, **prácticamente ninguna se cita en el cuerpo**.
+**Las citas están.** El conteo riguroso, párrafo por párrafo, da:
 
-Por eso Turnitin marca el Marco Teórico completo: leyó los párrafos de ONUDI, JICA y ZOPP, los encontró casi idénticos a sus fuentes originales, y **no vio ninguna atribución que le permitiera descontarlos**.
+| | |
+|---|---|
+| Citas de autor-año en el texto | **84** |
+| Párrafos que las contienen | **77** |
+| Fuentes distintas invocadas | **67** |
+| Referencias normativas (ARSA, RTCA, ISO, AOAC, decretos) | **38** |
+| Entradas en la bibliografía | **114** |
 
-### Causa 2 — Cuatro citas textuales usan `¨` (diéresis) en lugar de comillas
+Y la densidad en el Marco Teórico es **normal**: 34 citas en 4.688 palabras, una cada 137 palabras. Turnitin además filtró la bibliografía correctamente: **0 % de coincidencia ahí**.
+
+**Entonces, ¿por qué marca el Marco Teórico?** Porque Turnitin solo excluye lo que va **entre comillas**. Un párrafo parafraseado con su cita al final no se descuenta: el sistema compara cadenas de palabras, encuentra que coinciden con el original y lo cuenta. Y aquí coinciden demasiado.
+
+Los tres casos son demostrables cruzando tus citas con las fuentes que Turnitin señaló:
+
+| Tu cita en el texto | Entrada en tu bibliografía | Fuente que marcó Turnitin |
+|---|---|---|
+| `(Luis 2024)` — párrafos 330 y 338 | *luis (2024): Sapag Chain… En: Administrar Proyectos* | **#4 `administrarproyectos.com`** |
+| `(ALNAP 2023)` — párrafo 353 | *ALNAP (2023): Revisión de los criterios del CAD-OCDE* | **#8 `alnap.cdn.ngo`** |
+| `(Marcos 2020)` — párrafo 305 | *Marcos S (2020): Método de planificación ZOPP* | ZOPP / sinnaps |
+| `(Axial ERP 2022)` — párrafo 320 | *Axial ERP (2022): Gestión del Ciclo de Proyecto* | **#6 `www.projectadmin.org`** |
+
+Fíjate en lo que esto significa: **la fuente está citada y está en la bibliografía, y aun así aparece resaltada.** No es un problema de atribución. Es que las frases son las mismas.
+
+Esto es importante para tu tranquilidad: **no es plagio por ocultar la fuente.** Es paráfrasis insuficiente, que es una falta de técnica de redacción, no de honestidad. Y se corrige reescribiendo, **conservando las citas que ya tienes**.
+
+### Causa 2 — Bloques largos que citan al abrir y luego siguen ocho párrafos sin citar
+
+Este sí es un hueco real de atribución, y es un patrón muy marcado. De los 73 párrafos sustantivos del Marco Teórico, **42 no tienen ninguna cita** (2.143 palabras, la mitad del capítulo).
+
+No están repartidos al azar: forman **bloques enteros** en los que citas el primer párrafo y desarrollas el resto sin volver a citar.
+
+| Tema | Párrafos seguidos sin cita |
+|---|---|
+| Matriz de marco lógico (filas y columnas) | 283, 284, 285, 287, 289, 290, 291 |
+| JICA (pasos de la metodología) | 293, 302 |
+| MGA (etapas y fases) | 312, 313, 314, 315 |
+| Ciclo de gestión de proyectos | 318, 322, 323, 324, 325, 326 |
+| Metodología Sapag (seis etapas) | 329, 332, 333, 334, 335, 336, 337 |
+| Criterios CAD-OCDE | 345, 347, 348, 349, 350, 351, 352 |
+
+El lector —y Turnitin— llega al párrafo 337 sin saber de dónde viene nada de lo que lleva leído. La norma APA pide reponer la cita cuando el desarrollo se extiende varios párrafos.
+
+### Causa 3 — Secciones completas sin ninguna cita
+
+| Sección | Palabras | Citas de autor |
+|---|---|---|
+| **Diseño Metodológico** | 2.710 | **1** |
+| Estudio organizacional | 1.487 | **0** |
+| Estudio legal (desarrollo) | 2.482 | 0 (pero sí 38 referencias normativas ✅) |
+| Estudio financiero | 7.318 | **0** |
+| Análisis de riesgos | 7.763 | 0 |
+
+Matices, porque no todos son igual de graves:
+
+- El **estudio legal** está bien así: en un capítulo normativo lo correcto es citar la norma (Acuerdo 0632-ARSA-2023, Decreto 104-93, RTCA), y eso lo haces. La excepción es el artículo 145 de la Constitución transcrito en la página 136, que sí necesita referencia.
+- El **análisis de riesgos** casi no necesita citas: son resultados propios, y por eso mismo solo tiene 9,5 % de coincidencia.
+- El **estudio financiero** con 0 citas en 7.318 palabras es más discutible: los resultados son tuyos, pero las definiciones de VAN, TIR y WACC intercaladas entre ellos no lo son.
+- El **Diseño Metodológico** es el caso grave, y es la Causa 5.
+
+### Causa 4 — Cuatro citas textuales usan `¨` (diéresis) en lugar de comillas
 
 Esto es un error técnico con efecto directo y medible en el porcentaje. Turnitin excluye el "texto citado" (el filtro está activo en tu informe), pero **solo reconoce comillas de verdad**: `"…"` o `“…”`. El carácter `¨` (U+00A8, diéresis) **no es una comilla** y Turnitin lo ignora.
 
 Resultado: estas cuatro citas, que tú marcaste como textuales, **están contando el 100 % dentro del 23 %**:
 
-| Párrafo | Texto | Problema |
+| Párrafo | Cita | Problema |
 |---|---|---|
-| 234 | `Según ¨El estudio de prefactibilidad es un análisis en la etapa preliminar…¨ (p 1)` | `¨` en vez de comillas **y falta el autor** |
-| 243 | `Según la Guía de transferencia Metodológica ¨La ONUDI promueve…¨` | `¨` en vez de comillas, falta año y página |
+| 234 | `Según Lifeder (2023), ¨El estudio de prefactibilidad…¨ (p 1)` | `¨` en vez de comillas |
+| 243 | `Según la Guía de transferencia Metodológica ¨La ONUDI promueve…¨` | `¨` en vez de comillas **y sin ninguna cita**: no hay autor, año ni página |
 | 250 | `Según ABECÉ (2018), … son un ¨Conjunto de investigaciones teóricas…¨ (p 1)` | `¨` en vez de comillas |
-| 254 | `Según Dominguez (2018), el estudio técnico¨ Determina la factibilidad…”` | abre con `¨` y **cierra con `”`** → par desbalanceado |
+| 254 | `Según Dominguez (2018), el estudio técnico¨ Determina la factibilidad…”` | abre con `¨` y **cierra con `”`** → par desbalanceado, la exclusión no se aplica |
 
-Además el documento tiene **14 comillas de apertura `“` frente a 16 de cierre `”`**: hay pares mal cerrados en otros sitios, y una comilla sin pareja anula la exclusión de todo el fragmento.
+El caso del párrafo 243 es el más serio de los cuatro: es una **cita textual sin ninguna atribución**. "La Guía de transferencia Metodológica" no identifica una obra concreta ni remite a ninguna entrada de la bibliografía. Ese sí hay que resolverlo, no por el porcentaje sino porque es la clase de observación que un jurado anota.
 
-### Causa 3 — Citas sin autor
+Los párrafos 274 y 276, en cambio, **están bien**: usan comillas tipográficas correctas y sus citas (`Nava (2009)`, `Restrepo y Leiva (2018)`) están puestas. Turnitin debería estar descontándolos.
 
-Tres pasajes llevan número de página pero **no dicen de quién es la cita**:
+Revisa además el balance de comillas en todo el documento: hay **14 de apertura `“` frente a 16 de cierre `”`**. Una comilla sin pareja anula la exclusión de todo el fragmento.
 
-- Párrafo 234: `Según ¨…¨ (p 1)` → falta el autor (por la bibliografía, es **Lifeder, 2023**)
-- Párrafo 274: `Según  “El análisis financiero es fundamental…” (p 1)` → falta el autor (es **Nava Rosillón**)
-- Párrafo 276: `Según El análisis de los riesgos es esencial…” (p 38)` → falta el autor, y **no abre comilla** (es **Córdoba Restrepo y Agredo Leiva, 2018**)
+### Causa 5 — El formato de las citas es irregular
 
-Esto no solo infla el porcentaje: en una defensa, una cita textual sin autor es una observación grave por sí sola.
+No afecta el porcentaje, pero lo vas a necesitar para la revisión de forma. Las 84 citas conviven en al menos cinco formatos distintos:
 
-### Causa 4 — El Diseño Metodológico define conceptos en lugar de explicar tu método
+| Formato | Ejemplos |
+|---|---|
+| Nombre completo en mayúsculas | `(ANA JULIA SILVA OQUENDO 2020)`, `(PEREZ, Ana María, et al. 2008)` |
+| Nombre de pila + apellido | `(Jorge Borjas Chávez 2013)`, `(Guillermo Roa Rodriguez 2015)`, `(Federico Holmann 2001)` |
+| Solo nombre de pila | `(Luis 2024)`, `(Marcos  2020)`, `(Cepeda 2025)` |
+| Sin coma antes del año | `(Franco et al. 2012)`, `(ALNAP 2023)`, `(SNIP 2020)` |
+| APA correcto | `(Hidalgo, 2008)`, `(Pérez, 2022)`, `(Matamoros, 1990)` |
+
+APA 7 pide **apellido, coma, año**: `(Borjas Chávez, 2013)`, `(Silva Oquendo, 2020)`. Además `(Rios, 2019)` en el párrafo 278 y `(Juan Carlos Robles Ríos 2019)` en el 279 son **la misma fuente citada de dos maneras**, y `(Luis 2024)` cita por el nombre de pila a una entrada que en realidad es un artículo sobre Sapag.
+
+Como todo está gestionado con Citavi, esto se corrige en un sitio: arregla el campo de autor de cada referencia en la base de Citavi y actualiza los campos en Word. No lo edites a mano en el documento, porque al actualizar los campos se revierte.
+
+### Causa 6 — El Diseño Metodológico define conceptos en lugar de explicar tu método
 
 Aquí está el hallazgo más accionable. Compara dos párrafos de tu propia tesis:
 
@@ -112,7 +183,7 @@ Eso **sí** es diseño metodológico: dice qué vas a hacer tú, con qué instru
 
 Los párrafos **414, 416, 421, 423 y 429–453** están en el primer grupo: son definiciones de manual, algunas **repetidas** de lo que ya dijiste en el Marco Teórico (localización y tamaño aparecen dos veces en la tesis, págs. 23–25 y 46–47). Los párrafos **446–451** son un resumen del Código del Trabajo de Honduras copiado de fuentes web, dentro de un capítulo de metodología donde no corresponde.
 
-### Causa 5 (menor) — Interpretación de indicadores calcada y triplicada
+### Causa 7 — Interpretación de indicadores calcada y triplicada
 
 En las páginas 178–201 el problema es distinto: frases interpretativas que aparecen en cientos de tesis.
 
@@ -131,11 +202,15 @@ Ordenado por puntos recuperados frente a esfuerzo. Con los tres primeros bloques
 **Páginas 22–38 (párrafos 242–358).** Son 17 páginas describiendo ONUDI, marco lógico EML/LFA, JICA, ZOPP, criterios CAD-OCDE y el ciclo de Sapag. Pero **la tesis usa ONUDI** (párrafos 386, 393, 462 lo dicen explícitamente): las demás metodologías son un desvío descriptivo que no alimenta ninguna decisión posterior.
 
 Qué hacer:
-1. Mantén ONUDI desarrollada, reescrita con tus palabras y **citando a Franco, Montoya y Gómez (2012)** y a la guía de ONUDI.
-2. Sustituye JICA, ZOPP, marco lógico y CAD-OCDE por **una tabla comparativa de elaboración propia** (columnas: metodología / origen / enfoque / fases / aplicabilidad a un proyecto agroindustrial privado) más **un párrafo tuyo** que justifique por qué eliges ONUDI y descartas las demás.
+1. Mantén ONUDI desarrollada, **reescrita con tus palabras**, conservando las citas que ya tienes: `(Franco et al. 2012)` en los párrafos 242 y 247.
+2. Sustituye JICA, ZOPP, MGA, marco lógico, ciclo de proyecto, Sapag, SNIP, CAD-OCDE y AIKA por **una tabla comparativa de elaboración propia** (columnas: metodología / origen / enfoque / fases / aplicabilidad a un proyecto agroindustrial privado) más **un párrafo tuyo** que justifique por qué eliges ONUDI y descartas las demás.
 3. Esa justificación es exactamente lo que hoy falta y lo que un jurado pregunta: *¿por qué ONUDI y no marco lógico?*
 
+**No pierdes las fuentes:** las citas de esos bloques (`Marcos 2020`, `FERNÁNDEZ 1989`, `Sierra et al 2023`, `Axial ERP 2022`, `Peter Landau 2024`, `Luis 2024`, `SNIP 2020`, `ALNAP 2023`, `Cepeda 2025`) pasan a la tabla comparativa, una por fila. Sigues respaldando cada metodología, en una décima parte del espacio.
+
 Pasas de ~17 páginas mayormente resaltadas a ~3 páginas de análisis propio. Es la acción de mayor rendimiento de toda la lista, y **fortalece** el capítulo.
+
+**Sobre lo que decidas conservar:** reescríbelo de verdad. La prueba práctica es cerrar la fuente, entender la idea y escribirla de memoria; si al terminar la frase se parece a la original, vuelve a empezar. Y cuando la formulación exacta del autor sea lo valioso, entonces **cítala entre comillas** — así Turnitin la descuenta y tú quedas cubierto.
 
 ### Prioridad 2 — Reescribir el Diseño Metodológico en clave de "qué haré yo" · **–1,5 a –2 puntos**
 **Párrafos 414, 416, 421, 423, 429–453 (págs. 45–49).** Toma como modelo tus propios párrafos 389–391, 393–395 y 467–469, que están bien hechos y sin marcas.
@@ -157,12 +232,14 @@ Ejemplos concretos:
 
 Este bloque baja el porcentaje **y** mejora sustancialmente el capítulo: hoy describe, después analizará.
 
-### Prioridad 4 — Arreglar comillas y citas · **–0,3 a –0,5 puntos, y cierra un riesgo grave**
-1. Reemplaza los **7 caracteres `¨`** por comillas tipográficas `“ ”` (párrafos 234, 243, 250, 254).
-2. Revisa el balance de comillas: hay 14 `“` y 16 `”`. Cada par debe abrir y cerrar.
-3. Añade los autores faltantes: **234 → (Lifeder, 2023, p. 1)**; **274 → (Nava Rosillón, p. 1)**; **276 → (Córdoba Restrepo y Agredo Leiva, 2018, p. 38)**.
-4. Verifica que las ~50 obras de la bibliografía tengan al menos una cita en el texto. Si alguna no se cita, o la citas donde corresponde, o sale de la bibliografía.
-5. La bibliografía está en formato `Autor (año): Título` (estilo Citavi), **no APA 7**. Confirma con tu asesor si EAFIT exige APA; el cuerpo del documento sí usa estilos APA para tablas y figuras, así que hay inconsistencia.
+### Prioridad 4 — Comillas, citas huérfanas y formato · **–0,3 a –0,5 puntos, y cierra riesgos de forma**
+1. Reemplaza los **7 caracteres `¨`** por comillas tipográficas `“ ”` (párrafos 234, 243, 250, 254). Con esto Turnitin empieza a descontar esas cuatro citas.
+2. Revisa el balance de comillas en todo el documento: hay 14 `“` y 16 `”`. Cada par debe abrir y cerrar.
+3. **Párrafo 243:** identifica y cita la obra. Hoy dice solo "la Guía de transferencia Metodológica" y es una cita textual sin autor, año ni página.
+4. **Repón las citas en los bloques largos** (Causa 2). En los tramos de marco lógico, JICA, MGA, ciclo de proyecto, Sapag y CAD-OCDE, vuelve a citar cada dos o tres párrafos. Con Citavi es rápido: son ~15 inserciones.
+5. **Unifica el formato de las citas en Citavi** (Causa 5): apellido y año, `(Borjas Chávez, 2013)`. Corrige el campo de autor en la base de Citavi, no en el documento, y luego actualiza los campos en Word.
+6. **Resuelve la duplicación** de `(Rios, 2019)` y `(Juan Carlos Robles Ríos 2019)`: son la misma fuente con dos entradas.
+7. Confirma con tu asesor si EAFIT exige **APA 7** para la bibliografía. Hoy sale en el estilo `Autor (año): Título` de Citavi, mientras el cuerpo del documento sí usa estilos APA para tablas y figuras. Si piden APA, es cambiar el estilo de salida en Citavi: un clic, no un trabajo manual.
 
 ### Prioridad 5 — Normativa y tablas técnicas · **–0,5 a –1 punto**
 **Págs. 106–108** (parámetros de calidad de leche cruda: TRAM, células somáticas, densidad, métodos AOAC/ISO) y **pág. 136** (Constitución, art. 145; Ley General del Ambiente).
@@ -185,7 +262,7 @@ Pregunta a tu asesor (Elkin Gómez, que es quien tiene la vista de instructor) s
 | P1 · Comprimir metodologías comparadas | −4,0 |
 | P2 · Reescribir Diseño Metodológico | −1,7 |
 | P3 · Interpretación financiera específica | −1,7 |
-| P4 · Comillas y citas | −0,4 |
+| P4 · Comillas, cita huérfana y reposición de citas | −0,4 |
 | P5 · Normativa y tablas | −0,7 |
 | **Subtotal** | **≈ 14,5** |
 | P6 · Excluir índices (si lo autorizan) | −1,3 → **≈ 13,2** |
@@ -203,19 +280,42 @@ Digo esto en serio, porque circula mucho y sale muy caro:
 - **No uses caracteres ocultos, texto en blanco, letras de otro alfabeto ni espaciados raros.** Turnitin marca estas manipulaciones explícitamente y quedan registradas en el informe.
 - **No borres contenido sustantivo solo para diluir el porcentaje.** Recortar el marco teórico funciona porque ese material es prescindible y su lugar lo ocupa un análisis mejor; no recortes tus resultados.
 
-El camino correcto es el único que además te sirve: **atribuir lo que es de otros y escribir con tu voz lo que es tuyo.** Un 23 % con 11 citas en 53.000 palabras es, en el fondo, un problema de citación, no de plagio. Se arregla citando.
+El camino correcto es el único que además te sirve: **citar lo que es de otros y escribir con tu voz lo que es tuyo.** Tu problema no es de honestidad —las 84 citas y las 114 entradas de bibliografía lo demuestran— sino de **distancia con el original**. Se arregla reescribiendo, no ocultando.
 
 ---
 
 ## 7. Orden de trabajo sugerido
 
-1. **Hoy (1 h):** Prioridad 4 completa —comillas y autores—. Es mecánica y elimina el riesgo más visible en una defensa.
+1. **Hoy (1 h):** Prioridad 4, puntos 1 a 3 —comillas y el párrafo 243—. Es mecánico y elimina el riesgo más visible en una defensa.
 2. **Hoy (5 min):** escribe a tu asesor por la exclusión de índices (Prioridad 6). Corre en paralelo.
 3. **Días 1–3:** Prioridad 1. Es el bloque grande. Redacta primero la tabla comparativa de metodologías y el párrafo de justificación; con eso sustituyes las 14 páginas de golpe.
 4. **Día 4:** Prioridad 2, siguiendo el modelo de tus propios párrafos 389–391.
 5. **Día 5:** Prioridad 3, unificando las dos secciones de indicadores.
-6. **Día 6:** Prioridad 5 y revisión de que cada obra de la bibliografía esté citada en el texto.
+6. **Día 6:** Prioridad 4, puntos 4 a 7 (reponer citas en bloques largos y unificar formato en Citavi) y Prioridad 5.
 7. **Antes de reentregar:** vuelve a pasar Turnitin. Si tu institución limita los reintentos, pide a tu asesor una revisión en modo borrador.
+
+---
+
+## 8. Nota metodológica: por qué la revisión 1 se equivocó
+
+Lo dejo escrito porque cualquiera que analice este .docx con herramientas automáticas va a caer en la misma trampa, y porque el dato erróneo circuló.
+
+**Las citas de esta tesis son marcadores de Citavi.** Cada una vive dentro de un control de contenido inline (`w:sdt`) que envuelve un campo `ADDIN CitaviPlaceholder`. Ejemplo real, párrafo 208:
+
+| | |
+|---|---|
+| Lo que devuelve `paragraph.text` de python-docx | `"De acuerdo con datos de , la producción total…"` |
+| El texto **real** del párrafo | `"De acuerdo con datos de (FAOSTAT 2022), la producción total…"` |
+
+`paragraph.text` concatena solo los `w:t` de los runs directos y **omite todo lo que está dentro de controles de contenido**. Las citas eran literalmente invisibles para el script. Al contarlas salieron 11.
+
+El segundo intento cometió el error opuesto: concatené el documento completo en una sola cadena y apliqué las expresiones regulares sobre ella. Como `[^()]` y `\s` también aceptan saltos de línea, los patrones cruzaban de un párrafo al siguiente y emparejaban texto de un lado con años del otro. Salieron 85 citas, muchas inventadas.
+
+**La forma correcta**, implementada en `contar_citas.py`, es recorrer `p._p.iter(qn('w:t'))` de cada párrafo por separado, sin concatenar nada. Resultado: **84 citas reales en 77 párrafos, 67 fuentes distintas** (la coincidencia numérica con el 85 anterior es casualidad: aquel conteo tenía falsos positivos y falsos negativos a la vez).
+
+Lo que **no** se vio afectado por este error: todo el análisis de la sección 2. Las mediciones de qué está resaltado y dónde salen del PDF del informe de Turnitin, leyendo los rectángulos de color y el texto que cubren. Esa parte no depende del .docx y sigue siendo válida.
+
+**Nota sobre los porcentajes:** mi conteo directo de palabras resaltadas da 27,4 % frente al 23 % de Turnitin, porque mi medición captura palabras que quedan parcialmente bajo el borde del resaltado y cuenta cifras de tablas. Las **cifras absolutas están sobreestimadas ~19 %**, pero la **distribución relativa entre secciones es fiable**, y es lo que guía el plan. Los puntos estimados en la sección 5 ya vienen ajustados por ese factor.
 
 ---
 
@@ -229,6 +329,6 @@ El camino correcto es el único que además te sirve: **atribuir lo que es de ot
 | `cuantificar.py` | Cuenta palabras coincidentes por página y por zona |
 | `mapear.py` | Cruza cada coincidencia con el párrafo correspondiente del .docx |
 | `anexo_pasajes.py` | Genera el anexo |
+| `contar_citas.py` | **Conteo riguroso de las 84 citas**, leyendo los campos de Citavi. Documenta la trampa de `paragraph.text` |
+| `densidad_citas.py` | Densidad de citas por sección y auditoría de los 42 párrafos sin cita del marco teórico |
 | `matches.json`, `por_pagina.json` | Datos crudos |
-
-**Nota sobre los números:** mi conteo directo de palabras resaltadas da 27,4 % frente al 23 % de Turnitin, porque mi medición captura palabras que quedan parcialmente bajo el borde del resaltado y cuenta cifras de tablas. Las **cifras absolutas están sobreestimadas ~19 %**, pero la **distribución relativa entre secciones es fiable**, y es lo que guía el plan. Los puntos estimados en la sección 5 ya vienen ajustados por ese factor.
