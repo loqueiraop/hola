@@ -143,8 +143,7 @@ para(tf, "Instrumento que fija las condiciones de la relación entre las partes:
          "se desarrollará la franquicia.",
      first=True, size=11, color=INK_SOFT, line=1.32)
 block_label(s, x + IN, 3.64, CW2 - 2 * IN, "Rasgos que lo definen")
-bullets(s, x + IN, 3.88, CW2 - 2 * IN, 1.34, [
-    "Bilateral y oneroso: obligaciones recíprocas y precio",
+bullets(s, x + IN, 3.88, CW2 - 2 * IN, 1.10, [
     "De colaboración, no de simple intercambio",
     "De tracto sucesivo: se ejecuta de forma continuada",
     "Contrato marco: regula la pertenencia a una red",
@@ -154,17 +153,21 @@ tf = textbox(s, x + IN, 5.26, CW2 - 2 * IN, 0.24)
 para(tf, "(Apolo Apolo et al., 2022; Kim y Tiwana, 2022)", first=True, size=9,
      color=MUTED, line=1.1)
 
-# --- banda: reconocimiento jurídico
-card(s, M, 5.78, CW, 0.86, fill=INK, border=None)
-tf = textbox(s, M + 0.4, 5.94, CW - 0.8, 0.22)
-para(tf, "Un reconocimiento jurídico desigual", first=True, size=9.5,
-     color=ACCENT, bold=True, caps=True, spc=150, line=1.0)
-tf = textbox(s, M + 0.4, 6.18, CW - 0.8, 0.42)
-para(tf, "Argentina lo tipificó (arts. 1512–1524 CCyC); España lo regula por vía "
-         "sectorial (Ley 7/1996); Ecuador lo reconoce en su Código de Comercio; "
-         "Colombia y Perú lo mantienen como contrato atípico, de modo que el peso "
-         "recae en la redacción del contrato y en la autonomía de la voluntad.",
-     first=True, size=10, color=ON_DARK, line=1.3)
+# --- banda: reconocimiento jurídico, en cuatro datos escaneables
+card(s, M, 5.72, CW, 1.00, fill=INK, border=None)
+block_label(s, M + 0.4, 5.90, CW - 0.8, "Un reconocimiento jurídico desigual",
+            size=9.5)
+paises = [("Argentina", "Tipificado (arts. 1512–1524)"),
+          ("España", "Regulado (Ley 7/1996)"),
+          ("Ecuador", "Código de Comercio"),
+          ("Colombia y Perú", "Contrato atípico")]
+pw = (CW - 0.8 - 3 * 0.30) / 4
+for k, (pais, estado) in enumerate(paises):
+    pxx = M + 0.4 + k * (pw + 0.30)
+    tf = textbox(s, pxx, 6.16, pw, 0.20)
+    para(tf, pais, first=True, size=10, color=ON_DARK, bold=True, line=1.0)
+    tf = textbox(s, pxx, 6.38, pw, 0.20)
+    para(tf, estado, first=True, size=9, color=ON_DARK_SF, line=1.0)
 
 notes(s, "0:30–3:15 · Distinguir franquicia (modelo de negocio) de contrato "
          "(instrumento jurídico). Cerrar con la banda: donde no hay tipificación, "
@@ -215,24 +218,21 @@ for i, (num, t, d) in enumerate(etapas):
 x = M
 card(s, x, 5.30, CW2, 1.28, fill=CARD_ALT, border=LINE)
 block_label(s, x + 0.28, 5.48, CW2 - 0.56, "Antes de firmar", size=9)
-tf = textbox(s, x + 0.28, 5.72, CW2 - 0.56, 0.82)
-para(tf, "El franquiciador debe entregar información sobre su identidad, el "
-         "sector, las características de la franquicia y la organización de la "
-         "red al menos 20 días hábiles antes de la firma. Omitirla o deformarla "
-         "genera responsabilidad aunque el contrato nunca se firme (Conde Gómez, "
-         "2020).",
+tf = textbox(s, x + 0.28, 5.72, 1.9, 0.42)
+para(tf, "20 días", first=True, size=21, font=SERIF, color=ACCENT, line=1.0)
+tf = textbox(s, x + 0.28, 6.16, CW2 - 0.56, 0.34)
+para(tf, "hábiles de información previa obligatoria. Omitirla genera "
+         "responsabilidad aunque no se firme.",
      first=True, size=9.5, color=INK_SOFT, line=1.26)
 
 x = M + CW2 + 0.33
 card(s, x, 5.30, CW2, 1.28, fill=INK, border=None)
 rect(s, x, 5.30, CW2, 0.045, fill=ACCENT)
 block_label(s, x + 0.28, 5.48, CW2 - 0.56, "La fórmula del modelo", size=9)
-tf = textbox(s, x + 0.28, 5.72, CW2 - 0.56, 0.82)
-para(tf, "La franquicia combina independencia empresarial con un nivel de control "
-         "establecido por el titular de la marca. El franquiciado administra su "
-         "propio negocio, pero no decide sobre todo: opera dentro de un estándar "
-         "que no le pertenece.",
-     first=True, size=9.5, color=ON_DARK, line=1.26)
+tf = textbox(s, x + 0.28, 5.74, CW2 - 0.56, 0.76)
+para(tf, "Independencia empresarial dentro de un marco de control: el "
+         "franquiciado administra su negocio, pero no decide sobre todo.",
+     first=True, size=12, font=SERIF, color=ON_DARK, italic=True, line=1.3)
 
 notes(s, "3:15–6:00 · Recorrer las cinco etapas con ritmo. Detenerse en la 1 (la "
          "selección explica por qué unas redes funcionan y otras no) y en el "
@@ -250,21 +250,19 @@ header(s, "Componente 3", "Partes involucradas",
 
 partes = [
     ("El franquiciador", "también franquiciante u otorgante", True,
-     "Marca y signos distintivos · know-how probado · manuales operativos · "
-     "asistencia técnica y comercial",
-     "Cobrar canon y regalías · exigir confidencialidad del know-how · "
-     "actualizar los manuales · exigir la estandarización de la red",
-     "Comunicar el know-how · prestar asistencia técnica · entregar la "
-     "información precontractual · responder ante litigios de propiedad "
-     "intelectual"),
+     "Marca y signos distintivos · know-how probado · manuales y asistencia "
+     "técnica",
+     "Cobrar canon y regalías · exigir confidencialidad · exigir la "
+     "estandarización de la red",
+     "Comunicar el know-how · prestar asistencia técnica · informar antes de "
+     "contratar"),
     ("El franquiciado", "o franquiciatario", False,
-     "Canon de entrada e inversión inicial · regalías periódicas · gestión y "
-     "equipo humano · conocimiento del mercado local",
-     "Capacitación y asistencia permanente · manual operativo completo · "
-     "exclusividad territorial si se pactó · adaptar el producto al mercado "
-     "local",
-     "Pagar canon y regalías · mantener la confidencialidad · seguir el manual "
-     "operativo · permitir auditorías · no competir con la red"),
+     "Canon e inversión inicial · regalías periódicas · gestión y conocimiento "
+     "del mercado local",
+     "Capacitación y asistencia · manual operativo completo · exclusividad "
+     "territorial si se pactó",
+     "Pagar canon y regalías · seguir el manual operativo · no competir con la "
+     "red"),
 ]
 
 for i, (t, alias, primary, aporta, derechos, oblig) in enumerate(partes):
@@ -287,26 +285,22 @@ for i, (t, alias, primary, aporta, derechos, oblig) in enumerate(partes):
         tf = textbox(s, x + IN, by + 0.20, CW2 - 2 * IN, 0.52)
         para(tf, txt, first=True, size=9.5, color=INK_SOFT, line=1.26)
 
-card(s, M, 5.62, CW, 0.52, fill=CARD_ALT, border=None)
-tf = textbox(s, M + 0.34, 5.70, CW - 0.68, 0.40)
-rich(tf, [("Y un tercero cuando la red se internacionaliza.  ",
+card(s, M, 5.66, CW, 0.44, fill=CARD_ALT, border=None)
+tf = textbox(s, M + 0.34, 5.66, CW - 0.68, 0.44, anchor=MSO_ANCHOR.MIDDLE)
+rich(tf, [("Y un tercero cuando la red se internacionaliza:  ",
            {"size": 9.5, "color": INK, "bold": True}),
-          ("Aparece el subfranquiciante o máster franquiciado, que sin ser "
-           "titular de la marca asume frente a terceros las funciones propias de "
-           "un franquiciador (Speicher Mendiola, 2024; Conde Gómez, 2020).",
+          ("el subfranquiciante o máster franquiciado.",
            {"size": 9.5, "color": INK_SOFT})],
-     first=True, line=1.26)
+     first=True, line=1.2)
 
-card(s, M, 6.20, CW, 0.50, fill=INK, border=None)
-tf = textbox(s, M + 0.34, 6.26, CW - 0.68, 0.40)
-rich(tf, [("Independencia declarada, pero no absoluta.  ",
+card(s, M, 6.16, CW, 0.46, fill=INK, border=None)
+tf = textbox(s, M + 0.34, 6.16, CW - 0.68, 0.46, anchor=MSO_ANCHOR.MIDDLE)
+rich(tf, [("Independientes por ley (art. 1520 CCyC),  ",
            {"size": 9.5, "color": ACCENT, "bold": True}),
-          ("Argentina afirma que las partes son independientes (art. 1520 CCyC) "
-           "y el proyecto colombiano descarta la solidaridad pasiva salvo pacto "
-           "expreso. Aun así, la jurisprudencia española la extiende al "
-           "franquiciador cuando el daño deriva de sus instrucciones concretas.",
+          ("aunque la responsabilidad alcanza al franquiciador cuando el daño "
+           "deriva de sus instrucciones concretas.",
            {"size": 9.5, "color": ON_DARK})],
-     first=True, line=1.26)
+     first=True, line=1.2)
 
 notes(s, "6:00–9:00 · Presentar a las dos partes. Insistir en que el franquiciado "
          "es empresario, no empleado. No leer las listas completas: destacar dos "
@@ -324,39 +318,31 @@ header(s, "Componente 4", "Principales ventajas y desventajas",
 
 ventajas = [
     ("Reconocimiento de marca",
-     "se arranca con una marca posicionada: capta clientes antes y gana "
-     "reputación más rápido."),
-    ("Modelo de negocio validado",
-     "se accede a un negocio ya probado y se reduce la incertidumbre de crear "
-     "una marca desde cero."),
-    ("Menor riesgo empresarial",
-     "registra tasas de supervivencia superiores a las de los negocios "
-     "independientes."),
+     "se parte de una marca ya posicionada en el mercado."),
+    ("Modelo validado",
+     "negocio ya probado, sin la incertidumbre de empezar de cero."),
+    ("Menor riesgo",
+     "más supervivencia que un negocio independiente equivalente."),
     ("Capacitación y asistencia",
-     "formación técnica inicial y acompañamiento continuo en marketing, "
-     "operaciones y gestión."),
+     "formación inicial y acompañamiento continuo de la marca."),
     ("Apoyo en marketing",
-     "las campañas y las redes sociales se diseñan y coordinan desde la marca."),
+     "las campañas y las redes se coordinan desde la marca."),
     ("Economías de escala",
-     "la red negocia como bloque: mejores condiciones y menores costos de "
-     "adquisición."),
+     "la red negocia como bloque y reduce costos de compra."),
 ]
 desventajas = [
     ("Costos elevados",
-     "inversión inicial alta más pagos continuos por regalías y publicidad."),
-    ("Limitación de la autonomía",
-     "debe seguir con rigor las políticas, estándares y procedimientos del "
-     "franquiciador."),
-    ("Regalías al margen del resultado",
-     "se pagan aunque el negocio no genere las ganancias esperadas."),
+     "inversión inicial alta más regalías y aportes de publicidad."),
+    ("Autonomía limitada",
+     "manda el estándar del franquiciador, no el criterio propio."),
+    ("Regalías fijas",
+     "se pagan aunque el negocio no dé las ganancias esperadas."),
     ("Conflictos entre las partes",
-     "diferencias sobre estrategias, proveedores autorizados o condiciones "
-     "económicas."),
+     "por estrategias, proveedores o condiciones económicas."),
     ("Cláusulas estrictas",
-     "exclusividad, duración, renovación y restricciones que limitan la "
-     "flexibilidad."),
-    ("Dependencia de la reputación ajena",
-     "un golpe a la imagen del franquiciador repercute sobre toda la red."),
+     "exclusividad, duración, renovación y límites operativos."),
+    ("Reputación ajena",
+     "un golpe a la imagen de la marca afecta a toda la red."),
 ]
 
 for i, (titulo, items, positivo) in enumerate(
@@ -370,10 +356,10 @@ for i, (titulo, items, positivo) in enumerate(
     para(tf, titulo, first=True, size=17, font=SERIF, color=INK, line=1.0)
     tf = textbox(s, x + IN, 3.02, CW2 - 2 * IN, 3.4)
     for k, (t, d) in enumerate(items):
-        rich(tf, [(f"{k + 1}. ", {"size": 9.5, "color": ACCENT, "bold": True}),
-                  (t + ": ", {"size": 9.5, "color": INK, "bold": True}),
-                  (d, {"size": 9.5, "color": INK_SOFT})],
-             first=(k == 0), space_after=11, line=1.26)
+        rich(tf, [(f"{k + 1}. ", {"size": 10.5, "color": ACCENT, "bold": True}),
+                  (t + ": ", {"size": 10.5, "color": INK, "bold": True}),
+                  (d, {"size": 10.5, "color": INK_SOFT})],
+             first=(k == 0), space_after=8, line=1.26)
 
 notes(s, "9:00–11:15 · No leer las doce. Agrupar: las ventajas se resumen en que "
          "se compra tiempo y se comparte infraestructura; las desventajas, en que "
@@ -401,9 +387,8 @@ tf = textbox(s, x + IN, 3.24, CW2 - 2 * IN, 0.24)
 para(tf, "Vicepresidente de operaciones · Grupo David", first=True, size=10.5,
      color=ACCENT, bold=True, line=1.15)
 tf = textbox(s, x + IN, 3.54, CW2 - 2 * IN, 0.70)
-para(tf, "Veinte años en la organización. Ha sido gerente de tiendas minoristas, "
-         "gerente de operaciones y director de retail. Hoy supervisa la operación "
-         "integral del grupo, que incluye más de 40 franquicias.",
+para(tf, "Veinte años en la organización. Pasó por gerencia de tiendas, "
+         "operaciones y dirección de retail.",
      first=True, size=10, color=ON_DARK_SF, line=1.32)
 
 # --- escala de la operación
