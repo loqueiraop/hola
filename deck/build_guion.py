@@ -1,25 +1,25 @@
 """
 Genera "Guion exposicion - Contrato de franquicia.docx".
 
-Registro: profesional. El auditorio tiene experiencia en gestión y negocios,
-pero no conoce esta figura en particular, así que los términos técnicos se
-definen sin didactismo ni tono coloquial.
+Registro: español hablado, claro y adulto. El auditorio es de maestría, con
+experiencia profesional, pero no conoce esta figura. Por eso los términos se
+explican en una frase llana y se sigue adelante: sin jerga jurídica, sin
+nominalizaciones burocráticas y sin analogías infantiles.
 
 El texto no reproduce lo escrito en las diapositivas: la diapositiva enuncia,
-el guion explica y ejemplifica. Los tiempos de la tabla se calculan a partir del
-conteo real de palabras, a 140 palabras por minuto.
+el guion explica. Los tiempos de la tabla se calculan del conteo real de
+palabras, a 140 palabras por minuto.
 """
 
 import os
 import re
 from docx import Document
 from docx.shared import Pt, Cm, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-PPM = 140  # palabras por minuto a ritmo de exposición
+PPM = 140
 
 INK = RGBColor(0x1B, 0x2A, 0x41)
 GREY = RGBColor(0x70, 0x78, 0x86)
@@ -35,245 +35,226 @@ BLOQUES = [
              "Buenas tardes. Voy a presentarles el trabajo del Grupo 1 sobre el "
              "**contrato de franquicia**.",
 
-             "Toda empresa que decide crecer enfrenta la misma restricción: la "
-             "expansión exige capital, y el capital propio siempre es limitado. "
-             "Las respuestas habituales son endeudarse o abrir más despacio. La "
-             "franquicia plantea una tercera: expandirse con capital de terceros, "
-             "cediéndoles el derecho a operar bajo la marca.",
+             "Cualquier empresa que quiere crecer se topa con el mismo límite: "
+             "abrir puntos nuevos cuesta capital, y el propio alcanza "
+             "hasta cierto punto. Las salidas de siempre son endeudarse o crecer "
+             "más lento.",
 
-             "El costo de esa decisión es alto. Obliga a entregarle a un tercero "
-             "lo único que sostiene el valor de la empresa —su nombre y su forma "
-             "de trabajar— y a confiar en que lo ejecutará con el mismo estándar, "
-             "en un mercado donde el titular no está presente.",
+             "La franquicia propone otra: crecer con el dinero de otros. Alguien "
+             "más pone la inversión, abre el local y lo opera bajo tu marca.",
 
-             "El contrato de franquicia es el instrumento que vuelve "
-             "administrable esa decisión. Define qué se transfiere, qué se cobra, "
-             "qué se controla y qué ocurre cuando la relación se rompe. En los "
-             "próximos quince minutos voy a recorrer cómo está construido, "
-             "quiénes intervienen y qué asume cada parte.",
+             "Suena cómodo, pero tiene un precio alto. Para que funcione hay que "
+             "entregarle a un tercero lo único que de verdad vale en la empresa: "
+             "el nombre y la forma de trabajar. Y después confiar en que lo va a "
+             "hacer igual de bien en una ciudad donde uno no está para vigilarlo.",
+
+             "El contrato de franquicia es lo que vuelve manejable ese riesgo. "
+             "Ahí queda definido qué se entrega, qué se cobra, qué se controla y "
+             "qué pasa cuando la relación se rompe. Eso es lo que voy a explicar "
+             "en estos quince minutos.",
          ]),
 
     dict(n=2, titulo="Definición conceptual",
          pantalla="Dos tarjetas: «La franquicia» y «El contrato de franquicia». "
                   "Abajo, tres países.",
          texto=[
-             "Franquiciar no consiste en vender un producto, sino en transferir "
-             "la capacidad de reproducir un negocio. Esa capacidad se compone de "
-             "tres elementos, con naturaleza y valor distintos.",
+             "Cuando una empresa franquicia, no está vendiendo un producto. Está "
+             "vendiendo la capacidad de repetir su negocio. Y eso son tres cosas "
+             "distintas.",
 
-             "El primero es la marca. Su función económica es concreta: le ahorra "
-             "al nuevo establecimiento los años que toma construir reputación en "
-             "un mercado. El cliente ingresa con una expectativa ya formada.",
+             "La primera es la marca, y sirve para algo muy concreto: el local "
+             "nuevo se ahorra los años que cuesta que la gente confíe en un "
+             "nombre. El cliente entra sabiendo qué va a encontrar.",
 
-             "El segundo es el **know-how**, y es donde reside el valor real del "
-             "sistema. Se traduce como saber hacer, y comprende el conjunto de "
-             "procedimientos que la empresa depuró a lo largo de años de "
-             "operación: estándares de producción, dimensionamiento del personal, "
-             "protocolos de atención, manejo de reclamos, control de inventarios. "
-             "No es materia patentable, porque no se trata de una invención sino "
-             "de experiencia acumulada, buena parte de ella a costa de errores "
-             "costosos. Al franquiciar, todo eso se documenta en manuales y se "
-             "entrega a un tercero. De ahí la severidad de las cláusulas de "
-             "confidencialidad: el franquiciado queda autorizado a utilizarlo, no "
-             "a divulgarlo, y esa obligación sobrevive a la terminación del "
-             "contrato.",
+             "La segunda es el **know-how**, y ahí está el valor de verdad. Es un "
+             "término del inglés que significa saber hacer. Son todos los "
+             "procedimientos que la empresa fue afinando con los años: cómo se "
+             "prepara cada producto, cuánta gente hace falta en cada turno, qué "
+             "se hace cuando un cliente reclama, cómo se maneja el inventario. "
+             "Nada de eso se puede patentar, porque no es un "
+             "invento: es experiencia, y buena parte se aprendió cometiendo "
+             "errores caros. Al franquiciar, todo eso se pone por escrito en "
+             "manuales y se le entrega a alguien de afuera. Por eso las cláusulas "
+             "de confidencialidad son tan duras: el franquiciado lo puede usar, "
+             "pero no lo puede contar, y esa obligación le sigue aunque el "
+             "contrato termine.",
 
-             "El tercero es el sistema de operación: configuración del local, "
-             "protocolo de servicio, política publicitaria. No responde a un "
-             "criterio estético, sino a la necesidad de que dos establecimientos "
-             "con propietarios distintos resulten indistinguibles para el "
-             "consumidor.",
+             "La tercera es la forma de operar: cómo se ve el local, cómo se "
+             "atiende, cómo se hace la publicidad. No es un tema de gusto. Es lo "
+             "que permite que dos locales con dueños distintos le resulten "
+             "iguales al cliente.",
 
-             "Esos tres elementos, en conjunto, constituyen la franquicia.",
+             "Esas tres cosas juntas son la franquicia.",
 
-             "El contrato opera en otro plano. Es el instrumento donde se fijan "
-             "la contraprestación, el plazo, el territorio, las facultades de "
-             "cada parte y las consecuencias del incumplimiento. Presenta dos "
-             "particularidades que lo separan de la contratación mercantil "
-             "ordinaria.",
+             "El contrato es otra cosa. Es el documento donde se fija cuánto se "
+             "paga, por cuánto tiempo, en qué zona, qué puede hacer cada uno y "
+             "qué pasa si alguien incumple. Y tiene dos rasgos que lo diferencian "
+             "de un contrato comercial común.",
 
-             "La primera: no se agota en un acto. En una compraventa hay una "
-             "prestación, una contraprestación y la relación se extingue. Aquí la "
-             "relación permanece activa durante toda la vigencia, con pagos "
-             "periódicos, asistencia continua y supervisión permanente. Su "
-             "estructura se aproxima más al arrendamiento que a la compraventa.",
+             "El primero: no se cumple y se termina. En una compraventa uno paga, "
+             "el otro entrega y ahí queda. Acá la relación sigue viva todo el "
+             "tiempo que dure: hay pagos cada mes, asistencia permanente y "
+             "supervisión constante. Se parece más a un arriendo que a una "
+             "compra.",
 
-             "La segunda es menos evidente: el contrato es **deliberadamente "
-             "incompleto**. Ninguno anticipa un cambio en los hábitos de consumo "
-             "a ocho años, ni una contingencia sanitaria. Y no se trata de una "
-             "deficiencia de redacción. Un contrato que cerrara todas las "
-             "variables impediría a la red ajustarse cuando el mercado se "
-             "desplaza. Ese margen es lo que le da capacidad de adaptación.",
+             "El segundo es menos evidente: el contrato está **incompleto a "
+             "propósito**. Ninguno prevé que en ocho años la gente compre de otra "
+             "manera, ni que aparezca una pandemia. Y no es que el abogado lo "
+             "haya hecho mal. Un contrato que amarre todas las variables le "
+             "impide a la red moverse cuando el mercado se mueve. Ese margen es "
+             "lo que le da capacidad de adaptarse.",
 
-             "A ello se suma su condición de **contrato marco**: no regula una "
-             "operación aislada, sino la incorporación a una red. Por eso las "
-             "obligaciones del franquiciado no derivan únicamente del texto "
-             "pactado, sino también de la ejecución cotidiana del know-how dentro "
-             "de ese sistema.",
+             "Hay algo más: es un **contrato marco**. No regula una operación "
+             "puntual, regula la entrada a una red. Por eso las obligaciones del "
+             "franquiciado no salen solo del texto que firmó; también salen de "
+             "operar el negocio todos los días según ese método.",
 
-             "Por último, el grado de protección varía según la jurisdicción. "
-             "**Argentina** tipificó la figura en su Código Civil y Comercial: "
-             "ante un litigio existen artículos aplicables. **Ecuador** la "
-             "reconoce en su Código de Comercio. **Colombia y Perú** la mantienen "
-             "como contrato atípico, es decir, la ley no la nombra. No es una "
-             "figura ilegal, pero implica que lo que el contrato no prevea, no lo "
-             "prevé nadie. En esas jurisdicciones el contrato no respalda el "
-             "acuerdo: lo constituye por completo.",
+             "Y una advertencia que cambia según el país. **Argentina** metió la "
+             "franquicia en su Código Civil y Comercial: si hay un pleito, hay "
+             "artículos que aplicar. **Ecuador** la reconoce en su Código de "
+             "Comercio. **Colombia y Perú** la tratan como contrato atípico, o "
+             "sea que la ley no la menciona. No es ilegal, pero implica que lo "
+             "que el contrato no diga, no lo dice nadie. Ahí el contrato no "
+             "respalda el acuerdo: el contrato es el acuerdo.",
          ]),
 
     dict(n=3, titulo="¿Cómo se aplica?",
          pantalla="Cinco etapas numeradas. Abajo, «20 días» y «La fórmula del "
                   "modelo».",
          texto=[
-             "El ciclo tiene cinco etapas, y la primera no es la firma: es la "
-             "selección.",
+             "El proceso tiene cinco etapas, y la primera no es firmar: es elegir.",
 
-             "El titular de la marca evalúa candidatos con criterio restrictivo, "
-             "porque cada establecimiento que abre compromete su nombre. La "
-             "capacidad de inversión no es suficiente. La literatura "
-             "especializada identifica la selección de franquiciados como una de "
-             "las decisiones determinantes del desempeño del sistema completo, y "
-             "la razón es asimétrica: si el franquiciado opera mal, él pierde su "
-             "inversión, pero la marca pierde posicionamiento en todo el mercado.",
+             "La marca no le da una franquicia a cualquiera que tenga el dinero. "
+             "Evalúa candidatos, y los evalúa con cuidado, porque cada local que "
+             "abre lleva su nombre en la fachada. Los estudios coinciden en que "
+             "elegir bien al franquiciado es una de las decisiones que más "
+             "determina si la red funciona. Y el riesgo no se reparte igual: si "
+             "opera mal, él pierde su inversión, pero la marca pierde prestigio "
+             "en todo el mercado.",
 
-             "Alcanzado el acuerdo, se formaliza. Y en ese momento no solo se "
-             "define el precio: se define la salida. Plazo, condiciones de "
-             "renovación, causales de terminación anticipada y mecanismo de "
-             "solución de controversias. Todo eso se pacta al inicio, cuando "
-             "existe voluntad de acuerdo, precisamente porque después no la habrá.",
+             "Cuando hay acuerdo, se firma. Y ahí no solo se pacta el precio: se "
+             "pacta la salida. Cuánto dura, cómo se renueva, en qué casos se "
+             "puede cortar antes y quién decide si hay conflicto. Todo eso se "
+             "define al principio, mientras las dos partes se están llevando "
+             "bien, justamente porque después no se van a poner de acuerdo.",
 
-             "Sigue la transferencia y la capacitación, que es la etapa menos "
-             "visible y una de las más determinantes: entrenamiento del "
-             "propietario y del personal, entrega de manuales, acompañamiento en "
-             "la apertura. Es aquí donde el know-how cambia de titular en "
-             "términos prácticos.",
+             "Después viene la etapa que nadie ve y que es de las más "
+             "importantes: la capacitación. Se entrena al dueño y al personal, se "
+             "entregan los manuales, se acompaña la apertura. Ahí es donde el "
+             "know-how cambia de manos en la práctica.",
 
-             "Luego opera el establecimiento. El franquiciado asume la gestión "
-             "completa —contratación, nómina, atención, obligaciones locales— "
-             "pero la ejerce dentro de parámetros que no definió.",
+             "El local abre. Y el franquiciado lleva el negocio completo: "
+             "contrata, paga la nómina, atiende, responde por el arriendo. Pero "
+             "lo hace dentro de reglas que no escribió él.",
 
-             "Y la relación no termina ahí: continúa la supervisión. Visitas, "
-             "verificación de estándares, auditoría de instalaciones y, en muchos "
-             "contratos, revisión de los libros contables. Es una facultad "
-             "intrusiva, y está aceptada desde el inicio por una razón práctica: "
-             "cuando el servicio falla, el consumidor no atribuye la falla al "
-             "propietario del local, la atribuye a la marca. El costo "
-             "reputacional se distribuye sobre toda la red.",
+             "Y la marca no desaparece: vuelve. Visita el local, revisa que se "
+             "cumplan los estándares, audita las instalaciones y en muchos "
+             "contratos también los libros contables. Es una facultad incómoda, y "
+             "está aceptada desde el primer día por una razón práctica: cuando "
+             "algo sale mal, el cliente no culpa al dueño del local, culpa a la "
+             "marca. El daño se reparte entre todos los que están en la red.",
 
-             "Hay además una obligación previa a todo el ciclo, que a mi juicio "
-             "es la que mejor caracteriza esta figura. Antes de la firma, el "
-             "titular de la marca debe entregar al futuro franquiciado "
-             "información veraz sobre el negocio: su identidad, la situación del "
-             "sector, la estructura de la red. Y con **veinte días hábiles** de "
-             "anticipación, para que la decisión se adopte con información "
-             "completa. El fundamento es la asimetría: quien ofrece conoce el "
-             "negocio en detalle y quien invierte lo desconoce casi por completo. "
-             "El incumplimiento de este deber genera responsabilidad por daños "
-             "**aunque el contrato nunca llegue a celebrarse**.",
+             "Hay una obligación anterior a todo esto que para mí es lo más "
+             "interesante de la figura. Antes de firmar, la marca tiene que "
+             "entregarle al futuro franquiciado información real del negocio: "
+             "quién es, cómo está el sector, cómo está armada la red. Y con "
+             "**veinte días hábiles** de anticipación, para que decida con todo "
+             "sobre la mesa. Existe porque la diferencia de información es "
+             "enorme: el que ofrece conoce el negocio a fondo y el que invierte "
+             "casi no lo conoce. Y si esa información se esconde o se maquilla, "
+             "hay responsabilidad por daños **aunque el contrato no se llegue a "
+             "firmar**.",
          ]),
 
     dict(n=4, titulo="Partes involucradas",
          pantalla="Dos tarjetas, franquiciador y franquiciado. Abajo, la franja "
                   "del subfranquiciante.",
          texto=[
-             "Intervienen dos partes, con denominaciones que se confunden con "
-             "facilidad. El **franquiciador**, también llamado franquiciante u "
-             "otorgante, es el titular de la marca. El **franquiciado**, o "
-             "franquiciatario, es quien explota el establecimiento.",
+             "Son dos partes, y los nombres se parecen tanto que se confunden. El "
+             "**franquiciador**, que también se llama franquiciante u otorgante, "
+             "es el dueño de la marca. El **franquiciado**, o franquiciatario, es "
+             "el que abre y opera el local.",
 
-             "El franquiciador aporta activos intangibles: el nombre comercial, "
-             "el know-how, los manuales y la asistencia técnica. Y hay un "
-             "requisito previo que suele omitirse: para franquiciar debió haber "
-             "operado con éxito su propio negocio durante un período razonable. "
-             "No se franquicia un proyecto; se franquicia un historial "
-             "acreditado. Ese historial es lo que determina el valor de lo que "
-             "ofrece.",
+             "Lo que aporta el dueño de la marca no se puede tocar: el nombre, el "
+             "know-how, los manuales y la asistencia técnica. Y hay un requisito "
+             "previo del que casi no se habla: para poder franquiciar tuvo que "
+             "haber operado su propio negocio con éxito durante un buen tiempo. "
+             "No se franquicia una idea, se franquicia un historial. Y ese "
+             "historial define cuánto vale lo que ofrece.",
 
-             "Su contraprestación llega por dos vías que no deben confundirse. El "
-             "**canon de entrada** es un pago único, al inicio, por el derecho de "
-             "incorporación a la red. Las **regalías** son pagos periódicos, "
-             "generalmente calculados como un porcentaje de las ventas.",
+             "Cobra de dos maneras distintas, y no son lo mismo. El **canon de "
+             "entrada** es un pago único, al principio, por el derecho a entrar a "
+             "la red. Las **regalías** son pagos que se repiten cada mes, y "
+             "normalmente se calculan como un porcentaje de las ventas.",
 
-             "Y recibe algo más que la contraprestación económica: recibe "
-             "facultades de control. Puede exigir uniformidad en la imagen del "
-             "local y en la operación, y la reserva del know-how transferido.",
+             "Y además del dinero recibe control. Puede exigir que el local se "
+             "vea igual, que se opere igual, y que el know-how no salga de ahí.",
 
-             "El franquiciado aporta capital y gestión: la inversión inicial, las "
-             "regalías, la operación diaria, el equipo humano. Y aporta un activo "
-             "que el franquiciador no posee: el conocimiento del comportamiento "
-             "de compra en su propio mercado.",
+             "Del otro lado, el franquiciado pone el capital y la gestión: la "
+             "inversión inicial, las regalías, el día a día, el equipo. Y pone "
+             "algo que la marca no tiene: sabe cómo compra la gente de su ciudad.",
 
-             "A su favor, la protección más relevante suele ser la "
-             "**exclusividad territorial**: el compromiso de que la marca no "
-             "abrirá otro establecimiento en su zona de influencia fragmentando "
-             "su clientela. Si no se pactó expresamente, no existe.",
+             "A cambio recibe el paquete completo y, sobre todo, protección. La "
+             "más importante suele ser la **exclusividad territorial**: el "
+             "compromiso de que la marca no va a abrir otro local en su zona y le "
+             "va a dividir la clientela. Si no quedó escrito, no existe.",
 
-             "Entre sus obligaciones figura además la prohibición de competir con "
-             "la red mientras el contrato esté vigente, correlato lógico de haber "
-             "recibido el método.",
+             "Entre sus obligaciones está no competir con la red mientras el "
+             "contrato esté vigente, que es la contracara de haberle recibido el "
+             "método.",
 
-             "Y aquí está la confusión más frecuente. Aunque siga manuales "
-             "ajenos, aunque se someta a auditorías, aunque no fije libremente "
-             "sus precios, el franquiciado **no es un dependiente**. Es un "
-             "empresario independiente. Su capital está en riesgo. Si el "
-             "establecimiento fracasa, la pérdida es suya y no de la marca.",
+             "Y acá está la confusión más común. Aunque siga manuales ajenos, "
+             "aunque lo auditen, aunque no fije sus precios, el franquiciado **no "
+             "es un empleado**. Es un empresario independiente. Su capital está "
+             "en riesgo. Si el local quiebra, la pérdida es suya y no de la marca.",
 
-             "De ahí se deriva el punto de mayor litigiosidad: quién responde "
-             "frente al consumidor que sufre un daño en el establecimiento. La "
-             "regla general atribuye la responsabilidad al franquiciado, incluso "
-             "por los actos de sus dependientes, por su condición de empresario "
-             "independiente. La presencia del signo distintivo en la fachada no "
-             "basta para trasladar la responsabilidad al titular de la marca. Sin "
-             "embargo, los tribunales españoles han admitido una excepción, "
-             "particularmente en clínicas de medicina estética y odontología: "
-             "cuando se acredita que el daño derivó de una instrucción concreta "
-             "impuesta por el franquiciador, este responde. La existencia de "
-             "estándares y de supervisión no es suficiente; debe probarse el nexo "
-             "causal.",
+             "De ahí sale el punto que más se pelea en tribunales: quién responde "
+             "cuando un cliente sufre un daño dentro del local. En principio "
+             "responde el franquiciado, incluso por lo que hagan sus empleados, "
+             "precisamente porque es independiente. Que el aviso de la marca esté "
+             "en la puerta no alcanza para responsabilizarla. Pero los tribunales "
+             "españoles hicieron una excepción, sobre todo en clínicas de "
+             "estética y odontología: si se prueba que el daño vino de una "
+             "instrucción concreta de la marca, la marca responde. Tener manuales "
+             "y supervisar no basta.",
 
-             "Finalmente, cuando la red se internacionaliza aparece un tercer "
-             "sujeto. Un operador adquiere los derechos sobre un territorio "
-             "completo y otorga franquicias dentro de él. No es el titular "
-             "originario de la marca, pero frente a esos franquiciados asume sus "
-             "funciones.",
+             "Y cuando la red sale al exterior aparece un tercero. Alguien compra "
+             "los derechos de un país entero y después otorga franquicias ahí "
+             "adentro. No es el dueño de la marca, pero para esos locales hace de "
+             "dueño.",
          ]),
 
     dict(n=5, titulo="Ventajas y desventajas",
          pantalla="Seis ventajas y seis desventajas.",
          texto=[
-             "En la diapositiva están los doce puntos; no voy a leerlos. Prefiero "
-             "detenerme en la lógica que los ordena, porque ambas columnas "
-             "describen la misma decisión desde lados opuestos.",
+             "En la diapositiva están los doce puntos; no los voy a leer. "
+             "Prefiero explicarles la lógica, porque las dos columnas son la "
+             "misma decisión vista de los dos lados.",
 
-             "Lo que se obtiene se reduce a dos cosas. La primera es tiempo: no "
-             "se invierte en averiguar qué funciona, se ingresa a un modelo ya "
-             "validado. De ahí que las franquicias registren tasas de "
-             "supervivencia superiores a las de negocios independientes "
-             "comparables; no es un efecto del azar, es que los errores costosos "
-             "ya fueron asumidos por otro. La segunda es escala: publicidad, "
-             "capacitación y compras se ejecutan para la red completa. Un "
-             "establecimiento independiente negocia cien unidades; la red negocia "
-             "cien mil. No obtienen el mismo precio ni las mismas condiciones de "
-             "pago.",
+             "Lo que se gana son dos cosas. Tiempo: uno no se pone a averiguar "
+             "qué funciona, entra a algo que ya funciona. Por eso las franquicias "
+             "sobreviven más que los negocios independientes parecidos; no es "
+             "suerte, es que los errores caros ya los pagó otro. Y escala: la "
+             "publicidad, la capacitación y las compras se hacen para toda la "
+             "red. Un local solo negocia cien unidades, la red negocia cien mil. "
+             "No les dan el mismo precio ni el mismo plazo de pago.",
 
-             "Lo que se cede son también dos cosas. Se cede margen, y en una "
-             "modalidad que merece precisión: las regalías se calculan sobre "
-             "**las ventas, no sobre la utilidad**. Si en un mes las ventas caen "
-             "a la mitad, la regalía se liquida igual. Un mes adverso para el "
-             "establecimiento no es un mes adverso para la marca.",
+             "Lo que se cede son también dos cosas. Se cede margen, y de una "
+             "forma que hay que entender bien: las regalías se calculan sobre "
+             "**las ventas, no sobre la ganancia**. Si un mes las ventas caen a "
+             "la mitad, la regalía se paga igual. Un mes malo para el local no es "
+             "un mes malo para la marca.",
 
-             "Y se cede autonomía. El franquiciado puede identificar una "
-             "oportunidad válida en su mercado y no poder implementarla porque el "
-             "manual no lo autoriza. Existe además una exposición que no controla "
-             "en absoluto: si la marca sufre un deterioro reputacional, incluso "
-             "por hechos ocurridos en otro país, su establecimiento pierde "
-             "afluencia esa semana. Su gestión pudo ser impecable y el costo lo "
-             "asume igual.",
+             "Y se cede autonomía. El franquiciado puede ver una oportunidad real "
+             "en su mercado y no poder aprovecharla porque el manual no lo "
+             "permite. Y hay una exposición que no controla en absoluto: si la "
+             "marca se golpea en su reputación, aunque sea por algo que pasó en "
+             "otro país, su local pierde clientes esa semana. Pudo haber "
+             "trabajado impecable y el costo lo asume igual.",
 
-             "Y ahí está el núcleo del asunto: aquello que genera el valor de la "
-             "red es lo mismo que restringe al franquiciado. No hay uno sin el "
-             "otro. El contrato únicamente determina en qué punto se traza esa "
-             "línea.",
+             "Ahí está el fondo del asunto: lo mismo que le da valor a la red es "
+             "lo que le quita libertad al franquiciado. No hay uno sin el otro. "
+             "El contrato solo define dónde se pone esa raya.",
          ]),
 
     dict(n=6, titulo="Síntesis e intro al video",
@@ -281,89 +262,82 @@ BLOQUES = [
          texto=[
              "Para cerrar, tres conclusiones.",
 
-             "**La primera:** el modelo funciona porque ninguna de las partes "
-             "podría sola. Una dispone de la marca, el método y la experiencia "
-             "acumulada, pero no del capital ni del conocimiento de cada mercado. "
-             "La otra dispone del capital y del mercado, pero no de la marca ni "
-             "del método. La franquicia existe para articular esas dos mitades.",
+             "**La primera:** esto funciona porque ninguna de las dos partes "
+             "podría sola. Una tiene la marca, el método y la experiencia, pero "
+             "no el capital ni el conocimiento de cada mercado. La otra tiene el "
+             "capital y el mercado, pero no la marca ni el método. La franquicia "
+             "existe para juntar esas dos mitades.",
 
-             "**La segunda,** y es la que más me llamó la atención de la "
-             "investigación: el grado de exposición de las partes depende de la "
-             "jurisdicción. Donde la figura está regulada existe un estándar "
-             "mínimo de protección. Donde no lo está, como en Colombia o en Perú, "
-             "ese estándar lo fija el contrato o no lo fija nadie. Un contrato "
-             "deficiente en esas jurisdicciones no es un problema de técnica "
-             "jurídica: es la ausencia de defensa.",
+             "**La segunda,** y es la que más me llamó la atención al investigar: "
+             "qué tan expuestas están las partes depende del país. Donde la ley "
+             "regula la figura hay un mínimo garantizado. Donde no, como en "
+             "Colombia o Perú, ese mínimo lo pone el contrato o no lo pone nadie. "
+             "Un contrato mal hecho ahí no es un problema de forma: es quedarse "
+             "sin defensa.",
 
-             "**La tercera:** la independencia entre las partes es efectiva, pero "
-             "admite un límite. Se sostiene mientras el franquiciador oriente la "
-             "operación. Cuando el control alcanza tal intensidad que sustituye "
-             "la decisión del franquiciado, esa independencia deja de ser real, y "
-             "así lo han reconocido los tribunales.",
+             "**La tercera:** la independencia entre las partes es real, pero "
+             "tiene un límite. Se sostiene mientras la marca oriente. Cuando el "
+             "control es tan fuerte que reemplaza la decisión del franquiciado, "
+             "esa independencia deja de existir, y los tribunales ya lo "
+             "reconocieron.",
 
-             "Todo lo anterior es análisis normativo y doctrinal. Para "
-             "contrastarlo con la práctica, entrevistamos a **Gerardo Marcano**, "
-             "vicepresidente de operaciones de Grupo David, con veinte años en la "
-             "organización y responsabilidad sobre más de cuarenta franquicias.",
+             "Todo esto es teoría. Para contrastarlo con la práctica "
+             "entrevistamos a **Gerardo Marcano**, vicepresidente "
+             "de operaciones de Grupo David. Lleva veinte años ahí y hoy responde "
+             "por más de cuarenta franquicias.",
 
-             "Antes de la proyección, dos términos que él emplea. **Brand "
-             "awareness** es el nivel de reconocimiento y preferencia de marca en "
-             "un mercado determinado; para él es el factor que define si una "
-             "apertura procede o no procede. Y **tropicalización** es la "
-             "adaptación del producto al mercado local: ajuste de materiales, "
-             "colores y surtido según clima y hábitos de consumo. Su ejemplo es "
-             "ilustrativo: enviar ropa de invierno a una ciudad cálida equivale a "
-             "perder la temporada completa.",
+             "Antes de verlo, dos términos que él usa. **Brand awareness** es qué "
+             "tanto una marca es conocida y deseada en un mercado; para él eso "
+             "define si se abre o no se abre un local. Y **tropicalización** es "
+             "adaptar el producto a cada mercado: cambiar telas, colores y "
+             "surtido según el clima y lo que la gente usa. Su ejemplo lo resume "
+             "bien: mandar ropa de invierno a una ciudad cálida es perder la "
+             "temporada entera.",
 
-             "Presten atención especialmente a un punto: hasta dónde puede "
-             "adaptarse el modelo sin comprometer el estándar. Lo que aquí se "
-             "plantea en términos abstractos, para él constituye una decisión "
-             "operativa cotidiana.",
+             "Presten atención sobre todo a una cosa: hasta dónde se puede "
+             "adaptar el modelo sin romper el estándar. Lo que acá suena "
+             "abstracto, para él es una decisión de todos los días.",
 
              "Con esto cierro. Gracias.",
          ]),
 ]
 
 CIERRE = [
-    "La entrevista confirma algo que en el análisis apenas se intuye: lo que "
+    "La entrevista deja clara una cosa que en el análisis apenas se asoma: lo que "
     "sostiene una franquicia no es el texto del contrato, sino el rigor con que "
-    "se replica el estándar y el criterio con que se adapta a cada mercado. Con "
+    "se repite el estándar y el criterio con que se adapta a cada mercado. Con "
     "gusto respondo sus preguntas.",
 ]
 
 PREGUNTAS = [
-    ("¿Cuál es el monto de una franquicia?",
-     "Depende del sector y del posicionamiento de la marca, pero la estructura "
-     "es siempre la misma: un canon de entrada, único y al inicio, y regalías "
-     "periódicas calculadas normalmente como porcentaje de las ventas."),
-    ("¿Puede el franquiciado transferir su establecimiento?",
-     "Solo con autorización del franquiciador, y así suele quedar pactado. La "
-     "marca conserva la facultad de decidir quién se incorpora a su red."),
-    ("¿Quién responde frente a un daño sufrido por un cliente en el local?",
-     "Por regla general el franquiciado, por su condición de empresario "
-     "independiente. Los tribunales españoles han responsabilizado al "
-     "franquiciador cuando se acredita que el daño derivó de una instrucción "
-     "concreta que él impuso. La existencia de estándares de calidad no basta: "
-     "debe probarse el nexo causal."),
-    ("¿Qué margen tiene el franquiciado para modificar la operación?",
-     "Requiere autorización. Un laudo arbitral colombiano, el caso PANACA, "
-     "precisó que el franquiciado debe respetar la filosofía de la marca, pero "
-     "que los manuales tampoco pueden aplicarse de forma idéntica en cualquier "
-     "plaza o mercado."),
+    ("¿Cuánto cuesta una franquicia?",
+     "Depende del sector y de qué tan fuerte sea la marca, pero la estructura es "
+     "siempre la misma: un canon de entrada, que es único y al principio, y "
+     "regalías mensuales, que normalmente son un porcentaje de las ventas."),
+    ("¿El franquiciado puede vender su local?",
+     "Solo con autorización de la marca, y así queda escrito casi siempre. La "
+     "marca quiere decidir quién entra a su red."),
+    ("¿Quién responde si un cliente se lastima en el local?",
+     "En principio el franquiciado, porque es un empresario independiente. Los "
+     "tribunales españoles han responsabilizado a la marca cuando se prueba que "
+     "el daño vino de una instrucción concreta que ella dio. Tener estándares de "
+     "calidad no basta: hay que probar que esa orden causó el daño."),
+    ("¿Cuánto margen tiene el franquiciado para cambiar cosas?",
+     "Necesita autorización. Un laudo arbitral colombiano, el caso PANACA, dejó "
+     "dicho que el franquiciado debe respetar la filosofía de la marca, pero que "
+     "los manuales tampoco se pueden aplicar igual en cualquier ciudad."),
     ("¿En qué se diferencia de una licencia de marca?",
-     "La licencia autoriza únicamente el uso del signo distintivo. La franquicia "
-     "transfiere además el know-how, los manuales, la capacitación y la "
-     "asistencia continua, y viene acompañada de facultades de control sobre la "
-     "operación."),
-    ("¿Por qué Colombia no ha regulado la figura pese a su difusión?",
-     "Existe una norma técnica de aplicación voluntaria, la NTC 5813, y el "
-     "Ministerio de Comercio redactó en 2021 un proyecto de decreto que "
-     "contemplaba ese plazo de veinte días hábiles. A la fecha de nuestra "
-     "revisión, el proyecto seguía sin expedirse."),
-    ("¿Cuál es la duración habitual del contrato?",
-     "La fija el contrato y varía según el sector, pero siempre incorpora "
-     "cláusulas de renovación y de terminación. Se trata de una relación de "
-     "larga duración, y por eso la salida se negocia desde el inicio."),
+     "La licencia solo autoriza usar el nombre. La franquicia entrega además el "
+     "know-how, los manuales, la capacitación y la asistencia continua, y viene "
+     "con control sobre cómo se opera."),
+    ("¿Por qué Colombia no lo ha regulado si es tan común?",
+     "Hay una norma técnica voluntaria, la NTC 5813, y el Ministerio de Comercio "
+     "redactó en 2021 un proyecto de decreto que incluía ese plazo de veinte "
+     "días. Cuando hicimos la revisión seguía sin expedirse."),
+    ("¿Cuánto dura normalmente el contrato?",
+     "Lo fija el contrato y cambia según el sector, pero siempre trae cláusulas "
+     "de renovación y de terminación. Es una relación de largo plazo, y por eso "
+     "la salida se negocia desde el principio."),
 ]
 
 
@@ -377,7 +351,6 @@ def mmss(seg):
 
 
 def rich(p, texto, *, size=12.5, color=INK, font=SANS):
-    """Escribe el texto interpretando **negrita**."""
     for i, tramo in enumerate(texto.split("**")):
         if not tramo:
             continue
@@ -426,7 +399,6 @@ pf = est.paragraph_format
 pf.line_spacing = 1.4
 pf.space_after = Pt(9)
 
-# --- cabecera
 p = doc.add_paragraph()
 p.paragraph_format.space_after = Pt(2)
 r = p.add_run("CONTRATO DE FRANQUICIA")
@@ -449,7 +421,6 @@ r = p.add_run("15 minutos · Acuerdos Comerciales · Grupo 1 · María Isabel Ac
 r.font.size = Pt(10.5)
 r.font.color.rgb = GREY
 
-# --- cálculo de tiempos a partir del texto real
 for b in BLOQUES:
     b["palabras"] = sum(contar(t) for t in b["texto"])
     b["seg"] = b["palabras"] / PPM * 60
@@ -462,19 +433,17 @@ total = acumulado
 p = doc.add_paragraph()
 p.paragraph_format.space_after = Pt(8)
 r = p.add_run(
-    f"El video de la entrevista se proyecta después de los quince minutos, de modo "
-    f"que estos quince corresponden íntegramente a la exposición. La diapositiva 6 "
-    f"la cierra y deja el video montado. Leído a ritmo normal, unas {PPM} palabras "
-    f"por minuto, el guion completo da {mmss(total)}.")
+    f"El video de la entrevista se proyecta después de los quince minutos, así que "
+    f"estos quince son todos de exposición. La diapositiva 6 la cierra y deja el "
+    f"video montado. Leído a ritmo normal, unas {PPM} palabras por minuto, el guion "
+    f"completo da {mmss(total)}.")
 r.font.size = Pt(11)
 r.font.color.rgb = GREY
 
-# --- tabla de tiempos
 tabla = doc.add_table(rows=1, cols=3)
 tabla.alignment = WD_TABLE_ALIGNMENT.LEFT
 anchos = [Cm(2.4), Cm(8.6), Cm(2.4)]
-encabezados = ["Entra", "Diapositiva", "Dura"]
-for i, (h, w) in enumerate(zip(encabezados, anchos)):
+for i, (h, w) in enumerate(zip(["Entra", "Diapositiva", "Dura"], anchos)):
     c = tabla.rows[0].cells[i]
     c.width = w
     sombrear(c, "1B2A41")
@@ -488,8 +457,9 @@ for i, (h, w) in enumerate(zip(encabezados, anchos)):
 
 for b in BLOQUES:
     fila = tabla.add_row()
-    valores = [mmss(b["inicio"]), f"{b['n']} · {b['titulo']}", mmss(b["seg"])]
-    for i, (v, w) in enumerate(zip(valores, anchos)):
+    for i, (v, w) in enumerate(zip([mmss(b["inicio"]),
+                                    f"{b['n']} · {b['titulo']}",
+                                    mmss(b["seg"])], anchos)):
         c = fila.cells[i]
         c.width = w
         solo_borde_inferior(c)
@@ -501,20 +471,20 @@ for b in BLOQUES:
         rr.font.color.rgb = INK
 
 fila = tabla.add_row()
-finales = [mmss(total), "Fin de la exposición · empieza el video", ""]
-for i, w in enumerate(anchos):
+for i, (v, w) in enumerate(zip([mmss(total),
+                                "Fin de la exposición · empieza el video",
+                                ""], anchos)):
     c = fila.cells[i]
     c.width = w
     solo_borde_inferior(c)
     pp = c.paragraphs[0]
     pp.paragraph_format.space_after = Pt(0)
-    rr = pp.add_run(finales[i])
+    rr = pp.add_run(v)
     rr.font.bold = i < 2
     rr.font.size = Pt(10)
     rr.font.name = SANS
     rr.font.color.rgb = ACCENT
 
-# --- válvulas de escape
 p = doc.add_paragraph()
 p.paragraph_format.space_before = Pt(12)
 p.paragraph_format.space_after = Pt(3)
@@ -523,12 +493,12 @@ r.font.size = Pt(9)
 r.font.bold = True
 r.font.color.rgb = ACCENT
 
-for t in ("Para recuperar unos 50 segundos: en la diapositiva 4, omitir el "
-          "párrafo sobre responsabilidad frente al consumidor.",
-          "Para recuperar unos 20 segundos: en la diapositiva 5, suprimir el "
-          "caso del deterioro reputacional.",
+for t in ("Para recuperar unos 50 segundos: en la diapositiva 4, saltarse el "
+          "párrafo de quién responde ante un daño al cliente.",
+          "Para recuperar unos 20 segundos: en la diapositiva 5, saltarse el caso "
+          "del golpe a la reputación de la marca.",
           "Si sobra tiempo: desarrollar los ejemplos de la diapositiva 5, que es "
-          "donde la explicación gana concreción."):
+          "donde la explicación se vuelve concreta."):
     p = doc.add_paragraph(style="List Bullet")
     p.paragraph_format.space_after = Pt(3)
     p.paragraph_format.line_spacing = 1.2
@@ -536,7 +506,6 @@ for t in ("Para recuperar unos 50 segundos: en la diapositiva 4, omitir el "
     r.font.size = Pt(10.5)
     r.font.color.rgb = GREY
 
-# --- bloques
 for b in BLOQUES:
     doc.add_page_break()
 
@@ -564,7 +533,6 @@ for b in BLOQUES:
     for t in b["texto"]:
         rich(doc.add_paragraph(), t)
 
-# --- después del video
 doc.add_page_break()
 p = doc.add_paragraph()
 p.paragraph_format.space_after = Pt(1)
