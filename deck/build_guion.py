@@ -20,6 +20,8 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
 PPM = 140
+VERSION = "v2"
+FECHA = "10 de septiembre de 2026"
 
 INK = RGBColor(0x1B, 0x2A, 0x41)
 GREY = RGBColor(0x70, 0x78, 0x86)
@@ -143,6 +145,14 @@ r = p.add_run("15 minutos · Acuerdos Comerciales · Grupo 1 · María Isabel Ac
               "Xilena Blanco, María Daniela García, Fredy Valladares")
 r.font.size = Pt(10.5)
 r.font.color.rgb = GREY
+
+p = doc.add_paragraph()
+p.paragraph_format.space_after = Pt(14)
+r = p.add_run(f"{VERSION.upper()} · {FECHA} · guion en lenguaje hablado, sin dos "
+              f"puntos, con conectores entre ideas")
+r.font.size = Pt(9)
+r.font.bold = True
+r.font.color.rgb = ACCENT
 
 for b in BLOQUES:
     b["palabras"] = sum(contar(t) for t in b["texto"])
@@ -307,7 +317,7 @@ for q, a in PREGUNTAS:
 
 
 out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                   "Guion exposicion - Contrato de franquicia.docx")
+                   f"Guion Contrato de Franquicia {VERSION}.docx")
 doc.save(out)
 
 fallos = revisar_estilo()
