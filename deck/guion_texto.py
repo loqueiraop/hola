@@ -25,8 +25,8 @@ BLOQUES = [
 
              "Y la franquicia aparece como una tercera salida, porque permite "
              "crecer con el dinero de otros. Alguien más pone la inversión y "
-             "opera el local bajo tu marca, de manera que la red se expande sin "
-             "que el dueño de la marca tenga que financiarla.",
+             "opera el local bajo tu marca, de manera que la marca crece sin que "
+             "su dueño tenga que financiarlo.",
 
              "Eso tiene un precio alto, porque hay que entregarle a un tercero lo "
              "único que sostiene el valor de la empresa, que es su nombre y su "
@@ -46,9 +46,9 @@ BLOQUES = [
              "la capacidad de repetir su negocio, y eso se compone de tres cosas "
              "distintas.",
 
-             "La primera y más evidente es la marca, que le ahorra al local nuevo "
-             "todos los años que cuesta lograr que la gente confíe en un nombre, "
-             "porque el cliente entra ya sabiendo qué va a encontrar.",
+             "La primera es la marca, que le ahorra al local nuevo los años que "
+             "cuesta lograr que la gente confíe en un nombre, porque el cliente "
+             "entra ya sabiendo qué va a encontrar.",
 
              "Después viene el **know-how**, y ahí está el valor de verdad. Es un "
              "término del inglés que significa saber hacer, y se refiere a los "
@@ -57,14 +57,17 @@ BLOQUES = [
              "turno. Nada de eso se puede "
              "patentar, porque no es un invento sino experiencia acumulada a base "
              "de errores caros. Cuando la empresa franquicia, todo eso se pone "
-             "por escrito y se le entrega a un tercero, y por eso las cláusulas "
-             "de confidencialidad son tan duras, ya que el franquiciado lo puede "
-             "usar pero no divulgar.",
+             "por escrito en los **manuales operativos**, que son los documentos "
+             "donde queda paso a paso cómo se hace cada cosa. Y se le entregan a "
+             "un tercero, así que las cláusulas de confidencialidad son tan "
+             "duras, ya que el franquiciado los puede usar pero no divulgar.",
 
              "Y por último está la forma de operar, o sea cómo se ve el local, "
              "cómo se atiende y cómo se hace la publicidad, que es lo que logra "
              "que dos locales con dueños distintos le resulten iguales al "
-             "cliente.",
+             "cliente. A ese conjunto de reglas se le llama el **estándar** de la "
+             "marca, y a todos los locales que funcionan bajo ella, propios o de "
+             "franquiciados, se les llama la **red**.",
 
              "El contrato, en cambio, es el documento que ordena todo eso, y "
              "tiene cuatro rasgos que lo separan de un contrato comercial "
@@ -73,8 +76,8 @@ BLOQUES = [
              "El primero es que es un contrato **de colaboración y no un simple "
              "intercambio**. En una compraventa cada parte quiere lo contrario "
              "que la otra, porque uno quiere vender caro y el otro comprar "
-             "barato, mientras que acá las dos necesitan lo mismo, que es que el "
-             "local funcione. Por eso el franquiciador tiene que asistir y el "
+             "barato, mientras que acá las dos necesitan que el local funcione. "
+             "Por eso el franquiciador tiene que asistir y el "
              "franquiciado tiene que informar, aunque eso no los convierte en "
              "socios.",
 
@@ -98,9 +101,8 @@ BLOQUES = [
              "incorporó la franquicia a su Código Civil y Comercial, así que si "
              "hay un pleito existen artículos que aplicar, y **Ecuador** la "
              "reconoce en su Código de Comercio. **Colombia y Perú**, en cambio, "
-             "la tratan como contrato atípico, o sea que la ley no la menciona, y "
-             "eso implica que todo lo que el contrato no diga no lo dice nadie, "
-             "de manera que ahí el contrato es el acuerdo completo.",
+             "la tratan como contrato atípico, así que la ley no la menciona y lo "
+             "que el contrato no diga no lo dice nadie.",
          ]),
 
     dict(n=3, titulo="¿Cómo se aplica?",
@@ -110,13 +112,13 @@ BLOQUES = [
              "Veamos entonces cómo funciona esto en la práctica, porque el "
              "proceso tiene cinco etapas y la primera no es firmar sino elegir.",
 
-             "La marca no le entrega una franquicia a cualquiera que tenga el "
-             "dinero, sino que evalúa candidatos con cuidado, porque cada local "
-             "que abre va a llevar su nombre en la fachada. De hecho, los "
-             "estudios coinciden en que es una de las decisiones que más "
-             "determina si la red funciona, ya que si el franquiciado opera mal él "
-             "pierde su inversión pero la marca pierde prestigio en todo el "
-             "mercado.",
+             "La empresa dueña de la marca no le entrega una franquicia a "
+             "cualquiera que tenga el dinero, sino que evalúa candidatos con "
+             "cuidado, porque cada local que abre va a llevar su nombre en la "
+             "fachada. De hecho, los estudios coinciden en que es una de las "
+             "decisiones que más determina si la red funciona, ya que si el "
+             "franquiciado opera mal pierde su inversión pero la marca pierde "
+             "prestigio en todo el mercado.",
 
              "Una vez que hay acuerdo se firma, y ahí no solo se pacta el precio "
              "sino también la salida, es decir cuánto dura, cómo se renueva y en "
@@ -127,26 +129,26 @@ BLOQUES = [
              "Luego viene la etapa que nadie ve y que es de las más importantes, "
              "que es la capacitación. Se entrena al dueño y al personal, se "
              "entregan los manuales y se acompaña la apertura, así que es acá "
-             "donde el know-how cambia de manos de verdad.",
+             "donde el know-how cambia de manos.",
 
              "Cuando el local abre, el franquiciado lleva el negocio completo, "
              "porque contrata, paga la nómina, atiende y responde por el "
              "arriendo, aunque dentro de reglas que no escribió él.",
 
              "Y la marca no desaparece después de la firma, sino que vuelve. "
-             "Visita el local, revisa los estándares y audita las instalaciones y "
-             "a veces los libros contables. Es incómodo, pero está aceptado desde "
-             "el primer día porque cuando algo sale mal el cliente no culpa al "
-             "dueño del local sino a la marca, de modo que el daño se reparte "
-             "entre toda la red.",
+             "Visita el local, revisa que se cumpla el estándar, inspecciona las "
+             "instalaciones y a veces revisa las cuentas. Es incómodo, pero está "
+             "aceptado desde el primer día porque cuando algo sale mal el cliente "
+             "no culpa al dueño del local sino a la marca, de modo que el daño se "
+             "reparte entre toda la red.",
 
              "Ahora, antes de todo este ciclo hay una obligación que para mí es "
              "lo más interesante de la figura, y es que la marca tiene que "
              "entregarle al futuro franquiciado información real del negocio, o "
-             "sea quién es, cómo está el sector y cómo está armada la red. Además "
-             "debe hacerlo con **veinte días hábiles** de anticipación, y existe "
-             "porque el que ofrece conoce el negocio a fondo mientras el que "
-             "invierte casi no lo conoce. Y si esa información se esconde o se maquilla hay "
+             "sea quién es, cómo está el sector y cómo está armada la red, y con "
+             "**veinte días hábiles** de anticipación. Existe porque el que "
+             "ofrece conoce el negocio a fondo mientras el que invierte casi no "
+             "lo conoce. Y si esa información se esconde o se maquilla hay "
              "responsabilidad por daños **aunque el contrato no llegue a "
              "firmarse**.",
          ]),
@@ -169,9 +171,9 @@ BLOQUES = [
              "A cambio cobra de dos maneras que no son lo mismo. El **canon de "
              "entrada** es un pago único al principio por el derecho a entrar en "
              "la red, mientras que las **regalías** se repiten cada mes y "
-             "normalmente son un porcentaje de las ventas. Pero además del dinero "
-             "recibe control, porque puede exigir que el local se vea igual, que "
-             "se opere igual y que el know-how no salga de ahí.",
+             "normalmente son un porcentaje de las ventas. Y además del dinero "
+             "recibe control, porque puede exigir que el local se vea y se opere "
+             "igual.",
 
              "Del otro lado, el franquiciado pone el capital y la gestión, es "
              "decir la inversión inicial, las regalías, el día a día y el equipo, "
@@ -185,7 +187,8 @@ BLOQUES = [
              "obligaciones está no competir con la red.",
 
              "Acá aparece la confusión más común de todas, porque aunque siga "
-             "manuales ajenos, aunque lo auditen y aunque no fije libremente sus "
+             "manuales ajenos, aunque le revisen las cuentas y aunque no fije "
+             "libremente sus "
              "precios, el franquiciado **no es un empleado** sino un empresario "
              "independiente, de modo que si el local quiebra la pérdida es suya y "
              "no de la marca.",
@@ -194,9 +197,8 @@ BLOQUES = [
              "que es quién responde cuando un cliente sufre un daño en el local. "
              "En principio responde el franquiciado, y que el aviso de la marca "
              "esté en la puerta no alcanza para responsabilizarla, aunque los "
-             "tribunales españoles hicieron una excepción en clínicas de estética "
-             "y odontología, cuando se prueba que el daño vino de una instrucción "
-             "concreta de la marca.",
+             "tribunales españoles hicieron una excepción cuando se prueba que el "
+             "daño vino de una instrucción concreta de la marca.",
 
              "Por último, cuando la red sale al exterior aparece un tercero que "
              "compra los derechos de un país entero y después otorga franquicias "
@@ -229,8 +231,8 @@ BLOQUES = [
              "Y se cede autonomía, porque el franquiciado puede ver una "
              "oportunidad real en su mercado y no poder aprovecharla si el manual "
              "no lo permite, y de ahí salen buena parte de los conflictos entre "
-             "las dos partes. Además hay una exposición que no controla en "
-             "absoluto, ya que si la marca se golpea en su reputación, aunque sea "
+             "las partes. Además hay una exposición que no controla, ya que si la "
+             "marca se golpea en su reputación, aunque sea "
              "por algo que pasó en otro país, su local pierde clientes esa semana "
              "aunque él haya trabajado impecable.",
 
@@ -307,10 +309,10 @@ PREGUNTAS = [
      "estándares de calidad no basta y hay que probar que esa orden causó el "
      "daño."),
     ("¿Cuánto margen tiene el franquiciado para cambiar cosas?",
-     "Necesita autorización. Un laudo arbitral colombiano, el caso PANACA, dejó "
-     "dicho que el franquiciado debe respetar la filosofía de la marca, aunque "
-     "también aclaró que los manuales no se pueden aplicar igual en cualquier "
-     "ciudad."),
+     "Necesita autorización. En Colombia, un tribunal de arbitraje resolvió el "
+     "caso PANACA y dejó dicho que el franquiciado debe respetar la filosofía de "
+     "la marca, aunque también aclaró que los manuales no se pueden aplicar igual "
+     "en cualquier ciudad."),
     ("¿En qué se diferencia de una licencia de marca?",
      "La licencia solo autoriza usar el nombre, mientras que la franquicia "
      "entrega además el know-how, los manuales, la capacitación y la asistencia "
