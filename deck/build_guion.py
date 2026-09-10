@@ -25,30 +25,30 @@ SERIF, SANS = "Georgia", "Calibri"
 
 # ------------------------------------------------------------------ contenido
 BLOQUES = [
-    dict(n=1, titulo="Portada", quien="Fredy",
+    dict(n=1, titulo="Portada",
          pantalla="Título y nombres del grupo.",
          texto=[
-             "Buenas tardes. Somos el Grupo 1.",
+             "Buenas tardes. Voy a presentarles el trabajo del Grupo 1 sobre el "
+             "**contrato de franquicia**.",
 
-             "Voy a empezar con una pregunta. ¿Cuántos de ustedes han almorzado "
-             "en un local de una cadena conocida? Casi todos. Ahora, ¿de quién "
-             "era ese local?",
+             "Empiezo por algo que suele pasar desapercibido. Cuando entramos a "
+             "un local de una cadena conocida, una cafetería, una tienda de ropa, "
+             "un restaurante de comida rápida, lo natural es asumir que ese local "
+             "es de la empresa dueña de la marca. Casi nunca lo es. Suele ser de "
+             "un particular, alguien de la ciudad, que pagó para poder usar ese "
+             "nombre y que firmó un contrato aceptando operar exactamente como la "
+             "marca le indique.",
 
-             "Lo normal es pensar que es de la empresa dueña de la marca. Y casi "
-             "nunca lo es. Es de un particular, alguien de la ciudad, que pagó "
-             "para poder usar ese nombre y que firmó un contrato aceptando "
-             "operar exactamente como la marca le diga.",
-
-             "De eso vamos a hablar hoy: del **contrato de franquicia**. Es uno "
-             "de los acuerdos comerciales más extendidos del mundo, está en la "
-             "esquina de su casa, y aun así casi nadie sabe qué dice por dentro.",
+             "Ese contrato es del que voy a hablar. Es uno de los acuerdos "
+             "comerciales más extendidos del mundo, está en la esquina de "
+             "nuestra casa, y aun así casi nadie sabe qué dice por dentro.",
 
              "En los próximos quince minutos van a saber qué se compra "
-             "exactamente cuando alguien compra una franquicia, cuánto le cuesta, "
-             "y qué es lo que entrega en el camino.",
+             "exactamente cuando alguien compra una franquicia, cuánto le cuesta "
+             "y qué entrega en el camino.",
          ]),
 
-    dict(n=2, titulo="Definición conceptual", quien="Fredy",
+    dict(n=2, titulo="Definición conceptual",
          pantalla="Dos tarjetas: «La franquicia» y «El contrato de franquicia». "
                   "Abajo, tres países.",
          texto=[
@@ -110,7 +110,7 @@ BLOQUES = [
              "acuerdo: es todo el acuerdo.",
          ]),
 
-    dict(n=3, titulo="¿Cómo se aplica?", quien="María Isabel",
+    dict(n=3, titulo="¿Cómo se aplica?",
          pantalla="Cinco etapas numeradas. Abajo, «20 días» y «La fórmula del "
                   "modelo».",
          texto=[
@@ -146,8 +146,8 @@ BLOQUES = [
              "cuando un cliente tiene una mala experiencia, no dice «qué mal ese "
              "dueño». Dice «qué mal esa marca». El daño se reparte entre todos.",
 
-             "Y hay una regla previa a todo esto que a nosotros nos pareció lo "
-             "más interesante de la figura. Antes de firmar, la marca está "
+             "Y hay una regla previa a todo esto que me parece lo más "
+             "interesante de la figura. Antes de firmar, la marca está "
              "obligada a entregarle a quien va a invertir información real del "
              "negocio: quién es, cómo está el sector, cómo funciona la red. Y con "
              "**veinte días hábiles** de anticipación, para que la persona lo lea "
@@ -158,7 +158,7 @@ BLOQUES = [
              "firmar**.",
          ]),
 
-    dict(n=4, titulo="Partes involucradas", quien="Xilena",
+    dict(n=4, titulo="Partes involucradas",
          pantalla="Dos tarjetas, franquiciador y franquiciado. Abajo, la franja "
                   "del subfranquiciante.",
          texto=[
@@ -198,8 +198,8 @@ BLOQUES = [
              "franquiciado **no es un empleado**. Es un empresario. Su plata está "
              "en juego. Si el local quiebra, la pérdida es suya, no de la marca.",
 
-             "Eso lleva a una pregunta que en la práctica se pelea mucho: si un "
-             "cliente sufre un daño dentro del local, ¿a quién demanda? Por regla "
+             "Eso lleva al punto que más se pelea en la práctica: quién responde "
+             "cuando un cliente sufre un daño dentro del local. Por regla "
              "general responde el franquiciado, incluso por lo que hagan sus "
              "empleados, justamente porque es independiente. El letrero de la "
              "marca en la puerta no basta para responsabilizar a la marca. Pero "
@@ -215,7 +215,7 @@ BLOQUES = [
              "país se comporta como si lo fuera.",
          ]),
 
-    dict(n=5, titulo="Ventajas y desventajas", quien="María Daniela",
+    dict(n=5, titulo="Ventajas y desventajas",
          pantalla="Seis ventajas y seis desventajas.",
          texto=[
              "En la diapositiva están los doce puntos; no los voy a leer. "
@@ -249,10 +249,10 @@ BLOQUES = [
              "sin el otro. El contrato solo decide en qué punto se traza esa raya.",
          ]),
 
-    dict(n=6, titulo="Síntesis e intro al video", quien="María Daniela",
+    dict(n=6, titulo="Síntesis e intro al video",
          pantalla="El invitado y las cifras de la operación.",
          texto=[
-             "Para cerrar, tres cosas que nos quedaron claras.",
+             "Para cerrar, tres conclusiones.",
 
              "**La primera:** esto funciona porque ninguno de los dos podría "
              "solo. Uno tiene la marca y la experiencia, pero no el capital ni el "
@@ -260,7 +260,7 @@ BLOQUES = [
              "pero no la marca ni el método. La franquicia existe para juntar "
              "esas dos mitades.",
 
-             "**La segunda,** y es la que más nos sorprendió: qué tan expuestas "
+             "**La segunda,** y es la que más me sorprendió: qué tan expuestas "
              "están las partes depende del país. Donde la ley regula la figura "
              "hay un piso mínimo de protección. Donde no, como en Colombia o en "
              "Perú, ese piso lo pone el contrato o no lo pone nadie. Un contrato "
@@ -289,14 +289,14 @@ BLOQUES = [
              "modelo sin romperlo. Eso, que aquí sonaba abstracto, para él es una "
              "decisión de todos los días.",
 
-             "Con esto cerramos. Gracias.",
+             "Con esto cierro. Gracias.",
          ]),
 ]
 
 CIERRE = [
     "Como vieron, lo que sostiene una franquicia no es el texto del contrato, "
     "sino la disciplina con que se repite el estándar y la maña con que se adapta "
-    "a cada mercado. Quedamos atentos a sus preguntas.",
+    "a cada mercado. Con gusto respondo sus preguntas.",
 ]
 
 PREGUNTAS = [
@@ -434,10 +434,10 @@ r.font.size = Pt(11)
 r.font.color.rgb = GREY
 
 # --- tabla de tiempos
-tabla = doc.add_table(rows=1, cols=4)
+tabla = doc.add_table(rows=1, cols=3)
 tabla.alignment = WD_TABLE_ALIGNMENT.LEFT
-anchos = [Cm(2.0), Cm(6.6), Cm(2.2), Cm(4.2)]
-encabezados = ["Entra", "Diapositiva", "Dura", "Expone"]
+anchos = [Cm(2.4), Cm(8.6), Cm(2.4)]
+encabezados = ["Entra", "Diapositiva", "Dura"]
 for i, (h, w) in enumerate(zip(encabezados, anchos)):
     c = tabla.rows[0].cells[i]
     c.width = w
@@ -452,8 +452,7 @@ for i, (h, w) in enumerate(zip(encabezados, anchos)):
 
 for b in BLOQUES:
     fila = tabla.add_row()
-    valores = [mmss(b["inicio"]), f"{b['n']} · {b['titulo']}", mmss(b["seg"]),
-               b["quien"]]
+    valores = [mmss(b["inicio"]), f"{b['n']} · {b['titulo']}", mmss(b["seg"])]
     for i, (v, w) in enumerate(zip(valores, anchos)):
         c = fila.cells[i]
         c.width = w
@@ -466,23 +465,18 @@ for b in BLOQUES:
         rr.font.color.rgb = INK
 
 fila = tabla.add_row()
+finales = [mmss(total), "Fin de la exposición · empieza el video", ""]
 for i, w in enumerate(anchos):
     c = fila.cells[i]
     c.width = w
     solo_borde_inferior(c)
     pp = c.paragraphs[0]
     pp.paragraph_format.space_after = Pt(0)
-    if i == 0:
-        rr = pp.add_run(mmss(total))
-        rr.font.bold = True
-    elif i == 1:
-        rr = pp.add_run("Fin de la exposición · empieza el video")
-        rr.font.bold = True
-    else:
-        rr = pp.add_run("")
+    rr = pp.add_run(finales[i])
+    rr.font.bold = i < 2
     rr.font.size = Pt(10)
     rr.font.name = SANS
-    rr.font.color.rgb = ACCENT if i < 2 else INK
+    rr.font.color.rgb = ACCENT
 
 # --- válvulas de escape
 p = doc.add_paragraph()
@@ -512,8 +506,7 @@ for b in BLOQUES:
 
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(1)
-    r = p.add_run(f"{mmss(b['inicio'])} – {mmss(b['inicio'] + b['seg'])}"
-                  f"   ·   {b['quien'].upper()}")
+    r = p.add_run(f"{mmss(b['inicio'])} – {mmss(b['inicio'] + b['seg'])}")
     r.font.size = Pt(9.5)
     r.font.bold = True
     r.font.color.rgb = ACCENT
