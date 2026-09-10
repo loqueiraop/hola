@@ -57,35 +57,42 @@ BLOQUES = [
              "turno. Nada de eso se puede "
              "patentar, porque no es un invento sino experiencia acumulada a base "
              "de errores caros. Cuando la empresa franquicia, todo eso se pone "
-             "por escrito y se le entrega a alguien de afuera, y por eso las "
-             "cláusulas de confidencialidad son tan duras, ya que el franquiciado "
-             "lo puede usar pero no divulgar, incluso después de que el contrato "
-             "termine.",
+             "por escrito y se le entrega a un tercero, y por eso las cláusulas "
+             "de confidencialidad son tan duras, ya que el franquiciado lo puede "
+             "usar pero no divulgar.",
 
-             "Y por último está la forma de operar, es decir cómo se ve el local, "
+             "Y por último está la forma de operar, o sea cómo se ve el local, "
              "cómo se atiende y cómo se hace la publicidad, que es lo que logra "
              "que dos locales con dueños distintos le resulten iguales al "
-             "cliente. Las tres cosas juntas son la franquicia.",
+             "cliente.",
 
-             "El contrato, en cambio, es el documento donde queda fijado cuánto "
-             "se paga, por cuánto tiempo, en qué zona se opera y qué pasa si "
-             "alguien incumple, y tiene dos rasgos particulares.",
+             "El contrato, en cambio, es el documento que ordena todo eso, y "
+             "tiene cuatro rasgos que lo separan de un contrato comercial "
+             "corriente.",
 
-             "El primero es que no se cumple y se termina. En una compraventa uno "
-             "paga, el otro entrega y ahí queda cerrada la relación, mientras que "
-             "acá sigue viva con pagos cada mes, asistencia y supervisión, así "
-             "que se parece más a un arriendo que a una compra.",
+             "El primero es que es un contrato **de colaboración y no un simple "
+             "intercambio**. En una compraventa cada parte quiere lo contrario "
+             "que la otra, porque uno quiere vender caro y el otro comprar "
+             "barato, mientras que acá las dos necesitan lo mismo, que es que el "
+             "local funcione. Por eso el franquiciador tiene que asistir y el "
+             "franquiciado tiene que informar, aunque eso no los convierte en "
+             "socios.",
 
-             "El segundo es menos evidente, y es que el contrato está "
-             "**incompleto a propósito**. Ninguno alcanza a prever que en ocho "
-             "años la gente compre de otra manera, pero eso no significa que el "
-             "abogado lo haya redactado mal, porque si amarrara todas las "
-             "variables la red no podría moverse cuando el mercado se mueve.",
+             "El segundo es que es **de tracto sucesivo**, o sea que no se cumple "
+             "y se termina, sino que la relación sigue viva con pagos cada mes, "
+             "asistencia y supervisión, así que se parece más a un arriendo que a "
+             "una compra.",
 
-             "A esto hay que sumarle que es un **contrato marco**, porque no "
-             "regula una operación puntual sino la entrada a una red, así que las "
+             "El tercero es que es un **contrato marco**, porque no regula una "
+             "operación puntual sino la entrada a una red, así que las "
              "obligaciones no salen solo del texto que firmó sino también de "
              "operar el negocio según ese método.",
+
+             "Y el cuarto, que es el menos evidente, es que el contrato está "
+             "**incompleto a propósito**. Ninguno alcanza a prever que en ocho "
+             "años la gente compre de otra manera, pero eso no significa que esté "
+             "mal redactado, porque si amarrara todas las variables la red no "
+             "podría moverse cuando el mercado se mueve.",
 
              "Y hay una advertencia final que cambia según el país. **Argentina** "
              "incorporó la franquicia a su Código Civil y Comercial, así que si "
@@ -93,8 +100,7 @@ BLOQUES = [
              "reconoce en su Código de Comercio. **Colombia y Perú**, en cambio, "
              "la tratan como contrato atípico, o sea que la ley no la menciona, y "
              "eso implica que todo lo que el contrato no diga no lo dice nadie, "
-             "de manera que ahí el contrato no respalda el acuerdo sino que es el "
-             "acuerdo.",
+             "de manera que ahí el contrato es el acuerdo completo.",
          ]),
 
     dict(n=3, titulo="¿Cómo se aplica?",
@@ -108,9 +114,9 @@ BLOQUES = [
              "dinero, sino que evalúa candidatos con cuidado, porque cada local "
              "que abre va a llevar su nombre en la fachada. De hecho, los "
              "estudios coinciden en que es una de las decisiones que más "
-             "determina si la red funciona, porque el riesgo no se reparte por "
-             "igual, ya que si el franquiciado opera mal él pierde su inversión "
-             "pero la marca pierde prestigio en todo el mercado.",
+             "determina si la red funciona, ya que si el franquiciado opera mal él "
+             "pierde su inversión pero la marca pierde prestigio en todo el "
+             "mercado.",
 
              "Una vez que hay acuerdo se firma, y ahí no solo se pacta el precio "
              "sino también la salida, es decir cuánto dura, cómo se renueva y en "
@@ -138,10 +144,9 @@ BLOQUES = [
              "lo más interesante de la figura, y es que la marca tiene que "
              "entregarle al futuro franquiciado información real del negocio, o "
              "sea quién es, cómo está el sector y cómo está armada la red. Además "
-             "debe hacerlo con **veinte días hábiles** de anticipación, para que "
-             "alcance a decidir con todo sobre la mesa, y existe porque el que "
-             "ofrece conoce el negocio a fondo mientras el que invierte casi no "
-             "lo conoce. Y si esa información se esconde o se maquilla hay "
+             "debe hacerlo con **veinte días hábiles** de anticipación, y existe "
+             "porque el que ofrece conoce el negocio a fondo mientras el que "
+             "invierte casi no lo conoce. Y si esa información se esconde o se maquilla hay "
              "responsabilidad por daños **aunque el contrato no llegue a "
              "firmarse**.",
          ]),
@@ -159,8 +164,7 @@ BLOQUES = [
              "Lo que aporta el dueño de la marca no se puede tocar, porque son el "
              "nombre, el know-how, los manuales y la asistencia técnica. Y para "
              "franquiciar tuvo que haber operado su propio negocio con éxito "
-             "durante años, así que no se franquicia una idea sino un historial, "
-             "y eso es lo que define cuánto vale.",
+             "durante años, así que no se franquicia una idea sino un historial.",
 
              "A cambio cobra de dos maneras que no son lo mismo. El **canon de "
              "entrada** es un pago único al principio por el derecho a entrar en "
@@ -175,11 +179,10 @@ BLOQUES = [
              "compra la gente de su ciudad.",
 
              "Lo que recibe a cambio es protección, y la más importante suele ser "
-             "la **exclusividad territorial**, es decir el "
-             "compromiso de que la marca no va a abrir otro local en su zona "
-             "dividiéndole la clientela, aunque si no quedó escrito no existe. Y "
-             "entre sus obligaciones está no competir con la red mientras el "
-             "contrato esté vigente.",
+             "la **exclusividad territorial**, o sea el compromiso de que la "
+             "marca no va a abrir otro local en su zona dividiéndole la "
+             "clientela, aunque si no quedó escrito no existe. Y entre sus "
+             "obligaciones está no competir con la red.",
 
              "Acá aparece la confusión más común de todas, porque aunque siga "
              "manuales ajenos, aunque lo auditen y aunque no fije libremente sus "
@@ -190,11 +193,10 @@ BLOQUES = [
              "De esa independencia sale el punto que más se pelea en tribunales, "
              "que es quién responde cuando un cliente sufre un daño en el local. "
              "En principio responde el franquiciado, y que el aviso de la marca "
-             "esté en la puerta no alcanza para responsabilizarla. Sin embargo, "
-             "los tribunales "
-             "españoles hicieron una excepción en clínicas de estética y "
-             "odontología, porque si se prueba que el daño vino de una "
-             "instrucción concreta de la marca entonces la marca sí responde.",
+             "esté en la puerta no alcanza para responsabilizarla, aunque los "
+             "tribunales españoles hicieron una excepción en clínicas de estética "
+             "y odontología, cuando se prueba que el daño vino de una instrucción "
+             "concreta de la marca.",
 
              "Por último, cuando la red sale al exterior aparece un tercero que "
              "compra los derechos de un país entero y después otorga franquicias "
@@ -210,23 +212,24 @@ BLOQUES = [
              "dos columnas son la misma decisión vista desde lados opuestos.",
 
              "Lo que se gana se puede resumir en dos cosas. La primera es tiempo, "
-             "porque uno no se pone a averiguar qué funciona sino que entra a "
-             "algo que ya funciona, y eso explica que las franquicias sobrevivan "
-             "más que los negocios independientes parecidos, ya que los errores "
-             "caros los pagó otro antes. La segunda es escala, porque la "
+             "porque uno entra a algo que ya funciona y con una marca que la "
+             "gente ya conoce, y eso explica que las franquicias sobrevivan más "
+             "que los negocios independientes parecidos, ya que los errores caros "
+             "los pagó otro antes. La segunda es escala, porque la "
              "publicidad, la capacitación y las compras se hacen para toda la "
              "red, así que un local que negocia cien unidades no consigue el "
              "mismo precio que una red que negocia cien mil.",
 
-             "Lo que se cede son también dos cosas. Se cede margen, y de una "
-             "forma que hay que entender bien, porque las regalías se calculan "
-             "sobre **las ventas y no sobre la ganancia**, así que si un mes las "
-             "ventas caen a la mitad la regalía se paga igual y un mes malo para "
-             "el local no es un mes malo para la marca.",
+             "Lo que se cede son también dos cosas. Se cede dinero, porque la "
+             "inversión inicial es alta y además las regalías se calculan sobre "
+             "**las ventas y no sobre la ganancia**, así que si un mes las ventas "
+             "caen a la mitad la regalía se paga igual y un mes malo para el "
+             "local no es un mes malo para la marca.",
 
              "Y se cede autonomía, porque el franquiciado puede ver una "
              "oportunidad real en su mercado y no poder aprovecharla si el manual "
-             "no lo permite. Además hay una exposición que no controla en "
+             "no lo permite, y de ahí salen buena parte de los conflictos entre "
+             "las dos partes. Además hay una exposición que no controla en "
              "absoluto, ya que si la marca se golpea en su reputación, aunque sea "
              "por algo que pasó en otro país, su local pierde clientes esa semana "
              "aunque él haya trabajado impecable.",
@@ -265,9 +268,9 @@ BLOQUES = [
              "cuarenta franquicias.",
 
              "Antes de ver el video quiero aclararles dos términos que él usa. "
-             "Cuando habla de **brand awareness** se refiere a qué tanto una "
-             "marca es conocida y deseada en un mercado, y para él eso define si "
-             "se abre o no un local, mientras que **tropicalización** es adaptar "
+             "**Brand awareness** es qué tanto una marca es conocida y deseada en "
+             "un mercado, y para él eso define si se abre o no un local, mientras "
+             "que **tropicalización** es adaptar "
              "el producto a cada mercado, o sea cambiar telas, colores y surtido "
              "según el clima y lo que la gente usa. Su ejemplo lo resume bien, "
              "porque mandar ropa de invierno a una ciudad cálida es perder la "

@@ -20,7 +20,7 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
 PPM = 140
-VERSION = "v2"
+VERSION = "v3"
 FECHA = "10 de septiembre de 2026"
 
 INK = RGBColor(0x1B, 0x2A, 0x41)
@@ -39,7 +39,8 @@ CONECTORES = (
     "y ", "pero ", "porque", "así que", "entonces", "ahora", "además", "sin embargo",
     "de hecho", "por eso", "justamente", "luego", "después", "cuando", "una vez",
     "veamos", "en esta", "en la", "en el", "la primera", "la segunda", "la tercera",
-    "el primero", "el segundo", "el contrato", "lo que", "de esa", "de ese",
+    "el primero", "el segundo", "el tercero", "el cuarto", "el contrato",
+    "lo que", "de esa", "de ese",
     "por último", "acá ", "para ", "a esto", "a cambio", "del otro lado",
     "antes de", "eso ", "esa ", "esto ", "con esto", "presten", "cualquier",
     "la marca no", "lo único", "veinte", "al final",
@@ -148,8 +149,8 @@ r.font.color.rgb = GREY
 
 p = doc.add_paragraph()
 p.paragraph_format.space_after = Pt(14)
-r = p.add_run(f"{VERSION.upper()} · {FECHA} · guion en lenguaje hablado, sin dos "
-              f"puntos, con conectores entre ideas")
+r = p.add_run(f"{VERSION.upper()} · {FECHA} · incluye los cuatro rasgos del "
+              f"contrato y los doce puntos de ventajas y desventajas")
 r.font.size = Pt(9)
 r.font.bold = True
 r.font.color.rgb = ACCENT
