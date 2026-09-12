@@ -1,0 +1,28 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.claimblocks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BarrierDropsMixin",
+    "DecorationGuardMixin",
+    "DispenserBlockMixin",
+    "EnderPearlMixin",
+    "EntityExplosionBehaviorGuardMixin",
+    "EntityInvulnerabilityAccessor",
+    "ExplosionBehaviorGuardMixin",
+    "ExplosionMixin",
+    "FarmlandMixin",
+    "FluidGuardMixin",
+    "HopperGuardMixin",
+    "MobSpawnGuardMixin",
+    "PistonHandlerMixin",
+    "PressurePlateMixin",
+    "ServerChatPromptMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "tierrasmon-claims-refmap.json"
+}

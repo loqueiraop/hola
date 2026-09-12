@@ -1,0 +1,37 @@
+package com.claimblocks.mixin;
+
+import com.claimblocks.ClaimBlocksMod;
+import com.claimblocks.util.ExplosionGuard;
+import net.minecraft.block.BlockState;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
+import net.minecraft.world.explosion.Explosion;
+import net.minecraft.world.explosion.ExplosionBehavior;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+/** Los bloques de una zona protegida no se destruyen en explosiones. */
+@Mixin({ExplosionBehavior.class})
+public abstract class ExplosionBehaviorGuardMixin {
+   @Inject(
+      method = {
+         "canDestroyBlock(Lnet/minecraft/world/explosion/Explosion;Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;F)Z"
+      },
+      at = {@At("HEAD")},
+      cancellable = true,
+      require = 0
+   )
+   private void claimblocks$keepClaimedBlocks(
+      Explosion explosion, BlockView view, BlockPos pos, BlockState state, float power, CallbackInfoReturnable<Boolean> cir
+   ) {
+      try {
+         if (ExplosionGuard.protects(view, pos)) {
+            cir.setReturnValue(false);
+         }
+      } catch (Throwable t) {
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo protegiendo bloques de una explosion", t);
+      }
+   }
+}
