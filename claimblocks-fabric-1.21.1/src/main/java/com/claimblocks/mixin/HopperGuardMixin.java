@@ -36,7 +36,7 @@ public abstract class HopperGuardMixin {
             cir.setReturnValue(false);
          }
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo controlando una tolva (absorcion)", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo controlando una tolva (absorcion)", t);
       }
    }
 
@@ -65,7 +65,7 @@ public abstract class HopperGuardMixin {
             cir.setReturnValue(false);
          }
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo controlando una tolva (empuje)", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo controlando una tolva (empuje)", t);
       }
    }
 }

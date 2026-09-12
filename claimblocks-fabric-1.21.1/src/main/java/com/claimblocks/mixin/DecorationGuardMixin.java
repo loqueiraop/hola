@@ -28,7 +28,7 @@ public abstract class DecorationGuardMixin {
             cir.setReturnValue(false);
          }
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo protegiendo una decoracion", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo protegiendo una decoracion", t);
       }
    }
 }

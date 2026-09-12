@@ -57,7 +57,8 @@ public final class ClaimCommands {
 
    public static void register() {
       CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, env) -> {
-         LiteralCommandNode<ServerCommandSource> root = dispatcher.register(build("claim"));
+         LiteralCommandNode<ServerCommandSource> root = dispatcher.register(build("tmclaims"));
+         dispatcher.register(CommandManager.literal("claim").redirect(root));
          dispatcher.register(CommandManager.literal("fsclaim").redirect(root));
       });
    }
@@ -182,24 +183,24 @@ public final class ClaimCommands {
       ((ServerCommandSource)ctx.getSource())
          .sendFeedback(
             () -> {
-               MutableText t = Text.literal("=== ClaimBlocks Comandos ===\n")
+               MutableText t = Text.literal("=== Tierrasmon Claims ===\n")
                   .formatted(new Formatting[]{Formatting.YELLOW, Formatting.BOLD})
-                  .append(Text.literal("/claim menu  ").formatted(Formatting.AQUA))
+                  .append(Text.literal("/tmclaims menu  ").formatted(Formatting.AQUA))
                   .append(Text.literal("- abre el menu de la zona donde estas\n").formatted(Formatting.GRAY))
-                  .append(Text.literal("/claim info  ").formatted(Formatting.AQUA))
+                  .append(Text.literal("/tmclaims info  ").formatted(Formatting.AQUA))
                   .append(Text.literal("- info de la zona donde estas\n").formatted(Formatting.GRAY))
-                  .append(Text.literal("/claim list  ").formatted(Formatting.AQUA))
+                  .append(Text.literal("/tmclaims list  ").formatted(Formatting.AQUA))
                   .append(Text.literal("- lista tus zonas\n").formatted(Formatting.GRAY))
-                  .append(Text.literal("/claim remove  ").formatted(Formatting.AQUA))
+                  .append(Text.literal("/tmclaims remove  ").formatted(Formatting.AQUA))
                   .append(Text.literal("- borra tu zona actual\n").formatted(Formatting.GRAY));
                if (isOp) {
                   t.append(Text.literal("\n--- Solo Operadores ---\n").formatted(Formatting.RED))
-                     .append(Text.literal("/claim give <jugador> <tier>\n").formatted(Formatting.YELLOW))
-                     .append(Text.literal("/claim clear <jugador>\n").formatted(Formatting.YELLOW))
-                     .append(Text.literal("/claim ban|unban <jugador>\n").formatted(Formatting.YELLOW))
-                     .append(Text.literal("/claim transfer <jugador>\n").formatted(Formatting.YELLOW))
-                     .append(Text.literal("/claim removemember <jugador>\n").formatted(Formatting.YELLOW))
-                     .append(Text.literal("/claimadmin").formatted(Formatting.YELLOW));
+                     .append(Text.literal("/tmclaims give <jugador> <tier>\n").formatted(Formatting.YELLOW))
+                     .append(Text.literal("/tmclaims clear <jugador>\n").formatted(Formatting.YELLOW))
+                     .append(Text.literal("/tmclaims ban|unban <jugador>\n").formatted(Formatting.YELLOW))
+                     .append(Text.literal("/tmclaims transfer <jugador>\n").formatted(Formatting.YELLOW))
+                     .append(Text.literal("/tmclaims removemember <jugador>\n").formatted(Formatting.YELLOW))
+                     .append(Text.literal("/tmclaimsadmin").formatted(Formatting.YELLOW));
                }
 
                return t;
@@ -313,7 +314,7 @@ public final class ClaimCommands {
       List<Claim> claims = ClaimManager.getInstance().getClaimsOf(p.getUuid());
       ((ServerCommandSource)ctx.getSource())
          .sendFeedback(
-            () -> Text.literal("[Claim] ").formatted(Formatting.GRAY).append(Text.literal("Tus zonas (" + claims.size() + "):").formatted(Formatting.AQUA)),
+            () -> Text.literal("[Tierrasmon] ").formatted(Formatting.GRAY).append(Text.literal("Tus zonas (" + claims.size() + "):").formatted(Formatting.AQUA)),
             false
          );
 
@@ -345,7 +346,7 @@ public final class ClaimCommands {
       } else {
          ((ServerCommandSource)ctx.getSource())
             .sendFeedback(
-               () -> Text.literal("[Claim] ")
+               () -> Text.literal("[Tierrasmon] ")
                      .formatted(Formatting.GRAY)
                      .append(Text.literal("Información de la zona:").formatted(new Formatting[]{Formatting.AQUA, Formatting.BOLD})),
                false
@@ -475,7 +476,7 @@ public final class ClaimCommands {
                true
             );
          target.sendMessage(
-            Text.literal("[Claim] ")
+            Text.literal("[Tierrasmon] ")
                .formatted(Formatting.GRAY)
                .append(Text.literal("Has recibido la propiedad de una zona en X=" + c.getX() + " Z=" + c.getZ()).formatted(Formatting.GREEN)),
             false

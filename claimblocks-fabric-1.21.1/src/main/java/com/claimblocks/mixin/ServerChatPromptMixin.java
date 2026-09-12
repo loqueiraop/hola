@@ -33,7 +33,7 @@ public abstract class ServerChatPromptMixin {
          ChatPromptRouter.markPacketCaptureActive();
          ChatPromptRouter.consume(player, packet.chatMessage());
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo capturando la respuesta del menu", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo capturando la respuesta del menu", t);
       }
    }
 
@@ -55,7 +55,7 @@ public abstract class ServerChatPromptMixin {
             ci.cancel();
          }
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo ocultando la respuesta del menu", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo ocultando la respuesta del menu", t);
       }
    }
 }

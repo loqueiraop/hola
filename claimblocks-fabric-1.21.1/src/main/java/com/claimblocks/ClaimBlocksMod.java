@@ -38,7 +38,7 @@ public class ClaimBlocksMod implements ModInitializer {
    private static int particleCounter = 0;
 
    public void onInitialize() {
-      LOGGER.info("[ClaimBlocks] Inicializando Fantastic Claims para Fabric 1.21.1 (100% server-side)...");
+      LOGGER.info("[Tierrasmon Claims] Inicializando Fantastic Claims para Fabric 1.21.1 (100% server-side)...");
       ClaimCommands.register();
       ClaimAdminCommands.register();
       ClaimMergeCommands.register();
@@ -49,12 +49,12 @@ public class ClaimBlocksMod implements ModInitializer {
       ServerLifecycleEvents.SERVER_STARTED.register((ServerStarted)server -> {
          ClaimManager.getInstance().load(server);
          GlobalFlags.getInstance().load(server);
-         LOGGER.info("[ClaimBlocks] Datos cargados.");
+         LOGGER.info("[Tierrasmon Claims] Datos cargados.");
       });
       ServerLifecycleEvents.SERVER_STOPPING.register((ServerStopping)server -> {
          ClaimManager.getInstance().saveNow();
          GlobalFlags.getInstance().save(server);
-         LOGGER.info("[ClaimBlocks] Datos guardados al apagar.");
+         LOGGER.info("[Tierrasmon Claims] Datos guardados al apagar.");
       });
       ServerPlayConnectionEvents.JOIN.register((Join)(handler, sender, server) -> ClaimManager.getInstance().flushPendingTo(handler.player));
       ServerPlayConnectionEvents.DISCONNECT.register((Disconnect)(handler, server) -> {
@@ -77,7 +77,7 @@ public class ClaimBlocksMod implements ModInitializer {
             renderClaimBorders(server);
          }
       });
-      LOGGER.info("[ClaimBlocks] Inicializacion completada (10 tiers, 34 flags, grupos, panel admin).");
+      LOGGER.info("[Tierrasmon Claims] Inicializacion completada (10 tiers, 34 flags, grupos, panel admin).");
    }
 
    /** Flag "Ver particulas": rellena el area de la zona. */

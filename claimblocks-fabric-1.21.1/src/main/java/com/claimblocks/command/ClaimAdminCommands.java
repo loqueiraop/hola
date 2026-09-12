@@ -50,7 +50,8 @@ public final class ClaimAdminCommands {
 
    public static void register() {
       CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, env) -> {
-         LiteralCommandNode<ServerCommandSource> root = dispatcher.register(build("claimadmin"));
+         LiteralCommandNode<ServerCommandSource> root = dispatcher.register(build("tmclaimsadmin"));
+         dispatcher.register(CommandManager.literal("claimadmin").requires(s -> s.hasPermissionLevel(2)).redirect(root));
          dispatcher.register(CommandManager.literal("fsclaimadmin").requires(s -> s.hasPermissionLevel(2)).redirect(root));
       });
    }
@@ -153,7 +154,7 @@ public final class ClaimAdminCommands {
       }
 
       ServerCommandSource src = (ServerCommandSource)ctx.getSource();
-      src.sendFeedback(() -> Text.literal("--- Estadísticas de ClaimBlocks ---").formatted(Formatting.GOLD), false);
+      src.sendFeedback(() -> Text.literal("--- Estadísticas de Tierrasmon Claims ---").formatted(Formatting.GOLD), false);
       src.sendFeedback(() -> infoLine("Total de zonas activas: " + all.size()), false);
       src.sendFeedback(() -> infoLine("Jugadores con zona: " + uniqueOwners.size()), false);
       if (biggest != null) {

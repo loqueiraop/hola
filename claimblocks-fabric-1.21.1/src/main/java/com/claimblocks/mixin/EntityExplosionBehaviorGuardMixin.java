@@ -31,7 +31,7 @@ public abstract class EntityExplosionBehaviorGuardMixin {
             cir.setReturnValue(false);
          }
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo protegiendo bloques de una explosion", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo protegiendo bloques de una explosion", t);
       }
    }
 }

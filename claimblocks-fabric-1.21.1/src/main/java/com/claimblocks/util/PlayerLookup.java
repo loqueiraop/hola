@@ -74,7 +74,7 @@ public final class PlayerLookup {
                         found = new PlayerLookup.Resolved(p.getId(), p.getName() == null ? clean : p.getName(), null);
                      }
                   } catch (Throwable t) {
-                     ClaimBlocksMod.LOGGER.warn("[ClaimBlocks] No se pudo resolver el perfil de '" + clean + "'", t);
+                     ClaimBlocksMod.LOGGER.warn("[Tierrasmon Claims] No se pudo resolver el perfil de '" + clean + "'", t);
                   }
 
                   PlayerLookup.Resolved result = found;

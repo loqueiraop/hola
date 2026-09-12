@@ -46,7 +46,7 @@ public abstract class FluidGuardMixin {
             cir.setReturnValue(false);
          }
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo controlando un fluido", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo controlando un fluido", t);
       }
    }
 }

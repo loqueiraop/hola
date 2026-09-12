@@ -67,10 +67,10 @@ public final class PlayerTracker {
             MutableText leaveMsg = previous.getFlags().showLeave
                   && previous.getFlags().leaveMessage != null
                   && !previous.getFlags().leaveMessage.isBlank()
-               ? Text.literal("[Claim] ")
+               ? Text.literal("[Tierrasmon] ")
                   .formatted(Formatting.GRAY)
                   .append(Text.literal(truncate(previous.getFlags().leaveMessage, 50)).formatted(Formatting.GOLD))
-               : Text.literal("[Claim] ")
+               : Text.literal("[Tierrasmon] ")
                   .formatted(Formatting.GRAY)
                   .append(Text.literal("Saliendo de la zona ").formatted(Formatting.RED))
                   .append(Text.literal(truncate(zoneLabel(previous), 24)).formatted(new Formatting[]{Formatting.WHITE, Formatting.BOLD}));
@@ -88,10 +88,10 @@ public final class PlayerTracker {
             MutableText enterMsg = claim.getFlags().showWelcome
                   && claim.getFlags().welcomeMessage != null
                   && !claim.getFlags().welcomeMessage.isBlank()
-               ? Text.literal("[Claim] ")
+               ? Text.literal("[Tierrasmon] ")
                   .formatted(Formatting.GRAY)
                   .append(Text.literal(truncate(claim.getFlags().welcomeMessage, 50)).formatted(Formatting.GREEN))
-               : Text.literal("[Claim] ")
+               : Text.literal("[Tierrasmon] ")
                   .formatted(Formatting.GRAY)
                   .append(Text.literal("Entrando a la zona ").formatted(Formatting.GREEN))
                   .append(Text.literal(truncate(zoneLabel(claim), 24)).formatted(new Formatting[]{Formatting.WHITE, Formatting.BOLD}));

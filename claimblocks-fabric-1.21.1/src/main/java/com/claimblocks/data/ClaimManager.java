@@ -575,7 +575,7 @@ public class ClaimManager {
       if (!looksValid(file)) {
          Path bak = file.resolveSibling(file.getFileName().toString() + ".bak");
          if (looksValid(bak)) {
-            ClaimBlocksMod.LOGGER.warn("[ClaimBlocks] {} no se puede leer; restaurando desde {}", file, bak);
+            ClaimBlocksMod.LOGGER.warn("[Tierrasmon Claims] {} no se puede leer; restaurando desde {}", file, bak);
             file = bak;
          }
       }

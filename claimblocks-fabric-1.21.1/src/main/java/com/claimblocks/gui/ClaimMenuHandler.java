@@ -255,7 +255,7 @@ public class ClaimMenuHandler extends ScreenHandler {
                List.of(
                   Text.literal("Clic izq: elegir de una lista").formatted(Formatting.GRAY),
                   Text.literal("Clic der: escribir el nombre por chat").formatted(Formatting.GRAY),
-                  Text.literal("También sirve /claim addmember <jugador>").formatted(Formatting.DARK_GRAY)
+                  Text.literal("También sirve /tmclaims addmember <jugador>").formatted(Formatting.DARK_GRAY)
                )
             )
          );
@@ -657,7 +657,7 @@ public class ClaimMenuHandler extends ScreenHandler {
                   this.refreshFlagSlot(slotIndex, clicked);
                }
             } else if (slotIndex == SLOT_VIEW_MEMBERS) {
-               this.viewer.sendMessage(Text.literal("[Claim] Miembros de la zona:").formatted(Formatting.GRAY), false);
+               this.viewer.sendMessage(Text.literal("[Tierrasmon] Miembros de la zona:").formatted(Formatting.GRAY), false);
                if (this.claim.getMembers().isEmpty()) {
                   this.viewer.sendMessage(Text.literal("  (sin miembros)").formatted(Formatting.DARK_GRAY), false);
                } else {
@@ -711,7 +711,7 @@ public class ClaimMenuHandler extends ScreenHandler {
                this.viewer.closeHandledScreen();
             } else if (slotIndex == SLOT_LIST) {
                this.viewer.closeHandledScreen();
-               this.viewer.getServer().getCommandManager().executeWithPrefix(this.viewer.getCommandSource(), "claim list");
+               this.viewer.getServer().getCommandManager().executeWithPrefix(this.viewer.getCommandSource(), "tmclaims list");
             }
          }
       } else if (actionType != SlotActionType.QUICK_MOVE) {
@@ -811,9 +811,9 @@ public class ClaimMenuHandler extends ScreenHandler {
 
    public static void requestAddMember(ServerPlayerEntity player, Claim claim, int returnPage) {
       pending.put(player.getUuid(), new ClaimMenuHandler.PendingChat(ClaimMenuHandler.PendingType.ADD_MEMBER, claim.getClaimId(), returnPage));
-      player.sendMessage(Text.literal("[Claim] Escribe el nombre del jugador a añadir (o 'cancelar'):").formatted(Formatting.YELLOW), false);
+      player.sendMessage(Text.literal("[Tierrasmon] Escribe el nombre del jugador a añadir (o 'cancelar'):").formatted(Formatting.YELLOW), false);
       player.sendMessage(
-         Text.literal("    No hace falta que esté conectado. Alternativa: /claim addmember <jugador>").formatted(Formatting.DARK_GRAY), false
+         Text.literal("    No hace falta que esté conectado. Alternativa: /tmclaims addmember <jugador>").formatted(Formatting.DARK_GRAY), false
       );
    }
 
@@ -830,14 +830,14 @@ public class ClaimMenuHandler extends ScreenHandler {
          sb.append(names.get(i));
       }
 
-      player.sendMessage(Text.literal("[Claim] Miembros: ").formatted(Formatting.GRAY).append(Text.literal(sb.toString()).formatted(Formatting.WHITE)), false);
-      player.sendMessage(Text.literal("[Claim] Escribe el nombre del invitado a quitar (o 'cancelar'):").formatted(Formatting.YELLOW), false);
+      player.sendMessage(Text.literal("[Tierrasmon] Miembros: ").formatted(Formatting.GRAY).append(Text.literal(sb.toString()).formatted(Formatting.WHITE)), false);
+      player.sendMessage(Text.literal("[Tierrasmon] Escribe el nombre del invitado a quitar (o 'cancelar'):").formatted(Formatting.YELLOW), false);
    }
 
    public static void requestEditWelcome(ServerPlayerEntity player, Claim claim, int returnPage) {
       pending.put(player.getUuid(), new ClaimMenuHandler.PendingChat(ClaimMenuHandler.PendingType.EDIT_WELCOME, claim.getClaimId(), returnPage));
       player.sendMessage(
-         Text.literal("[Claim] Escribe tu bienvenida (max " + ClaimConfig.get().maxWelcomeLength + " chars) o 'cancelar':").formatted(Formatting.YELLOW),
+         Text.literal("[Tierrasmon] Escribe tu bienvenida (max " + ClaimConfig.get().maxWelcomeLength + " chars) o 'cancelar':").formatted(Formatting.YELLOW),
          false
       );
    }
@@ -845,19 +845,19 @@ public class ClaimMenuHandler extends ScreenHandler {
    public static void requestEditLeave(ServerPlayerEntity player, Claim claim, int returnPage) {
       pending.put(player.getUuid(), new ClaimMenuHandler.PendingChat(ClaimMenuHandler.PendingType.EDIT_LEAVE, claim.getClaimId(), returnPage));
       player.sendMessage(
-         Text.literal("[Claim] Escribe tu mensaje de salida (max " + ClaimConfig.get().maxWelcomeLength + " chars) o 'cancelar':").formatted(Formatting.YELLOW),
+         Text.literal("[Tierrasmon] Escribe tu mensaje de salida (max " + ClaimConfig.get().maxWelcomeLength + " chars) o 'cancelar':").formatted(Formatting.YELLOW),
          false
       );
    }
 
    public static void requestBanPlayer(ServerPlayerEntity player, Claim claim, int returnPage) {
       pending.put(player.getUuid(), new ClaimMenuHandler.PendingChat(ClaimMenuHandler.PendingType.BAN_PLAYER, claim.getClaimId(), returnPage));
-      player.sendMessage(Text.literal("[Claim] Escribe el nombre del jugador a BANEAR (o 'cancelar'):").formatted(Formatting.YELLOW), false);
+      player.sendMessage(Text.literal("[Tierrasmon] Escribe el nombre del jugador a BANEAR (o 'cancelar'):").formatted(Formatting.YELLOW), false);
    }
 
    public static void requestUnbanPlayer(ServerPlayerEntity player, Claim claim, int returnPage) {
       pending.put(player.getUuid(), new ClaimMenuHandler.PendingChat(ClaimMenuHandler.PendingType.UNBAN_PLAYER, claim.getClaimId(), returnPage));
-      player.sendMessage(Text.literal("[Claim] Escribe el nombre del jugador a DESBANEAR (o 'cancelar'):").formatted(Formatting.YELLOW), false);
+      player.sendMessage(Text.literal("[Tierrasmon] Escribe el nombre del jugador a DESBANEAR (o 'cancelar'):").formatted(Formatting.YELLOW), false);
    }
 
    public static void requestMergeName(ServerPlayerEntity player, Claim claim, int returnPage) {
@@ -926,7 +926,7 @@ public class ClaimMenuHandler extends ScreenHandler {
    public static void dispatchPrompt(ServerPlayerEntity player, ClaimMenuHandler.PendingChat prompt, String text) {
       if (player != null && prompt != null && !player.isDisconnected()) {
          if (ChatPromptRouter.isCancel(text)) {
-            player.sendMessage(Text.literal("[Claim] Cancelado.").formatted(Formatting.GRAY), false);
+            player.sendMessage(Text.literal("[Tierrasmon] Cancelado.").formatted(Formatting.GRAY), false);
          } else {
             Claim claim = findClaimById(prompt.claimId());
             if (claim == null) {
@@ -950,7 +950,7 @@ public class ClaimMenuHandler extends ScreenHandler {
    public static void dispatchAdminTransfer(ServerPlayerEntity player, UUID claimId, String text) {
       if (player != null && !player.isDisconnected()) {
          if (ChatPromptRouter.isCancel(text)) {
-            player.sendMessage(Text.literal("[Claim] Cancelado.").formatted(Formatting.GRAY), false);
+            player.sendMessage(Text.literal("[Tierrasmon] Cancelado.").formatted(Formatting.GRAY), false);
          } else {
             String name = ChatPromptRouter.extractPlayerName(text);
             PlayerLookup.resolveAsync(player.getServer(), name, resolved -> {
@@ -1041,7 +1041,7 @@ public class ClaimMenuHandler extends ScreenHandler {
             claim.addMember(resolved.id(), resolved.name());
             ClaimManager.getInstance().save();
             player.sendMessage(Text.literal("✔ " + resolved.name() + " agregado como miembro de la zona.").formatted(Formatting.GREEN), false);
-            MutableText msg = Text.literal("[Claim] Eres miembro de la zona de " + player.getName().getString()).formatted(Formatting.AQUA);
+            MutableText msg = Text.literal("[Tierrasmon] Eres miembro de la zona de " + player.getName().getString()).formatted(Formatting.AQUA);
             if (resolved.isOnline()) {
                resolved.online().sendMessage(msg, false);
             } else {
@@ -1089,7 +1089,7 @@ public class ClaimMenuHandler extends ScreenHandler {
          claim.removeMember(target);
          ClaimManager.getInstance().save();
          player.sendMessage(Text.literal("✔ " + shownName + " fue eliminado de la zona.").formatted(Formatting.GREEN), false);
-         MutableText msg = Text.literal("[Claim] Ya no eres miembro de la zona de " + player.getName().getString()).formatted(Formatting.YELLOW);
+         MutableText msg = Text.literal("[Tierrasmon] Ya no eres miembro de la zona de " + player.getName().getString()).formatted(Formatting.YELLOW);
          ServerPlayerEntity online = player.getServer() == null ? null : player.getServer().getPlayerManager().getPlayer(target);
          if (online != null) {
             online.sendMessage(msg, false);
@@ -1241,11 +1241,11 @@ public class ClaimMenuHandler extends ScreenHandler {
       target.sendMessage(Text.literal("[Grupo] " + inviter + " te invita a unir tu proteccion al grupo \"" + groupName + "\".").formatted(Formatting.AQUA), false);
       MutableText accept = Text.literal(" [✔ ACEPTAR] ")
          .setStyle(
-            Style.EMPTY.withColor(Formatting.GREEN).withBold(true).withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/claimmerge accept " + code))
+            Style.EMPTY.withColor(Formatting.GREEN).withBold(true).withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/tmclaimsmerge accept " + code))
          );
       MutableText reject = Text.literal("[✘ RECHAZAR]")
          .setStyle(
-            Style.EMPTY.withColor(Formatting.RED).withBold(true).withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/claimmerge reject " + code))
+            Style.EMPTY.withColor(Formatting.RED).withBold(true).withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/tmclaimsmerge reject " + code))
          );
       target.sendMessage(Text.literal("").append(accept).append(reject), false);
    }

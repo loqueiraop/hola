@@ -9,14 +9,15 @@ import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 
-/** /claimmerge accept|reject <codigo> y /claimmerge leave. Alias: /fsclaimmerge. */
+/** /tmclaimsmerge accept|reject <codigo> y /claimmerge leave. Alias: /fsclaimmerge. */
 public final class ClaimMergeCommands {
    private ClaimMergeCommands() {
    }
 
    public static void register() {
       CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, env) -> {
-         LiteralCommandNode<ServerCommandSource> root = dispatcher.register(build("claimmerge"));
+         LiteralCommandNode<ServerCommandSource> root = dispatcher.register(build("tmclaimsmerge"));
+         dispatcher.register(CommandManager.literal("claimmerge").redirect(root));
          dispatcher.register(CommandManager.literal("fsclaimmerge").redirect(root));
       });
    }

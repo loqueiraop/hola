@@ -19,7 +19,7 @@ import net.minecraft.util.WorldSavePath;
 
 /**
  * Configuracion del servidor, en claimblocks_config.json dentro de la carpeta del mundo.
- * Se recarga en caliente con /claimadmin reload.
+ * Se recarga en caliente con /tmclaimsadmin reload.
  */
 public final class ClaimConfig {
    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
@@ -96,7 +96,7 @@ public final class ClaimConfig {
                }
             }
          } catch (Exception e) {
-            ClaimBlocksMod.LOGGER.error("[ClaimBlocks] No se pudo leer " + this.file + "; se usan los valores por defecto", e);
+            ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] No se pudo leer " + this.file + "; se usan los valores por defecto", e);
          }
 
          this.readFrom(root);
@@ -160,8 +160,8 @@ public final class ClaimConfig {
       root.add(
          "_ayuda",
          doc(
-            "ClaimBlocks / Fantastic Claims - configuracion del servidor.",
-            "Recarga en caliente con /claimadmin reload (no hace falta reiniciar).",
+            "Tierrasmon Claims - configuracion del servidor.",
+            "Recarga en caliente con /tmclaimsadmin reload (no hace falta reiniciar).",
             "Si borras una clave se rellena con su valor por defecto al recargar.",
             "Los cambios de 'zonasNuevas' solo afectan a las zonas que se creen a partir de ahora."
          )
@@ -289,7 +289,7 @@ public final class ClaimConfig {
          Files.writeString(tmp, GSON.toJson(root), StandardCharsets.UTF_8);
          Files.move(tmp, this.file, StandardCopyOption.REPLACE_EXISTING);
       } catch (IOException e) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] No se pudo escribir " + this.file, e);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] No se pudo escribir " + this.file, e);
       }
    }
 

@@ -93,7 +93,7 @@ public final class ChatPromptRouter {
    public static void markPacketCaptureActive() {
       if (!packetCaptureActive) {
          packetCaptureActive = true;
-         ClaimBlocksMod.LOGGER.info("[ClaimBlocks] Captura de respuestas a nivel de paquete ACTIVA (compatible con plugins de chat).");
+         ClaimBlocksMod.LOGGER.info("[Tierrasmon Claims] Captura de respuestas a nivel de paquete ACTIVA (compatible con plugins de chat).");
       }
    }
 

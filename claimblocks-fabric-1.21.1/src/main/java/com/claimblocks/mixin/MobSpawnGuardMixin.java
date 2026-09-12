@@ -33,7 +33,7 @@ public abstract class MobSpawnGuardMixin {
             }
          }
       } catch (Throwable t) {
-         ClaimBlocksMod.LOGGER.error("[ClaimBlocks] Fallo controlando el spawn de un mob", t);
+         ClaimBlocksMod.LOGGER.error("[Tierrasmon Claims] Fallo controlando el spawn de un mob", t);
       }
    }
 }

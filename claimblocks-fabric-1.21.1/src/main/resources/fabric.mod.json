@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "claimblocks",
   "version": "${version}",
-  "name": "Fantastic Claims",
+  "name": "Tierrasmon Claims",
   "description": "Proteccion de zonas 100% server-side: 10 tamanos usando concretos vanilla, 34 flags por zona, panel admin, grupos/merge, contorno y relleno con particulas vanilla y persistencia JSON. Los clientes vanilla NO necesitan instalar nada.",
   "authors": [
     "ClaimBlocks Team"
