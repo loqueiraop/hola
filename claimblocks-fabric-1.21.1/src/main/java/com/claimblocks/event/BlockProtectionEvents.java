@@ -137,20 +137,20 @@ public final class BlockProtectionEvents {
                   }
 
                   ClaimManager.getInstance().removeClaim(world, pos);
-                  if (!player.getAbilities().creativeMode) {
-                     ItemStack stack = ClaimBlocks.createTierItem(tier, 1);
-                     if (!player.getInventory().insertStack(stack)) {
-                        player.dropItem(stack, false);
-                     }
+                  // Quitamos el bloque nosotros y cancelamos la rotura vanilla: si dejamos que
+                  // vanilla la haga, suelta el concreto en vez de la piedra de claim.
+                  world.setBlockState(pos, Blocks.AIR.getDefaultState(), 3);
+                  ItemStack stack = ClaimBlocks.createTierItem(tier, 1);
+                  if (!player.getInventory().insertStack(stack)) {
+                     player.dropItem(stack, false);
                   }
 
                   world.playSound(null, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1.0F, 1.0F);
-                  deny(player, "");
                   if (player instanceof ServerPlayerEntity sp) {
                      sp.sendMessage(Text.literal("✔ Zona eliminada. Piedra devuelta a tu inventario.").formatted(Formatting.GREEN), false);
                   }
 
-                  return true;
+                  return false;
                }
             }
 

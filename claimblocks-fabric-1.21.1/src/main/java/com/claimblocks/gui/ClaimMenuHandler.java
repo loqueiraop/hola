@@ -117,7 +117,7 @@ public class ClaimMenuHandler extends ScreenHandler {
    };
    private final Claim claim;
    private final ServerPlayerEntity viewer;
-   private final int page;
+   private int page;
    private boolean awaitingDeleteConfirm = false;
 
    public ClaimMenuHandler(int syncId, PlayerInventory pInv, Claim claim, int page) {
@@ -551,7 +551,7 @@ public class ClaimMenuHandler extends ScreenHandler {
          case PUBLIC_MODE -> "Todos entran pero no modifican";
          case SHOW_WELCOME -> "Mensaje personalizado al entrar";
          case SHOW_LEAVE -> "Mensaje personalizado al salir";
-         case SHOW_BORDER -> "Marca las aristas de tu protección con polvo de color";
+         case SHOW_BORDER -> "Aristas de polvo + pared que parpadea al acercarte al limite";
          case SHOW_PARTICLES -> "Llena tu protección con partículas";
          case BURN_HOSTILES -> "Quema a los mobs hostiles que entren (día o noche)";
          case ANIMAL_KILLING -> "Intrusos no pueden matar animales";
@@ -595,9 +595,13 @@ public class ClaimMenuHandler extends ScreenHandler {
          this.viewer.closeHandledScreen();
       } else if (slotIndex >= 0 && slotIndex < 54) {
          if (slotIndex == SLOT_PREV && this.page > 0) {
-            open(this.viewer, this.claim, this.page - 1);
+            this.page--;
+            this.awaitingDeleteConfirm = false;
+            this.rebuild();
          } else if (slotIndex == SLOT_NEXT && this.page < LAST_PAGE) {
-            open(this.viewer, this.claim, this.page + 1);
+            this.page++;
+            this.awaitingDeleteConfirm = false;
+            this.rebuild();
          } else if (slotIndex == SLOT_DELETE) {
             if (!this.awaitingDeleteConfirm) {
                this.awaitingDeleteConfirm = true;
@@ -627,7 +631,7 @@ public class ClaimMenuHandler extends ScreenHandler {
                   if (button == 1) {
                      this.claim.getFlags().showWelcome = !this.claim.getFlags().showWelcome;
                      ClaimManager.getInstance().save();
-                     this.rebuild();
+                     this.refreshFlagSlot(slotIndex, clicked);
                   } else {
                      requestEditWelcome(this.viewer, this.claim, this.page);
                      this.viewer.closeHandledScreen();
@@ -636,7 +640,7 @@ public class ClaimMenuHandler extends ScreenHandler {
                   if (button == 1) {
                      this.claim.getFlags().showLeave = !this.claim.getFlags().showLeave;
                      ClaimManager.getInstance().save();
-                     this.rebuild();
+                     this.refreshFlagSlot(slotIndex, clicked);
                   } else {
                      requestEditLeave(this.viewer, this.claim, this.page);
                      this.viewer.closeHandledScreen();
@@ -644,13 +648,13 @@ public class ClaimMenuHandler extends ScreenHandler {
                } else if (clicked == ClaimFlags.FlagId.SHOW_BORDER) {
                   this.claim.getFlags().showBorder = !this.claim.getFlags().showBorder;
                   ClaimManager.getInstance().save();
-                  this.rebuild();
+                  this.refreshFlagSlot(slotIndex, clicked);
                } else if (clicked == ClaimFlags.FlagId.SHOW_PARTICLES) {
                   ClaimParticleMenuHandler.open(this.viewer, this.claim, this.page);
                } else {
                   this.claim.getFlags().toggle(clicked);
                   ClaimManager.getInstance().save();
-                  this.rebuild();
+                  this.refreshFlagSlot(slotIndex, clicked);
                }
             } else if (slotIndex == SLOT_VIEW_MEMBERS) {
                this.viewer.sendMessage(Text.literal("[Claim] Miembros de la zona:").formatted(Formatting.GRAY), false);
@@ -734,6 +738,18 @@ public class ClaimMenuHandler extends ScreenHandler {
 
       this.viewer.sendMessage(Text.literal("✔ Zona eliminada. Protección devuelta a tu inventario.").formatted(Formatting.GREEN), false);
       this.viewer.closeHandledScreen();
+   }
+
+   /** Refresca solo la casilla de la flag pulsada, para no reenviar el menu completo. */
+   private void refreshFlagSlot(int slotIndex, ClaimFlags.FlagId id) {
+      int reqLevel = requiredPaidLevel(id);
+      if (reqLevel > 0 && paidLevelOf(this.claim.getTier()) < reqLevel) {
+         this.chest.setStack(slotIndex, this.lockedEffectButton(id, reqLevel));
+      } else {
+         this.chest.setStack(slotIndex, this.flagButton(id, this.claim.getFlags().get(id)));
+      }
+
+      this.sendContentUpdates();
    }
 
    private int pageIndex() {

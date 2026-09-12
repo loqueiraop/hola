@@ -41,7 +41,7 @@ public class MemberSelectMenu extends ScreenHandler {
    private final Claim claim;
    private final ServerPlayerEntity viewer;
    private final int returnPage;
-   private final int page;
+   private int page;
    private List<ServerPlayerEntity> candidates;
 
    public MemberSelectMenu(int syncId, PlayerInventory pInv, Claim claim, int returnPage, int page) {
@@ -182,11 +182,13 @@ public class MemberSelectMenu extends ScreenHandler {
          if (slotIndex == SLOT_BACK) {
             ClaimMenuHandler.open(this.viewer, this.claim, this.returnPage);
          } else if (slotIndex == SLOT_PREV && this.page > 0) {
-            open(this.viewer, this.claim, this.returnPage, this.page - 1);
+            this.page--;
+            this.rebuild();
          } else if (slotIndex == SLOT_NEXT) {
             int maxPage = Math.max(0, (this.candidates.size() - 1) / ENTRIES_PER_PAGE);
             if (this.page < maxPage) {
-               open(this.viewer, this.claim, this.returnPage, this.page + 1);
+               this.page++;
+               this.rebuild();
             }
          } else if (slotIndex == SLOT_BY_NAME) {
             ClaimMenuHandler.requestAddMember(this.viewer, this.claim, this.returnPage);

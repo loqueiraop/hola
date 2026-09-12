@@ -171,11 +171,18 @@ public final class ParticleBorder {
    // =====================================================================
    //  Contorno con polvo de colores (particula vanilla minecraft:dust).
    //  Es 100% server-side: el cliente no necesita el mod para verlo.
+   //
+   //  Por cada pared de la zona se dibuja:
+   //    - una linea a la altura del jugador, para que el borde se vea siempre
+   //      aunque la zona sea enorme
+   //    - las aristas de arriba y abajo, si caen dentro del alcance
+   //    - una pared parpadeante cuando te acercas al limite
    // =====================================================================
 
-   private static final double OUTLINE_STEP = 0.5;
+   private static final double LINE_STEP = 1.0;
+   private static final double WALL_SPAN = 8.0;
+   private static final double WALL_STEP = 1.0;
 
-   /** Polvo del color del tier de la zona. */
    private static DustParticleEffect dustFor(Claim claim) {
       float r = 1.0F;
       float g = 1.0F;
@@ -189,7 +196,25 @@ public final class ParticleBorder {
       return new DustParticleEffect(new Vector3f(r, g, b), 1.0F);
    }
 
-   /** Dibuja el contorno en aristas de una zona suelta. */
+   private static double clamp(double value, double lo, double hi) {
+      return value < lo ? lo : (value > hi ? hi : value);
+   }
+
+   private static double alignUp(double value) {
+      return Math.ceil(value / LINE_STEP) * LINE_STEP;
+   }
+
+   /** Parpadeo: mas rapido cuanto mas cerca estas del limite. */
+   private static boolean blinkOn(ServerWorld world, double distance) {
+      ClaimConfig config = ClaimConfig.get();
+      if (!config.borderWallBlink) {
+         return true;
+      } else {
+         long period = distance <= config.borderWallDistance / 2.0 ? 3L : 6L;
+         return world.getTime() / period % 2L == 0L;
+      }
+   }
+
    public static void drawOutline(ServerWorld world, ServerPlayerEntity player, Claim claim) {
       int radius = claim.getRadius();
       int height = claim.getHeight();
@@ -199,68 +224,113 @@ public final class ParticleBorder {
       double maxZ = (double)(claim.getZ() + radius + 1);
       double minY = (double)(claim.getY() - height);
       double maxY = (double)(claim.getY() + height + 1);
-      drawWireframe(world, player, dustFor(claim), minX, minY, minZ, maxX, maxY, maxZ);
+      DustParticleEffect dust = dustFor(claim);
+      wallAlongZ(world, player, dust, minX, minZ, maxZ, minY, maxY);
+      wallAlongZ(world, player, dust, maxX, minZ, maxZ, minY, maxY);
+      wallAlongX(world, player, dust, minZ, minX, maxX, minY, maxY);
+      wallAlongX(world, player, dust, maxZ, minX, maxX, minY, maxY);
+      corner(world, player, dust, minX, minZ, minY, maxY);
+      corner(world, player, dust, minX, maxZ, minY, maxY);
+      corner(world, player, dust, maxX, minZ, minY, maxY);
+      corner(world, player, dust, maxX, maxZ, minY, maxY);
    }
 
-   private static void drawWireframe(
-      ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double minX, double minY, double minZ, double maxX, double maxY, double maxZ
+   /** Pared en el plano x = wx, que recorre Z entre za y zb. */
+   private static void wallAlongZ(
+      ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double wx, double za, double zb, double minY, double maxY
    ) {
-      // 4 aristas horizontales en X (arriba y abajo)
-      lineX(world, player, dust, minX, maxX, minY, minZ);
-      lineX(world, player, dust, minX, maxX, minY, maxZ);
-      lineX(world, player, dust, minX, maxX, maxY, minZ);
-      lineX(world, player, dust, minX, maxX, maxY, maxZ);
-      // 4 aristas horizontales en Z
-      lineZ(world, player, dust, minZ, maxZ, minY, minX);
-      lineZ(world, player, dust, minZ, maxZ, minY, maxX);
-      lineZ(world, player, dust, minZ, maxZ, maxY, minX);
-      lineZ(world, player, dust, minZ, maxZ, maxY, maxX);
-      // 4 pilares verticales en las esquinas
-      lineY(world, player, dust, minY, maxY, minX, minZ);
-      lineY(world, player, dust, minY, maxY, minX, maxZ);
-      lineY(world, player, dust, minY, maxY, maxX, minZ);
-      lineY(world, player, dust, minY, maxY, maxX, maxZ);
+      ClaimConfig config = ClaimConfig.get();
+      double reach = (double)config.particleRenderDistance;
+      double gap = Math.abs(player.getX() - wx);
+      if (!(gap > reach)) {
+         double from = Math.max(za, alignUp(player.getZ() - reach));
+         double to = Math.min(zb, player.getZ() + reach);
+         if (!(from > to)) {
+            double levelY = clamp(player.getY(), minY, maxY);
+            lineZ(world, player, dust, from, to, levelY, wx);
+            if (Math.abs(player.getY() - minY) <= reach) {
+               lineZ(world, player, dust, from, to, minY, wx);
+            }
+
+            if (Math.abs(player.getY() - maxY) <= reach) {
+               lineZ(world, player, dust, from, to, maxY, wx);
+            }
+
+            if (gap <= (double)config.borderWallDistance && blinkOn(world, gap)) {
+               double wFrom = Math.max(za, alignUp(player.getZ() - WALL_SPAN));
+               double wTo = Math.min(zb, player.getZ() + WALL_SPAN);
+               double yFrom = Math.max(minY, alignUp(player.getY() - 2.0));
+               double yTo = Math.min(maxY, player.getY() + 3.0);
+
+               for (double z = wFrom; z <= wTo; z += WALL_STEP) {
+                  for (double y = yFrom; y <= yTo; y += WALL_STEP) {
+                     world.spawnParticles(player, dust, true, wx, y, z, 1, 0.0, 0.0, 0.0, 0.0);
+                  }
+               }
+            }
+         }
+      }
    }
 
-   /**
-    * Recorta el tramo de arista al entorno del jugador antes de recorrerlo, para que
-    * una zona de 500x500 no genere miles de particulas.
-    */
-   private static double startAt(double from, double limit) {
-      double aligned = Math.ceil(from / OUTLINE_STEP) * OUTLINE_STEP;
-      return Math.max(aligned, Math.ceil(limit / OUTLINE_STEP) * OUTLINE_STEP);
+   /** Pared en el plano z = wz, que recorre X entre xa y xb. */
+   private static void wallAlongX(
+      ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double wz, double xa, double xb, double minY, double maxY
+   ) {
+      ClaimConfig config = ClaimConfig.get();
+      double reach = (double)config.particleRenderDistance;
+      double gap = Math.abs(player.getZ() - wz);
+      if (!(gap > reach)) {
+         double from = Math.max(xa, alignUp(player.getX() - reach));
+         double to = Math.min(xb, player.getX() + reach);
+         if (!(from > to)) {
+            double levelY = clamp(player.getY(), minY, maxY);
+            lineX(world, player, dust, from, to, levelY, wz);
+            if (Math.abs(player.getY() - minY) <= reach) {
+               lineX(world, player, dust, from, to, minY, wz);
+            }
+
+            if (Math.abs(player.getY() - maxY) <= reach) {
+               lineX(world, player, dust, from, to, maxY, wz);
+            }
+
+            if (gap <= (double)config.borderWallDistance && blinkOn(world, gap)) {
+               double wFrom = Math.max(xa, alignUp(player.getX() - WALL_SPAN));
+               double wTo = Math.min(xb, player.getX() + WALL_SPAN);
+               double yFrom = Math.max(minY, alignUp(player.getY() - 2.0));
+               double yTo = Math.min(maxY, player.getY() + 3.0);
+
+               for (double x = wFrom; x <= wTo; x += WALL_STEP) {
+                  for (double y = yFrom; y <= yTo; y += WALL_STEP) {
+                     world.spawnParticles(player, dust, true, x, y, wz, 1, 0.0, 0.0, 0.0, 0.0);
+                  }
+               }
+            }
+         }
+      }
    }
 
-   private static void lineX(ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double xa, double xb, double y, double z) {
-      double max = (double)ClaimConfig.get().particleRenderDistance;
-      if (!(Math.abs(player.getY() - y) > max) && !(Math.abs(player.getZ() - z) > max)) {
-         double to = Math.min(xb, player.getX() + max);
+   /** Pilar vertical de esquina, recortado al alcance del jugador. */
+   private static void corner(ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double x, double z, double minY, double maxY) {
+      double reach = (double)ClaimConfig.get().particleRenderDistance;
+      if (!(Math.abs(player.getX() - x) > reach) && !(Math.abs(player.getZ() - z) > reach)) {
+         double from = Math.max(minY, alignUp(player.getY() - reach));
+         double to = Math.min(maxY, player.getY() + reach);
 
-         for (double x = startAt(xa, player.getX() - max); x <= to; x += OUTLINE_STEP) {
+         for (double y = from; y <= to; y += LINE_STEP) {
             world.spawnParticles(player, dust, true, x, y, z, 1, 0.0, 0.0, 0.0, 0.0);
          }
       }
    }
 
-   private static void lineZ(ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double za, double zb, double y, double x) {
-      double max = (double)ClaimConfig.get().particleRenderDistance;
-      if (!(Math.abs(player.getY() - y) > max) && !(Math.abs(player.getX() - x) > max)) {
-         double to = Math.min(zb, player.getZ() + max);
-
-         for (double z = startAt(za, player.getZ() - max); z <= to; z += OUTLINE_STEP) {
-            world.spawnParticles(player, dust, true, x, y, z, 1, 0.0, 0.0, 0.0, 0.0);
-         }
+   private static void lineX(ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double from, double to, double y, double z) {
+      for (double x = from; x <= to; x += LINE_STEP) {
+         world.spawnParticles(player, dust, true, x, y, z, 1, 0.0, 0.0, 0.0, 0.0);
       }
    }
 
-   private static void lineY(ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double ya, double yb, double x, double z) {
-      double max = (double)ClaimConfig.get().particleRenderDistance;
-      if (!(Math.abs(player.getX() - x) > max) && !(Math.abs(player.getZ() - z) > max)) {
-         double to = Math.min(yb, player.getY() + max);
-
-         for (double y = startAt(ya, player.getY() - max); y <= to; y += OUTLINE_STEP) {
-            world.spawnParticles(player, dust, true, x, y, z, 1, 0.0, 0.0, 0.0, 0.0);
-         }
+   private static void lineZ(ServerWorld world, ServerPlayerEntity player, DustParticleEffect dust, double from, double to, double y, double x) {
+      for (double z = from; z <= to; z += LINE_STEP) {
+         world.spawnParticles(player, dust, true, x, y, z, 1, 0.0, 0.0, 0.0, 0.0);
       }
    }
 
@@ -330,7 +400,6 @@ public final class ParticleBorder {
                   }
                }
 
-               // paredes perpendiculares a X (recorren Z)
                for (int i = 0; i < nx; i++) {
                   int j = 0;
 
@@ -347,17 +416,15 @@ public final class ParticleBorder {
                         double wx = (double)gridX[i].intValue();
                         double za = (double)gridZ[startJ].intValue();
                         double zb = (double)gridZ[j].intValue();
-                        lineZ(world, player, dust, za, zb, minY, wx);
-                        lineZ(world, player, dust, za, zb, maxY, wx);
-                        lineY(world, player, dust, minY, maxY, wx, za);
-                        lineY(world, player, dust, minY, maxY, wx, zb);
+                        wallAlongZ(world, player, dust, wx, za, zb, minY, maxY);
+                        corner(world, player, dust, wx, za, minY, maxY);
+                        corner(world, player, dust, wx, zb, minY, maxY);
                      } else {
                         j++;
                      }
                   }
                }
 
-               // paredes perpendiculares a Z (recorren X)
                for (int j = 0; j < nz; j++) {
                   int i = 0;
 
@@ -374,10 +441,9 @@ public final class ParticleBorder {
                         double wz = (double)gridZ[j].intValue();
                         double xa = (double)gridX[startI].intValue();
                         double xb = (double)gridX[i].intValue();
-                        lineX(world, player, dust, xa, xb, minY, wz);
-                        lineX(world, player, dust, xa, xb, maxY, wz);
-                        lineY(world, player, dust, minY, maxY, xa, wz);
-                        lineY(world, player, dust, minY, maxY, xb, wz);
+                        wallAlongX(world, player, dust, wz, xa, xb, minY, maxY);
+                        corner(world, player, dust, xa, wz, minY, maxY);
+                        corner(world, player, dust, xb, wz, minY, maxY);
                      } else {
                         i++;
                      }

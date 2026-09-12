@@ -41,6 +41,8 @@ public final class ClaimConfig {
    public int particleIntervalTicks = 4;
    public int borderIntervalTicks = 10;
    public int particleRenderDistance = 24;
+   public int borderWallDistance = 5;
+   public boolean borderWallBlink = true;
    public int fireSweepIntervalTicks = 40;
    public int fireSweepRadius = 6;
    public int passiveEffectIntervalTicks = 40;
@@ -129,6 +131,8 @@ public final class ClaimConfig {
       this.particleIntervalTicks = Math.max(1, readInt(perf, "ticksEntreParticulas", this.particleIntervalTicks));
       this.borderIntervalTicks = Math.max(1, readInt(perf, "ticksEntreActualizacionDeBordes", this.borderIntervalTicks));
       this.particleRenderDistance = Math.max(1, readInt(perf, "distanciaParaVerParticulas", this.particleRenderDistance));
+      this.borderWallDistance = Math.max(0, readInt(perf, "distanciaDeLaParedDeAviso", this.borderWallDistance));
+      this.borderWallBlink = readBool(perf, "paredDeAvisoParpadea", this.borderWallBlink);
       this.fireSweepIntervalTicks = Math.max(1, readInt(perf, "ticksEntreBarridoDeFuego", this.fireSweepIntervalTicks));
       this.fireSweepRadius = Math.max(0, readInt(perf, "radioDeBarridoDeFuego", this.fireSweepRadius));
       this.passiveEffectIntervalTicks = Math.max(1, readInt(perf, "ticksEntreEfectosPasivos", this.passiveEffectIntervalTicks));
@@ -223,6 +227,8 @@ public final class ClaimConfig {
             "ticksEntreParticulas: cada cuanto se dibujan las particulas del area.",
             "ticksEntreActualizacionDeBordes: cada cuanto se redibuja el contorno de polvo.",
             "distanciaParaVerParticulas: a cuantos bloques del borde se empiezan a ver.",
+            "distanciaDeLaParedDeAviso: a que distancia del limite aparece la pared de particulas. 0 la desactiva.",
+            "paredDeAvisoParpadea: la pared parpadea, y mas rapido cuanto mas cerca estas del limite.",
             "ticksEntreBarridoDeFuego y radioDeBarridoDeFuego: apagado de fuego dentro de la zona.",
             "ticksEntreEfectosPasivos: cada cuanto se reaplican regeneracion, resistencia y velocidad."
          )
@@ -230,6 +236,8 @@ public final class ClaimConfig {
       perf.addProperty("ticksEntreParticulas", this.particleIntervalTicks);
       perf.addProperty("ticksEntreActualizacionDeBordes", this.borderIntervalTicks);
       perf.addProperty("distanciaParaVerParticulas", this.particleRenderDistance);
+      perf.addProperty("distanciaDeLaParedDeAviso", this.borderWallDistance);
+      perf.addProperty("paredDeAvisoParpadea", this.borderWallBlink);
       perf.addProperty("ticksEntreBarridoDeFuego", this.fireSweepIntervalTicks);
       perf.addProperty("radioDeBarridoDeFuego", this.fireSweepRadius);
       perf.addProperty("ticksEntreEfectosPasivos", this.passiveEffectIntervalTicks);
