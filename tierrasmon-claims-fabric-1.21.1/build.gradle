@@ -2,6 +2,15 @@ plugins {
     id 'fabric-loom' version '1.10.5'
 }
 
+loom {
+    // Fijado a proposito: si se deja al valor por defecto, Loom lo deriva de
+    // archives_base_name y deja de coincidir con el refmap que declara
+    // claimblocks.mixins.json, los mixins no se remapean y el server no arranca.
+    mixin {
+        defaultRefmapName = 'tierrasmon-claims-refmap.json'
+    }
+}
+
 version = project.mod_version
 group = project.maven_group
 

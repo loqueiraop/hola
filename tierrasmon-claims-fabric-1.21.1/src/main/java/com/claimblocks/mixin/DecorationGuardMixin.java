@@ -4,16 +4,20 @@ import com.claimblocks.ClaimBlocksMod;
 import com.claimblocks.util.DecorationProtection;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.decoration.AbstractDecorationEntity;
-import net.minecraft.entity.decoration.ArmorStandEntity;
-import net.minecraft.entity.decoration.ItemFrameEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-/** Protege cuadros, marcos de items y soportes de armadura de flechas, mobs y explosiones. */
-@Mixin({AbstractDecorationEntity.class, ItemFrameEntity.class, ArmorStandEntity.class})
+/**
+ * Protege cuadros, marcos de items y soportes de armadura de flechas, mobs y explosiones.
+ *
+ * Se engancha a Entity.damage y no a las clases de decoracion porque ni
+ * AbstractDecorationEntity ni PaintingEntity declaran damage: lo heredan de Entity,
+ * asi que inyectar en ellas dejaria los cuadros sin proteger. El filtro es un
+ * instanceof, asi que no pesa para el resto de entidades.
+ */
+@Mixin({Entity.class})
 public abstract class DecorationGuardMixin {
    @Inject(
       method = {"damage(Lnet/minecraft/entity/damage/DamageSource;F)Z"},
@@ -24,7 +28,7 @@ public abstract class DecorationGuardMixin {
    private void claimblocks$protectDecoration(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
       try {
          Entity self = (Entity)(Object)this;
-         if (DecorationProtection.blocksDamage(self, source)) {
+         if (DecorationProtection.isDecoration(self) && DecorationProtection.blocksDamage(self, source)) {
             cir.setReturnValue(false);
          }
       } catch (Throwable t) {
