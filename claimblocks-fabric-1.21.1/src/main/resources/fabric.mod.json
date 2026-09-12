@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "claimblocks",
+  "version": "${version}",
+  "name": "Fantastic Claims",
+  "description": "Proteccion de zonas: 10 tamanos usando concretos vanilla, 34 flags por zona, panel admin, grupos/merge, bordes con particulas y persistencia JSON. La proteccion es 100% server-side: los clientes vanilla NO necesitan instalar nada. Si el cliente tiene el mod, ademas ve el contorno de sus zonas en lineas.",
+  "authors": ["ClaimBlocks Team"],
+  "contact": {
+    "sources": "https://github.com/loqueiraop/hola",
+    "issues": "https://github.com/loqueiraop/hola/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/claimblocks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.claimblocks.ClaimBlocksMod"],
+    "client": ["com.claimblocks.client.ClaimBlocksClient"]
+  },
+  "mixins": ["claimblocks.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.102.0"
+  }
+}
