@@ -551,7 +551,7 @@ public class ClaimMenuHandler extends ScreenHandler {
          case PUBLIC_MODE -> "Todos entran pero no modifican";
          case SHOW_WELCOME -> "Mensaje personalizado al entrar";
          case SHOW_LEAVE -> "Mensaje personalizado al salir";
-         case SHOW_BORDER -> "Dibuja el contorno de tu protección (líneas)";
+         case SHOW_BORDER -> "Marca las aristas de tu protección con polvo de color";
          case SHOW_PARTICLES -> "Llena tu protección con partículas";
          case BURN_HOSTILES -> "Quema a los mobs hostiles que entren (día o noche)";
          case ANIMAL_KILLING -> "Intrusos no pueden matar animales";

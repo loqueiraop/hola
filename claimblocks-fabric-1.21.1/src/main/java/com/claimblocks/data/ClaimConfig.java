@@ -39,7 +39,7 @@ public final class ClaimConfig {
    public int chatPromptSeconds = 90;
    public int maxWelcomeLength = 60;
    public int particleIntervalTicks = 4;
-   public int borderIntervalTicks = 20;
+   public int borderIntervalTicks = 10;
    public int particleRenderDistance = 24;
    public int fireSweepIntervalTicks = 40;
    public int fireSweepRadius = 6;
@@ -221,7 +221,7 @@ public final class ClaimConfig {
          doc(
             "Sube los intervalos para gastar menos CPU y ancho de banda (20 ticks = 1 segundo).",
             "ticksEntreParticulas: cada cuanto se dibujan las particulas del area.",
-            "ticksEntreActualizacionDeBordes: cada cuanto se envia el borde a los clientes.",
+            "ticksEntreActualizacionDeBordes: cada cuanto se redibuja el contorno de polvo.",
             "distanciaParaVerParticulas: a cuantos bloques del borde se empiezan a ver.",
             "ticksEntreBarridoDeFuego y radioDeBarridoDeFuego: apagado de fuego dentro de la zona.",
             "ticksEntreEfectosPasivos: cada cuanto se reaplican regeneracion, resistencia y velocidad."
